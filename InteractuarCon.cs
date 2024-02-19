@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class InteratuarCon : Area2D {
+public partial class InteractuarCon : Area2D {
 
 
     public override void _Ready(){
