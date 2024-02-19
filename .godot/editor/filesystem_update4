@@ -4,3 +4,10 @@ res://ArrastrarYsoltar.cs
 res://InteratuarCon.cs
 res://new_script.cs
 res://InteractuarCon.cs
+res://Prueba.tscn
+res://scripts/aaaa.cs
+res://scripts/ArrastrarYsoltar.cs
+res://scripts/CambioDeMapa.cs
+res://scripts/InteractuarCon.cs
+res://scripts/new_script.cs
+res://escenas/node_2d.tscn

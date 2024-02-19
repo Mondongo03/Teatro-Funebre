@@ -1,10 +1,10 @@
 [gd_scene load_steps=9 format=3 uid="uid://dmiq6b6x1xr3n"]
 
-[ext_resource type="Texture2D" uid="uid://bmcqrepalobj6" path="res://1336.png" id="1_fy0le"]
-[ext_resource type="Script" path="res://ArrastrarYsoltar.cs" id="1_gdji6"]
-[ext_resource type="Texture2D" uid="uid://cemwnpemlsjxx" path="res://FondoInicio.jpg" id="1_lobgt"]
-[ext_resource type="Texture2D" uid="uid://diyid5dnq6662" path="res://icon.svg" id="3_t3pcb"]
-[ext_resource type="Script" path="res://InteractuarCon.cs" id="5_cor1v"]
+[ext_resource type="Texture2D" uid="uid://bmcqrepalobj6" path="res://assets/1336.png" id="1_fy0le"]
+[ext_resource type="Script" path="res://scripts/ArrastrarYsoltar.cs" id="1_gdji6"]
+[ext_resource type="Texture2D" uid="uid://cemwnpemlsjxx" path="res://assets/FondoInicio.jpg" id="1_lobgt"]
+[ext_resource type="Texture2D" uid="uid://diyid5dnq6662" path="res://assets/icon.svg" id="3_t3pcb"]
+[ext_resource type="Script" path="res://scripts/InteractuarCon.cs" id="5_cor1v"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ejhk8"]
 custom_solver_bias = 1.0
