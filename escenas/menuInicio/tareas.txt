@@ -1,0 +1,3 @@
+TAREAS
+    - Hacer el diseño del menu
+    - Crear el Script
