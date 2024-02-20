@@ -1,2 +1,2 @@
-﻿53072
-D:/Descargas/Godot_v4.2.1-stable_mono_win64/Godot_v4.2.1-stable_mono_win64/Godot_v4.2.1-stable_mono_win64.exe
+﻿63683
+C:/Users/ruben/Desktop/Godot_v4.2.1-stable_mono_win64/Godot_v4.2.1-stable_mono_win64.exe

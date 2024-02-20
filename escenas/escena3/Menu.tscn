@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://cphcmirumv6sr"]
+
+[ext_resource type="Texture2D" uid="uid://cdw8jfg8yrb1d" path="res://escenas/escena3/assets/cortina.jpg" id="1_b0mcs"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Cortina" type="Sprite2D" parent="." groups=["cortina"]]
+position = Vector2(210, 310)
+scale = Vector2(0.217708, 0.217708)
+texture = ExtResource("1_b0mcs")
+
+[node name="Cortina2" type="Sprite2D" parent="." groups=["cortina"]]
+position = Vector2(942, 309)
+scale = Vector2(0.218, 0.218)
+texture = ExtResource("1_b0mcs")

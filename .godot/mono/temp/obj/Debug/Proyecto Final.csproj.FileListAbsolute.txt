@@ -16,3 +16,21 @@ D:\Teatro-Funebre\.godot\mono\temp\obj\Debug\refint\Proyecto Final.dll
 D:\Teatro-Funebre\.godot\mono\temp\obj\Debug\Proyecto Final.pdb
 D:\Teatro-Funebre\.godot\mono\temp\obj\Debug\Proyecto Final.genruntimeconfig.cache
 D:\Teatro-Funebre\.godot\mono\temp\obj\Debug\ref\Proyecto Final.dll
+C:\Users\ruben\Desktop\Teatro-Funebre\.godot\mono\temp\bin\Debug\Proyecto Final.deps.json
+C:\Users\ruben\Desktop\Teatro-Funebre\.godot\mono\temp\bin\Debug\Proyecto Final.runtimeconfig.json
+C:\Users\ruben\Desktop\Teatro-Funebre\.godot\mono\temp\bin\Debug\Proyecto Final.dll
+C:\Users\ruben\Desktop\Teatro-Funebre\.godot\mono\temp\bin\Debug\Proyecto Final.pdb
+C:\Users\ruben\Desktop\Teatro-Funebre\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\ruben\Desktop\Teatro-Funebre\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\ruben\Desktop\Teatro-Funebre\.godot\mono\temp\obj\Debug\Proyecto Final.csproj.AssemblyReference.cache
+C:\Users\ruben\Desktop\Teatro-Funebre\.godot\mono\temp\obj\Debug\Proyecto Final.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ruben\Desktop\Teatro-Funebre\.godot\mono\temp\obj\Debug\Proyecto Final.AssemblyInfoInputs.cache
+C:\Users\ruben\Desktop\Teatro-Funebre\.godot\mono\temp\obj\Debug\Proyecto Final.AssemblyInfo.cs
+C:\Users\ruben\Desktop\Teatro-Funebre\.godot\mono\temp\obj\Debug\Proyecto Final.csproj.CoreCompileInputs.cache
+C:\Users\ruben\Desktop\Teatro-Funebre\.godot\mono\temp\obj\Debug\Proyecto Final.sourcelink.json
+C:\Users\ruben\Desktop\Teatro-Funebre\.godot\mono\temp\obj\Debug\Proyecto.334F53BF.Up2Date
+C:\Users\ruben\Desktop\Teatro-Funebre\.godot\mono\temp\obj\Debug\Proyecto Final.dll
+C:\Users\ruben\Desktop\Teatro-Funebre\.godot\mono\temp\obj\Debug\refint\Proyecto Final.dll
+C:\Users\ruben\Desktop\Teatro-Funebre\.godot\mono\temp\obj\Debug\Proyecto Final.pdb
+C:\Users\ruben\Desktop\Teatro-Funebre\.godot\mono\temp\obj\Debug\Proyecto Final.genruntimeconfig.cache
+C:\Users\ruben\Desktop\Teatro-Funebre\.godot\mono\temp\obj\Debug\ref\Proyecto Final.dll
