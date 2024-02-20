@@ -1,9 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1708371575
-::res://escenas/::1708371448
-::res://escenas/escena1/::1708371448
-node_2d.tscn::PackedScene::8019070129756456321::1708371448::0::1::::<><>::uid://bmcqrepalobj6::::res://escenas/escena1/assets/1336.png<>res://escenas/escena1/scripts/ArrastrarYsoltar.cs<>uid://cemwnpemlsjxx::::res://escenas/escena1/assets/FondoInicio.jpg<>uid://diyid5dnq6662::::res://escenas/escena1/assets/icon.svg<>res://escenas/escena1/scripts/InteractuarCon.cs
-::res://escenas/escena1/assets/::1708371448
+::res://::1708425284
+::res://escenas/::1708421320
+::res://escenas/escena1/::1708371581
+node_2d.tscn::PackedScene::8019070129756456321::1708371581::0::1::::<><>::uid://bmcqrepalobj6::::res://escenas/escena1/assets/1336.png<>res://escenas/escena1/scripts/ArrastrarYsoltar.cs<>uid://cemwnpemlsjxx::::res://escenas/escena1/assets/FondoInicio.jpg<>uid://diyid5dnq6662::::res://escenas/escena1/assets/icon.svg<>res://escenas/escena1/scripts/InteractuarCon.cs
+::res://escenas/escena1/assets/::1708371576
 1336.png::CompressedTexture2D::3233817626518974133::1708371448::1708371448::1::::<><>::
 FondoInicio.jpg::CompressedTexture2D::5079729058738788105::1708371448::1708371448::1::::<><>::
 icon.svg::CompressedTexture2D::7770810540553058061::1708371448::1708371576::1::::<><>::
@@ -15,3 +15,5 @@ InteractuarCon.cs::CSharpScript::-1::1708371448::0::1::::<><>::
 new_script.cs::CSharpScript::-1::1708371448::0::1::::<><>::
 ::res://escenas/escena2/::1708371448
 Prueba.tscn::PackedScene::4381707136062974251::1708371448::0::1::::<><>::
+::res://escenas/escena3/::1708421998
+::res://escenas/escena3/assets/::1708421998
