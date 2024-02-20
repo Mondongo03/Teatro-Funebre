@@ -1,7 +1,56 @@
-[gd_scene format=3 uid="uid://b3oscujcwaje6"]
+[gd_scene load_steps=5 format=3 uid="uid://b3oscujcwaje6"]
+
+[ext_resource type="Texture2D" uid="uid://ca4aq1x55yy2u" path="res://escenas/escena2/assets/rollo-cuerda-aislado.jpg" id="1_dveqv"]
+[ext_resource type="Texture2D" uid="uid://kujc0ll2avxr" path="res://escenas/escena2/assets/curtain.png" id="2_qfu4j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k1vju"]
+size = Vector2(4720, 3438.3)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_memt1"]
+size = Vector2(4.23579, 6.42857)
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(62, 51)
 scale = Vector2(10000, 10000)
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+position = Vector2(0.0532226, 0.0224609)
+rotation = -1.5708
+scale = Vector2(5.25424e-06, 3.86819e-06)
+texture = ExtResource("1_dveqv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0.05325, 0.0224)
+rotation = -1.5708
+scale = Vector2(5.25424e-06, 3.86819e-06)
+shape = SubResource("RectangleShape2D_k1vju")
+
+[node name="Area2D2" type="Area2D" parent="." groups=["cortina-derecha"]]
+position = Vector2(0.0011, -9.99998e-05)
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D2"]
+position = Vector2(0.0932999, 0.0372009)
+rotation = -6.28319
+scale = Vector2(0.000130183, 0.000201099)
+texture = ExtResource("2_qfu4j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(0.0934747, 0.0374999)
+scale = Vector2(0.007, 0.007)
+shape = SubResource("RectangleShape2D_memt1")
+
+[node name="Area2D3" type="Area2D" parent="." groups=["cortina-izquierda"]]
+position = Vector2(-0.0847, 0.0002)
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D3"]
+position = Vector2(0.0932999, 0.0372009)
+rotation = -6.28319
+scale = Vector2(0.000130183, 0.000201099)
+texture = ExtResource("2_qfu4j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
+position = Vector2(0.09335, 0.0372)
+scale = Vector2(0.007, 0.007)
+shape = SubResource("RectangleShape2D_memt1")
