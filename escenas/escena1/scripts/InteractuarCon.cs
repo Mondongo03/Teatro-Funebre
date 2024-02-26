@@ -15,6 +15,7 @@ public partial class InteractuarCon : Area2D {
 	public void _on_hueco_area_entered(CollisionObject2D collisionObject2D){
 		if (collisionObject2D.IsInGroup("bola")){
 		GD.Print("Bola a entrau");
+		GetTree().ChangeSceneToFile("res://escenas/escena2/Prueba.tscn");
 		}
 		else if (collisionObject2D.IsInGroup("godot")){
 		GD.Print("Godot a entrau");
