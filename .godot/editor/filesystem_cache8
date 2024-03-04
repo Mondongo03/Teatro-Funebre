@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1708968316
+::res://::1709569231
 ::res://escenas/::1708370433
-::res://escenas/escena1/::1708371592
-node_2d.tscn::PackedScene::8019070129756456321::1708371592::0::1::::<><>::uid://bmcqrepalobj6::::res://escenas/escena1/assets/1336.png<>res://escenas/escena1/scripts/ArrastrarYsoltar.cs<>uid://cemwnpemlsjxx::::res://escenas/escena1/assets/FondoInicio.jpg<>uid://diyid5dnq6662::::res://escenas/escena1/assets/icon.svg<>res://escenas/escena1/scripts/InteractuarCon.cs
+::res://escenas/escena1/::1708971055
+node_2d.tscn::PackedScene::8019070129756456321::1708971055::0::1::::<><>::uid://bmcqrepalobj6::::res://escenas/escena1/assets/1336.png<>res://escenas/escena1/scripts/ArrastrarYsoltar.cs<>uid://cemwnpemlsjxx::::res://escenas/escena1/assets/FondoInicio.jpg<>uid://diyid5dnq6662::::res://escenas/escena1/assets/icon.svg<>res://escenas/escena1/scripts/InteractuarCon.cs
 ::res://escenas/escena1/assets/::1708370097
 1336.png::CompressedTexture2D::3233817626518974133::1708370097::1708370097::1::::<><>::
 FondoInicio.jpg::CompressedTexture2D::5079729058738788105::1708370097::1708370097::1::::<><>::
@@ -10,11 +10,11 @@ icon.svg::CompressedTexture2D::7770810540553058061::1708370097::1708370097::1:::
 ::res://escenas/escena1/scripts/::1708417447
 aaaa.cs::CSharpScript::-1::1708370097::0::1::::<>Node<>::
 ArrastrarYsoltar.cs::CSharpScript::-1::1708370097::0::1::::<>Area2D<>::
-CambioDeMapa.cs::CSharpScript::-1::1708371568::0::1::::<>CollisionShape2D<>::
-InteractuarCon.cs::CSharpScript::-1::1708370097::0::1::::<>Area2D<>::
+CambioDeMapa.cs::CSharpScript::-1::1708971005::0::1::::<>Area2D<>::
+InteractuarCon.cs::CSharpScript::-1::1708971033::0::1::::<>Area2D<>::
 new_script.cs::CSharpScript::-1::1708370097::0::1::::<>Node<>::
-::res://escenas/escena2/::1708370097
-Prueba.tscn::PackedScene::4381707136062974251::1708370097::0::1::::<><>::
+::res://escenas/escena2/::1708971055
+Prueba.tscn::PackedScene::4381707136062974251::1708971055::0::1::::<><>::
 ::res://escenas/menuInicio/::1708370547
 tareas.txt::TextFile::-1::1708370575::0::1::::<><>::
 ::res://escenas/menuPausa/::1708370583
