@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://ce2yigury8ao7"]
+
+[ext_resource type="Script" path="res://escenas/escena1/scripts/ArrastrarYsoltar.cs" id="1_qp4go"]
+[ext_resource type="Texture2D" uid="uid://diyid5dnq6662" path="res://escenas/escena1/assets/icon.svg" id="2_ycx58"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ovyfb"]
+size = Vector2(33, 33)
+
+[node name="Godot" type="Area2D" groups=["godot"]]
+position = Vector2(20, 20)
+script = ExtResource("1_qp4go")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 1
+shape = SubResource("RectangleShape2D_ovyfb")
+debug_color = Color(0.839216, 0.172549, 0.835294, 0.419608)
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+z_index = 1
+position = Vector2(2.27374e-13, -9.09495e-13)
+scale = Vector2(0.262032, 0.262032)
+texture = ExtResource("2_ycx58")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

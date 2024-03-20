@@ -1,1 +1,13 @@
-res://escenas/escena2/Prueba.tscn
+res://escenas/escena1/objects/bola.tscn
+res://escenas/escena1/node_2d.tscn
+res://escenas/escena1/objects/inventario_1.tscn
+res://escenas/escena1/objects/godot.tscn
+res://escenas/escena1/objects/hueco.tscn
+res://escenas/escena1/main.cs
+res://escenas/escena1/scripts/aaaa.cs
+res://escenas/escena1/scripts/ArrastrarYsoltar.cs
+res://escenas/escena1/scripts/CambioDeMapa.cs
+res://escenas/escena1/scripts/InteractuarCon.cs
+res://escenas/escena1/scripts/new_script.cs
+res://escenas/escena2/scripts/MoverIzquierda.cs
+res://escenas/escena2/scripts/MoverPrueba.cs

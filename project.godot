@@ -15,6 +15,11 @@ run/main_scene="res://escenas/escena1/node_2d.tscn"
 config/features=PackedStringArray("4.1", "C#", "Forward Plus")
 config/icon="res://assets/icon.svg"
 
+[autoload]
+
+GlobalArrastrarYsoltar="*res://escenas/escena1/scripts/ArrastrarYsoltar.cs"
+GlobalInteractuarCon="*res://escenas/escena1/scripts/InteractuarCon.cs"
+
 [dotnet]
 
 project/assembly_name="Proyecto Final"

@@ -5,6 +5,9 @@ using System;
 public partial class ArrastrarYsoltar : Area2D {
 
 	bool puedoMover = false;
+	public static Boolean encontrado = false;
+
+	
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready(){
 
@@ -20,9 +23,17 @@ public partial class ArrastrarYsoltar : Area2D {
 	public void _on_input_event(Node viewport, InputEvent evento, int shap){
 		if(evento.IsActionPressed("click_izquierdo")){
 			puedoMover = true;
+			encontrado = true;
+
 		}
 		if(evento.IsActionReleased("click_izquierdo")){
 			puedoMover = false;
+			encontrado = true;
 		}
 	}
+
+	public Boolean devolverClickado(){
+		return encontrado;
+	}
+	
 }

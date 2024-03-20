@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://bhjow3k5digt3"]
+
+[ext_resource type="Script" path="res://escenas/escena1/scripts/ArrastrarYsoltar.cs" id="1_fitay"]
+[ext_resource type="Texture2D" uid="uid://bmcqrepalobj6" path="res://escenas/escena1/assets/1336.png" id="2_twf6m"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ejhk8"]
+custom_solver_bias = 1.0
+radius = 29.0689
+
+[node name="Bola" type="Area2D" groups=["bola"]]
+z_index = 4
+position = Vector2(200, 200)
+script = ExtResource("1_fitay")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 1
+position = Vector2(-6, 7)
+shape = SubResource("CircleShape2D_ejhk8")
+debug_color = Color(0.839216, 0.172549, 0.835294, 0.419608)
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+z_index = 1
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_twf6m")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
