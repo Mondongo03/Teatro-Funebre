@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dmiq6b6x1xr3n"]
+[gd_scene load_steps=4 format=3 uid="uid://dmiq6b6x1xr3n"]
 
 [ext_resource type="Script" path="res://escenas/escena1/scripts/aaaa.cs" id="1_e3ntn"]
 [ext_resource type="Texture2D" uid="uid://cemwnpemlsjxx" path="res://escenas/escena1/assets/FondoInicio.jpg" id="1_lobgt"]
+[ext_resource type="PackedScene" uid="uid://cfcow7smksh4b" path="res://escenas/escena1/Objetos/camino_de_saul.tscn" id="3_c05kq"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_e3ntn")
@@ -10,3 +11,6 @@ script = ExtResource("1_e3ntn")
 position = Vector2(576, 325)
 scale = Vector2(0.96, 0.8125)
 texture = ExtResource("1_lobgt")
+
+[node name="CaminoDeSaul" parent="." instance=ExtResource("3_c05kq")]
+position = Vector2(-6.10352e-05, 0)

@@ -1,2 +1,2 @@
-﻿49984
-D:/Descargas/Godot_v4.2.1-stable_mono_win64/Godot_v4.2.1-stable_mono_win64/Godot_v4.2.1-stable_mono_win64.exe
+﻿51931
+C:/Users/macna/Desktop/Godot_v4.2.1-stable_mono_win64/Godot_v4.2.1-stable_mono_win64.exe
