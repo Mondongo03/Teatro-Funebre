@@ -11,6 +11,8 @@ public partial class Main : Node2D {
 			 Node2D bolaInstancia;
 			 Node2D godotInstancia2;
 			 public static Node2D varillaMinutosInstancia;
+			 public static Node2D varillaSegundosInstancia;
+			 public static Node2D relojZoomeadoInstancia;
 			 Node2D relojInstancia;
 			 int slotsOcupados;
 			 Boolean clickadoBola = false;
@@ -30,7 +32,7 @@ public partial class Main : Node2D {
 		 }
 		clickadoBola = bolaClass.devolverClickado();
 		slotsOcupados = interactuarCon.devolverSlotsOcupados();
-		//GD.Print(slotsOcupados);
+		GD.Print(varillaMinutosReloj);
 
 		_on_area_2d_area_entered((CollisionObject2D)bolaInstancia);
 		_on_area_2d_area_exited((CollisionObject2D)bolaInstancia);
@@ -66,6 +68,10 @@ public partial class Main : Node2D {
 			PackedScene varillaMinutos = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/varillaM.tscn");
 			varillaMinutosInstancia = varillaMinutos.Instantiate() as Node2D; // Cast the instance to Node
 			AddChild(varillaMinutosInstancia);
+
+			PackedScene varillaSegundos = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/varillaS.tscn");
+			varillaSegundosInstancia = varillaSegundos.Instantiate() as Node2D; // Cast the instance to Node
+			AddChild(varillaSegundosInstancia);
     }
 
 

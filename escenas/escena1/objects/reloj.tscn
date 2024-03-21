@@ -18,3 +18,4 @@ texture = ExtResource("1_3g218")
 
 [connection signal="area_entered" from="." to="." method="_on_reloj_entered"]
 [connection signal="area_exited" from="." to="." method="_on_reloj_exited"]
+[connection signal="input_event" from="." to="." method="_on_input_event"]
