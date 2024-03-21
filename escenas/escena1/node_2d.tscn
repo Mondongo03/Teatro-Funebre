@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dmiq6b6x1xr3n"]
 
 [ext_resource type="Script" path="res://escenas/escena1/Main.cs" id="1_h6e1c"]
-[ext_resource type="Texture2D" uid="uid://cemwnpemlsjxx" path="res://escenas/escena1/assets/FondoInicio.jpg" id="1_lobgt"]
+[ext_resource type="Texture2D" uid="uid://df3xdc8uy6hdl" path="res://escenas/escena1/assets/FondoInicio.png" id="2_72pvx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yiuey"]
 size = Vector2(1153, 652)
@@ -12,7 +12,7 @@ script = ExtResource("1_h6e1c")
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(576, 325)
 scale = Vector2(0.96, 0.8125)
-texture = ExtResource("1_lobgt")
+texture = ExtResource("2_72pvx")
 
 [node name="Area2D" type="Area2D" parent="."]
 

@@ -7,15 +7,17 @@ public partial class Main : Node2D {
 			InteractuarCon interactuarCon = new InteractuarCon();
 			Bola bolaClass = new Bola();
 			Reloj reloj = new Reloj();
-
+			int slotsOcupados;
+			
+			[Export] 
+			Button botonPrueba;
 			 Node2D bolaInstancia;
 			 Node2D godotInstancia2;
 			 public static Node2D varillaMinutosInstancia;
 			 public static Node2D varillaSegundosInstancia;
 			 public static Node2D relojZoomeadoInstancia;
 			 Node2D relojInstancia;
-			[Export] 
-			int slotsOcupados;
+			
 			 Boolean clickadoBola = false;
 			 Boolean clickadoVarillaM = false;
 			public static Boolean varillaMinutosReloj = false;
