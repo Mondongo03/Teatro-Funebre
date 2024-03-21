@@ -1,12 +1,13 @@
 using Godot;
 using System;
 
-public partial class Reloj : Area2D {
+public partial class RelojZoomeado : Area2D {
     public override void _Ready(){
 		
     }
 
     public override void _Process(double delta){
+				
 	}
 
 	public void _on_reloj_entered(CollisionObject2D collisionObject2D){
@@ -38,15 +39,6 @@ public partial class Reloj : Area2D {
 				PackedScene relojZooemado = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/relojZoomeado.tscn");
 			Main.relojZoomeadoInstancia = relojZooemado.Instantiate() as Node2D; // Cast the instance to Node
 			AddChild(Main.relojZoomeadoInstancia);
-
-			PackedScene varillaMinutos = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/varillaM.tscn");
-			Main.varillaMinutosInstancia = varillaMinutos.Instantiate() as Node2D; // Cast the instance to Node
-			AddChild(Main.varillaMinutosInstancia);
-
-			PackedScene varillaSegundos = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/varillaS.tscn");
-			Main.varillaSegundosInstancia = varillaSegundos.Instantiate() as Node2D;
-			Main.varillaSegundosInstancia.Position = new Vector2I(280, 100); // Cast the instance to Node
-			AddChild(Main.varillaSegundosInstancia);
 		}
 	}
 }

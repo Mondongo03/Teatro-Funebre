@@ -7,21 +7,30 @@ public partial class VarillaM : Area2D {
 	bool puedoMover = false;
 	public static Boolean encontrado = false;
 
+
+
 	
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready(){
-
+		
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta){
-
-		if(puedoMover){
+			if(Main.varillaMinutosReloj){
+				rotar();
+			}
+		if(puedoMover && !Main.varillaMinutosReloj){
 			Position = GetGlobalMousePosition();
 		}
+		GD.Print("Rotación: "+Rotation);
+		GD.Print(Main.varillaMinutosInstancia.Rotation);
+				GD.Print(Main.varillaSegundosInstancia.Rotation);
+				Main.varillaSegundosInstancia.Rotation = (Main.varillaMinutosInstancia.Rotation /5)*1;
 	}
 	public void _on_input_event(Node viewport, InputEvent evento, int shap){
-		if(evento.IsActionPressed("click_izquierdo")){
+		 if(evento.IsActionPressed("click_izquierdo") && !Main.varillaMinutosReloj){
+			
 			puedoMover = true;
 			encontrado = true;
 
@@ -29,11 +38,15 @@ public partial class VarillaM : Area2D {
 		if(evento.IsActionReleased("click_izquierdo")){
 			puedoMover = false;
 			encontrado = true;
+			
 		}
 	}
 
 	public Boolean devolverClickado(){
 		return encontrado;
+	}
+	public void rotar(){
+		LookAt(GetGlobalMousePosition());
 	}
 	
 }

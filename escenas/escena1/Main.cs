@@ -14,7 +14,8 @@ public partial class Main : Node2D {
 			 public static Node2D varillaSegundosInstancia;
 			 public static Node2D relojZoomeadoInstancia;
 			 Node2D relojInstancia;
-			 int slotsOcupados;
+			[Export] 
+			int slotsOcupados;
 			 Boolean clickadoBola = false;
 			 Boolean clickadoVarillaM = false;
 			public static Boolean varillaMinutosReloj = false;
