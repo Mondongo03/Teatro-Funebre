@@ -2,7 +2,6 @@ using Godot;
 using System;
 
 public partial class Reloj : Area2D {
-
     public override void _Ready(){
 		
     }
@@ -14,15 +13,23 @@ public partial class Reloj : Area2D {
 	public void _on_reloj_entered(CollisionObject2D collisionObject2D){
 
 
-		if (collisionObject2D.IsInGroup("VarillaM")){
+		if (collisionObject2D.IsInGroup("VarillaM") && Main.varillaMinutosInstancia != null){
 		GD.Print("Varilla a entrau");
+		collisionObject2D.QueueFree();
+		Main.varillaMinutosReloj = true;
+
+	
+		}
+		if (collisionObject2D.IsInGroup("VarillaS")){
+		GD.Print("Varilla a entrau");
+		Main.varillaSegundosReloj = true;
 		collisionObject2D.QueueFree();
 	
 		}
 	}
 
 	public void _on_reloj_exited(CollisionObject2D collisionObject2D){
-		if (collisionObject2D.IsInGroup("VarillaM")){
+		if (collisionObject2D.IsInGroup("VarillaM") && Main.varillaMinutosInstancia != null){
 		GD.Print("Varilla a saliu");
 		}
 	}

@@ -2,7 +2,7 @@ using Godot;
 using System;
 using System.Numerics;
 
-public partial class main : Node2D {
+public partial class Main : Node2D {
 			VarillaM varillaMClass = new VarillaM();
 			InteractuarCon interactuarCon = new InteractuarCon();
 			Bola bolaClass = new Bola();
@@ -10,11 +10,13 @@ public partial class main : Node2D {
 
 			 Node2D bolaInstancia;
 			 Node2D godotInstancia2;
-			 Node2D varillaMinutosInstancia;
+			 public static Node2D varillaMinutosInstancia;
 			 Node2D relojInstancia;
 			 int slotsOcupados;
 			 Boolean clickadoBola = false;
 			 Boolean clickadoVarillaM = false;
+			public static Boolean varillaMinutosReloj = false;
+			public static Boolean varillaSegundosReloj = false;
 	public override void _Ready() {
 		
 			
@@ -23,7 +25,9 @@ public partial class main : Node2D {
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta){
 		
+		 if (varillaMinutosInstancia != null) {
 		clickadoVarillaM = varillaMClass.devolverClickado();
+		 }
 		clickadoBola = bolaClass.devolverClickado();
 		slotsOcupados = interactuarCon.devolverSlotsOcupados();
 		//GD.Print(slotsOcupados);
@@ -31,8 +35,10 @@ public partial class main : Node2D {
 		_on_area_2d_area_entered((CollisionObject2D)bolaInstancia);
 		_on_area_2d_area_exited((CollisionObject2D)bolaInstancia);
 
+	if(varillaMinutosInstancia != null){
 		_on_area_2d_area_entered((CollisionObject2D)varillaMinutosInstancia);
 		_on_area_2d_area_exited((CollisionObject2D)varillaMinutosInstancia);
+}
 	}
 	public void InstanciarEscena() {
 			
@@ -69,7 +75,7 @@ public partial class main : Node2D {
 			bolaInstancia.Position = new Vector2I(280, 100);
 		}
 		else if(clickadoVarillaM && collisionObject2D == varillaMinutosInstancia){
-			varillaMinutosInstancia.Position = new Vector2I(140, 100);
+			if(varillaMinutosInstancia != null) varillaMinutosInstancia.Position = new Vector2I(140, 100);
 		}
 
 }

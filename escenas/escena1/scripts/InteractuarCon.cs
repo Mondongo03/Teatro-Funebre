@@ -24,7 +24,7 @@ public partial class InteractuarCon : Area2D {
 		
 	
 		}
-		else if (collisionObject2D.IsInGroup("godot")){
+		else if (collisionObject2D.IsInGroup("VarillaM") && Main.varillaMinutosInstancia != null){
 			slotsOcupados++;
 			GD.Print(slotsOcupados);
 		GD.Print("Godot a entrau");
