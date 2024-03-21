@@ -2,7 +2,7 @@ using Godot;
 using Microsoft.VisualBasic;
 using System;
 
-public partial class ArrastrarYsoltar : Area2D {
+public partial class VarillaM : Area2D {
 
 	bool puedoMover = false;
 	public static Boolean encontrado = false;

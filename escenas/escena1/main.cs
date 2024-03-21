@@ -3,12 +3,18 @@ using System;
 using System.Numerics;
 
 public partial class main : Node2D {
+			VarillaM varillaMClass = new VarillaM();
 			InteractuarCon interactuarCon = new InteractuarCon();
-			ArrastrarYsoltar arrastrarYsoltar = new ArrastrarYsoltar();
+			Bola bolaClass = new Bola();
+			Reloj reloj = new Reloj();
+
 			 Node2D bolaInstancia;
 			 Node2D godotInstancia2;
+			 Node2D varillaMinutosInstancia;
+			 Node2D relojInstancia;
 			 int slotsOcupados;
-			 Boolean clickado = false;
+			 Boolean clickadoBola = false;
+			 Boolean clickadoVarillaM = false;
 	public override void _Ready() {
 		
 			
@@ -16,30 +22,24 @@ public partial class main : Node2D {
 	}
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta){
-		if (slotsOcupados ==0){}
-		if (slotsOcupados ==1){}
-		if (slotsOcupados ==2){}
 		
-		clickado = arrastrarYsoltar.devolverClickado();
+		clickadoVarillaM = varillaMClass.devolverClickado();
+		clickadoBola = bolaClass.devolverClickado();
 		slotsOcupados = interactuarCon.devolverSlotsOcupados();
 		//GD.Print(slotsOcupados);
 
 		_on_area_2d_area_entered((CollisionObject2D)bolaInstancia);
 		_on_area_2d_area_exited((CollisionObject2D)bolaInstancia);
 
-		_on_area_2d_area_entered((CollisionObject2D)godotInstancia2);
-		_on_area_2d_area_exited((CollisionObject2D)godotInstancia2);
+		_on_area_2d_area_entered((CollisionObject2D)varillaMinutosInstancia);
+		_on_area_2d_area_exited((CollisionObject2D)varillaMinutosInstancia);
 	}
 	public void InstanciarEscena() {
+			
 			PackedScene bola = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/bola.tscn");
 			bolaInstancia = bola.Instantiate() as Node2D; // Cast the instance to Node
 			AddChild(bolaInstancia);
 			
-			PackedScene godot = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/godot.tscn");
-			godotInstancia2 = godot.Instantiate() as Node2D; 
-			godotInstancia2.Position = new Vector2I(600, 600);// Cast the instance to Node
-			AddChild(godotInstancia2);
-
 			var hueco = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/hueco.tscn");
 			var huecoInstancia = hueco.Instantiate() as Node2D;// Cast the instance to Node
 			huecoInstancia.Position = new Vector2I(140, 200);
@@ -52,31 +52,30 @@ public partial class main : Node2D {
 			var huecoInstancia3 = hueco.Instantiate() as Node2D; // Cast the instance to Node
 			huecoInstancia3.Position = new Vector2I(420, 200);
 			AddChild(huecoInstancia3);
+
+			PackedScene reloj = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/reloj.tscn");
+			relojInstancia = reloj.Instantiate() as Node2D; // Cast the instance to Node
+			AddChild(relojInstancia);
+
+			PackedScene varillaMinutos = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/varillaM.tscn");
+			varillaMinutosInstancia = varillaMinutos.Instantiate() as Node2D; // Cast the instance to Node
+			AddChild(varillaMinutosInstancia);
     }
 
 
 	void _on_area_2d_area_entered(CollisionObject2D collisionObject2D){
-		if(slotsOcupados == 0 && clickado && collisionObject2D == bolaInstancia){
-			bolaInstancia.Position = new Vector2I(140, 100);
-		}
-		else if(slotsOcupados == 1 && clickado && collisionObject2D == bolaInstancia){
-			bolaInstancia.Position = new Vector2I(280, 100);
-			
-		}
-		if(slotsOcupados == 0 && clickado && collisionObject2D == godotInstancia2){
-			godotInstancia2.Position = new Vector2I(140, 100);
-		}
-		else if(slotsOcupados == 1 && clickado && collisionObject2D == godotInstancia2){
-			godotInstancia2.Position = new Vector2I(140, 100);
-			
-		}
-
 		
-
+		if(clickadoBola && collisionObject2D == bolaInstancia){
+			bolaInstancia.Position = new Vector2I(280, 100);
+		}
+		else if(clickadoVarillaM && collisionObject2D == varillaMinutosInstancia){
+			varillaMinutosInstancia.Position = new Vector2I(140, 100);
+		}
 
 }
 void _on_area_2d_area_exited(CollisionObject2D collisionObject2D){
 }
+
 }
 
 

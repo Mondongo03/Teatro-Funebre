@@ -17,7 +17,6 @@ config/icon="res://assets/icon.svg"
 
 [autoload]
 
-GlobalArrastrarYsoltar="*res://escenas/escena1/scripts/ArrastrarYsoltar.cs"
 GlobalInteractuarCon="*res://escenas/escena1/scripts/InteractuarCon.cs"
 
 [dotnet]

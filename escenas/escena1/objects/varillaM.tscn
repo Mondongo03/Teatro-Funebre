@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dya1l2sbg42fq"]
+
+[ext_resource type="Script" path="res://escenas/escena1/scripts/VarillaM.cs" id="1_54wgu"]
+[ext_resource type="Texture2D" uid="uid://bgbymj53bpcfv" path="res://escenas/escena1/assets/varillaM.png" id="1_d0lo7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jyv5b"]
+size = Vector2(83, 20)
+
+[node name="Area2D2" type="Area2D" groups=["VarillaM"]]
+position = Vector2(122, 578)
+script = ExtResource("1_54wgu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_jyv5b")
+one_way_collision_margin = 3.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+scale = Vector2(0.199107, 0.0905403)
+texture = ExtResource("1_d0lo7")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
