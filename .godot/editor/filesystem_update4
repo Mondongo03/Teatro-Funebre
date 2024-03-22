@@ -1,11 +1,6 @@
-res://escenas/menuInicio/node_2d.tscn
 res://escenas/escena1/node_2d.tscn
-res://escenas/escena1/Objetos/camino_de_saul.tscn
-res://escenas/escena2/Prueba.tscn
 res://escenas/escena1/scripts/aaaa.cs
 res://escenas/escena1/scripts/ArrastrarYsoltar.cs
 res://escenas/escena1/scripts/Despertarse.cs
 res://escenas/escena1/scripts/InteractuarCon.cs
 res://escenas/menuInicio/Scripts/MenuPrincipal.cs
-res://escenas/escena1/scripts/CambioDeMapa.cs
-res://escenas/escena1/scripts/new_script.cs

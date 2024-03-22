@@ -88,19 +88,19 @@
     ]
   },
   "packageFolders": {
-    "/home/ruben/.nuget/packages/": {}
+    "C:\\Users\\macna\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ruben/Escritorio/Teatro-Funebre/Proyecto Final.csproj",
+      "projectUniqueName": "D:\\Teatro-Funebre\\Proyecto Final.csproj",
       "projectName": "Proyecto Final",
-      "projectPath": "/home/ruben/Escritorio/Teatro-Funebre/Proyecto Final.csproj",
-      "packagesPath": "/home/ruben/.nuget/packages/",
-      "outputPath": "/home/ruben/Escritorio/Teatro-Funebre/.godot/mono/temp/obj/",
+      "projectPath": "D:\\Teatro-Funebre\\Proyecto Final.csproj",
+      "packagesPath": "C:\\Users\\macna\\.nuget\\packages\\",
+      "outputPath": "D:\\Teatro-Funebre\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/ruben/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\macna\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -156,6 +156,10 @@
           {
             "name": "Microsoft.NETCore.App.Ref",
             "version": "[6.0.26, 6.0.26]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.26, 6.0.26]"
           }
         ],
         "frameworkReferences": {
@@ -163,7 +167,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
