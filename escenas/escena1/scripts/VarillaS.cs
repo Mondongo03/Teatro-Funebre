@@ -5,7 +5,7 @@ using System;
 public partial class VarillaS : Area2D {
 
 	bool puedoMover = false;
-	public static Boolean encontrado = false;
+	public static bool encontrado = false;
 
 	
 	// Called when the node enters the scene tree for the first time.
@@ -50,5 +50,9 @@ public partial class VarillaS : Area2D {
 			LookAt(GetGlobalMousePosition());
 		
 		
+	}
+
+	public static Boolean GetClickado(){
+		return encontrado;
 	}
 }

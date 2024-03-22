@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dmiq6b6x1xr3n"]
+[gd_scene load_steps=5 format=3 uid="uid://dmiq6b6x1xr3n"]
 
 [ext_resource type="Script" path="res://escenas/escena1/Main.cs" id="1_h6e1c"]
 [ext_resource type="Texture2D" uid="uid://df3xdc8uy6hdl" path="res://escenas/escena1/assets/FondoInicio.png" id="2_72pvx"]
+[ext_resource type="PackedScene" uid="uid://psdxwljnkdvt" path="res://escenas/escena1/objects/cajon.tscn" id="3_hsbms"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yiuey"]
 size = Vector2(1153, 652)
@@ -18,10 +19,11 @@ texture = ExtResource("2_72pvx")
 visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-visible = false
 position = Vector2(577.5, 326)
 shape = SubResource("RectangleShape2D_yiuey")
 debug_color = Color(0.588235, 0.462745, 0.768627, 0.419608)
+
+[node name="Area2D2" parent="." instance=ExtResource("3_hsbms")]
 
 [connection signal="child_entered_tree" from="Sprite2D2" to="." method="_on_sprite_2d_2_child_entered_tree"]
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://bcc5xa7yb82wj"]
+
+[ext_resource type="Texture2D" uid="uid://ckldlnl30sbyc" path="res://escenas/escena1/assets/cajon.png" id="1_fs7n7"]
+[ext_resource type="Script" path="res://escenas/escena1/objects/cajonZoomeado.cs" id="1_igapj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mhoc7"]
+size = Vector2(767, 274)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ktqbd"]
+size = Vector2(833.75, 107.25)
+
+[node name="Area2D2" type="Area2D"]
+z_index = 4
+script = ExtResource("1_igapj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(582.695, 344.25)
+scale = Vector2(1.35348, 1.35348)
+texture = ExtResource("1_fs7n7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(578.5, 296)
+shape = SubResource("RectangleShape2D_mhoc7")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(583.125, 474.375)
+shape = SubResource("RectangleShape2D_ktqbd")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

@@ -7,7 +7,7 @@
 radius = 260.192
 
 [node name="Area2D2" type="Area2D"]
-z_index = 2
+z_index = 3
 position = Vector2(120, 20)
 script = ExtResource("1_3l0wy")
 

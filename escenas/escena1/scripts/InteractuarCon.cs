@@ -6,11 +6,11 @@ public partial class InteractuarCon : Area2D {
 	public static Boolean clickado = false;
 
 	public static int slotsOcupados = 0;
-    public override void _Ready(){
+	public override void _Ready(){
 		
-    }
+	}
 
-    public override void _Process(double delta){
+	public override void _Process(double delta){
 
 	}
 
