@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://cfcow7smksh4b"]
 
 [ext_resource type="Script" path="res://escenas/escena1/scripts/Despertarse.cs" id="1_24y2q"]
-[ext_resource type="Texture2D" uid="uid://ddbckl1lokln0" path="res://escenas/escena1/assets/GnomoCD.png" id="2_aaeyi"]
+[ext_resource type="Texture2D" path="res://escenas/escena1/assets/GnomoCD.png" id="2_aaeyi"]
 [ext_resource type="Script" path="res://escenas/escena1/scripts/InteractuarCon.cs" id="3_r017q"]
 
 [sub_resource type="Curve2D" id="Curve2D_jemwt"]

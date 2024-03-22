@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://cl7vmvj44fbh8"]
+[gd_scene load_steps=3 format=3 uid="uid://c2oa2o80al2mr"]
 
 [ext_resource type="Script" path="res://escenas/menuInicio/Scripts/MenuPrincipal.cs" id="1_g6uly"]
 
