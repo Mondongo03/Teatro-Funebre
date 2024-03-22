@@ -18,9 +18,6 @@ public partial class InteractuarCon : Area2D
         if (bolaInside && godotInside)
         {   
             despertarse.despertar(true);
-        }else
-        {
-            despertarse.despertar(false);
         }
 	}
 
@@ -35,7 +32,8 @@ public partial class InteractuarCon : Area2D
         {
             GD.Print("Godot ha entrado al área.");
             godotInside = true;
-        }else if (collisionObject2D.IsInGroup("personaje"))
+        }
+        else if (collisionObject2D.IsInGroup("personaje"))
         {
             GD.Print("Saul ha entrado al área. Cambiando de escena...");
             GetTree().ChangeSceneToFile("res://escenas/escena2/Prueba.tscn");

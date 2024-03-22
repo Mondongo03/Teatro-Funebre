@@ -3,9 +3,10 @@ using System;
 
 public partial class Despertarse : PathFollow2D
 {
-	
-	float speed = 0.1f;
 
+	float speed = 0.2f;
+	[Export]
+	private AnimatedSprite2D animatedSprite2D;
 	public static bool funciona = false;
 
 	// Called when the node enters the scene tree for the first time.
@@ -18,6 +19,7 @@ public partial class Despertarse : PathFollow2D
 	{
 		if(funciona == true)
 		{
+			animatedSprite2D.Play("CaminarDerecha");
 			ProgressRatio += (float)delta * speed;
 		}
 	}

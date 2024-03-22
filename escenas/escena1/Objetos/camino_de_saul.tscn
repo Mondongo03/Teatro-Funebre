@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://cfcow7smksh4b"]
+[gd_scene load_steps=11 format=3 uid="uid://cfcow7smksh4b"]
 
 [ext_resource type="Script" path="res://escenas/escena1/scripts/Despertarse.cs" id="1_24y2q"]
-[ext_resource type="Texture2D" uid="uid://7u8qh161nooq" path="res://escenas/escena1/assets/1709576603766.jpg" id="2_30x5i"]
+[ext_resource type="Texture2D" uid="uid://ddbckl1lokln0" path="res://escenas/escena1/assets/GnomoCD.png" id="2_aaeyi"]
 [ext_resource type="Script" path="res://escenas/escena1/scripts/InteractuarCon.cs" id="3_r017q"]
 
 [sub_resource type="Curve2D" id="Curve2D_jemwt"]
@@ -10,23 +10,62 @@ _data = {
 }
 point_count = 3
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_sujht"]
+atlas = ExtResource("2_aaeyi")
+region = Rect2(0, 0, 46, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k40cs"]
+atlas = ExtResource("2_aaeyi")
+region = Rect2(46, 0, 46, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fv5tn"]
+atlas = ExtResource("2_aaeyi")
+region = Rect2(92, 0, 46, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xtfxc"]
+atlas = ExtResource("2_aaeyi")
+region = Rect2(138, 0, 46, 112)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5danm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sujht")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k40cs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fv5tn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xtfxc")
+}],
+"loop": true,
+"name": &"CaminarDerecha",
+"speed": 8.0
+}]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e5em2"]
-size = Vector2(200.532, 89.0372)
+size = Vector2(13.6059, 5.87339)
 
 [node name="CaminoDeSaul" type="Path2D"]
 curve = SubResource("Curve2D_jemwt")
 
-[node name="CaminarDeSaul" type="PathFollow2D" parent="."]
+[node name="CaminarDeSaul" type="PathFollow2D" parent="." node_paths=PackedStringArray("animatedSprite2D")]
 position = Vector2(152, 445)
 rotation = 1.59474
 rotates = false
 loop = false
 script = ExtResource("1_24y2q")
+animatedSprite2D = NodePath("Saul")
 
-[node name="Saul" type="Sprite2D" parent="CaminarDeSaul" groups=["personaje"]]
+[node name="Saul" type="AnimatedSprite2D" parent="CaminarDeSaul" groups=["personaje"]]
 rotation = -1.59474
-scale = Vector2(0.124491, 0.124491)
-texture = ExtResource("2_30x5i")
+scale = Vector2(1.82503, 1.82503)
+sprite_frames = SubResource("SpriteFrames_5danm")
+animation = &"CaminarDerecha"
+frame_progress = 0.629753
 
 [node name="Area2D" type="Area2D" parent="CaminarDeSaul/Saul" groups=["personaje"]]
 position = Vector2(-259.836, -731.512)
@@ -35,8 +74,9 @@ scale = Vector2(8.0327, 8.0327)
 script = ExtResource("3_r017q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CaminarDeSaul/Saul/Area2D" groups=["personaje"]]
-position = Vector2(90.2661, -34.5186)
+position = Vector2(90.32, -34.3593)
 shape = SubResource("RectangleShape2D_e5em2")
+one_way_collision_margin = 0.0
 
 [node name="_Timer_19358" type="Timer" parent="CaminarDeSaul"]
 wait_time = 0.2
