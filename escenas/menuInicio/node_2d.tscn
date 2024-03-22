@@ -7,8 +7,8 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(574.25, 321.75)
-scale = Vector2(1149.5, 644.5)
+position = Vector2(626.75, 351.186)
+scale = Vector2(1254.5, 703.371)
 texture = SubResource("PlaceholderTexture2D_wosiv")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Sprite2D"]
@@ -24,33 +24,33 @@ grow_vertical = 2
 
 [node name="newGame" type="Button" parent="Sprite2D/CanvasLayer/Control"]
 layout_mode = 0
-offset_left = 502.0
+offset_left = 542.0
 offset_top = 84.0
-offset_right = 656.0
+offset_right = 696.0
 offset_bottom = 157.0
 text = "New game"
 
 [node name="loadGame" type="Button" parent="Sprite2D/CanvasLayer/Control"]
 layout_mode = 0
-offset_left = 502.0
+offset_left = 542.0
 offset_top = 214.0
-offset_right = 655.0
+offset_right = 695.0
 offset_bottom = 285.0
 text = "Load game"
 
 [node name="setting" type="Button" parent="Sprite2D/CanvasLayer/Control"]
 layout_mode = 0
-offset_left = 502.0
+offset_left = 542.0
 offset_top = 333.0
-offset_right = 656.0
+offset_right = 696.0
 offset_bottom = 406.0
 text = "Settings"
 
 [node name="exit" type="Button" parent="Sprite2D/CanvasLayer/Control"]
 layout_mode = 0
-offset_left = 502.0
+offset_left = 542.0
 offset_top = 451.0
-offset_right = 655.0
+offset_right = 695.0
 offset_bottom = 534.0
 text = "Exit the game"
 
