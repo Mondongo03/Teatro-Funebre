@@ -4,16 +4,18 @@
 [ext_resource type="Script" path="res://escenas/escena1/scripts/Reloj.cs" id="1_mfbsu"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_lhlpg"]
+radius = 27.6586
 
 [node name="Area2D2" type="Area2D"]
-position = Vector2(341, 278)
+position = Vector2(341, 298)
 script = ExtResource("1_mfbsu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_lhlpg")
 
 [node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
-scale = Vector2(0.15, 0.15)
+position = Vector2(0, -4)
+scale = Vector2(0.435417, 0.435417)
 texture = ExtResource("1_3g218")
 
 [connection signal="area_entered" from="." to="." method="_on_reloj_entered"]

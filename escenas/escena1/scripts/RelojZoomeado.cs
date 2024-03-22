@@ -2,6 +2,8 @@ using Godot;
 using System;
 
 public partial class RelojZoomeado : Area2D {
+	
+	Reloj reloj = new Reloj();
     public override void _Ready(){
 		
     }
@@ -36,9 +38,12 @@ public partial class RelojZoomeado : Area2D {
 	public void _on_input_event(Node viewport, InputEvent evento, int shap){
 		if(evento.IsActionPressed("click_izquierdo")){
 			GD.Print("click");
-				PackedScene relojZooemado = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/relojZoomeado.tscn");
-			Main.relojZoomeadoInstancia = relojZooemado.Instantiate() as Node2D; // Cast the instance to Node
-			AddChild(Main.relojZoomeadoInstancia);
+			Reloj.zoooom = false;
+			Main.varillaSegundosInstancia.QueueFree();
+			Main.varillaMinutosInstancia.QueueFree();
+			QueueFree();
+			Main.fondoNegroInstancia.QueueFree();
+			
 		}
 	}
 }

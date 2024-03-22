@@ -17,17 +17,11 @@ public partial class VarillaM : Area2D {
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta){
-			if(Main.varillaMinutosReloj){
-				rotar();
-			}
+			
 		if(puedoMover && !Main.varillaMinutosReloj){
 			Position = GetGlobalMousePosition();
 		}
-		GD.Print("Rotación: "+Rotation);
-		GD.Print(Main.varillaMinutosInstancia.Rotation);
-				GD.Print(Main.varillaSegundosInstancia.Rotation);
-				Main.varillaSegundosInstancia.Rotation = (Main.varillaMinutosInstancia.Rotation /5)*1;
-	}
+		}
 	public void _on_input_event(Node viewport, InputEvent evento, int shap){
 		 if(evento.IsActionPressed("click_izquierdo") && !Main.varillaMinutosReloj){
 			
@@ -45,8 +39,6 @@ public partial class VarillaM : Area2D {
 	public Boolean devolverClickado(){
 		return encontrado;
 	}
-	public void rotar(){
-		LookAt(GetGlobalMousePosition());
-	}
+	
 	
 }

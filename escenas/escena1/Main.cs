@@ -16,6 +16,7 @@ public partial class Main : Node2D {
 			 public static Node2D varillaMinutosInstancia;
 			 public static Node2D varillaSegundosInstancia;
 			 public static Node2D relojZoomeadoInstancia;
+			 public static Node2D fondoNegroInstancia;
 			 Node2D relojInstancia;
 			
 			 Boolean clickadoBola = false;
@@ -83,10 +84,6 @@ public partial class Main : Node2D {
 		if(clickadoBola && collisionObject2D == bolaInstancia){
 			bolaInstancia.Position = new Vector2I(280, 100);
 		}
-		else if(clickadoVarillaM && collisionObject2D == varillaMinutosInstancia){
-			if(varillaMinutosInstancia != null) varillaMinutosInstancia.Position = new Vector2I(140, 100);
-		}
-
 }
 void _on_area_2d_area_exited(CollisionObject2D collisionObject2D){
 }
