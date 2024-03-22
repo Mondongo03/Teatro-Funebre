@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Teatro-Funebre\\Proyecto Final.csproj": {}
+    "C:\\Users\\ruben\\Desktop\\Teatro-Funebre\\Proyecto Final.csproj": {}
   },
   "projects": {
-    "D:\\Teatro-Funebre\\Proyecto Final.csproj": {
+    "C:\\Users\\ruben\\Desktop\\Teatro-Funebre\\Proyecto Final.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Teatro-Funebre\\Proyecto Final.csproj",
+        "projectUniqueName": "C:\\Users\\ruben\\Desktop\\Teatro-Funebre\\Proyecto Final.csproj",
         "projectName": "Proyecto Final",
-        "projectPath": "D:\\Teatro-Funebre\\Proyecto Final.csproj",
-        "packagesPath": "C:\\Users\\macna\\.nuget\\packages\\",
-        "outputPath": "D:\\Teatro-Funebre\\.godot\\mono\\temp\\obj\\",
+        "projectPath": "C:\\Users\\ruben\\Desktop\\Teatro-Funebre\\Proyecto Final.csproj",
+        "packagesPath": "C:\\Users\\ruben\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ruben\\Desktop\\Teatro-Funebre\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\macna\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ruben\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -32,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -65,15 +70,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.26, 6.0.26]"
+              "version": "[6.0.27, 6.0.27]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.26, 6.0.26]"
+              "version": "[6.0.27, 6.0.27]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.26, 6.0.26]"
+              "version": "[6.0.27, 6.0.27]"
             }
           ],
           "frameworkReferences": {
@@ -81,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
