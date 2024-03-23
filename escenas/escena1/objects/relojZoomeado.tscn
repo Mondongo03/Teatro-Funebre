@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://i14i3ig4xbfm"]
 
 [ext_resource type="Script" path="res://escenas/escena1/scripts/RelojZoomeado.cs" id="1_3l0wy"]
-[ext_resource type="Texture2D" uid="uid://bx3rt1m1l4mf3" path="res://escenas/escena1/assets/reloj.png" id="1_njcqp"]
+[ext_resource type="Texture2D" uid="uid://cwlyqtudp0r0y" path="res://escenas/escena1/assets/reloj.png" id="1_njcqp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ayhp2"]
 radius = 260.192

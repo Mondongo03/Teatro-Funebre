@@ -11,11 +11,6 @@ config_version=5
 [application]
 
 config/name="Proyecto Final"
-<<<<<<< HEAD
-run/main_scene="res://escenas/escena1/node_2d.tscn"
-config/features=PackedStringArray("4.1", "C#", "Forward Plus")
-config/icon="res://assets/icon.svg"
-=======
 run/main_scene="res://escenas/menuInicio/node_2d.tscn"
 config/features=PackedStringArray("4.2", "C#", "Forward Plus")
 config/icon="res://icono/_1f0113f9-21f1-4bca-92a9-29dd36ceee99.jpg"
@@ -24,7 +19,7 @@ config/icon="res://icono/_1f0113f9-21f1-4bca-92a9-29dd36ceee99.jpg"
 
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
->>>>>>> main
+
 
 [autoload]
 
