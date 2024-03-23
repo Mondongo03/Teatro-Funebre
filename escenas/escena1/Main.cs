@@ -13,6 +13,7 @@ public partial class Main : Node2D {
 			 public static Node2D relojZoomeadoInstancia;
 			 public static Node2D fondoNegroInstancia;
 			 public static Node2D cajonZoomeadoInstancia;
+			 public static Node2D huecoInstancia;
 			 Node2D relojInstancia;
 			
 			 Boolean clickadoBola = false;
@@ -26,15 +27,9 @@ public partial class Main : Node2D {
 	}
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta){
-		GD.Print("Reloj: "+Reloj.terminado);
 		 if (varillaMinutosInstancia != null) {
 		clickadoVarillaM = varillaMClass.devolverClickado();
 		 }
-
-	if(varillaMinutosInstancia != null){
-		_on_area_2d_area_entered((CollisionObject2D)varillaMinutosInstancia);
-		_on_area_2d_area_exited((CollisionObject2D)varillaMinutosInstancia);
-}
 	}
 	public void InstanciarEscena() {
 
@@ -49,14 +44,14 @@ public partial class Main : Node2D {
 			PackedScene varillaSegundos = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/varillaS.tscn");
 			varillaSegundosInstancia = varillaSegundos.Instantiate() as Node2D; // Cast the instance to Node
 			AddChild(varillaSegundosInstancia);
+
+				
+			PackedScene hueco = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/hueco.tscn");
+			huecoInstancia = hueco.Instantiate() as Node2D; // Cast the instance to Node
+			AddChild(huecoInstancia);
 	}
 
-
-	void _on_area_2d_area_entered(CollisionObject2D collisionObject2D){
-}
-void _on_area_2d_area_exited(CollisionObject2D collisionObject2D){
 }
 
-}
 
 

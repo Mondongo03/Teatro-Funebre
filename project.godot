@@ -12,18 +12,17 @@ config_version=5
 
 config/name="Proyecto Final"
 run/main_scene="res://escenas/menuInicio/node_2d.tscn"
-config/features=PackedStringArray("4.2", "C#", "Forward Plus")
+config/features=PackedStringArray("4.1", "C#", "Forward Plus")
 config/icon="res://icono/_1f0113f9-21f1-4bca-92a9-29dd36ceee99.jpg"
+
+[autoload]
+
+GlobalInteractuarCon="*res://escenas/escena1/scripts/InteractuarCon.cs"
 
 [display]
 
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
-
-
-[autoload]
-
-GlobalInteractuarCon="*res://escenas/escena1/scripts/InteractuarCon.cs"
 
 [dotnet]
 

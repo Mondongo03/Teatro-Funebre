@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://escenas/escena1/Main.cs" id="1_h6e1c"]
 [ext_resource type="Texture2D" uid="uid://df3xdc8uy6hdl" path="res://escenas/escena1/assets/FondoInicio.png" id="2_72pvx"]
-[ext_resource type="PackedScene" uid="uid://cfcow7smksh4b" path="res://escenas/escena1/Objetos/camino_de_saul.tscn" id="3_c05kq"]
+[ext_resource type="PackedScene" uid="uid://cfcow7smksh4b" path="res://escenas/escena1/objects/camino_de_saul.tscn" id="3_c05kq"]
 [ext_resource type="PackedScene" uid="uid://psdxwljnkdvt" path="res://escenas/escena1/objects/cajon.tscn" id="3_hsbms"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yiuey"]
@@ -16,20 +16,18 @@ position = Vector2(576, 325)
 scale = Vector2(0.96, 0.8125)
 texture = ExtResource("2_72pvx")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Fondo" type="Area2D" parent="."]
 visible = false
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fondo"]
 position = Vector2(577.5, 326)
 shape = SubResource("RectangleShape2D_yiuey")
 debug_color = Color(0.588235, 0.462745, 0.768627, 0.419608)
 
-[node name="Area2D2" parent="." instance=ExtResource("3_hsbms")]
+[node name="Cajon" parent="." instance=ExtResource("3_hsbms")]
 
 [node name="CaminoDeSaul" parent="." instance=ExtResource("3_c05kq")]
 position = Vector2(0, -47)
 scale = Vector2(1.07825, 1.06533)
 
 [connection signal="child_entered_tree" from="Sprite2D2" to="." method="_on_sprite_2d_2_child_entered_tree"]
-[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
-[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]

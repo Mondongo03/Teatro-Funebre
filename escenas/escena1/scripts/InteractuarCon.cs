@@ -21,40 +21,19 @@ public partial class InteractuarCon : Area2D
 		}
 	}
 
-	public void _on_hueco_area_entered(CollisionObject2D collisionObject2D){
 
+	public void _on_hueco_area_entered(Area2D area)
+    {
+        if (area.IsInGroup("personaje")) {
 
-		if (collisionObject2D.IsInGroup("bola")){
-			slotsOcupados++;
-			GD.Print(slotsOcupados);
-		GD.Print("Bola a entrau");
-		
-	
-		}
-		else if (collisionObject2D.IsInGroup("VarillaM") && Main.varillaMinutosInstancia != null){
-			slotsOcupados++;
-			GD.Print(slotsOcupados);
-		GD.Print("Godot a entrau");
-
-		if (collisionObject2D.IsInGroup("personaje"))
-		{
-			GD.Print("Saul ha entrado al área. Cambiando de escena...");
-			GetTree().ChangeSceneToFile("res://escenas/escena2/Prueba.tscn");
-		}
-		}
-	}
-
-	public void _on_hueco_area_exited(CollisionObject2D collisionObject2D){
-		if (collisionObject2D.IsInGroup("bola")){
-			clickado = false;
-			slotsOcupados--;
-			GD.Print(slotsOcupados);
-		GD.Print("Bola a saliu");
-		}
-		else if (collisionObject2D.IsInGroup("godot")){
-		GD.Print("Godot a saliu");
-		}
-	}
+            GD.Print("Saul ha entrado al área. Cambiando de escena...");
+            GetTree().ChangeSceneToFile("res://escenas/escena2/Prueba.tscn");
+        }
+    }
+	public void _on_hueco_area_exited(Area2D area)
+    {
+        // Manejar la señal area_exited aquí
+    }
 
 	public int devolverSlotsOcupados(){
 		return slotsOcupados;
