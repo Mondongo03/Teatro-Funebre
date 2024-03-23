@@ -15,19 +15,30 @@ public partial class VarillaS : Area2D {
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta){
-		if(Main.varillaSegundosReloj){
-			if (Main.varillaMinutosInstancia.Rotation <3.45 && Main.varillaSegundosInstancia.Rotation <20.35) {
+		if(Main.varillaSegundosReloj && Main.varillaMinutosReloj && !Reloj.terminado){
+			if(Cajon.encontrado){
+			if (Main.varillaMinutosInstancia.Rotation <3.45F && Main.varillaSegundosInstancia.Rotation <20.35F) {
 				rotar();
 				
 				}
+				if(Main.varillaMinutosInstancia.Rotation >=3.45F && Main.varillaSegundosInstancia.Rotation >=20.35F && Cajon.encontrado){ 
+					Reloj.terminado = true;
+					Main.varillaMinutosInstancia.QueueFree();
+					Main.varillaSegundosInstancia.QueueFree();
+					Main.fondoNegroInstancia.QueueFree();
+					Main.relojZoomeadoInstancia.QueueFree();
+				}
 			}
+		}if(!Cajon.encontrado){
+			if(Reloj.zoooom){
+				rotar();
+			}
+		}
 		if(puedoMover){
 			Position = GetGlobalMousePosition();
 		}
-		GD.Print("Rotación: "+Rotation);
-		GD.Print(Main.varillaMinutosInstancia.Rotation);
-				GD.Print(Main.varillaSegundosInstancia.Rotation);
-				Main.varillaMinutosInstancia.Rotation = (float)((Main.varillaSegundosInstancia.Rotation /5)*0.846);
+
+		Main.varillaMinutosInstancia.Rotation = (float)((Main.varillaSegundosInstancia.Rotation /5)*0.846);
 	
 	}
 	public void _on_input_event(Node viewport, InputEvent evento, int shap){
@@ -46,9 +57,7 @@ public partial class VarillaS : Area2D {
 		return encontrado;
 	}
 	public void rotar(){
-		
-			LookAt(GetGlobalMousePosition());
-		
+			if(!Reloj.terminado) LookAt(GetGlobalMousePosition()/1.3F);
 		
 	}
 

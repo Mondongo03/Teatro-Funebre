@@ -26,4 +26,6 @@ shape = SubResource("RectangleShape2D_mhoc7")
 position = Vector2(583.125, 474.375)
 shape = SubResource("RectangleShape2D_ktqbd")
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
 [connection signal="input_event" from="." to="." method="_on_input_event"]

@@ -7,7 +7,6 @@
 size = Vector2(88.25, 6)
 
 [node name="Area2D3" type="Area2D" groups=["VarillaS"]]
-z_index = 1
 position = Vector2(1005, 354)
 script = ExtResource("1_54wgu")
 

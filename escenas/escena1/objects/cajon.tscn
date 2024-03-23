@@ -14,4 +14,6 @@ shape = SubResource("RectangleShape2D_xqcwt")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
 [connection signal="input_event" from="." to="." method="_on_input_event"]

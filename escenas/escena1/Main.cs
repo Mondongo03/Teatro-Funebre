@@ -26,11 +26,10 @@ public partial class Main : Node2D {
 	}
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta){
-		
+		GD.Print("Reloj: "+Reloj.terminado);
 		 if (varillaMinutosInstancia != null) {
 		clickadoVarillaM = varillaMClass.devolverClickado();
 		 }
-		GD.Print(varillaMinutosReloj);
 
 	if(varillaMinutosInstancia != null){
 		_on_area_2d_area_entered((CollisionObject2D)varillaMinutosInstancia);
