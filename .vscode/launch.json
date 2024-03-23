@@ -1,6 +1,7 @@
 {
     "version": "2.0.0",
     "configurations": [
+        
         {
             "name": "Launch Project",
             "type": "cppvsdbg",
@@ -36,7 +37,7 @@
             "request": "launch",
             "mode": "executable",
             "preLaunchTask": "build",
-            "executable": "<insert-godot-executable-path-here>",
+            "executable": "D:/Descargas/Godot_v4.2.1-stable_mono_win64/Godot_v4.2.1-stable_mono_win64/Godot_v4.2.1-stable_mono_win64.exe",
             // See which arguments are available here:
             // https://docs.godotengine.org/en/stable/getting_started/editor/command_line_tutorial.html
             "executableArguments": [
@@ -50,7 +51,7 @@
             "request": "launch",
             "mode": "executable",
             "preLaunchTask": "build",
-            "executable": "<insert-godot-executable-path-here>",
+            "executable": "D:/Descargas/Godot_v4.2.1-stable_mono_win64/Godot_v4.2.1-stable_mono_win64/Godot_v4.2.1-stable_mono_win64.exe",
             // See which arguments are available here:
             // https://docs.godotengine.org/en/stable/getting_started/editor/command_line_tutorial.html
             "executableArguments": [

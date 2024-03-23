@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2oa2o80al2mr"]
+
+[ext_resource type="Script" path="res://escenas/menuInicio/Scripts/MenuPrincipal.cs" id="1_g6uly"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_wosiv"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(626.75, 351.186)
+scale = Vector2(1254.5, 703.371)
+texture = SubResource("PlaceholderTexture2D_wosiv")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Sprite2D"]
+script = ExtResource("1_g6uly")
+
+[node name="Control" type="Control" parent="Sprite2D/CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="newGame" type="Button" parent="Sprite2D/CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 542.0
+offset_top = 84.0
+offset_right = 696.0
+offset_bottom = 157.0
+text = "New game"
+
+[node name="loadGame" type="Button" parent="Sprite2D/CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 542.0
+offset_top = 214.0
+offset_right = 695.0
+offset_bottom = 285.0
+text = "Load game"
+
+[node name="setting" type="Button" parent="Sprite2D/CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 542.0
+offset_top = 333.0
+offset_right = 696.0
+offset_bottom = 406.0
+text = "Settings"
+
+[node name="exit" type="Button" parent="Sprite2D/CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 542.0
+offset_top = 451.0
+offset_right = 695.0
+offset_bottom = 534.0
+text = "Exit the game"
+
+[connection signal="pressed" from="Sprite2D/CanvasLayer/Control/newGame" to="Sprite2D/CanvasLayer" method="_onNewGameButtonPressed"]
+[connection signal="pressed" from="Sprite2D/CanvasLayer/Control/loadGame" to="Sprite2D/CanvasLayer" method="_onLoadGameButtonPressed"]
+[connection signal="pressed" from="Sprite2D/CanvasLayer/Control/setting" to="Sprite2D/CanvasLayer" method="_onSettingsButtonPressed"]
+[connection signal="pressed" from="Sprite2D/CanvasLayer/Control/exit" to="Sprite2D/CanvasLayer" method="_onExitButtonPressed"]

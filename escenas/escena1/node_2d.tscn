@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [gd_scene load_steps=5 format=3 uid="uid://dmiq6b6x1xr3n"]
 
 [ext_resource type="Script" path="res://escenas/escena1/Main.cs" id="1_h6e1c"]
@@ -28,3 +29,22 @@ debug_color = Color(0.588235, 0.462745, 0.768627, 0.419608)
 [connection signal="child_entered_tree" from="Sprite2D2" to="." method="_on_sprite_2d_2_child_entered_tree"]
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
+=======
+[gd_scene load_steps=4 format=3 uid="uid://dmiq6b6x1xr3n"]
+
+[ext_resource type="Script" path="res://escenas/escena1/scripts/aaaa.cs" id="1_e3ntn"]
+[ext_resource type="Texture2D" uid="uid://cemwnpemlsjxx" path="res://escenas/escena1/assets/FondoInicio.jpg" id="1_lobgt"]
+[ext_resource type="PackedScene" uid="uid://cfcow7smksh4b" path="res://escenas/escena1/Objetos/camino_de_saul.tscn" id="3_c05kq"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_e3ntn")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(577.772, 326)
+scale = Vector2(0.962954, 0.815)
+texture = ExtResource("1_lobgt")
+
+[node name="CaminoDeSaul" parent="." instance=ExtResource("3_c05kq")]
+position = Vector2(-2.58132, -8.89727)
+scale = Vector2(1.07825, 1.06533)
+>>>>>>> main

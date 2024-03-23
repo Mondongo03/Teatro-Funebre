@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 ﻿53024
 C:/Users/ruben/Desktop/Godot_v4.1.3-stable_mono_win64/Godot_v4.1.3-stable_mono_win64.exe
+=======
+﻿53874
+C:/Users/macna/Desktop/Godot_v4.2.1-stable_mono_win64/Godot_v4.2.1-stable_mono_win64.exe
+>>>>>>> main

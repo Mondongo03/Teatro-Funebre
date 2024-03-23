@@ -3,12 +3,14 @@
     "tasks": [
         {
             "label": "build",
-            "group": "build",
-            "type": "shell",
-            "command": "scons",
+            "command": "\"D:\\Descargas\\Godot_v4.2.1-stable_mono_win64\\Godot_v4.2.1-stable_mono_win64\\Godot_v4.2.1-stable_mono_win64.exe\"",
+            "type": "process",
             "args": [
-              // enable for debugging with breakpoints
-              "dev_build=yes",
+                "--build-solutions",
+                "--path",
+                "${workspaceRoot}",
+                "--no-window",
+                "-q"
             ],
             "problemMatcher": "$msCompile"
         }
