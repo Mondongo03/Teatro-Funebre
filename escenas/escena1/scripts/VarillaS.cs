@@ -7,6 +7,7 @@ public partial class VarillaS : Area2D {
 	bool puedoMover = false;
 	public static bool encontrado = false;
 
+	public static bool ring = false;
 	
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready(){
@@ -22,11 +23,14 @@ public partial class VarillaS : Area2D {
 				
 				}
 				if(Main.varillaMinutosInstancia.Rotation >=3.45F && Main.varillaSegundosInstancia.Rotation >=20.35F && Cajon.encontrado){ 
+					ring = true;
+					
 					Reloj.terminado = true;
 					Main.varillaMinutosInstancia.QueueFree();
 					Main.varillaSegundosInstancia.QueueFree();
 					Main.fondoNegroInstancia.QueueFree();
 					Main.relojZoomeadoInstancia.QueueFree();
+
 				}
 			}
 		}if(!Cajon.encontrado){

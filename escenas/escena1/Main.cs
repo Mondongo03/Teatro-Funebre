@@ -45,7 +45,6 @@ public partial class Main : Node2D {
 			varillaSegundosInstancia = varillaSegundos.Instantiate() as Node2D; // Cast the instance to Node
 			AddChild(varillaSegundosInstancia);
 
-				
 			PackedScene hueco = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/hueco.tscn");
 			huecoInstancia = hueco.Instantiate() as Node2D; // Cast the instance to Node
 			AddChild(huecoInstancia);
