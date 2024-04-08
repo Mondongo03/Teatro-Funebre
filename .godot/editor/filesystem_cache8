@@ -4,9 +4,9 @@ export_presets.cfg::TextFile::-1::1711119902::0::1::::<><>::
 pene.txt::TextFile::-1::1711119951::0::1::::<><>::
 README.md::TextFile::-1::1711119902::0::1::::<><>::
 ::res://escenas/::1711119902
-::res://escenas/escena1/::1711119902
-node_2d.tscn::PackedScene::8019070129756456321::1711119902::0::1::::<><>::res://escenas/escena1/scripts/aaaa.cs<>uid://cemwnpemlsjxx::::res://escenas/escena1/assets/FondoInicio.jpg<>uid://cfcow7smksh4b::::res://escenas/escena1/Objetos/camino_de_saul.tscn
-::res://escenas/escena1/assets/::1711119979
+::res://escenas/escena1/::1711121079
+node_2d.tscn::PackedScene::8019070129756456321::1711121079::0::1::::<><>::res://escenas/escena1/scripts/aaaa.cs<>uid://cemwnpemlsjxx::::res://escenas/escena1/assets/FondoInicio.jpg<>uid://cfcow7smksh4b::::res://escenas/escena1/Objetos/camino_de_saul.tscn
+::res://escenas/escena1/assets/::1711120217
 1336.png::CompressedTexture2D::3233817626518974133::1708370097::1708370097::1::::<><>::
 1709576603766.jpg::CompressedTexture2D::2289363194234139788::1711119902::1711119902::1::::<><>::
 FondoInicio.jpg::CompressedTexture2D::5079729058738788105::1708370097::1708370097::1::::<><>::
