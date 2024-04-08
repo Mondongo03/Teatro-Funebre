@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dutsed31ug2al"]
+
+[ext_resource type="Texture2D" uid="uid://bmf755qu6auib" path="res://escenas/escena1/assets/Inventario.png" id="1_skhwi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_coaop"]
+size = Vector2(64, 63)
+
+[node name="Inventario1" type="Area2D"]
+position = Vector2(120, 128)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(22, -21.5)
+shape = SubResource("RectangleShape2D_coaop")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+texture = ExtResource("1_skhwi")

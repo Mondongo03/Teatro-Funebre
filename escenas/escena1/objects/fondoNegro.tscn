@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3kqhleckst5a"]
+
+[ext_resource type="Texture2D" uid="uid://dc3tmivo7uw13" path="res://escenas/escena1/assets/fondoNegro.png" id="1_d3vyr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a40hb"]
+size = Vector2(2236.5, 1144.5)
+
+[node name="Area2D2" type="Area2D"]
+position = Vector2(11, 13)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1108.75, 559.75)
+shape = SubResource("RectangleShape2D_a40hb")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+z_index = 2
+position = Vector2(1.74995, 9.25)
+scale = Vector2(3.17857, 2.3)
+texture = ExtResource("1_d3vyr")
