@@ -1,15 +1,19 @@
-[gd_scene load_steps=9 format=3 uid="uid://dmiq6b6x1xr3n"]
+[gd_scene load_steps=11 format=3 uid="uid://dmiq6b6x1xr3n"]
 
 [ext_resource type="Script" path="res://escenas/escena1/Main.cs" id="1_h6e1c"]
 [ext_resource type="Texture2D" uid="uid://df3xdc8uy6hdl" path="res://escenas/escena1/assets/FondoInicio.png" id="2_72pvx"]
 [ext_resource type="PackedScene" uid="uid://cfcow7smksh4b" path="res://escenas/escena1/objects/camino_de_saul.tscn" id="3_c05kq"]
 [ext_resource type="PackedScene" uid="uid://psdxwljnkdvt" path="res://escenas/escena1/objects/cajon.tscn" id="3_hsbms"]
 [ext_resource type="Script" path="res://escenas/escena1/scripts/Audio.cs" id="3_w3in3"]
+[ext_resource type="Texture2D" uid="uid://3y2khlkisrjn" path="res://escenas/escena1/assets/suelo.png" id="4_vuxmw"]
 [ext_resource type="AudioStream" uid="uid://uhi3i8urinhu" path="res://escenas/escena1/assets/ost_escena1.mp3" id="5_gckte"]
 [ext_resource type="AudioStream" uid="uid://c7lfedn15vthe" path="res://escenas/escena1/assets/ring.ogg" id="6_w5xpm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yiuey"]
 size = Vector2(1153, 652)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uy43s"]
+size = Vector2(185, 273)
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_h6e1c")
@@ -29,7 +33,21 @@ debug_color = Color(0.588235, 0.462745, 0.768627, 0.419608)
 
 [node name="Cajon" parent="." instance=ExtResource("3_hsbms")]
 
+[node name="Suelo" type="Area2D" parent="."]
+z_index = 2
+position = Vector2(39, 387)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Suelo"]
+position = Vector2(706.5, 126.5)
+shape = SubResource("RectangleShape2D_uy43s")
+
+[node name="Sprite2D" type="Sprite2D" parent="Suelo"]
+position = Vector2(710, 126.53)
+scale = Vector2(0.170775, 0.813784)
+texture = ExtResource("4_vuxmw")
+
 [node name="CaminoDeSaul" parent="." instance=ExtResource("3_c05kq")]
+z_index = 777
 position = Vector2(0, -47)
 scale = Vector2(1.07825, 1.06533)
 
