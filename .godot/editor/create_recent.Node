@@ -1,14 +1,13 @@
-AudioStreamPlayer2D
 CollisionShape2D
-Area2D
-AnimationPlayer
 Sprite2D
+Area2D
+AudioStreamPlayer2D
+AnimationPlayer
 Node2D
 AnimatedSprite2D
 Control
 CanvasLayer
 Button
-Sprite2D
 Label
 PathFollow2D
 Path2D
