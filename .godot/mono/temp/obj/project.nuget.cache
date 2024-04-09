@@ -1,15 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "hRfhX313s+zqsdLxTrwbRizQ5r4KVw+9t8AILoE/sQ3JNmx/NrhMXdEfA08PArwD/0R/xCJ8g9QETzs1OFJ22A==",
+  "dgSpecHash": "uKQM68kYUG6hMx9//t/7QNY+Sbwvt9Y8rAG1Dyz8u/QSaPk0uOwlk/yZ6H9Js1Qd6nm5XQhhVXAe4STBRdgIKA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ruben\\Desktop\\Teatro-Funebre\\Proyecto Final.csproj",
+  "projectFilePath": "/home/ruben/Escritorio/Teatro-Funebre/Proyecto Final.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ruben\\.nuget\\packages\\godot.sourcegenerators\\4.1.3\\godot.sourcegenerators.4.1.3.nupkg.sha512",
-    "C:\\Users\\ruben\\.nuget\\packages\\godotsharp\\4.1.3\\godotsharp.4.1.3.nupkg.sha512",
-    "C:\\Users\\ruben\\.nuget\\packages\\godotsharpeditor\\4.1.3\\godotsharpeditor.4.1.3.nupkg.sha512",
-    "C:\\Users\\ruben\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.27\\microsoft.netcore.app.ref.6.0.27.nupkg.sha512",
-    "C:\\Users\\ruben\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.27\\microsoft.windowsdesktop.app.ref.6.0.27.nupkg.sha512",
-    "C:\\Users\\ruben\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.27\\microsoft.aspnetcore.app.ref.6.0.27.nupkg.sha512"
+    "/home/ruben/.nuget/packages/godot.sourcegenerators/4.1.2/godot.sourcegenerators.4.1.2.nupkg.sha512",
+    "/home/ruben/.nuget/packages/godotsharp/4.1.2/godotsharp.4.1.2.nupkg.sha512",
+    "/home/ruben/.nuget/packages/godotsharpeditor/4.1.2/godotsharpeditor.4.1.2.nupkg.sha512",
+    "/home/ruben/.nuget/packages/microsoft.netcore.app.ref/6.0.28/microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "/home/ruben/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.28/microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512"
   ],
   "logs": []
 }
