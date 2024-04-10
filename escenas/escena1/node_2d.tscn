@@ -47,7 +47,7 @@ scale = Vector2(0.170775, 0.813784)
 texture = ExtResource("4_vuxmw")
 
 [node name="CaminoDeSaul" parent="." instance=ExtResource("3_c05kq")]
-z_index = 777
+z_index = 1
 position = Vector2(0, -47)
 scale = Vector2(1.07825, 1.06533)
 

@@ -61,7 +61,7 @@ public partial class VarillaS : Area2D {
 		return encontrado;
 	}
 	public void rotar(){
-			if(!Reloj.terminado) LookAt(GetGlobalMousePosition()/1.3F);
+			if(!Reloj.terminado) LookAt(GetGlobalMousePosition());
 		
 	}
 

@@ -1,9 +1,14 @@
 res://escenas/escena1/node_2d.tscn
 res://escenas/escena1/Main.cs
+res://escenas/escena1/objects/ventanaZoomeada.tscn
+res://escenas/escena1/objects/relojZoomeado.tscn
+res://escenas/escena1/objects/varillaArreglo.tscn
+res://escenas/escena1/objects/varillaM.tscn
 res://escenas/escena1/scripts/Audio.cs
 res://escenas/escena1/scripts/Cajon.cs
 res://escenas/escena1/scripts/cajonZoomeado.cs
 res://escenas/escena1/scripts/Despertarse.cs
+res://escenas/escena1/scripts/Escalera.cs
 res://escenas/escena1/scripts/InteractuarCon.cs
 res://escenas/escena1/scripts/Reloj.cs
 res://escenas/escena1/scripts/RelojZoomeado.cs
@@ -11,5 +16,3 @@ res://escenas/escena1/scripts/VarillaM.cs
 res://escenas/escena1/scripts/VarillaS.cs
 res://escenas/escena2/scripts/MoverPrueba.cs
 res://escenas/menuInicio/Scripts/MenuPrincipal.cs
-res://escenas/escena1/objects/escalera.tscn
-res://escenas/escena1/scripts/Escalera.cs
