@@ -1,6 +1,6 @@
+Area2D
 CollisionShape2D
 Sprite2D
-Area2D
 AudioStreamPlayer2D
 AnimationPlayer
 Node2D
