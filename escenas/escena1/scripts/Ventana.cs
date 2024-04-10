@@ -3,13 +3,13 @@ using System;
 using System.Numerics;
 using System.Reflection.Metadata;
 
-public partial class Ventana Area2D{
+public partial class Ventana : Area2D {
 
     public static Boolean Ventanazoom = false;
 
-
-
     private AnimationPlayer animPlayer;
+    
+    public static Node2D ventanaZoomeadaInstancia;
 
     public override void _Ready()
 	{
@@ -30,10 +30,10 @@ public partial class Ventana Area2D{
         Main.fondoNegroInstancia.ZIndex = 1;
         AddChild(Main.fondoNegroInstancia);
 
-        PackedScene ventanaZoomeada = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects(venatnaZoomeada.tscn");
-        Main.venatnaZoomeadaInstancia = ventanaZoomeada.Instantiate() as Node2D;
-        Main.ventanaZoomeada.ZIndex = 10;
-        AddChild(Main.venatnaZoomeadaInstancia);
+        PackedScene ventanaZoomeada = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/venatnaZoomeada.tscn");
+        ventanaZoomeadaInstancia = ventanaZoomeada.Instantiate() as Node2D;
+        ventanaZoomeadaInstancia.ZIndex = 10;
+        AddChild(ventanaZoomeadaInstancia);
     }
 
     }
