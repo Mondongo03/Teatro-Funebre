@@ -30,7 +30,7 @@ public partial class Ventana : Area2D {
         Main.fondoNegroInstancia.ZIndex = 1;
         AddChild(Main.fondoNegroInstancia);
 
-        PackedScene ventanaZoomeada = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/venatnaZoomeada.tscn");
+        PackedScene ventanaZoomeada = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/ventanaZoomeada.tscn");
         ventanaZoomeadaInstancia = ventanaZoomeada.Instantiate() as Node2D;
         ventanaZoomeadaInstancia.ZIndex = 10;
         AddChild(ventanaZoomeadaInstancia);

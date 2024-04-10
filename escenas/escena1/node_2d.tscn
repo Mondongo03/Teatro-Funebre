@@ -1,23 +1,28 @@
-[gd_scene load_steps=9 format=3 uid="uid://dmiq6b6x1xr3n"]
+[gd_scene load_steps=8 format=3 uid="uid://dmiq6b6x1xr3n"]
 
-[ext_resource type="Script" path="res://escenas/escena1/Main.cs" id="1_h6e1c"]
 [ext_resource type="Texture2D" uid="uid://df3xdc8uy6hdl" path="res://escenas/escena1/assets/FondoInicio.png" id="2_72pvx"]
 [ext_resource type="PackedScene" uid="uid://cfcow7smksh4b" path="res://escenas/escena1/objects/camino_de_saul.tscn" id="3_c05kq"]
 [ext_resource type="PackedScene" uid="uid://psdxwljnkdvt" path="res://escenas/escena1/objects/cajon.tscn" id="3_hsbms"]
-[ext_resource type="Script" path="res://escenas/escena1/scripts/Audio.cs" id="3_w3in3"]
 [ext_resource type="AudioStream" uid="uid://uhi3i8urinhu" path="res://escenas/escena1/assets/ost_escena1.mp3" id="5_gckte"]
 [ext_resource type="AudioStream" uid="uid://c7lfedn15vthe" path="res://escenas/escena1/assets/ring.ogg" id="6_w5xpm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dv3th"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yiuey"]
 size = Vector2(1153, 652)
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_h6e1c")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(576, 325)
 scale = Vector2(0.96, 0.8125)
 texture = ExtResource("2_72pvx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D2"]
+position = Vector2(168.75, -172.308)
+scale = Vector2(7, 7)
+shape = SubResource("CircleShape2D_dv3th")
+one_way_collision_margin = 0.0
 
 [node name="Fondo" type="Area2D" parent="."]
 visible = false
@@ -40,6 +45,5 @@ autoplay = true
 [node name="Reloj" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_w5xpm")
 bus = &"Reloj"
-script = ExtResource("3_w3in3")
 
 [connection signal="child_entered_tree" from="Sprite2D2" to="." method="_on_sprite_2d_2_child_entered_tree"]
