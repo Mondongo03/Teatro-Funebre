@@ -15,6 +15,7 @@ position = Vector2(33, 194.5)
 shape = SubResource("RectangleShape2D_wbf4y")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
 position = Vector2(33, 194)
 texture = ExtResource("1_kmmfh")
 

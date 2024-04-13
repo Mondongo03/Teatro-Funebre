@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dmiq6b6x1xr3n"]
+[gd_scene load_steps=14 format=3 uid="uid://dmiq6b6x1xr3n"]
 
 [ext_resource type="Script" path="res://escenas/escena1/Main.cs" id="1_h6e1c"]
 [ext_resource type="Texture2D" uid="uid://df3xdc8uy6hdl" path="res://escenas/escena1/assets/FondoInicio.png" id="2_72pvx"]
@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://3y2khlkisrjn" path="res://escenas/escena1/assets/suelo.png" id="4_vuxmw"]
 [ext_resource type="AudioStream" uid="uid://uhi3i8urinhu" path="res://escenas/escena1/assets/ost_escena1.mp3" id="5_gckte"]
 [ext_resource type="AudioStream" uid="uid://c7lfedn15vthe" path="res://escenas/escena1/assets/ring.ogg" id="6_w5xpm"]
+[ext_resource type="Script" path="res://escenas/escena1/scripts/Cajetilla.cs" id="9_oxo4b"]
+[ext_resource type="Texture2D" uid="uid://jw5qnljkstsl" path="res://escenas/escena1/assets/cajetilla.png" id="10_2nvlu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yiuey"]
 size = Vector2(1153, 652)
@@ -15,7 +17,12 @@ size = Vector2(1153, 652)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uy43s"]
 size = Vector2(185, 273)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pvdyn"]
+size = Vector2(24, 32)
+
 [node name="Node2D" type="Node2D"]
+texture_filter = 1
+texture_repeat = 1
 script = ExtResource("1_h6e1c")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
@@ -60,4 +67,15 @@ stream = ExtResource("6_w5xpm")
 bus = &"Reloj"
 script = ExtResource("3_w3in3")
 
+[node name="Cajetilla" type="Area2D" parent="."]
+position = Vector2(450, 310)
+script = ExtResource("9_oxo4b")
+
+[node name="Sprite2D" type="Sprite2D" parent="Cajetilla"]
+texture = ExtResource("10_2nvlu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cajetilla"]
+shape = SubResource("RectangleShape2D_pvdyn")
+
 [connection signal="child_entered_tree" from="Sprite2D2" to="." method="_on_sprite_2d_2_child_entered_tree"]
+[connection signal="input_event" from="Cajetilla" to="Cajetilla" method="_on_input_event"]

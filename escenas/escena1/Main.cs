@@ -15,6 +15,7 @@ public partial class Main : Node2D {
 			 public static Node2D cajonZoomeadoInstancia;
 			 public static Node2D huecoInstancia;
 			 public static Node2D escaleraInstancia;
+			 public static Node2D tapaInstancia;
 			 Node2D relojInstancia;
 			
 			 Boolean clickadoBola = false;
@@ -53,6 +54,10 @@ public partial class Main : Node2D {
 			PackedScene escalera = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/escalera.tscn");
 			escaleraInstancia = escalera.Instantiate() as Node2D; // Cast the instance to Node
 			AddChild(escaleraInstancia);
+
+			PackedScene tapa = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/tapa.tscn");
+	    	tapaInstancia = tapa.Instantiate() as Node2D; 
+			AddChild(tapaInstancia);
 	}
 
 }
