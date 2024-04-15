@@ -20,3 +20,6 @@ res://escenas/escena1/scripts/VarillaM.cs
 res://escenas/escena1/scripts/VarillaS.cs
 res://escenas/escena2/scripts/MoverPrueba.cs
 res://escenas/menuInicio/Scripts/MenuPrincipal.cs
+res://escenas/escena1/objects/tapa.tscn
+res://escenas/escena1/objects/relojZoomeado.tscn
+res://escenas/escena1/objects/cajonZoomeado.tscn

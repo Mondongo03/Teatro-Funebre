@@ -18,7 +18,7 @@ public partial class Flecha : Area2D {
 
     public void _on_input_event(Node viewport, InputEvent evento, int shap) {
         if (evento.IsActionPressed("click_izquierdo")) {
-           GD.Print("Hitbox Funiona");
+           
         }
         
     }

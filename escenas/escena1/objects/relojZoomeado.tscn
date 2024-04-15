@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cwlyqtudp0r0y" path="res://escenas/escena1/assets/reloj.png" id="1_njcqp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ayhp2"]
-radius = 260.192
+radius = 270.823
 
 [node name="Area2D2" type="Area2D"]
 z_index = 5

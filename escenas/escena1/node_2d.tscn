@@ -41,7 +41,7 @@ debug_color = Color(0.588235, 0.462745, 0.768627, 0.419608)
 [node name="Cajon" parent="." instance=ExtResource("3_hsbms")]
 
 [node name="Suelo" type="Area2D" parent="."]
-z_index = 2
+z_index = 1
 position = Vector2(39, 387)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Suelo"]

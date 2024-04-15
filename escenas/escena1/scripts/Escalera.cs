@@ -20,7 +20,6 @@ public partial class Escalera : Area2D {
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
     public override void _Process(double delta){
-        GD.Print(Position.Y);
         if (puedoMover && estaMoviendo) {
             Vector2 offset = GetGlobalMousePosition() - posicionInicialClick;
              yPrime = Mathf.Clamp(posicionInicial.Y + offset.Y, -75, 325);
@@ -28,7 +27,6 @@ public partial class Escalera : Area2D {
         }
         
         if(Position.Y == -75 && noFlechasInfinitas == 0){
-            GD.Print("Llega al if");
             PackedScene flecha = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/flecha.tscn");
 			flechaInstancia = flecha.Instantiate() as Node2D;
             flechaInstancia.ZIndex = 777;
