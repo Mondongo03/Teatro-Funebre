@@ -77,5 +77,10 @@ texture = ExtResource("10_2nvlu")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Cajetilla"]
 shape = SubResource("RectangleShape2D_pvdyn")
 
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
 [connection signal="child_entered_tree" from="Sprite2D2" to="." method="_on_sprite_2d_2_child_entered_tree"]
 [connection signal="input_event" from="Cajetilla" to="Cajetilla" method="_on_input_event"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
