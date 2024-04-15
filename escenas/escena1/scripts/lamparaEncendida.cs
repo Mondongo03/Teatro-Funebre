@@ -4,7 +4,6 @@ using System.Numerics;
 using System.Reflection.Metadata;
 
 public partial class lamparaEncendida : Area2D {
-	public Node2D lamparaEncendida;
 	public override void _Ready()
 	{
 	}

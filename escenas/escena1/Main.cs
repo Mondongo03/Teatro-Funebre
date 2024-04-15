@@ -14,6 +14,7 @@ public partial class Main : Node2D {
 			 public static Node2D fondoNegroInstancia;
 			 public static Node2D cajonZoomeadoInstancia;
 			 public static Node2D huecoInstancia;
+			 public static Node2D lamparaApagadaInstancia;
 			 Node2D relojInstancia;
 			
 			 Boolean clickadoBola = false;
@@ -21,8 +22,7 @@ public partial class Main : Node2D {
 			public static Boolean varillaMinutosReloj = false;
 			public static Boolean varillaSegundosReloj = false;
 	public override void _Ready() {
-		
-			
+		GD.Print("aaaaaaaaaaaaa");
 		InstanciarEscena();
 	}
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -32,7 +32,7 @@ public partial class Main : Node2D {
 		 }
 	}
 	public void InstanciarEscena() {
-
+			GD.Print("LLEGA AL METODO");
 			PackedScene reloj = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/reloj.tscn");
 			relojInstancia = reloj.Instantiate() as Node2D; // Cast the instance to Node
 			AddChild(relojInstancia);
@@ -49,9 +49,9 @@ public partial class Main : Node2D {
 			huecoInstancia = hueco.Instantiate() as Node2D; // Cast the instance to Node
 			AddChild(huecoInstancia);
 
-			PackedScene lamaparaApagada = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/lamparaApagada.tscn");
-			lamaparaApagadaInstancia = lamaparaApagada.Instantiate() as Node2D; // Cast the instance to Node
-			AddChild(lamaparaApagadaInstancia);
+			PackedScene lamparaApagada = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/lamparaApagada.tscn");
+			lamparaApagadaInstancia = lamparaApagada.Instantiate() as Node2D; // Cast the instance to Node
+			AddChild(lamparaApagadaInstancia);
 	}
 
 }

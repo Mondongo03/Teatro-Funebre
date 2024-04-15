@@ -1,5 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://dmiq6b6x1xr3n"]
+[gd_scene load_steps=10 format=3 uid="uid://dmiq6b6x1xr3n"]
 
+[ext_resource type="Script" path="res://escenas/escena1/Main.cs" id="1_jd2rq"]
 [ext_resource type="Script" path="res://escenas/escena1/scripts/Ventana.cs" id="1_xfdgb"]
 [ext_resource type="Texture2D" uid="uid://df3xdc8uy6hdl" path="res://escenas/escena1/assets/FondoInicio.png" id="2_72pvx"]
 [ext_resource type="PackedScene" uid="uid://cfcow7smksh4b" path="res://escenas/escena1/objects/camino_de_saul.tscn" id="3_c05kq"]
@@ -13,6 +14,7 @@
 size = Vector2(1153, 652)
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_jd2rq")
 
 [node name="Area2D" type="Area2D" parent="."]
 z_index = 1
