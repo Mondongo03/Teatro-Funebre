@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnnmhfhrfgbxw"]
+
+[ext_resource type="Texture2D" uid="uid://c6agvq1gu46n4" path="res://escenas/escena1/assets/Lampara apagada.png" id="1_vm03f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y4yhw"]
+size = Vector2(74, 120)
+
+[node name="Area2D" type="Area2D"]
+position = Vector2(522, 268)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(23.5, 23.5)
+scale = Vector2(0.843333, 0.843333)
+texture = ExtResource("1_vm03f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(47, -3)
+shape = SubResource("RectangleShape2D_y4yhw")

@@ -48,6 +48,10 @@ public partial class Main : Node2D {
 			PackedScene hueco = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/hueco.tscn");
 			huecoInstancia = hueco.Instantiate() as Node2D; // Cast the instance to Node
 			AddChild(huecoInstancia);
+
+			PackedScene lamaparaApagada = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/lamparaApagada.tscn");
+			lamaparaApagadaInstancia = lamaparaApagada.Instantiate() as Node2D; // Cast the instance to Node
+			AddChild(lamaparaApagadaInstancia);
 	}
 
 }
