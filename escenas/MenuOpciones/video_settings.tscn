@@ -1,11 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://qns0gr0343f"]
 
-[ext_resource type="Script" path="res://escenas/MenuOpciones/Scripts/video_settings.cs" id="1_8675m"]
+[ext_resource type="Script" path="res://escenas/MenuOpciones/Scripts/Video_settings.cs" id="1_77p3r"]
 
-[node name="VideoSettings" type="CanvasLayer" node_paths=PackedStringArray("resolucion", "optionButton")]
-script = ExtResource("1_8675m")
-resolucion = NodePath("Control/Resolucion")
-optionButton = NodePath("Control/OptionButton")
+[node name="VideoSettings" type="CanvasLayer"]
+script = ExtResource("1_77p3r")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
