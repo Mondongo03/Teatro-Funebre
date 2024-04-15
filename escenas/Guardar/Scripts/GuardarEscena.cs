@@ -13,11 +13,11 @@ public partial class GuardarEscena : Node
 	{
 	}
 
-	public void SaveGame()
+	public void SaveGame(Node tree)
 	{
 	    using var saveGame = FileAccess.Open("user://savegame.save", FileAccess.ModeFlags.Write);
 
-	    var saveNodes = GetTree().GetNodesInGroup("Persist");
+	    var saveNodes = tree.GetTree().GetNodesInGroup("Persist");
 	    foreach (Node saveNode in saveNodes)
 	    {
 	        // Check the node is an instanced scene so it can be instanced again during load.

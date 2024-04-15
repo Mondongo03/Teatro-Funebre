@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dmiq6b6x1xr3n"]
+[gd_scene load_steps=10 format=3 uid="uid://dmiq6b6x1xr3n"]
 
 [ext_resource type="Script" path="res://escenas/escena1/Main.cs" id="1_h6e1c"]
 [ext_resource type="Texture2D" uid="uid://df3xdc8uy6hdl" path="res://escenas/escena1/assets/FondoInicio.png" id="2_72pvx"]
@@ -7,11 +7,12 @@
 [ext_resource type="Script" path="res://escenas/escena1/scripts/Audio.cs" id="3_w3in3"]
 [ext_resource type="AudioStream" uid="uid://uhi3i8urinhu" path="res://escenas/escena1/assets/ost_escena1.mp3" id="5_gckte"]
 [ext_resource type="AudioStream" uid="uid://c7lfedn15vthe" path="res://escenas/escena1/assets/ring.ogg" id="6_w5xpm"]
+[ext_resource type="PackedScene" uid="uid://c0vydxagyq8pj" path="res://escenas/menuPausa/escenas/pausa.tscn" id="8_uorag"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yiuey"]
 size = Vector2(1153, 652)
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" groups=["Persist"]]
 script = ExtResource("1_h6e1c")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
@@ -41,5 +42,7 @@ autoplay = true
 stream = ExtResource("6_w5xpm")
 bus = &"Reloj"
 script = ExtResource("3_w3in3")
+
+[node name="CanvasLayer" parent="." instance=ExtResource("8_uorag")]
 
 [connection signal="child_entered_tree" from="Sprite2D2" to="." method="_on_sprite_2d_2_child_entered_tree"]

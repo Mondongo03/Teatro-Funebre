@@ -1,11 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://b3oscujcwaje6"]
+[gd_scene load_steps=2 format=3 uid="uid://b3oscujcwaje6"]
+
 [ext_resource type="Texture2D" uid="uid://bka6kaocja8oa" path="res://escenas/escena2/assets/_9424859e-a0b3-45d1-ade3-76daa2be9243.jpg" id="1_hv644"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" groups=["Persist"]]
 position = Vector2(62, 51)
 scale = Vector2(10000, 10000)
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0.0549963, 0.0293472)
 scale = Vector2(0.000119539, 6.74363e-05)
 texture = ExtResource("1_hv644")
-
