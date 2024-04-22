@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://c5kcjmevhdh7l"]
+
+[ext_resource type="Texture2D" uid="uid://qicd48vou8wn" path="res://escenas/escena1/assets/Monstruo.png" id="1_8jucl"]
+
+[sub_resource type="Curve2D" id="Curve2D_anvj3"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 352, 456, 0, 0, 0, 0, 239, 455)
+}
+point_count = 2
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ktxh8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_8jucl")
+}],
+"loop": true,
+"name": &"Monstruo",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_86mp6"]
+size = Vector2(98, 82)
+
+[node name="Monstruomovimiento" type="Path2D"]
+curve = SubResource("Curve2D_anvj3")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+position = Vector2(352, 456)
+rotates = false
+loop = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="PathFollow2D" groups=["Monstruo"]]
+sprite_frames = SubResource("SpriteFrames_ktxh8")
+animation = &"Monstruo"
+
+[node name="Area2D" type="Area2D" parent="PathFollow2D/AnimatedSprite2D" groups=["Monstruo"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/AnimatedSprite2D/Area2D"]
+shape = SubResource("RectangleShape2D_86mp6")
