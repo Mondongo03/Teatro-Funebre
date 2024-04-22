@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bs2kvjh6p3tgq"]
+
+[ext_resource type="Texture2D" path="res://escenas/escena1/assets/Lampara encendida.png" id="1_heay2"]
+[ext_resource type="Script" path="res://escenas/escena1/scripts/LamparaEncendida.cs" id="1_ojpgd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y4yhw"]
+size = Vector2(74, 121)
+
+[node name="Area2D2" type="Area2D"]
+texture_filter = 1
+position = Vector2(522, 268)
+script = ExtResource("1_ojpgd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(23.5, 23.5)
+scale = Vector2(0.843333, 0.843333)
+texture = ExtResource("1_heay2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(47, -2.5)
+shape = SubResource("RectangleShape2D_y4yhw")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

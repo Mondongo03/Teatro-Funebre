@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dya1l2sbg42fq"]
 
 [ext_resource type="Script" path="res://escenas/escena1/scripts/VarillaS.cs" id="1_54wgu"]
-[ext_resource type="Texture2D" uid="uid://bgbymj53bpcfv" path="res://escenas/escena1/assets/varillaM.png" id="1_d0lo7"]
+[ext_resource type="Texture2D" uid="uid://b8hnosscpdrfy" path="res://escenas/escena1/assets/varillaS.png" id="2_n6mwj"]
 [ext_resource type="AudioStream" uid="uid://c7lfedn15vthe" path="res://escenas/escena1/assets/ring.ogg" id="3_ogq6i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jyv5b"]
@@ -20,7 +20,7 @@ one_way_collision_margin = 3.0
 texture_filter = 1
 position = Vector2(0.125, 5.72205e-06)
 scale = Vector2(1.36923, 0.939302)
-texture = ExtResource("1_d0lo7")
+texture = ExtResource("2_n6mwj")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_ogq6i")
