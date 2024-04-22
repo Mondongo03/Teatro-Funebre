@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dmiq6b6x1xr3n"]
+[gd_scene load_steps=15 format=3 uid="uid://dmiq6b6x1xr3n"]
 
 [ext_resource type="Script" path="res://escenas/escena1/Main.cs" id="1_h6e1c"]
 [ext_resource type="Texture2D" uid="uid://df3xdc8uy6hdl" path="res://escenas/escena1/assets/FondoInicio.png" id="2_72pvx"]
@@ -10,6 +10,7 @@
 [ext_resource type="AudioStream" uid="uid://c7lfedn15vthe" path="res://escenas/escena1/assets/ring.ogg" id="6_w5xpm"]
 [ext_resource type="Script" path="res://escenas/escena1/scripts/Cajetilla.cs" id="9_oxo4b"]
 [ext_resource type="Texture2D" uid="uid://jw5qnljkstsl" path="res://escenas/escena1/assets/cajetilla.png" id="10_2nvlu"]
+[ext_resource type="Texture2D" uid="uid://c7onbysk4jycf" path="res://escenas/escena2/assets/unicornioprueba.png" id="11_dovao"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yiuey"]
 size = Vector2(1153, 652)
@@ -80,6 +81,10 @@ shape = SubResource("RectangleShape2D_pvdyn")
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0
 autostart = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(417, 408)
+texture = ExtResource("11_dovao")
 
 [connection signal="child_entered_tree" from="Sprite2D2" to="." method="_on_sprite_2d_2_child_entered_tree"]
 [connection signal="input_event" from="Cajetilla" to="Cajetilla" method="_on_input_event"]
