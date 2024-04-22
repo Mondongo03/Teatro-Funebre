@@ -40,8 +40,8 @@ public partial class MenuPrincipal : CanvasLayer
     // Función llamada cuando se presiona el botón de "Configuración"
     private void _onSettingsButtonPressed()
     {
-        // Aquí puedes agregar la lógica para abrir el menú de configuración
         GD.Print("Abriendo configuración...");
+        GetTree().ChangeSceneToFile("escenas/MenuOpciones/menu_de_opciones.tscn");
     }
 
     // Función llamada cuando se presiona el botón de "Salir"

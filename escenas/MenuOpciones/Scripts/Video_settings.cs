@@ -7,14 +7,33 @@ using System.Xml.Linq;
 public partial class Video_settings : CanvasLayer
 {
 	[ExportGroup("resolucion")]
-	[Export] private Label resolucion;
 	[Export] private OptionButton optionButton;
+	[Export] private Button exit;
+
 	private static GameData gameData = new GameData();
+	private static bool pantalla = false;
+
+	public static void setPantalla(bool s)
+	{
+		pantalla = s;
+	}
+
+
 
 	public override void _Ready()
     {
 
 		AddResolutionToButton();
+
+    }
+
+	public override void _Process(double delta)
+    {
+		if(pantalla){
+			exit.Hide();
+		}else{
+			exit.Visible = true;
+		}
     }
 
 	private void AddResolutionToButton()
@@ -61,11 +80,6 @@ public partial class Video_settings : CanvasLayer
 		Save();
 	}
 
-	public void _on_toggled(bool toggled)
-	{
-		gameData.isFullScreen = toggled;
-	}
-
 	public void _on_option_button_item_selected(int mySelectedRez)
 	{
 		gameData.resolutionIndex = mySelectedRez;
@@ -94,4 +108,9 @@ public partial class Video_settings : CanvasLayer
 			DisplayServer.WindowSetPosition((DisplayServer.WindowGetSize() - new Vector2I(1280, 720)) / 2);
         }
     }
+	
+	public void _on_exit_pressed()
+	{
+		GetTree().ChangeSceneToFile("escenas/menuInicio/node_2d.tscn");
+	}
 }

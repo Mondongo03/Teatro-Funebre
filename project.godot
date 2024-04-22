@@ -18,6 +18,7 @@ config/icon="res://icono/_1f0113f9-21f1-4bca-92a9-29dd36ceee99.jpg"
 [autoload]
 
 GlobalInteractuarCon="*res://escenas/escena1/scripts/InteractuarCon.cs"
+Transicion="*res://escenas/transicion/Transicion.cs"
 
 [display]
 
