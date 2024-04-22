@@ -3,9 +3,6 @@ using System;
 using System.Numerics;
 
 public partial class Main : Node2D {
-			VarillaM varillaMClass = new VarillaM();
-			InteractuarCon interactuarCon = new InteractuarCon();
-			Reloj reloj = new Reloj();
 			int slotsOcupados;
 			Area2D pista_1;
 			 Node2D godotInstancia2;
@@ -31,7 +28,7 @@ public partial class Main : Node2D {
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta){
 		 if (varillaMinutosInstancia != null) {
-		clickadoVarillaM = varillaMClass.devolverClickado();
+		clickadoVarillaM = VarillaM.devolverClickado();
 		 }
 	}
 	public void InstanciarEscena() {
