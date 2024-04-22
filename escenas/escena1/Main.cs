@@ -15,6 +15,7 @@ public partial class Main : Node2D {
 			 public static Node2D cajonZoomeadoInstancia;
 			 public static Node2D huecoInstancia;
 			 public static Node2D lamparaApagadaInstancia;
+			 public static Node2D lamparaEncendidaInstancia;
 			 Node2D relojInstancia;
 			
 			 Boolean clickadoBola = false;

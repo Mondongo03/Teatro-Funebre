@@ -3,7 +3,7 @@ using System;
 using System.Numerics;
 using System.Reflection.Metadata;
 
-public partial class lamparaEncendida : Area2D {
+public partial class LamparaEncendida : Area2D {
 	public override void _Ready()
 	{
 	}
@@ -15,10 +15,10 @@ public partial class lamparaEncendida : Area2D {
 
 public void _on_input_event(Node viewport, InputEvent evento, int shap){
 	if(evento.IsActionPressed("click_izquierdo")){
-        
-			QueueFree();
-
+			GD.Print("Hago click");
+    			Main.lamparaEncendidaInstancia.QueueFree();
+				QueueFree();
+    }
 	}
-}
 
 }

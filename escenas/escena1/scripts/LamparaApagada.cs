@@ -3,8 +3,8 @@ using System;
 using System.Numerics;
 using System.Reflection.Metadata;
 
-public partial class lamaparaApagada : Area2D {
-	public Node2D lamparaEncendidaInstancia;
+public partial class LamparaApagada : Area2D {
+	
 	public override void _Ready()
 	{
 	}
@@ -18,8 +18,10 @@ public void _on_input_event(Node viewport, InputEvent evento, int shap){
 	if(evento.IsActionPressed("click_izquierdo")){
     
 	PackedScene lamparaEncendida = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/lamparaEncendida.tscn");
-			lamparaEncendidaInstancia = lamparaEncendida.Instantiate() as Node2D; // Cast the instance to Node
-			AddChild(lamparaEncendidaInstancia);
+			Main.lamparaEncendidaInstancia = lamparaEncendida.Instantiate() as Node2D; // Cast the instance to Node
+			Main.lamparaEncendidaInstancia.ZIndex = 2;
+			Main.lamparaEncendidaInstancia.Position = new Vector2I(0,0);
+			AddChild(Main.lamparaEncendidaInstancia);
 
 			
 

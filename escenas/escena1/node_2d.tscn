@@ -14,6 +14,7 @@
 size = Vector2(1153, 652)
 
 [node name="Node2D" type="Node2D"]
+texture_filter = 1
 script = ExtResource("1_jd2rq")
 
 [node name="Area2D" type="Area2D" parent="."]
