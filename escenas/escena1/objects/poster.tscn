@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://dflq7gbjquied"]
+
+[ext_resource type="Texture2D" uid="uid://bcdoinpyx4xb7" path="res://escenas/escena1/assets/poster.png" id="1_c00e0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bog13"]
+size = Vector2(176.643, 235.368)
+
+[sub_resource type="Animation" id="Animation_4nxkw"]
+resource_name = "rotaciónPoster"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -0.610865]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1ft67"]
+_data = {
+"rotaciónPoster": SubResource("Animation_4nxkw")
+}
+
+[node name="Area2D" type="Area2D"]
+position = Vector2(265, 32)
+rotation = -0.610865
+gravity_space_override = 1
+gravity_point = true
+gravity_point_unit_distance = 0.445
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-107.765, 109.829)
+scale = Vector2(0.859456, 0.82687)
+texture = ExtResource("1_c00e0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-108.178, 107.684)
+shape = SubResource("RectangleShape2D_bog13")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+process_mode = 3
+speed_scale = 2.0
+libraries = {
+"": SubResource("AnimationLibrary_1ft67")
+}

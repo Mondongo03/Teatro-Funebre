@@ -1,14 +1,15 @@
-[gd_scene load_steps=12 format=3 uid="uid://dmiq6b6x1xr3n"]
+[gd_scene load_steps=13 format=3 uid="uid://dmiq6b6x1xr3n"]
 
 [ext_resource type="Script" path="res://escenas/escena1/Main.cs" id="1_h6e1c"]
 [ext_resource type="Texture2D" uid="uid://df3xdc8uy6hdl" path="res://escenas/escena1/assets/FondoInicio.png" id="2_72pvx"]
 [ext_resource type="PackedScene" uid="uid://cfcow7smksh4b" path="res://escenas/escena1/objects/camino_de_saul.tscn" id="3_c05kq"]
 [ext_resource type="PackedScene" uid="uid://psdxwljnkdvt" path="res://escenas/escena1/objects/cajon.tscn" id="3_hsbms"]
 [ext_resource type="Script" path="res://escenas/escena1/scripts/Audio.cs" id="3_w3in3"]
-[ext_resource type="Texture2D" path="res://escenas/escena1/assets/suelo.png" id="4_vuxmw"]
+[ext_resource type="Texture2D" uid="uid://3y2khlkisrjn" path="res://escenas/escena1/assets/suelo.png" id="4_vuxmw"]
 [ext_resource type="AudioStream" uid="uid://uhi3i8urinhu" path="res://escenas/escena1/assets/ost_escena1.mp3" id="5_gckte"]
 [ext_resource type="AudioStream" uid="uid://c7lfedn15vthe" path="res://escenas/escena1/assets/ring.ogg" id="6_w5xpm"]
-[ext_resource type="Texture2D" path="res://escenas/escena2/assets/unicornioprueba.png" id="11_dovao"]
+[ext_resource type="PackedScene" uid="uid://dflq7gbjquied" path="res://escenas/escena1/objects/poster.tscn" id="10_hcckh"]
+[ext_resource type="Texture2D" uid="uid://c7onbysk4jycf" path="res://escenas/escena2/assets/unicornioprueba.png" id="11_dovao"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yiuey"]
 size = Vector2(1153, 652)
@@ -70,6 +71,9 @@ autostart = true
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(417, 408)
 texture = ExtResource("11_dovao")
+
+[node name="Area2D" parent="." instance=ExtResource("10_hcckh")]
+position = Vector2(274, 50)
 
 [connection signal="child_entered_tree" from="Sprite2D2" to="." method="_on_sprite_2d_2_child_entered_tree"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

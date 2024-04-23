@@ -36,7 +36,7 @@ public partial class VarillaM : Area2D {
 		}
 	}
 
-	public Boolean devolverClickado(){
+	public static Boolean devolverClickado(){
 		return encontrado;
 	}
 	
