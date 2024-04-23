@@ -27,7 +27,6 @@ _data = {
 
 [node name="Area2D" type="Area2D"]
 position = Vector2(265, 32)
-rotation = -0.610865
 gravity_space_override = 1
 gravity_point = true
 gravity_point_unit_distance = 0.445

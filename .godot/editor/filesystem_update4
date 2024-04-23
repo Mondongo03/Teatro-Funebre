@@ -1,5 +1,6 @@
-res://escenas/escena1/node_2d.tscn
+res://escenas/escena3/Desvan.tscn
 res://escenas/escena1/Main.cs
+res://escenas/escena1/node_2d.tscn
 res://escenas/escena1/objects/camino_de_saul.tscn
 res://escenas/escena1/objects/reloj.tscn
 res://escenas/escena1/objects/varillaM.tscn

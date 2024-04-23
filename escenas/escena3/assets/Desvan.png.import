@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://42o21mfgkct3"
-path="res://.godot/imported/Desvan.png-5bb877a56184541780b70424d5d597b3.ctex"
+path="res://.godot/imported/Desvan.png-029aa251647a0bd06269c9766e3fd43a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://escenas/escena2/assets/Desvan.png"
-dest_files=["res://.godot/imported/Desvan.png-5bb877a56184541780b70424d5d597b3.ctex"]
+source_file="res://escenas/escena3/assets/Desvan.png"
+dest_files=["res://.godot/imported/Desvan.png-029aa251647a0bd06269c9766e3fd43a.ctex"]
 
 [params]
 
