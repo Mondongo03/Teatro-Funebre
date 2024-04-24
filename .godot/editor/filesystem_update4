@@ -3,7 +3,7 @@ res://escenas/escena1/Main.cs
 res://escenas/menuPausa/escenas/pausa.tscn
 res://escenas/MenuOpciones/volum_settings.tscn
 res://escenas/MenuOpciones/video_settings.tscn
-res://escenas/transicion/transicion.tscn
+res://escenas/escena1/node_2d.tscn
 res://escenas/escena1/scripts/Audio.cs
 res://escenas/escena1/scripts/Cajon.cs
 res://escenas/escena1/scripts/cajonZoomeado.cs
@@ -19,5 +19,3 @@ res://escenas/menuInicio/Scripts/MenuPrincipal.cs
 res://escenas/MenuOpciones/Scripts/Video_settings.cs
 res://escenas/MenuOpciones/Scripts/Volumen_settings.cs
 res://escenas/menuPausa/scripts/MenuDePausa.cs
-res://escenas/transicion/Transicion.cs
-res://escenas/escena1/node_2d.tscn
