@@ -1,0 +1,62 @@
+[gd_scene load_steps=2 format=3 uid="uid://qns0gr0343f"]
+
+[ext_resource type="Script" path="res://escenas/MenuOpciones/Scripts/Video_settings.cs" id="1_77p3r"]
+
+[node name="VideoSettings" type="CanvasLayer" node_paths=PackedStringArray("optionButton", "exit")]
+script = ExtResource("1_77p3r")
+optionButton = NodePath("Control/OptionButton")
+exit = NodePath("Control/Exit")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 386.0
+offset_top = 213.0
+offset_right = 426.0
+offset_bottom = 253.0
+
+[node name="Resolucion" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 4.0
+offset_right = 194.0
+offset_bottom = 27.0
+text = "Resolucion de la pantalla
+"
+
+[node name="OptionButton" type="OptionButton" parent="Control"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 36.0
+offset_right = 153.0
+offset_bottom = 65.0
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 3.3
+anchor_right = 0.5
+anchor_bottom = 3.3
+offset_left = -18.0
+offset_top = 33.0
+offset_right = 311.0
+offset_bottom = 64.0
+text = "Aplicar"
+
+[node name="Exit" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 3.325
+anchor_top = 4.1
+anchor_right = 3.325
+anchor_bottom = 4.1
+offset_left = -132.0
+offset_top = 36.0
+offset_right = 199.0
+offset_bottom = 67.0
+text = "Salir"
+
+[connection signal="item_selected" from="Control/OptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="pressed" from="Control/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Control/Exit" to="." method="_on_exit_pressed"]

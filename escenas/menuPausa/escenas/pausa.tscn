@@ -1,0 +1,76 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0vydxagyq8pj"]
+
+[ext_resource type="Script" path="res://escenas/menuPausa/scripts/MenuDePausa.cs" id="1_s5chg"]
+[ext_resource type="PackedScene" uid="uid://qns0gr0343f" path="res://escenas/MenuOpciones/video_settings.tscn" id="2_amcn0"]
+[ext_resource type="PackedScene" uid="uid://dtwowptmwky12" path="res://escenas/MenuOpciones/volum_settings.tscn" id="3_4ip31"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Menu de pausa" type="Control" parent="." node_paths=PackedStringArray("continuar", "opciones", "salir", "exit", "video", "sonido")]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s5chg")
+continuar = NodePath("Continuar")
+opciones = NodePath("Opciones")
+salir = NodePath("Salir al menu principal")
+exit = NodePath("Exit")
+video = NodePath("VideoSettings")
+sonido = NodePath("CanvasLayer")
+
+[node name="ColorRect" type="ColorRect" parent="Menu de pausa"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.490196)
+
+[node name="Continuar" type="Button" parent="Menu de pausa"]
+layout_mode = 0
+offset_left = 428.0
+offset_top = 193.0
+offset_right = 666.0
+offset_bottom = 245.0
+text = "Continuar"
+
+[node name="Opciones" type="Button" parent="Menu de pausa"]
+layout_mode = 0
+offset_left = 426.0
+offset_top = 282.0
+offset_right = 664.0
+offset_bottom = 334.0
+text = "Opciones"
+
+[node name="Salir al menu principal" type="Button" parent="Menu de pausa"]
+layout_mode = 0
+offset_left = 425.0
+offset_top = 369.0
+offset_right = 663.0
+offset_bottom = 421.0
+text = "Salir al menu principal"
+
+[node name="VideoSettings" parent="Menu de pausa" instance=ExtResource("2_amcn0")]
+visible = false
+
+[node name="CanvasLayer" parent="Menu de pausa" instance=ExtResource("3_4ip31")]
+visible = false
+
+[node name="Exit" type="Button" parent="Menu de pausa"]
+visible = false
+layout_mode = 0
+offset_left = 387.0
+offset_top = 414.0
+offset_right = 718.0
+offset_bottom = 445.0
+text = "Salir"
+
+[connection signal="pressed" from="Menu de pausa/Continuar" to="Menu de pausa" method="_on_continuar_pressed"]
+[connection signal="pressed" from="Menu de pausa/Opciones" to="Menu de pausa" method="_on_opciones_pressed"]
+[connection signal="pressed" from="Menu de pausa/Salir al menu principal" to="Menu de pausa" method="_on_salir_al_menu_principal_pressed"]
+[connection signal="pressed" from="Menu de pausa/Exit" to="Menu de pausa" method="_on_exit_pressed"]

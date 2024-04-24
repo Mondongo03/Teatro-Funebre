@@ -1,6 +1,7 @@
 using Godot;
 using System;
 using System.Numerics;
+using System.Threading;
 
 public partial class Main : Node2D {
 			VarillaM varillaMClass = new VarillaM();
@@ -20,9 +21,9 @@ public partial class Main : Node2D {
 			 Boolean clickadoVarillaM = false;
 			public static Boolean varillaMinutosReloj = false;
 			public static Boolean varillaSegundosReloj = false;
+			[Export] public AnimationPlayer animationPlayer;
 	public override void _Ready() {
-		
-			
+		animationPlayer.Play("cosa");
 		InstanciarEscena();
 	}
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

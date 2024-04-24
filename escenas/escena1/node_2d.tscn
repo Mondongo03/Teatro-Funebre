@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dmiq6b6x1xr3n"]
+[gd_scene load_steps=14 format=3 uid="uid://dmiq6b6x1xr3n"]
 
 [ext_resource type="Script" path="res://escenas/escena1/Main.cs" id="1_h6e1c"]
 [ext_resource type="Texture2D" uid="uid://df3xdc8uy6hdl" path="res://escenas/escena1/assets/FondoInicio.png" id="2_72pvx"]
@@ -7,14 +7,82 @@
 [ext_resource type="Script" path="res://escenas/escena1/scripts/Audio.cs" id="3_w3in3"]
 [ext_resource type="AudioStream" uid="uid://uhi3i8urinhu" path="res://escenas/escena1/assets/ost_escena1.mp3" id="5_gckte"]
 [ext_resource type="AudioStream" uid="uid://c7lfedn15vthe" path="res://escenas/escena1/assets/ring.ogg" id="6_w5xpm"]
+[ext_resource type="PackedScene" uid="uid://c0vydxagyq8pj" path="res://escenas/menuPausa/escenas/pausa.tscn" id="8_uorag"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yiuey"]
 size = Vector2(1153, 652)
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="Animation" id="Animation_rk4ht"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D2:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CaminoDeSaul:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_mit4r"]
+resource_name = "aparecer"
+length = 0.5
+
+[sub_resource type="Animation" id="Animation_n5gus"]
+resource_name = "cosa"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D2:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CaminoDeSaul:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3uyuo"]
+_data = {
+"RESET": SubResource("Animation_rk4ht"),
+"aparecer": SubResource("Animation_mit4r"),
+"cosa": SubResource("Animation_n5gus")
+}
+
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("animationPlayer") groups=["Persist"]]
 script = ExtResource("1_h6e1c")
+animationPlayer = NodePath("AnimationPlayer")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
 position = Vector2(576, 325)
 scale = Vector2(0.96, 0.8125)
 texture = ExtResource("2_72pvx")
@@ -30,6 +98,7 @@ debug_color = Color(0.588235, 0.462745, 0.768627, 0.419608)
 [node name="Cajon" parent="." instance=ExtResource("3_hsbms")]
 
 [node name="CaminoDeSaul" parent="." instance=ExtResource("3_c05kq")]
+modulate = Color(1, 1, 1, 0)
 position = Vector2(0, -47)
 scale = Vector2(1.07825, 1.06533)
 
@@ -39,7 +108,13 @@ autoplay = true
 
 [node name="Reloj" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_w5xpm")
-bus = &"Reloj"
 script = ExtResource("3_w3in3")
+
+[node name="CanvasLayer" parent="." instance=ExtResource("8_uorag")]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_3uyuo")
+}
 
 [connection signal="child_entered_tree" from="Sprite2D2" to="." method="_on_sprite_2d_2_child_entered_tree"]
