@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dmiq6b6x1xr3n"]
+[gd_scene load_steps=13 format=3 uid="uid://dmiq6b6x1xr3n"]
 
 [ext_resource type="Texture2D" uid="uid://df3xdc8uy6hdl" path="res://escenas/escena1/assets/FondoInicio.png" id="2_72pvx"]
 [ext_resource type="PackedScene" uid="uid://cfcow7smksh4b" path="res://escenas/escena1/objects/camino_de_saul.tscn" id="3_c05kq"]
@@ -12,10 +12,44 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yiuey"]
 size = Vector2(1153, 652)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_hw7rb"]
-size = Vector2(99, 80)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ni0l4"]
+size = Vector2(99, 79)
 
-[sub_resource type="Curve2D" id="Curve2D_wmwwx"]
+[sub_resource type="Animation" id="Animation_0jysr"]
+resource_name = "MonstruoEscondido"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(208, 498), Vector2(298, 498)]
+}
+
+[sub_resource type="Animation" id="Animation_iodu8"]
+resource_name = "MonstruoEncontrado"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(298, 498), Vector2(208, 498)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_feg5u"]
+_data = {
+"MonstruoEncontrado": SubResource("Animation_iodu8"),
+"MonstruoEscondido": SubResource("Animation_0jysr")
+}
 
 [node name="Node2D" type="Node2D"]
 texture_filter = 1
@@ -56,19 +90,20 @@ autoplay = true
 stream = ExtResource("6_w5xpm")
 bus = &"Reloj"
 
-[node name="Node2D" type="Node2D" parent="."]
-position = Vector2(196, 480)
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2(208, 498)
 
-[node name="Sprite2D" type="Sprite2D" parent="Node2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(-1.5, -3.5)
+shape = SubResource("RectangleShape2D_ni0l4")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D2"]
 texture = ExtResource("6_diwag")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D"]
-shape = SubResource("RectangleShape2D_hw7rb")
-
-[node name="Path2D" type="Path2D" parent="Node2D"]
-position = Vector2(100, 0)
-scale = Vector2(1000, 1000)
-curve = SubResource("Curve2D_wmwwx")
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Area2D2"]
+libraries = {
+"": SubResource("AnimationLibrary_feg5u")
+}
 
 [connection signal="input_event" from="Area2D" to="Area2D" method="_on_input_event"]
 [connection signal="child_entered_tree" from="Sprite2D2" to="." method="_on_sprite_2d_2_child_entered_tree"]
