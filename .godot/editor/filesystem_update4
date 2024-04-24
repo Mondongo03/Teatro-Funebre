@@ -1,4 +1,4 @@
-res://escenas/escena3/Desvan.tscn
+res://escenas/escena1/objects/poster.tscn
 res://escenas/escena1/Main.cs
 res://escenas/escena1/node_2d.tscn
 res://escenas/escena1/objects/camino_de_saul.tscn
@@ -7,10 +7,8 @@ res://escenas/escena1/objects/varillaM.tscn
 res://escenas/escena1/objects/varillaS.tscn
 res://escenas/escena1/objects/tapa.tscn
 res://escenas/escena1/objects/cajetilla.tscn
-res://escenas/escena1/objects/miniVarillaM.tscn
-res://escenas/escena1/objects/pista_1.tscn
-res://escenas/escena1/objects/miniVarillaS.tscn
-res://escenas/escena1/objects/poster.tscn
+res://escenas/escena2/Prueba.tscn
+res://escenas/escena3/Desvan.tscn
 res://escenas/escena1/scripts/Audio.cs
 res://escenas/escena1/scripts/Cajetilla.cs
 res://escenas/escena1/scripts/Cajon.cs
@@ -19,6 +17,7 @@ res://escenas/escena1/scripts/Despertarse.cs
 res://escenas/escena1/scripts/Escalera.cs
 res://escenas/escena1/scripts/Flecha.cs
 res://escenas/escena1/scripts/InteractuarCon.cs
+res://escenas/escena1/scripts/poster.cs
 res://escenas/escena1/scripts/Reloj.cs
 res://escenas/escena1/scripts/RelojZoomeado.cs
 res://escenas/escena1/scripts/Tapa.cs
