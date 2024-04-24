@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://c2oa2o80al2mr"]
+[gd_scene load_steps=3 format=3 uid="uid://c2oa2o80al2mr"]
+
+[ext_resource type="Script" path="res://escenas/menuInicio/Scripts/MenuPrincipal.cs" id="1_15yoe"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_wosiv"]
 
@@ -10,6 +12,7 @@ scale = Vector2(1254.5, 703.371)
 texture = SubResource("PlaceholderTexture2D_wosiv")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Sprite2D"]
+script = ExtResource("1_15yoe")
 
 [node name="Control" type="Control" parent="Sprite2D/CanvasLayer"]
 layout_mode = 3
