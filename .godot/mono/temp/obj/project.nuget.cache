@@ -1,14 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "uKQM68kYUG6hMx9//t/7QNY+Sbwvt9Y8rAG1Dyz8u/QSaPk0uOwlk/yZ6H9Js1Qd6nm5XQhhVXAe4STBRdgIKA==",
+  "dgSpecHash": "djNdHAimQV+NoJaaXbv7Pj5zD5hF11DcUJCwnKn/tyrWSNpzx6gL7hYE4QP9ddmi6l0nuYnXFo3tmwhzxnHVBQ==",
   "success": true,
-  "projectFilePath": "/home/ruben/Escritorio/Teatro-Funebre/Proyecto Final.csproj",
+  "projectFilePath": "D:\\Teatro-Funebre\\Proyecto Final.csproj",
   "expectedPackageFiles": [
-    "/home/ruben/.nuget/packages/godot.sourcegenerators/4.1.2/godot.sourcegenerators.4.1.2.nupkg.sha512",
-    "/home/ruben/.nuget/packages/godotsharp/4.1.2/godotsharp.4.1.2.nupkg.sha512",
-    "/home/ruben/.nuget/packages/godotsharpeditor/4.1.2/godotsharpeditor.4.1.2.nupkg.sha512",
-    "/home/ruben/.nuget/packages/microsoft.netcore.app.ref/6.0.28/microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
-    "/home/ruben/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.28/microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512"
+    "C:\\Users\\macna\\.nuget\\packages\\godot.sourcegenerators\\4.2.1\\godot.sourcegenerators.4.2.1.nupkg.sha512",
+    "C:\\Users\\macna\\.nuget\\packages\\godotsharp\\4.2.1\\godotsharp.4.2.1.nupkg.sha512",
+    "C:\\Users\\macna\\.nuget\\packages\\godotsharpeditor\\4.2.1\\godotsharpeditor.4.2.1.nupkg.sha512",
+    "C:\\Users\\macna\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\macna\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\macna\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512"
   ],
   "logs": []
 }
