@@ -7,6 +7,8 @@ public partial class Reloj : Area2D {
 	
 	public static bool zoooom = false;
 	public static bool terminado = false;
+	public static Node2D miniVarillaMInstancia;
+	public static Node2D miniVarillaSInstancia;
 	public override void _Ready(){
 		
 	}
@@ -21,13 +23,17 @@ public partial class Reloj : Area2D {
 		
 		collisionObject2D.QueueFree();
 		Main.varillaMinutosReloj = true;
-
+				PackedScene miniVarillaM = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/miniVarillaM.tscn");
+				miniVarillaMInstancia = miniVarillaM.Instantiate() as Node2D; 
+				AddChild(miniVarillaMInstancia);
 	
 		}
 		if (collisionObject2D.IsInGroup("VarillaS")){
 		Main.varillaSegundosReloj = true;
 		collisionObject2D.QueueFree();
-	
+				PackedScene miniVarillaS = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/miniVarillaS.tscn");
+				miniVarillaSInstancia = miniVarillaS.Instantiate() as Node2D; 
+				AddChild(miniVarillaSInstancia);
 		}
 	}
 
@@ -36,8 +42,8 @@ public partial class Reloj : Area2D {
 		}
 	}
 	public void _on_input_event(Node viewport, InputEvent evento, int shap){
-		
-		if(evento.IsActionPressed("click_izquierdo") && !zoooom && !Cajon.zoooom){
+
+		if(evento.IsActionPressed("click_izquierdo") && !RelojZoomeado.zoooom && !Cajon.zoooom ){
 			if(!VarillaM.encontrado && !VarillaS.encontrado){
 				Main.varillaMinutosInstancia.ZIndex = -1;
 				PackedScene fondoNegro = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/fondoNegro.tscn");

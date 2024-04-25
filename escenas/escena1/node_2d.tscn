@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dmiq6b6x1xr3n"]
+[gd_scene load_steps=16 format=3 uid="uid://dmiq6b6x1xr3n"]
 
 [ext_resource type="Script" path="res://escenas/escena1/Main.cs" id="1_h6e1c"]
 [ext_resource type="Texture2D" uid="uid://df3xdc8uy6hdl" path="res://escenas/escena1/assets/FondoInicio.png" id="2_72pvx"]
@@ -8,6 +8,8 @@
 [ext_resource type="AudioStream" uid="uid://uhi3i8urinhu" path="res://escenas/escena1/assets/ost_escena1.mp3" id="5_gckte"]
 [ext_resource type="AudioStream" uid="uid://c7lfedn15vthe" path="res://escenas/escena1/assets/ring.ogg" id="6_w5xpm"]
 [ext_resource type="PackedScene" uid="uid://c0vydxagyq8pj" path="res://escenas/menuPausa/escenas/pausa.tscn" id="8_uorag"]
+[ext_resource type="PackedScene" uid="uid://ce2fov1ogsk42" path="res://escenas/escena1/objects/ventana_shape.tscn" id="9_hhauv"]
+[ext_resource type="Texture2D" uid="uid://3y2khlkisrjn" path="res://escenas/escena1/assets/suelo.png" id="10_e8ngq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yiuey"]
 size = Vector2(1153, 652)
@@ -88,7 +90,6 @@ scale = Vector2(0.96, 0.8125)
 texture = ExtResource("2_72pvx")
 
 [node name="Fondo" type="Area2D" parent="."]
-visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fondo"]
 position = Vector2(577.5, 326)
@@ -116,5 +117,13 @@ script = ExtResource("3_w3in3")
 libraries = {
 "": SubResource("AnimationLibrary_3uyuo")
 }
+
+[node name="VentanaShape" parent="." instance=ExtResource("9_hhauv")]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(760.5, 514.5)
+scale = Vector2(0.15581, 0.825444)
+texture = ExtResource("10_e8ngq")
 
 [connection signal="child_entered_tree" from="Sprite2D2" to="." method="_on_sprite_2d_2_child_entered_tree"]

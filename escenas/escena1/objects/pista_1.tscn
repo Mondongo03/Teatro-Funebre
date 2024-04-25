@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://v5m85lfhhmy4"]
+
+[ext_resource type="Texture2D" uid="uid://c3kotab24v707" path="res://escenas/escena1/assets/pista1.png" id="1_lul71"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kvs7x"]
+radius = 146.055
+
+[node name="pista_1" type="Area2D"]
+z_index = 3
+position = Vector2(434, -141)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_lul71")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(14, -33)
+shape = SubResource("CircleShape2D_kvs7x")

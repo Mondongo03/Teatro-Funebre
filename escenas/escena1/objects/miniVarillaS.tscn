@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxaeo78mgicbv"]
+
+[ext_resource type="Texture2D" uid="uid://b712iuler0kgs" path="res://escenas/escena1/assets/MiniVarillaM.png" id="1_d155q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pcn6g"]
+size = Vector2(0, 2)
+
+[node name="miniVarillaS" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-2.12499, -4.125)
+scale = Vector2(0.520835, 0.687499)
+texture = ExtResource("1_d155q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-10, 9)
+shape = SubResource("RectangleShape2D_pcn6g")

@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bka6kaocja8oa" path="res://escenas/escena2/assets/_9424859e-a0b3-45d1-ade3-76daa2be9243.jpg" id="1_hv644"]
 
-[node name="Node2D" type="Node2D" groups=["Persist"]]
+[node name="Node2D" type="Node2D"]
 position = Vector2(62, 51)
 scale = Vector2(10000, 10000)
 
