@@ -93,11 +93,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ruben/Documentos/Teatro-Funebre/Proyecto Final.csproj",
+      "projectUniqueName": "/home/ruben/Escritorio/TensorFlow/Teatro-Funebre/Proyecto Final.csproj",
       "projectName": "Proyecto Final",
-      "projectPath": "/home/ruben/Documentos/Teatro-Funebre/Proyecto Final.csproj",
+      "projectPath": "/home/ruben/Escritorio/TensorFlow/Teatro-Funebre/Proyecto Final.csproj",
       "packagesPath": "/home/ruben/.nuget/packages/",
-      "outputPath": "/home/ruben/Documentos/Teatro-Funebre/.godot/mono/temp/obj/",
+      "outputPath": "/home/ruben/Escritorio/TensorFlow/Teatro-Funebre/.godot/mono/temp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/ruben/.nuget/NuGet/NuGet.Config"

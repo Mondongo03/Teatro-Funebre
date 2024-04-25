@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://dm1itv8w3u78u"]
+
+[ext_resource type="Texture2D" uid="uid://42o21mfgkct3" path="res://escenas/escena3/assets/Desvan.png" id="1_5mqr0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2v5bv"]
+radius = 0.00220227
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(62, 51)
+scale = Vector2(10000, 10000)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0.0514, 0.02725)
+scale = Vector2(9.6e-05, 8.1125e-05)
+texture = ExtResource("1_5mqr0")
+
+[node name="Area2D5" type="Area2D" parent="."]
+position = Vector2(0.0449, 0.0547)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D5"]
+shape = SubResource("CircleShape2D_2v5bv")
+
+[node name="Area2D4" type="Area2D" parent="."]
+position = Vector2(0.0655, 0.0426)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
+shape = SubResource("CircleShape2D_2v5bv")
+
+[node name="Area2D3" type="Area2D" parent="."]
+position = Vector2(0.0607, 0.0547)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
+shape = SubResource("CircleShape2D_2v5bv")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(0.0528, 0.0345)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_2v5bv")
+
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2(0.04, 0.0426)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+shape = SubResource("CircleShape2D_2v5bv")

@@ -79,5 +79,6 @@ shape = SubResource("RectangleShape2D_e5em2")
 one_way_collision_margin = 0.0
 
 [node name="_Timer_19358" type="Timer" parent="CaminarDeSaul"]
-wait_time = 0.2
+process_callback = 0
+wait_time = 10.0
 one_shot = true

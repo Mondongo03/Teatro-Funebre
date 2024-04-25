@@ -17,8 +17,9 @@ public partial class Main : Node2D {
 			 public static Node2D tapaInstancia; 
 			 public static Node2D pista_1Instancia;
 			 public static Node2D lamparaEncendidaInstancia; 
-			 public static Node2D LamparaApagadaInstancia;
-			 Node2D relojInstancia;
+			 public static Node2D lamparaApagadaInstancia;
+			 public static Node2D relojInstancia;
+			 public static Node2D posterInstancia;
 			
 			 Boolean clickadoBola = false;
 			 Boolean clickadoVarillaM = false;
@@ -66,6 +67,14 @@ public partial class Main : Node2D {
 			PackedScene pista_1 = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/pista_1.tscn");
 	    	pista_1Instancia = pista_1.Instantiate() as Node2D; 
 			AddChild(pista_1Instancia);
+
+			PackedScene lamparaApagada = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/lamparaApagada.tscn");
+	    	lamparaApagadaInstancia = lamparaApagada.Instantiate() as Node2D; 
+			AddChild(lamparaApagadaInstancia);
+
+			PackedScene poster = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/poster.tscn");
+	    	posterInstancia = poster.Instantiate() as Node2D; 
+			AddChild(posterInstancia);
 	}
 
 	public void popPista_1(){

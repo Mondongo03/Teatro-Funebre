@@ -1,39 +1,24 @@
-[gd_scene load_steps=16 format=3 uid="uid://dmiq6b6x1xr3n"]
+[gd_scene load_steps=20 format=3 uid="uid://dmiq6b6x1xr3n"]
 
 [ext_resource type="Script" path="res://escenas/escena1/Main.cs" id="1_i1hyq"]
 [ext_resource type="Texture2D" uid="uid://df3xdc8uy6hdl" path="res://escenas/escena1/assets/FondoInicio.png" id="2_72pvx"]
 [ext_resource type="Script" path="res://escenas/escena1/scripts/Ventana.cs" id="2_jnesw"]
 [ext_resource type="PackedScene" uid="uid://cfcow7smksh4b" path="res://escenas/escena1/objects/camino_de_saul.tscn" id="3_c05kq"]
 [ext_resource type="PackedScene" uid="uid://psdxwljnkdvt" path="res://escenas/escena1/objects/cajon.tscn" id="3_hsbms"]
+[ext_resource type="Script" path="res://escenas/escena1/scripts/Audio.cs" id="3_w3in3"]
+[ext_resource type="Texture2D" uid="uid://3y2khlkisrjn" path="res://escenas/escena1/assets/suelo.png" id="4_vuxmw"]
 [ext_resource type="AudioStream" uid="uid://uhi3i8urinhu" path="res://escenas/escena1/assets/ost_escena1.mp3" id="5_gckte"]
 [ext_resource type="Texture2D" uid="uid://qicd48vou8wn" path="res://escenas/escena1/assets/Monstruo.png" id="6_diwag"]
 [ext_resource type="Script" path="res://escenas/escena1/scripts/Monstruo.cs" id="6_nm2km"]
 [ext_resource type="AudioStream" uid="uid://c7lfedn15vthe" path="res://escenas/escena1/assets/ring.ogg" id="6_w5xpm"]
+[ext_resource type="Texture2D" uid="uid://c7onbysk4jycf" path="res://escenas/escena2/assets/unicornioprueba.png" id="11_dovao"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dv3th"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yiuey"]
-size = Vector2(1153, 652)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ni0l4"]
 size = Vector2(99, 79)
 
-[sub_resource type="Animation" id="Animation_iodu8"]
-resource_name = "MonstruoEncontrado"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(298, 498), Vector2(208, 498)]
-}
-
-[sub_resource type="Animation" id="Animation_0jysr"]
+[sub_resource type="Animation" id="Animation_c0bx1"]
 resource_name = "MonstruoEscondido"
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -45,17 +30,39 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(208, 498), Vector2(298, 498)]
+"values": [Vector2(-83, -26), Vector2(-4, -26)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_feg5u"]
-_data = {
-"MonstruoEncontrado": SubResource("Animation_iodu8"),
-"MonstruoEscondido": SubResource("Animation_0jysr")
+[sub_resource type="Animation" id="Animation_um6y8"]
+resource_name = "MonstruoEncontrado"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-4, -26), Vector2(-83, -26)]
 }
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kk2w5"]
+_data = {
+"MonstruoEncontrado": SubResource("Animation_um6y8"),
+"MonstruoEscondido": SubResource("Animation_c0bx1")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yiuey"]
+size = Vector2(1153, 652)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uy43s"]
+size = Vector2(185, 273)
 
 [node name="Node2D" type="Node2D"]
 texture_filter = 1
+texture_repeat = 1
 script = ExtResource("1_i1hyq")
 
 [node name="Area2D" type="Area2D" parent="."]
@@ -73,17 +80,50 @@ position = Vector2(576, 325)
 scale = Vector2(0.96, 0.8125)
 texture = ExtResource("2_72pvx")
 
+[node name="Monstruo" type="Area2D" parent="." node_paths=PackedStringArray("animationPlayer")]
+position = Vector2(-83, -26)
+script = ExtResource("6_nm2km")
+animationPlayer = NodePath("")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Monstruo"]
+texture_filter = 1
+position = Vector2(297, 495)
+texture = ExtResource("6_diwag")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Monstruo"]
+position = Vector2(296.5, 494.5)
+shape = SubResource("RectangleShape2D_ni0l4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Monstruo"]
+libraries = {
+"": SubResource("AnimationLibrary_kk2w5")
+}
+
 [node name="Fondo" type="Area2D" parent="."]
-visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fondo"]
+visible = false
 position = Vector2(577.5, 326)
 shape = SubResource("RectangleShape2D_yiuey")
 debug_color = Color(0.588235, 0.462745, 0.768627, 0.419608)
 
 [node name="Cajon" parent="." instance=ExtResource("3_hsbms")]
 
+[node name="Suelo" type="Area2D" parent="."]
+z_index = 1
+position = Vector2(39, 387)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Suelo"]
+position = Vector2(706.5, 126.5)
+shape = SubResource("RectangleShape2D_uy43s")
+
+[node name="Sprite2D" type="Sprite2D" parent="Suelo"]
+position = Vector2(710, 126.53)
+scale = Vector2(0.170775, 0.813784)
+texture = ExtResource("4_vuxmw")
+
 [node name="CaminoDeSaul" parent="." instance=ExtResource("3_c05kq")]
+z_index = 1
 position = Vector2(0, -47)
 scale = Vector2(1.07825, 1.06533)
 
@@ -94,23 +134,17 @@ autoplay = true
 [node name="Reloj" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_w5xpm")
 bus = &"Reloj"
+script = ExtResource("3_w3in3")
 
-[node name="Area2D2" type="Area2D" parent="."]
-position = Vector2(208, 498)
-script = ExtResource("6_nm2km")
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
-position = Vector2(-1.5, -3.5)
-shape = SubResource("RectangleShape2D_ni0l4")
-
-[node name="Sprite2D" type="Sprite2D" parent="Area2D2"]
-texture = ExtResource("6_diwag")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Area2D2"]
-libraries = {
-"": SubResource("AnimationLibrary_feg5u")
-}
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(417, 408)
+texture = ExtResource("11_dovao")
 
 [connection signal="input_event" from="Area2D" to="Area2D" method="_on_input_event"]
 [connection signal="child_entered_tree" from="Sprite2D2" to="." method="_on_sprite_2d_2_child_entered_tree"]
-[connection signal="input_event" from="Area2D2" to="Area2D2" method="_on_input_event"]
+[connection signal="input_event" from="Monstruo" to="Monstruo" method="_on_input_event"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
