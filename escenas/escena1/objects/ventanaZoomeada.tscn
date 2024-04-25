@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://b1x4bflkeo7br"]
+[gd_scene load_steps=3 format=3 uid="uid://bjodcjdnodpn3"]
+
+[ext_resource type="Texture2D" uid="uid://bh5ome50yjwlt" path="res://escenas/escena1/assets/ventanaZoomeada.png" id="1_rdfv4"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_7x141"]
 radius = 254.071
@@ -10,3 +12,4 @@ position = Vector2(633, 325)
 shape = SubResource("CircleShape2D_7x141")
 
 [node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+texture = ExtResource("1_rdfv4")

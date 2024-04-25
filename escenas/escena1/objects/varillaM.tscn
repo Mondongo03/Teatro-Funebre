@@ -4,21 +4,21 @@
 [ext_resource type="Texture2D" uid="uid://bgbymj53bpcfv" path="res://escenas/escena1/assets/varillaM.png" id="1_d0lo7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jyv5b"]
-size = Vector2(4.5, 45)
+size = Vector2(4.5, 44)
 
 [node name="Area2D2" type="Area2D" groups=["VarillaM"]]
-position = Vector2(451, 327)
+position = Vector2(451, 326)
 script = ExtResource("1_54wgu")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = 2
 texture_filter = 1
-position = Vector2(-0.480774, -19.5)
-scale = Vector2(1.00769, 0.882353)
+position = Vector2(-0.480774, -19)
+scale = Vector2(1.00769, 0.862745)
 texture = ExtResource("1_d0lo7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.25, -19.5)
+position = Vector2(-0.25, -19)
 shape = SubResource("RectangleShape2D_jyv5b")
 one_way_collision_margin = 3.0
 
