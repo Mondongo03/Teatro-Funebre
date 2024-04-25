@@ -1,6 +1,7 @@
 using Godot;
 using System;
 using System.Numerics;
+using System.Threading;
 
 public partial class Main : Node2D {
 			int slotsOcupados;
@@ -25,9 +26,9 @@ public partial class Main : Node2D {
 			Boolean clickadoVarillaM = false;
 			public static Boolean varillaMinutosReloj = false;
 			public static Boolean varillaSegundosReloj = false;
-
-
+			[Export] public AnimationPlayer animationPlayer;
 	public override void _Ready() {
+		animationPlayer.Play("cosa");
 		InstanciarEscena();
 	}
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -37,6 +38,7 @@ public partial class Main : Node2D {
 		 }
 	}
 	public void InstanciarEscena() {
+
 
 			PackedScene reloj = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/reloj.tscn");
 			relojInstancia = reloj.Instantiate() as Node2D; // Cast the instance to Node
@@ -81,7 +83,8 @@ public partial class Main : Node2D {
 			PackedScene monstruo = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/monstruo.tscn");
 	    	monstruoInstancia = monstruo.Instantiate() as Node2D; 
 			AddChild(monstruoInstancia);
-	}
+
+}
 
 	public void popPista_1(){
 		pista_1Instancia.Position = new Vector2I(334,255);
@@ -91,8 +94,5 @@ public partial class Main : Node2D {
 		if(VarillaM.encontrado == false || VarillaS.encontrado == false){
 			popPista_1();}
 	}
-
 }
-
-
 

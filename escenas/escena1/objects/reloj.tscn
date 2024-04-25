@@ -7,6 +7,7 @@
 radius = 27.6586
 
 [node name="Area2D2" type="Area2D"]
+z_index = 1
 position = Vector2(341, 298)
 script = ExtResource("1_mfbsu")
 

@@ -1,0 +1,82 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtwowptmwky12"]
+
+[ext_resource type="Script" path="res://escenas/MenuOpciones/Scripts/Volumen_settings.cs" id="1_pdk0d"]
+
+[node name="CanvasLayer" type="CanvasLayer" node_paths=PackedStringArray("master_slider", "vfx_slider", "music_slider", "master_porcentual", "vfx_porcentual", "music_porcentual")]
+script = ExtResource("1_pdk0d")
+master_slider = NodePath("VolumenMaster")
+vfx_slider = NodePath("VolumenVFX")
+music_slider = NodePath("VolumenMusica")
+master_porcentual = NodePath("MasterPorcentual")
+vfx_porcentual = NodePath("VFXPorcentual")
+music_porcentual = NodePath("MusicaPorcentual")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0, 1, 1)
+
+[node name="Master" type="Label" parent="."]
+offset_left = 385.0
+offset_top = 15.0
+offset_right = 517.0
+offset_bottom = 38.0
+text = "Volumne general"
+
+[node name="VolumenMaster" type="HSlider" parent="."]
+offset_left = 389.0
+offset_top = 50.0
+offset_right = 656.0
+offset_bottom = 66.0
+
+[node name="MasterPorcentual" type="Label" parent="."]
+offset_left = 666.0
+offset_top = 46.0
+offset_right = 798.0
+offset_bottom = 69.0
+
+[node name="VFX" type="Label" parent="."]
+offset_left = 386.0
+offset_top = 132.0
+offset_right = 522.0
+offset_bottom = 155.0
+text = "Efectos de sonido"
+
+[node name="VolumenVFX" type="HSlider" parent="."]
+offset_left = 390.0
+offset_top = 167.0
+offset_right = 657.0
+offset_bottom = 183.0
+
+[node name="VFXPorcentual" type="Label" parent="."]
+offset_left = 667.0
+offset_top = 163.0
+offset_right = 799.0
+offset_bottom = 186.0
+
+[node name="Musica" type="Label" parent="."]
+offset_left = 385.0
+offset_top = 70.0
+offset_right = 517.0
+offset_bottom = 93.0
+text = "Musica"
+
+[node name="VolumenMusica" type="HSlider" parent="."]
+offset_left = 389.0
+offset_top = 105.0
+offset_right = 656.0
+offset_bottom = 121.0
+
+[node name="MusicaPorcentual" type="Label" parent="."]
+offset_left = 667.0
+offset_top = 102.0
+offset_right = 799.0
+offset_bottom = 125.0
+
+[connection signal="value_changed" from="VolumenMaster" to="." method="_on_volumen_master_value_changed"]
+[connection signal="value_changed" from="VolumenVFX" to="." method="_on_volumen_vfx_value_changed"]
+[connection signal="value_changed" from="VolumenMusica" to="." method="_on_volumen_musica_value_changed"]

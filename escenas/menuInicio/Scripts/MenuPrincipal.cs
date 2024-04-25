@@ -14,6 +14,8 @@ public partial class MenuPrincipal : CanvasLayer
     [Export] 
     public Button exitButton;
 
+    public static GuardarEscena guardarEscena = new GuardarEscena();
+
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
@@ -31,15 +33,15 @@ public partial class MenuPrincipal : CanvasLayer
     // Función llamada cuando se presiona el botón de "Cargar Juego"
     private void _onLoadGameButtonPressed()
     {
-        // Aquí puedes agregar la lógica para cargar un juego guardado
         GD.Print("Cargando juego...");
+        guardarEscena.LoadGame();
     }
 
     // Función llamada cuando se presiona el botón de "Configuración"
     private void _onSettingsButtonPressed()
     {
-        // Aquí puedes agregar la lógica para abrir el menú de configuración
         GD.Print("Abriendo configuración...");
+        GetTree().ChangeSceneToFile("escenas/MenuOpciones/menu_de_opciones.tscn");
     }
 
     // Función llamada cuando se presiona el botón de "Salir"

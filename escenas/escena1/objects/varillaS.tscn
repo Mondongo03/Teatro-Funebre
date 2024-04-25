@@ -8,7 +8,7 @@
 size = Vector2(88.25, 6)
 
 [node name="Area2D3" type="Area2D" groups=["VarillaS"]]
-position = Vector2(1005, 354)
+position = Vector2(1000, 231)
 script = ExtResource("1_54wgu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
