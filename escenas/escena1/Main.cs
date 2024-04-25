@@ -5,26 +5,28 @@ using System.Numerics;
 public partial class Main : Node2D {
 			int slotsOcupados;
 			Area2D pista_1;
-			 Node2D godotInstancia2;
-			 public static Node2D varillaMinutosInstancia;
-			 public static Node2D varillaSegundosInstancia;
-			 public static Node2D relojZoomeadoInstancia;
-			 public static Node2D fondoNegroInstancia;
-			 public static Node2D cajonZoomeadoInstancia;
-			 public static Node2D huecoInstancia;
-			 public static Node2D escaleraInstancia;
-			 public static Node2D cajetillaInstancia;
-			 public static Node2D tapaInstancia; 
-			 public static Node2D pista_1Instancia;
-			 public static Node2D lamparaEncendidaInstancia; 
-			 public static Node2D lamparaApagadaInstancia;
-			 public static Node2D relojInstancia;
-			 public static Node2D posterInstancia;
-			
-			 Boolean clickadoBola = false;
-			 Boolean clickadoVarillaM = false;
+			Node2D godotInstancia2;
+			public static Node2D varillaMinutosInstancia;
+			public static Node2D varillaSegundosInstancia;
+			public static Node2D relojZoomeadoInstancia;
+			public static Node2D fondoNegroInstancia;
+			public static Node2D cajonZoomeadoInstancia;
+			public static Node2D huecoInstancia;
+			public static Node2D escaleraInstancia;
+			public static Node2D cajetillaInstancia;
+			public static Node2D tapaInstancia; 
+			public static Node2D pista_1Instancia;
+			public static Node2D lamparaEncendidaInstancia; 
+			public static Node2D lamparaApagadaInstancia;
+			public static Node2D relojInstancia;
+			public static Node2D posterInstancia;
+			public static Node2D monstruoInstancia;
+			Boolean clickadoBola = false;
+			Boolean clickadoVarillaM = false;
 			public static Boolean varillaMinutosReloj = false;
 			public static Boolean varillaSegundosReloj = false;
+
+
 	public override void _Ready() {
 		InstanciarEscena();
 	}
@@ -75,6 +77,10 @@ public partial class Main : Node2D {
 			PackedScene poster = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/poster.tscn");
 	    	posterInstancia = poster.Instantiate() as Node2D; 
 			AddChild(posterInstancia);
+
+			PackedScene monstruo = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/monstruo.tscn");
+	    	monstruoInstancia = monstruo.Instantiate() as Node2D; 
+			AddChild(monstruoInstancia);
 	}
 
 	public void popPista_1(){

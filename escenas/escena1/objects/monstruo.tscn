@@ -1,0 +1,63 @@
+[gd_scene load_steps=7 format=3 uid="uid://dmucemcsokbcn"]
+
+[ext_resource type="Script" path="res://escenas/escena1/scripts/Monstruo.cs" id="1_v3872"]
+[ext_resource type="Texture2D" uid="uid://qicd48vou8wn" path="res://escenas/escena1/assets/Monstruo.png" id="2_1arpl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ni0l4"]
+size = Vector2(99, 79)
+
+[sub_resource type="Animation" id="Animation_um6y8"]
+resource_name = "MonstruoEncontrado"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-4, -26), Vector2(-83, -26)]
+}
+
+[sub_resource type="Animation" id="Animation_c0bx1"]
+resource_name = "MonstruoEscondido"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-83, -26), Vector2(-4, -26)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kk2w5"]
+_data = {
+"MonstruoEncontrado": SubResource("Animation_um6y8"),
+"MonstruoEscondido": SubResource("Animation_c0bx1")
+}
+
+[node name="Monstruo" type="Area2D"]
+position = Vector2(-83, -26)
+script = ExtResource("1_v3872")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(297, 495)
+texture = ExtResource("2_1arpl")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(296.5, 494.5)
+shape = SubResource("RectangleShape2D_ni0l4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_kk2w5")
+}
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
