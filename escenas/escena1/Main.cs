@@ -27,7 +27,9 @@ public partial class Main : Node2D {
 			public static Boolean varillaMinutosReloj = false;
 			public static Boolean varillaSegundosReloj = false;
 			[Export] public AnimationPlayer animationPlayer;
+			[Export] public AudioStreamPlayer2D audioStreamPlayer2D;
 	public override void _Ready() {
+		audioStreamPlayer2D.Play();
 		animationPlayer.Play("cosa");
 		InstanciarEscena();
 	}

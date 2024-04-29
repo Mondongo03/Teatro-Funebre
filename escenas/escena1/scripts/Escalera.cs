@@ -1,6 +1,7 @@
 using Godot;
 using Microsoft.VisualBasic;
 using System;
+using System.Dynamic;
 
 public partial class Escalera : Area2D {
 
@@ -12,9 +13,11 @@ public partial class Escalera : Area2D {
     Vector2 posicionInicialClick;
     Vector2 posicionInicial;
     public static Node2D flechaInstancia;
+    [Export] public AnimationPlayer animationPlayer;
 
     // Called when the node enters the scene tree for the first time.
     public override void _Ready(){
+        animationPlayer.Play("cosa");
         posicionInicial = Position;
     }
 

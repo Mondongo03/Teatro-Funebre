@@ -13,13 +13,13 @@ public partial class MenuPrincipal : CanvasLayer
     public Button settingsButton;
     [Export] 
     public Button exitButton;
-
+    [Export] public AudioStreamPlayer2D audioStreamPlayer2D;
     public static GuardarEscena guardarEscena = new GuardarEscena();
 
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
-        // Conecta los botones a sus respectivas señales
+        audioStreamPlayer2D.Play();
 
     }
 

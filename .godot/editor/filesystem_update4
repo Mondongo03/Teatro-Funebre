@@ -3,13 +3,6 @@ res://escenas/escena1/Main.cs
 res://escenas/menuInicio/node_2d.tscn
 res://escenas/menuPausa/escenas/pausa.tscn
 res://escenas/MenuOpciones/volum_settings.tscn
-res://escenas/MenuOpciones/video_settings.tscn
-res://escenas/escena1/objects/ventana_shape.tscn
-res://escenas/escena1/objects/poster.tscn
-res://escenas/escena1/objects/varillaS.tscn
-res://escenas/escena1/objects/varillaM.tscn
-res://escenas/escena1/objects/reloj.tscn
-res://escenas/escena3/Desvan.tscn
 res://escenas/escena1/scripts/Audio.cs
 res://escenas/escena1/scripts/Cajetilla.cs
 res://escenas/escena1/scripts/Cajon.cs
@@ -34,3 +27,13 @@ res://escenas/menuInicio/Scripts/MenuPrincipal.cs
 res://escenas/MenuOpciones/Scripts/Video_settings.cs
 res://escenas/MenuOpciones/Scripts/Volumen_settings.cs
 res://escenas/menuPausa/scripts/MenuDePausa.cs
+res://escenas/escena1/objects/escalera.tscn
+res://escenas/escena1/objects/reloj.tscn
+res://escenas/escena1/objects/cajon.tscn
+res://escenas/escena1/objects/cajonZoomeado.tscn
+res://escenas/escena2/Prueba.tscn
+res://escenas/escena3/Desvan.tscn
+res://escenas/escena1/objects/camino_de_saul.tscn
+res://escenas/escena2/escena2.cs
+res://escenas/escena1/Desvan.cs
+res://escenas/escena3/script/Desvan.cs

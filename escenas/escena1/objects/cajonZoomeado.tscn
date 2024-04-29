@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bcc5xa7yb82wj"]
+[gd_scene load_steps=6 format=3 uid="uid://bcc5xa7yb82wj"]
 
 [ext_resource type="Texture2D" uid="uid://ckldlnl30sbyc" path="res://escenas/escena1/assets/cajon.png" id="1_fs7n7"]
 [ext_resource type="Script" path="res://escenas/escena1/scripts/cajonZoomeado.cs" id="1_igapj"]
+[ext_resource type="AudioStream" uid="uid://cw0p7shvd74gi" path="res://escenas/escena1/assets/drawer-close-92180.mp3" id="3_3ijib"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mhoc7"]
 size = Vector2(767, 274)
@@ -9,9 +10,10 @@ size = Vector2(767, 274)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ktqbd"]
 size = Vector2(833.75, 107.25)
 
-[node name="Area2D2" type="Area2D"]
+[node name="Area2D2" type="Area2D" node_paths=PackedStringArray("cerrar")]
 z_index = 4
 script = ExtResource("1_igapj")
+cerrar = NodePath("AudioStreamPlayer2D")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(582.695, 344.25)
@@ -27,5 +29,9 @@ position = Vector2(583.125, 474.375)
 shape = SubResource("RectangleShape2D_ktqbd")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_3ijib")
+bus = &"Ejecftos de sonido"
 
 [connection signal="input_event" from="." to="." method="_on_input_event"]

@@ -1,12 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://b3oscujcwaje6"]
+[gd_scene load_steps=5 format=3 uid="uid://b3oscujcwaje6"]
 
+[ext_resource type="Script" path="res://escenas/escena2/escena2.cs" id="1_7q1kv"]
 [ext_resource type="Texture2D" uid="uid://bka6kaocja8oa" path="res://escenas/escena2/assets/_9424859e-a0b3-45d1-ade3-76daa2be9243.jpg" id="1_hv644"]
+[ext_resource type="PackedScene" uid="uid://c0vydxagyq8pj" path="res://escenas/menuPausa/escenas/pausa.tscn" id="2_p1h3l"]
+[ext_resource type="AudioStream" uid="uid://ccfyo5w280mxv" path="res://escenas/escena2/assets/magic-forest-95823.mp3" id="4_m1gnl"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("audioStreamPlayer2D")]
 position = Vector2(62, 51)
 scale = Vector2(10000, 10000)
+script = ExtResource("1_7q1kv")
+audioStreamPlayer2D = NodePath("AudioStreamPlayer2D")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0.0549963, 0.0293472)
 scale = Vector2(0.000119539, 6.74363e-05)
 texture = ExtResource("1_hv644")
+
+[node name="CanvasLayer" parent="." instance=ExtResource("2_p1h3l")]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_m1gnl")
+bus = &"Musica"

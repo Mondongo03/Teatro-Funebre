@@ -7,13 +7,20 @@ public partial class Reloj : Area2D {
 	
 	public static bool zoooom = false;
 	public static bool terminado = false;
+	public static bool suena = false;
 	public static Node2D miniVarillaMInstancia;
 	public static Node2D miniVarillaSInstancia;
+	[Export] public AudioStreamPlayer2D audioStreamPlayer2D;
+
 	public override void _Ready(){
 		
 	}
 
 	public override void _Process(double delta){
+		if(terminado && !suena){
+			audioStreamPlayer2D.Play();
+			suena = true;
+		}
 	}
 
 	public void _on_reloj_entered(CollisionObject2D collisionObject2D){

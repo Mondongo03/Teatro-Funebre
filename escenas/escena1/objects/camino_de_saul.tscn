@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://cfcow7smksh4b"]
+[gd_scene load_steps=12 format=3 uid="uid://cfcow7smksh4b"]
 
 [ext_resource type="Script" path="res://escenas/escena1/scripts/Despertarse.cs" id="1_24y2q"]
 [ext_resource type="Texture2D" uid="uid://ddbckl1lokln0" path="res://escenas/escena1/assets/GnomoCD.png" id="2_aaeyi"]
 [ext_resource type="Script" path="res://escenas/escena1/scripts/InteractuarCon.cs" id="3_r017q"]
+[ext_resource type="AudioStream" uid="uid://dh80coniwchbb" path="res://escenas/escena1/assets/walking-up-stairs-86304.mp3" id="4_3t0ai"]
 
 [sub_resource type="Curve2D" id="Curve2D_jemwt"]
 _data = {
@@ -52,13 +53,14 @@ size = Vector2(13.6059, 5.87339)
 [node name="CaminoDeSaul" type="Path2D"]
 curve = SubResource("Curve2D_jemwt")
 
-[node name="CaminarDeSaul" type="PathFollow2D" parent="." node_paths=PackedStringArray("animatedSprite2D")]
+[node name="CaminarDeSaul" type="PathFollow2D" parent="." node_paths=PackedStringArray("animatedSprite2D", "audioStreamPlayer2D")]
 position = Vector2(152, 445)
 rotation = 1.59474
 rotates = false
 loop = false
 script = ExtResource("1_24y2q")
 animatedSprite2D = NodePath("Saul")
+audioStreamPlayer2D = NodePath("../AudioStreamPlayer2D")
 
 [node name="Saul" type="AnimatedSprite2D" parent="CaminarDeSaul" groups=["personaje"]]
 rotation = -1.59474
@@ -81,3 +83,7 @@ one_way_collision_margin = 0.0
 [node name="_Timer_19358" type="Timer" parent="CaminarDeSaul"]
 wait_time = 0.2
 one_shot = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_3t0ai")
+bus = &"Ejecftos de sonido"
