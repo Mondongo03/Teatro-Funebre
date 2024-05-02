@@ -1,0 +1,230 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_audio.html"><param name="Name" value="Audio"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_audio.html"><param name="Name" value="Audio"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_audio.html#a09b9059b397fb79f35c1d93050a16b9e"><param name="Name" value="_Process(double delta)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_audio.html"><param name="Name" value="Audio"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_audio.html#a96bf111bbcec18b07d67892268b4c8d4"><param name="Name" value="_Ready()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cajetilla.html"><param name="Name" value="Cajetilla"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cajetilla.html"><param name="Name" value="Cajetilla"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cajetilla.html#ab7f69c4e759fa8179554870f2dd13192"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cajon.html"><param name="Name" value="Cajon"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cajon.html"><param name="Name" value="Cajon"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cajon.html#a4b469decd2bc35bc5013e73ea48ae44b"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_despertarse.html"><param name="Name" value="Despertarse"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_despertarse.html"><param name="Name" value="Despertarse"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_despertarse.html#a7b0a29b1727d033e458857c158ec2f3a"><param name="Name" value="_Process(double delta)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_despertarse.html"><param name="Name" value="Despertarse"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_despertarse.html#ab0a390b95bb57d5975edcef72adc9f4b"><param name="Name" value="despertar(bool boolean)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_desvan.html"><param name="Name" value="Desvan"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_escalera.html"><param name="Name" value="Escalera"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_escalera.html"><param name="Name" value="Escalera"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_escalera.html#adab5ebd5d2f26418fd59f4ef1d175986"><param name="Name" value="_Process(double delta)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_escalera.html"><param name="Name" value="Escalera"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_escalera.html#a114e89faa95a8e20e0f14310217391f4"><param name="Name" value="_Ready()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_escalera.html"><param name="Name" value="Escalera"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_escalera.html#addeb9653a91bc459dd525a910123f0bb"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_flecha.html"><param name="Name" value="Flecha"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_flecha.html"><param name="Name" value="Flecha"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_flecha.html#a59886881ec23317528c43bdc441a9770"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_game_data.html"><param name="Name" value="GameData"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj.html#a63fafa4326b917b7058c6b1a3d7165fc"><param name="Name" value="GetZoom()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_guardar_escena.html"><param name="Name" value="GuardarEscena"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_interactuar_con.html"><param name="Name" value="InteractuarCon"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_interactuar_con.html"><param name="Name" value="InteractuarCon"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_interactuar_con.html#aa2acaeb177e4ffbdddd00b6ce5af038f"><param name="Name" value="_Process(double delta)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_interactuar_con.html"><param name="Name" value="InteractuarCon"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_interactuar_con.html#a6885c28c6fc972ad434cb3c486de2cb1"><param name="Name" value="_on_hueco_area_entered(Area2D area)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_lampara_apagada.html"><param name="Name" value="LamparaApagada"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_lampara_apagada.html"><param name="Name" value="LamparaApagada"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_lampara_apagada.html#a798700b6b6f62356a32cf215ff90b917"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_lampara_encendida.html"><param name="Name" value="LamparaEncendida"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_lampara_encendida.html"><param name="Name" value="LamparaEncendida"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_lampara_encendida.html#a5be1d7897209fae9fe46a281228be616"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_main.html"><param name="Name" value="Main"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_menu_de_pausa.html"><param name="Name" value="MenuDePausa"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_menu_principal.html"><param name="Name" value="MenuPrincipal"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_monstruo.html"><param name="Name" value="Monstruo"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_monstruo.html"><param name="Name" value="Monstruo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_monstruo.html#ac78c24e10cb43ece284c01f49d184fad"><param name="Name" value="_Ready()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_monstruo.html"><param name="Name" value="Monstruo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_monstruo.html#ac1b66ec27c62ebb92e9f2fd7c577e22c"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_mover_prueba.html"><param name="Name" value="MoverPrueba"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj.html"><param name="Name" value="Reloj"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj.html"><param name="Name" value="Reloj"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj.html#a63fafa4326b917b7058c6b1a3d7165fc"><param name="Name" value="GetZoom()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj.html"><param name="Name" value="Reloj"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj.html#a4d8114de12eddf6a4599655267b342c5"><param name="Name" value="SetZoom(Boolean value)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj.html"><param name="Name" value="Reloj"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj.html#aacbb68ecc18231e95e4cae8b359ee397"><param name="Name" value="_Process(double delta)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj.html"><param name="Name" value="Reloj"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj.html#a4ba980f5e8ff96726f708c5f9200442d"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj.html"><param name="Name" value="Reloj"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj.html#acba0c6011827d66e452aeea69d71b44b"><param name="Name" value="_on_reloj_entered(CollisionObject2D collisionObject2D)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj_zoomeado.html"><param name="Name" value="RelojZoomeado"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj_zoomeado.html"><param name="Name" value="RelojZoomeado"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj_zoomeado.html#a174f954be63dc07bcb23346d4686b4cb"><param name="Name" value="_Ready()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj_zoomeado.html"><param name="Name" value="RelojZoomeado"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj_zoomeado.html#aefe2905c0a82d825d2bc27602166efc0"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj.html#a4d8114de12eddf6a4599655267b342c5"><param name="Name" value="SetZoom(Boolean value)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_tapa.html"><param name="Name" value="Tapa"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_varilla_m.html"><param name="Name" value="VarillaM"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_varilla_s.html"><param name="Name" value="VarillaS"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_ventana.html"><param name="Name" value="Ventana"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_video__settings.html"><param name="Name" value="Video_settings"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_volumen__settings.html"><param name="Name" value="Volumen_settings"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_audio.html#a09b9059b397fb79f35c1d93050a16b9e"><param name="Name" value="_Process(double delta)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_audio.html#a09b9059b397fb79f35c1d93050a16b9e"><param name="Name" value="Audio"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_despertarse.html#a7b0a29b1727d033e458857c158ec2f3a"><param name="Name" value="_Process(double delta)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_despertarse.html#a7b0a29b1727d033e458857c158ec2f3a"><param name="Name" value="Despertarse"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_escalera.html#adab5ebd5d2f26418fd59f4ef1d175986"><param name="Name" value="_Process(double delta)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_escalera.html#adab5ebd5d2f26418fd59f4ef1d175986"><param name="Name" value="Escalera"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_interactuar_con.html#aa2acaeb177e4ffbdddd00b6ce5af038f"><param name="Name" value="_Process(double delta)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_interactuar_con.html#aa2acaeb177e4ffbdddd00b6ce5af038f"><param name="Name" value="InteractuarCon"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj.html#aacbb68ecc18231e95e4cae8b359ee397"><param name="Name" value="_Process(double delta)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj.html#aacbb68ecc18231e95e4cae8b359ee397"><param name="Name" value="Reloj"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_audio.html#a96bf111bbcec18b07d67892268b4c8d4"><param name="Name" value="_Ready()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_audio.html#a96bf111bbcec18b07d67892268b4c8d4"><param name="Name" value="Audio"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_escalera.html#a114e89faa95a8e20e0f14310217391f4"><param name="Name" value="_Ready()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_escalera.html#a114e89faa95a8e20e0f14310217391f4"><param name="Name" value="Escalera"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_monstruo.html#ac78c24e10cb43ece284c01f49d184fad"><param name="Name" value="_Ready()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_monstruo.html#ac78c24e10cb43ece284c01f49d184fad"><param name="Name" value="Monstruo"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj_zoomeado.html#a174f954be63dc07bcb23346d4686b4cb"><param name="Name" value="_Ready()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj_zoomeado.html#a174f954be63dc07bcb23346d4686b4cb"><param name="Name" value="RelojZoomeado"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classposter.html#ac7e24e76b34c04ee8aa97a568bedd297"><param name="Name" value="_Ready()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classposter.html#ac7e24e76b34c04ee8aa97a568bedd297"><param name="Name" value="poster"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_interactuar_con.html#a6885c28c6fc972ad434cb3c486de2cb1"><param name="Name" value="_on_hueco_area_entered(Area2D area)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cajetilla.html#ab7f69c4e759fa8179554870f2dd13192"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cajetilla.html#ab7f69c4e759fa8179554870f2dd13192"><param name="Name" value="Cajetilla"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cajon.html#a4b469decd2bc35bc5013e73ea48ae44b"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cajon.html#a4b469decd2bc35bc5013e73ea48ae44b"><param name="Name" value="Cajon"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_escalera.html#addeb9653a91bc459dd525a910123f0bb"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_escalera.html#addeb9653a91bc459dd525a910123f0bb"><param name="Name" value="Escalera"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_flecha.html#a59886881ec23317528c43bdc441a9770"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_flecha.html#a59886881ec23317528c43bdc441a9770"><param name="Name" value="Flecha"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_lampara_apagada.html#a798700b6b6f62356a32cf215ff90b917"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_lampara_apagada.html#a798700b6b6f62356a32cf215ff90b917"><param name="Name" value="LamparaApagada"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_lampara_encendida.html#a5be1d7897209fae9fe46a281228be616"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_lampara_encendida.html#a5be1d7897209fae9fe46a281228be616"><param name="Name" value="LamparaEncendida"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_monstruo.html#ac1b66ec27c62ebb92e9f2fd7c577e22c"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_monstruo.html#ac1b66ec27c62ebb92e9f2fd7c577e22c"><param name="Name" value="Monstruo"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj.html#a4ba980f5e8ff96726f708c5f9200442d"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj.html#a4ba980f5e8ff96726f708c5f9200442d"><param name="Name" value="Reloj"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj_zoomeado.html#aefe2905c0a82d825d2bc27602166efc0"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj_zoomeado.html#aefe2905c0a82d825d2bc27602166efc0"><param name="Name" value="RelojZoomeado"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classcajon_zoomeado.html#ae7a653ea6c9cc2c343858fb1c4f7f529"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classcajon_zoomeado.html#ae7a653ea6c9cc2c343858fb1c4f7f529"><param name="Name" value="cajonZoomeado"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classposter.html#a285fa9ba89adfd0d7639ae113941f587"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classposter.html#a285fa9ba89adfd0d7639ae113941f587"><param name="Name" value="poster"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj.html#acba0c6011827d66e452aeea69d71b44b"><param name="Name" value="_on_reloj_entered(CollisionObject2D collisionObject2D)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classcajon_zoomeado.html"><param name="Name" value="cajonZoomeado"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classcajon_zoomeado.html"><param name="Name" value="cajonZoomeado"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classcajon_zoomeado.html#ae7a653ea6c9cc2c343858fb1c4f7f529"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_despertarse.html#ab0a390b95bb57d5975edcef72adc9f4b"><param name="Name" value="despertar(bool boolean)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classescena2.html"><param name="Name" value="escena2"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classposter.html"><param name="Name" value="poster"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classposter.html"><param name="Name" value="poster"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classposter.html#ac7e24e76b34c04ee8aa97a568bedd297"><param name="Name" value="_Ready()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classposter.html"><param name="Name" value="poster"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classposter.html#a285fa9ba89adfd0d7639ae113941f587"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
+  </UL>
+</UL>
+</BODY>
+</HTML>

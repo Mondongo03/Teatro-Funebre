@@ -1,0 +1,63 @@
+\doxysection{Referencia de la clase Monstruo}
+\hypertarget{class_monstruo}{}\label{class_monstruo}\index{Monstruo@{Monstruo}}
+
+
+Clase que gestiona el pequeño monstruo que hay debajo de la cama del Gnomo.  
+
+
+Diagrama de herencia de Monstruo\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_monstruo}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_monstruo_ac78c24e10cb43ece284c01f49d184fad}\label{class_monstruo_ac78c24e10cb43ece284c01f49d184fad} 
+override void {\bfseries \+\_\+\+Ready} ()
+\begin{DoxyCompactList}\small\item\em Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_monstruo_ac1b66ec27c62ebb92e9f2fd7c577e22c}{\+\_\+on\+\_\+input\+\_\+event}} (Node viewport, Input\+Event evento, int shap)
+\begin{DoxyCompactList}\small\item\em Este metodo es una señal del propio godot que nos permite detectar cuando haces click sobre le objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_monstruo_acded997b661ba44253b0d884f93486d1}\label{class_monstruo_acded997b661ba44253b0d884f93486d1} 
+Animation\+Player {\bfseries animation\+Player}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_monstruo_a2d89b6110457603c18bfc84236d46e14}\label{class_monstruo_a2d89b6110457603c18bfc84236d46e14} 
+static bool {\bfseries encontrado} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase que gestiona el pequeño monstruo que hay debajo de la cama del Gnomo. 
+
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{class_monstruo_ac1b66ec27c62ebb92e9f2fd7c577e22c}\label{class_monstruo_ac1b66ec27c62ebb92e9f2fd7c577e22c} 
+\index{Monstruo@{Monstruo}!\_on\_input\_event@{\_on\_input\_event}}
+\index{\_on\_input\_event@{\_on\_input\_event}!Monstruo@{Monstruo}}
+\doxysubsubsection{\texorpdfstring{\_on\_input\_event()}{\_on\_input\_event()}}
+{\footnotesize\ttfamily void Monstruo.\+\_\+on\+\_\+input\+\_\+event (\begin{DoxyParamCaption}\item[{Node}]{viewport,  }\item[{Input\+Event}]{evento,  }\item[{int}]{shap }\end{DoxyParamCaption})}
+
+
+
+Este metodo es una señal del propio godot que nos permite detectar cuando haces click sobre le objeto. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em viewport} & Nodo del objeto parte de la API\\
+\hline
+{\em evento} & Nos permite detectar cuando se hace click\\
+\hline
+{\em shap} & Variable que se utiliza para la API\\
+\hline
+\end{DoxyParams}
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+escenas/escena1/scripts/Monstruo.\+cs\end{DoxyCompactItemize}

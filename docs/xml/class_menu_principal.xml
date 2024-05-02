@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_menu_principal" kind="class" language="C#" prot="public">
+    <compoundname>MenuPrincipal</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">CanvasLayer</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_menu_principal_1a45c2af331ed42bb25f46b37aa8e52a1a" prot="public" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button MenuPrincipal.newGameButton</definition>
+        <argsstring></argsstring>
+        <name>newGameButton</name>
+        <qualifiedname>MenuPrincipal.newGameButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/menuInicio/Scripts/MenuPrincipal.cs" line="9" column="19" bodyfile="escenas/menuInicio/Scripts/MenuPrincipal.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_principal_1addf3df6de6f310dabbd7fd4501a0f47e" prot="public" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button MenuPrincipal.loadGameButton</definition>
+        <argsstring></argsstring>
+        <name>loadGameButton</name>
+        <qualifiedname>MenuPrincipal.loadGameButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/menuInicio/Scripts/MenuPrincipal.cs" line="11" column="19" bodyfile="escenas/menuInicio/Scripts/MenuPrincipal.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_principal_1a12cee2adaf870f864e7d1bbe51750de9" prot="public" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button MenuPrincipal.settingsButton</definition>
+        <argsstring></argsstring>
+        <name>settingsButton</name>
+        <qualifiedname>MenuPrincipal.settingsButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/menuInicio/Scripts/MenuPrincipal.cs" line="13" column="19" bodyfile="escenas/menuInicio/Scripts/MenuPrincipal.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_principal_1a8443eca7a18766b2a709c286c7b740c1" prot="public" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button MenuPrincipal.exitButton</definition>
+        <argsstring></argsstring>
+        <name>exitButton</name>
+        <qualifiedname>MenuPrincipal.exitButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/menuInicio/Scripts/MenuPrincipal.cs" line="15" column="19" bodyfile="escenas/menuInicio/Scripts/MenuPrincipal.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_principal_1ac1d33a93d588014213060253cde84312" prot="public" static="no" mutable="no">
+        <type>AudioStreamPlayer2D</type>
+        <definition>AudioStreamPlayer2D MenuPrincipal.audioStreamPlayer2D</definition>
+        <argsstring></argsstring>
+        <name>audioStreamPlayer2D</name>
+        <qualifiedname>MenuPrincipal.audioStreamPlayer2D</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/menuInicio/Scripts/MenuPrincipal.cs" line="16" column="33" bodyfile="escenas/menuInicio/Scripts/MenuPrincipal.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_menu_principal_1aa42bacad72d135ac449e234f726ed822" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_guardar_escena" kindref="compound">GuardarEscena</ref></type>
+        <definition>GuardarEscena MenuPrincipal.guardarEscena</definition>
+        <argsstring></argsstring>
+        <name>guardarEscena</name>
+        <qualifiedname>MenuPrincipal.guardarEscena</qualifiedname>
+        <initializer>= new <ref refid="class_guardar_escena" kindref="compound">GuardarEscena</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/menuInicio/Scripts/MenuPrincipal.cs" line="17" column="33" bodyfile="escenas/menuInicio/Scripts/MenuPrincipal.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_menu_principal_1a6953c17367442ffd867c76d3be25b770" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void MenuPrincipal._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>MenuPrincipal._Ready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/menuInicio/Scripts/MenuPrincipal.cs" line="20" column="26" bodyfile="escenas/menuInicio/Scripts/MenuPrincipal.cs" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_principal_1aadfae6f53169b05d8bd58f811e49be2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void MenuPrincipal._Process</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>_Process</name>
+        <qualifiedname>MenuPrincipal._Process</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/menuInicio/Scripts/MenuPrincipal.cs" line="55" column="26" bodyfile="escenas/menuInicio/Scripts/MenuPrincipal.cs" bodystart="55" bodyend="58"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_menu_principal_1a936dbd6a21427d68eada56c2c9c66c57" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MenuPrincipal._onNewGameButtonPressed</definition>
+        <argsstring>()</argsstring>
+        <name>_onNewGameButtonPressed</name>
+        <qualifiedname>MenuPrincipal._onNewGameButtonPressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/menuInicio/Scripts/MenuPrincipal.cs" line="27" column="18" bodyfile="escenas/menuInicio/Scripts/MenuPrincipal.cs" bodystart="27" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_principal_1ab8be01dee92a459c29d63999c2391320" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MenuPrincipal._onLoadGameButtonPressed</definition>
+        <argsstring>()</argsstring>
+        <name>_onLoadGameButtonPressed</name>
+        <qualifiedname>MenuPrincipal._onLoadGameButtonPressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/menuInicio/Scripts/MenuPrincipal.cs" line="34" column="18" bodyfile="escenas/menuInicio/Scripts/MenuPrincipal.cs" bodystart="34" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_principal_1a728d4a58a4576bcc42492f1deecb87fc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MenuPrincipal._onSettingsButtonPressed</definition>
+        <argsstring>()</argsstring>
+        <name>_onSettingsButtonPressed</name>
+        <qualifiedname>MenuPrincipal._onSettingsButtonPressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/menuInicio/Scripts/MenuPrincipal.cs" line="41" column="18" bodyfile="escenas/menuInicio/Scripts/MenuPrincipal.cs" bodystart="41" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_principal_1aeb9e44b498a2155a440c39d486818155" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MenuPrincipal._onExitButtonPressed</definition>
+        <argsstring>()</argsstring>
+        <name>_onExitButtonPressed</name>
+        <qualifiedname>MenuPrincipal._onExitButtonPressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/menuInicio/Scripts/MenuPrincipal.cs" line="48" column="18" bodyfile="escenas/menuInicio/Scripts/MenuPrincipal.cs" bodystart="48" bodyend="52"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CanvasLayer</label>
+      </node>
+      <node id="1">
+        <label>MenuPrincipal</label>
+        <link refid="class_menu_principal"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CanvasLayer</label>
+      </node>
+      <node id="3">
+        <label>GuardarEscena</label>
+        <link refid="class_guardar_escena"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MenuPrincipal</label>
+        <link refid="class_menu_principal"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>guardarEscena</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Node</label>
+      </node>
+    </collaborationgraph>
+    <location file="escenas/menuInicio/Scripts/MenuPrincipal.cs" line="4" column="15" bodyfile="escenas/menuInicio/Scripts/MenuPrincipal.cs" bodystart="5" bodyend="59"/>
+    <listofallmembers>
+      <member refid="class_menu_principal_1aeb9e44b498a2155a440c39d486818155" prot="private" virt="non-virtual"><scope>MenuPrincipal</scope><name>_onExitButtonPressed</name></member>
+      <member refid="class_menu_principal_1ab8be01dee92a459c29d63999c2391320" prot="private" virt="non-virtual"><scope>MenuPrincipal</scope><name>_onLoadGameButtonPressed</name></member>
+      <member refid="class_menu_principal_1a936dbd6a21427d68eada56c2c9c66c57" prot="private" virt="non-virtual"><scope>MenuPrincipal</scope><name>_onNewGameButtonPressed</name></member>
+      <member refid="class_menu_principal_1a728d4a58a4576bcc42492f1deecb87fc" prot="private" virt="non-virtual"><scope>MenuPrincipal</scope><name>_onSettingsButtonPressed</name></member>
+      <member refid="class_menu_principal_1aadfae6f53169b05d8bd58f811e49be2b" prot="public" virt="non-virtual"><scope>MenuPrincipal</scope><name>_Process</name></member>
+      <member refid="class_menu_principal_1a6953c17367442ffd867c76d3be25b770" prot="public" virt="non-virtual"><scope>MenuPrincipal</scope><name>_Ready</name></member>
+      <member refid="class_menu_principal_1ac1d33a93d588014213060253cde84312" prot="public" virt="non-virtual"><scope>MenuPrincipal</scope><name>audioStreamPlayer2D</name></member>
+      <member refid="class_menu_principal_1a8443eca7a18766b2a709c286c7b740c1" prot="public" virt="non-virtual"><scope>MenuPrincipal</scope><name>exitButton</name></member>
+      <member refid="class_menu_principal_1aa42bacad72d135ac449e234f726ed822" prot="public" virt="non-virtual"><scope>MenuPrincipal</scope><name>guardarEscena</name></member>
+      <member refid="class_menu_principal_1addf3df6de6f310dabbd7fd4501a0f47e" prot="public" virt="non-virtual"><scope>MenuPrincipal</scope><name>loadGameButton</name></member>
+      <member refid="class_menu_principal_1a45c2af331ed42bb25f46b37aa8e52a1a" prot="public" virt="non-virtual"><scope>MenuPrincipal</scope><name>newGameButton</name></member>
+      <member refid="class_menu_principal_1a12cee2adaf870f864e7d1bbe51750de9" prot="public" virt="non-virtual"><scope>MenuPrincipal</scope><name>settingsButton</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

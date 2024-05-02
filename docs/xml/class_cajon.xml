@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_cajon" kind="class" language="C#" prot="public">
+    <compoundname>Cajon</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Area2D</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_cajon_1aefa09a192d1369edeae8fa817773661b" prot="public" static="yes" mutable="no">
+        <type>Boolean</type>
+        <definition>Boolean Cajon.encontrado</definition>
+        <argsstring></argsstring>
+        <name>encontrado</name>
+        <qualifiedname>Cajon.encontrado</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/scripts/Cajon.cs" line="12" column="23" bodyfile="escenas/escena1/scripts/Cajon.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cajon_1acdc4704b4c9973303212f59e570dd914" prot="public" static="yes" mutable="no">
+        <type>Boolean</type>
+        <definition>Boolean Cajon.zoooom</definition>
+        <argsstring></argsstring>
+        <name>zoooom</name>
+        <qualifiedname>Cajon.zoooom</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/scripts/Cajon.cs" line="13" column="23" bodyfile="escenas/escena1/scripts/Cajon.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_cajon_1a6c2de1053b372cd80a599e7029f1b135" prot="public" static="no" mutable="no">
+        <type>AudioStreamPlayer2D</type>
+        <definition>AudioStreamPlayer2D Cajon.abrir</definition>
+        <argsstring></argsstring>
+        <name>abrir</name>
+        <qualifiedname>Cajon.abrir</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/scripts/Cajon.cs" line="14" column="29" bodyfile="escenas/escena1/scripts/Cajon.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_cajon_1aada0f98ce7fa2805efeeb1d5cd07f97e" prot="private" static="no" mutable="no">
+        <type>AnimationPlayer</type>
+        <definition>AnimationPlayer Cajon.animPlayer</definition>
+        <argsstring></argsstring>
+        <name>animPlayer</name>
+        <qualifiedname>Cajon.animPlayer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/scripts/Cajon.cs" line="16" column="25" bodyfile="escenas/escena1/scripts/Cajon.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_cajon_1a4b469decd2bc35bc5013e73ea48ae44b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cajon._on_input_event</definition>
+        <argsstring>(Node viewport, InputEvent evento, int shap)</argsstring>
+        <name>_on_input_event</name>
+        <qualifiedname>Cajon._on_input_event</qualifiedname>
+        <param>
+          <type>Node</type>
+          <declname>viewport</declname>
+        </param>
+        <param>
+          <type>InputEvent</type>
+          <declname>evento</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>shap</declname>
+        </param>
+        <briefdescription>
+<para>Este metodo es una señal del propio godot que nos permite detectar cuando haces click sobre le objeto. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>viewport</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nodo del objeto parte de la API</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>evento</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nos permite detectar cuando se hace click</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>shap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable que se utiliza para la API</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/scripts/Cajon.cs" line="24" column="13" bodyfile="escenas/escena1/scripts/Cajon.cs" bodystart="24" bodyend="44"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Clase que nos permite gestionar el cajon de la primera escena. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Area2D</label>
+      </node>
+      <node id="1">
+        <label>Cajon</label>
+        <link refid="class_cajon"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Area2D</label>
+      </node>
+      <node id="1">
+        <label>Cajon</label>
+        <link refid="class_cajon"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="escenas/escena1/scripts/Cajon.cs" line="9" column="15" bodyfile="escenas/escena1/scripts/Cajon.cs" bodystart="10" bodyend="46"/>
+    <listofallmembers>
+      <member refid="class_cajon_1a4b469decd2bc35bc5013e73ea48ae44b" prot="public" virt="non-virtual"><scope>Cajon</scope><name>_on_input_event</name></member>
+      <member refid="class_cajon_1a6c2de1053b372cd80a599e7029f1b135" prot="public" virt="non-virtual"><scope>Cajon</scope><name>abrir</name></member>
+      <member refid="class_cajon_1aada0f98ce7fa2805efeeb1d5cd07f97e" prot="private" virt="non-virtual"><scope>Cajon</scope><name>animPlayer</name></member>
+      <member refid="class_cajon_1aefa09a192d1369edeae8fa817773661b" prot="public" virt="non-virtual"><scope>Cajon</scope><name>encontrado</name></member>
+      <member refid="class_cajon_1acdc4704b4c9973303212f59e570dd914" prot="public" virt="non-virtual"><scope>Cajon</scope><name>zoooom</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classescena2" kind="class" language="C#" prot="public">
+    <compoundname>escena2</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Node2D</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classescena2_1a07dc1b58ec677767a41e49928d0a1ce8" prot="public" static="no" mutable="no">
+        <type>AudioStreamPlayer2D</type>
+        <definition>AudioStreamPlayer2D escena2.audioStreamPlayer2D</definition>
+        <argsstring></argsstring>
+        <name>audioStreamPlayer2D</name>
+        <qualifiedname>escena2.audioStreamPlayer2D</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena2/escena2.cs" line="6" column="29" bodyfile="escenas/escena2/escena2.cs" bodystart="6" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classescena2_1abc16a11164f23f593800ec2209c79321" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void escena2._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>escena2._Ready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena2/escena2.cs" line="8" column="22" bodyfile="escenas/escena2/escena2.cs" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classescena2_1a8ce0bbc52c856621da3a779b0ae8a2c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void escena2._Process</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>_Process</name>
+        <qualifiedname>escena2._Process</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena2/escena2.cs" line="14" column="22" bodyfile="escenas/escena2/escena2.cs" bodystart="14" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Node2D</label>
+      </node>
+      <node id="1">
+        <label>escena2</label>
+        <link refid="classescena2"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Node2D</label>
+      </node>
+      <node id="1">
+        <label>escena2</label>
+        <link refid="classescena2"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="escenas/escena2/escena2.cs" line="4" column="15" bodyfile="escenas/escena2/escena2.cs" bodystart="5" bodyend="17"/>
+    <listofallmembers>
+      <member refid="classescena2_1a8ce0bbc52c856621da3a779b0ae8a2c4" prot="public" virt="non-virtual"><scope>escena2</scope><name>_Process</name></member>
+      <member refid="classescena2_1abc16a11164f23f593800ec2209c79321" prot="public" virt="non-virtual"><scope>escena2</scope><name>_Ready</name></member>
+      <member refid="classescena2_1a07dc1b58ec677767a41e49928d0a1ce8" prot="public" virt="non-virtual"><scope>escena2</scope><name>audioStreamPlayer2D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

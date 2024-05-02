@@ -1,0 +1,487 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_main" kind="class" language="C#" prot="public">
+    <compoundname>Main</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Node2D</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_main_1a98edf2f8bd7e45568bf27482dcebe0e5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Main.slotsOcupados</definition>
+        <argsstring></argsstring>
+        <name>slotsOcupados</name>
+        <qualifiedname>Main.slotsOcupados</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="7" column="5" bodyfile="escenas/escena1/Main.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a7a3316c20347a274aacbd1e900cf1ddb" prot="private" static="no" mutable="no">
+        <type>Area2D</type>
+        <definition>Area2D Main.pista_1</definition>
+        <argsstring></argsstring>
+        <name>pista_1</name>
+        <qualifiedname>Main.pista_1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="8" column="8" bodyfile="escenas/escena1/Main.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a413e0425e69dd5b0dfdb1992146e775f" prot="private" static="no" mutable="no">
+        <type>Node2D</type>
+        <definition>Node2D Main.godotInstancia2</definition>
+        <argsstring></argsstring>
+        <name>godotInstancia2</name>
+        <qualifiedname>Main.godotInstancia2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="9" column="8" bodyfile="escenas/escena1/Main.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a8d3ecebfa9d886ddba11b59de496cb69" prot="private" static="no" mutable="no">
+        <type>Boolean</type>
+        <definition>Boolean Main.clickadoBola</definition>
+        <argsstring></argsstring>
+        <name>clickadoBola</name>
+        <qualifiedname>Main.clickadoBola</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="25" column="9" bodyfile="escenas/escena1/Main.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a0252d4e84421a922e85fdebb955e4bbf" prot="private" static="no" mutable="no">
+        <type>Boolean</type>
+        <definition>Boolean Main.clickadoVarillaM</definition>
+        <argsstring></argsstring>
+        <name>clickadoVarillaM</name>
+        <qualifiedname>Main.clickadoVarillaM</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="26" column="9" bodyfile="escenas/escena1/Main.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_main_1ab84385b0fee002c41ebabe65d0f6b68e" prot="public" static="yes" mutable="no">
+        <type>Node2D</type>
+        <definition>Node2D Main.varillaMinutosInstancia</definition>
+        <argsstring></argsstring>
+        <name>varillaMinutosInstancia</name>
+        <qualifiedname>Main.varillaMinutosInstancia</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="10" column="22" bodyfile="escenas/escena1/Main.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1aeee46d744170c367fa6230ea8f6a03be" prot="public" static="yes" mutable="no">
+        <type>Node2D</type>
+        <definition>Node2D Main.varillaSegundosInstancia</definition>
+        <argsstring></argsstring>
+        <name>varillaSegundosInstancia</name>
+        <qualifiedname>Main.varillaSegundosInstancia</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="11" column="22" bodyfile="escenas/escena1/Main.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a29f4d74cbb45abbd199c112952377643" prot="public" static="yes" mutable="no">
+        <type>Node2D</type>
+        <definition>Node2D Main.relojZoomeadoInstancia</definition>
+        <argsstring></argsstring>
+        <name>relojZoomeadoInstancia</name>
+        <qualifiedname>Main.relojZoomeadoInstancia</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="12" column="22" bodyfile="escenas/escena1/Main.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a8dd33b73ab76afa96acefcac05a6e8c1" prot="public" static="yes" mutable="no">
+        <type>Node2D</type>
+        <definition>Node2D Main.fondoNegroInstancia</definition>
+        <argsstring></argsstring>
+        <name>fondoNegroInstancia</name>
+        <qualifiedname>Main.fondoNegroInstancia</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="13" column="22" bodyfile="escenas/escena1/Main.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1ae1ac0b4fed1c9748a347dfb87340f2f9" prot="public" static="yes" mutable="no">
+        <type>Node2D</type>
+        <definition>Node2D Main.cajonZoomeadoInstancia</definition>
+        <argsstring></argsstring>
+        <name>cajonZoomeadoInstancia</name>
+        <qualifiedname>Main.cajonZoomeadoInstancia</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="14" column="22" bodyfile="escenas/escena1/Main.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1acb64ef31e35691c53efaa3ea2f2f8386" prot="public" static="yes" mutable="no">
+        <type>Node2D</type>
+        <definition>Node2D Main.huecoInstancia</definition>
+        <argsstring></argsstring>
+        <name>huecoInstancia</name>
+        <qualifiedname>Main.huecoInstancia</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="15" column="22" bodyfile="escenas/escena1/Main.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1ac9d5ff83ef88f632aeaeb8243073fa40" prot="public" static="yes" mutable="no">
+        <type>Node2D</type>
+        <definition>Node2D Main.escaleraInstancia</definition>
+        <argsstring></argsstring>
+        <name>escaleraInstancia</name>
+        <qualifiedname>Main.escaleraInstancia</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="16" column="22" bodyfile="escenas/escena1/Main.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1aa37baa9a20fef0d0ff160143de997b3c" prot="public" static="yes" mutable="no">
+        <type>Node2D</type>
+        <definition>Node2D Main.cajetillaInstancia</definition>
+        <argsstring></argsstring>
+        <name>cajetillaInstancia</name>
+        <qualifiedname>Main.cajetillaInstancia</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="17" column="22" bodyfile="escenas/escena1/Main.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a5898095083efdd1ab9f280bfad493a32" prot="public" static="yes" mutable="no">
+        <type>Node2D</type>
+        <definition>Node2D Main.tapaInstancia</definition>
+        <argsstring></argsstring>
+        <name>tapaInstancia</name>
+        <qualifiedname>Main.tapaInstancia</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="18" column="22" bodyfile="escenas/escena1/Main.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1ac54b7641885086e800feca02b8df4f57" prot="public" static="yes" mutable="no">
+        <type>Node2D</type>
+        <definition>Node2D Main.pista_1Instancia</definition>
+        <argsstring></argsstring>
+        <name>pista_1Instancia</name>
+        <qualifiedname>Main.pista_1Instancia</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="19" column="22" bodyfile="escenas/escena1/Main.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a3325c58cde956199bae7a91175ea266d" prot="public" static="yes" mutable="no">
+        <type>Node2D</type>
+        <definition>Node2D Main.lamparaEncendidaInstancia</definition>
+        <argsstring></argsstring>
+        <name>lamparaEncendidaInstancia</name>
+        <qualifiedname>Main.lamparaEncendidaInstancia</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="20" column="22" bodyfile="escenas/escena1/Main.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1abc90392df35f8762c8060227b0840c87" prot="public" static="yes" mutable="no">
+        <type>Node2D</type>
+        <definition>Node2D Main.lamparaApagadaInstancia</definition>
+        <argsstring></argsstring>
+        <name>lamparaApagadaInstancia</name>
+        <qualifiedname>Main.lamparaApagadaInstancia</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="21" column="22" bodyfile="escenas/escena1/Main.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a27b4e3b11721876dddcd6f07a9b2cda4" prot="public" static="yes" mutable="no">
+        <type>Node2D</type>
+        <definition>Node2D Main.relojInstancia</definition>
+        <argsstring></argsstring>
+        <name>relojInstancia</name>
+        <qualifiedname>Main.relojInstancia</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="22" column="22" bodyfile="escenas/escena1/Main.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a6f7ed7acb44c8aa1f16f566daa426e43" prot="public" static="yes" mutable="no">
+        <type>Node2D</type>
+        <definition>Node2D Main.posterInstancia</definition>
+        <argsstring></argsstring>
+        <name>posterInstancia</name>
+        <qualifiedname>Main.posterInstancia</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="23" column="22" bodyfile="escenas/escena1/Main.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1adf6fd45502443bd9aff48e443164d9db" prot="public" static="yes" mutable="no">
+        <type>Node2D</type>
+        <definition>Node2D Main.monstruoInstancia</definition>
+        <argsstring></argsstring>
+        <name>monstruoInstancia</name>
+        <qualifiedname>Main.monstruoInstancia</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="24" column="22" bodyfile="escenas/escena1/Main.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a0d70aed3ef73633de54cec46c892c2cd" prot="public" static="yes" mutable="no">
+        <type>Boolean</type>
+        <definition>Boolean Main.varillaMinutosReloj</definition>
+        <argsstring></argsstring>
+        <name>varillaMinutosReloj</name>
+        <qualifiedname>Main.varillaMinutosReloj</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="27" column="23" bodyfile="escenas/escena1/Main.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1ab8365d247119c87b8cf95d37146441d0" prot="public" static="yes" mutable="no">
+        <type>Boolean</type>
+        <definition>Boolean Main.varillaSegundosReloj</definition>
+        <argsstring></argsstring>
+        <name>varillaSegundosReloj</name>
+        <qualifiedname>Main.varillaSegundosReloj</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="28" column="23" bodyfile="escenas/escena1/Main.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_main_1adfadab1a1db443061d1999b52c412c4d" prot="public" static="no" mutable="no">
+        <type>AnimationPlayer</type>
+        <definition>AnimationPlayer Main.animationPlayer</definition>
+        <argsstring></argsstring>
+        <name>animationPlayer</name>
+        <qualifiedname>Main.animationPlayer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="29" column="25" bodyfile="escenas/escena1/Main.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1af8d742c6c52a829d8b04f90393fd329e" prot="public" static="no" mutable="no">
+        <type>AudioStreamPlayer2D</type>
+        <definition>AudioStreamPlayer2D Main.audioStreamPlayer2D</definition>
+        <argsstring></argsstring>
+        <name>audioStreamPlayer2D</name>
+        <qualifiedname>Main.audioStreamPlayer2D</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="30" column="29" bodyfile="escenas/escena1/Main.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_main_1afa38a52a0b6f8e0362539aea9114f285" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Main._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>Main._Ready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="31" column="22" bodyfile="escenas/escena1/Main.cs" bodystart="31" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_main_1a86919ed599f9f8a27a81a3f71142dea4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Main._Process</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>_Process</name>
+        <qualifiedname>Main._Process</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="37" column="22" bodyfile="escenas/escena1/Main.cs" bodystart="37" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_main_1a0ab775342fc867755f3fd37cb8a738f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Main.InstanciarEscena</definition>
+        <argsstring>()</argsstring>
+        <name>InstanciarEscena</name>
+        <qualifiedname>Main.InstanciarEscena</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="42" column="13" bodyfile="escenas/escena1/Main.cs" bodystart="42" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_main_1aa263141de205b807204a92cae503339d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Main.popPista_1</definition>
+        <argsstring>()</argsstring>
+        <name>popPista_1</name>
+        <qualifiedname>Main.popPista_1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="91" column="13" bodyfile="escenas/escena1/Main.cs" bodystart="91" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_main_1a11a5ace0e275706cd7b40f1dad42a000" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Main._on_timer_timeout</definition>
+        <argsstring>()</argsstring>
+        <name>_on_timer_timeout</name>
+        <qualifiedname>Main._on_timer_timeout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/Main.cs" line="95" column="13" bodyfile="escenas/escena1/Main.cs" bodystart="95" bodyend="98"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Main</label>
+        <link refid="class_main"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Node2D</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Main</label>
+        <link refid="class_main"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Node2D</label>
+      </node>
+    </collaborationgraph>
+    <location file="escenas/escena1/Main.cs" line="6" column="15" bodyfile="escenas/escena1/Main.cs" bodystart="6" bodyend="99"/>
+    <listofallmembers>
+      <member refid="class_main_1a11a5ace0e275706cd7b40f1dad42a000" prot="public" virt="non-virtual"><scope>Main</scope><name>_on_timer_timeout</name></member>
+      <member refid="class_main_1a86919ed599f9f8a27a81a3f71142dea4" prot="public" virt="non-virtual"><scope>Main</scope><name>_Process</name></member>
+      <member refid="class_main_1afa38a52a0b6f8e0362539aea9114f285" prot="public" virt="non-virtual"><scope>Main</scope><name>_Ready</name></member>
+      <member refid="class_main_1adfadab1a1db443061d1999b52c412c4d" prot="public" virt="non-virtual"><scope>Main</scope><name>animationPlayer</name></member>
+      <member refid="class_main_1af8d742c6c52a829d8b04f90393fd329e" prot="public" virt="non-virtual"><scope>Main</scope><name>audioStreamPlayer2D</name></member>
+      <member refid="class_main_1aa37baa9a20fef0d0ff160143de997b3c" prot="public" virt="non-virtual"><scope>Main</scope><name>cajetillaInstancia</name></member>
+      <member refid="class_main_1ae1ac0b4fed1c9748a347dfb87340f2f9" prot="public" virt="non-virtual"><scope>Main</scope><name>cajonZoomeadoInstancia</name></member>
+      <member refid="class_main_1a8d3ecebfa9d886ddba11b59de496cb69" prot="private" virt="non-virtual"><scope>Main</scope><name>clickadoBola</name></member>
+      <member refid="class_main_1a0252d4e84421a922e85fdebb955e4bbf" prot="private" virt="non-virtual"><scope>Main</scope><name>clickadoVarillaM</name></member>
+      <member refid="class_main_1ac9d5ff83ef88f632aeaeb8243073fa40" prot="public" virt="non-virtual"><scope>Main</scope><name>escaleraInstancia</name></member>
+      <member refid="class_main_1a8dd33b73ab76afa96acefcac05a6e8c1" prot="public" virt="non-virtual"><scope>Main</scope><name>fondoNegroInstancia</name></member>
+      <member refid="class_main_1a413e0425e69dd5b0dfdb1992146e775f" prot="private" virt="non-virtual"><scope>Main</scope><name>godotInstancia2</name></member>
+      <member refid="class_main_1acb64ef31e35691c53efaa3ea2f2f8386" prot="public" virt="non-virtual"><scope>Main</scope><name>huecoInstancia</name></member>
+      <member refid="class_main_1a0ab775342fc867755f3fd37cb8a738f9" prot="public" virt="non-virtual"><scope>Main</scope><name>InstanciarEscena</name></member>
+      <member refid="class_main_1abc90392df35f8762c8060227b0840c87" prot="public" virt="non-virtual"><scope>Main</scope><name>lamparaApagadaInstancia</name></member>
+      <member refid="class_main_1a3325c58cde956199bae7a91175ea266d" prot="public" virt="non-virtual"><scope>Main</scope><name>lamparaEncendidaInstancia</name></member>
+      <member refid="class_main_1adf6fd45502443bd9aff48e443164d9db" prot="public" virt="non-virtual"><scope>Main</scope><name>monstruoInstancia</name></member>
+      <member refid="class_main_1a7a3316c20347a274aacbd1e900cf1ddb" prot="private" virt="non-virtual"><scope>Main</scope><name>pista_1</name></member>
+      <member refid="class_main_1ac54b7641885086e800feca02b8df4f57" prot="public" virt="non-virtual"><scope>Main</scope><name>pista_1Instancia</name></member>
+      <member refid="class_main_1aa263141de205b807204a92cae503339d" prot="public" virt="non-virtual"><scope>Main</scope><name>popPista_1</name></member>
+      <member refid="class_main_1a6f7ed7acb44c8aa1f16f566daa426e43" prot="public" virt="non-virtual"><scope>Main</scope><name>posterInstancia</name></member>
+      <member refid="class_main_1a27b4e3b11721876dddcd6f07a9b2cda4" prot="public" virt="non-virtual"><scope>Main</scope><name>relojInstancia</name></member>
+      <member refid="class_main_1a29f4d74cbb45abbd199c112952377643" prot="public" virt="non-virtual"><scope>Main</scope><name>relojZoomeadoInstancia</name></member>
+      <member refid="class_main_1a98edf2f8bd7e45568bf27482dcebe0e5" prot="private" virt="non-virtual"><scope>Main</scope><name>slotsOcupados</name></member>
+      <member refid="class_main_1a5898095083efdd1ab9f280bfad493a32" prot="public" virt="non-virtual"><scope>Main</scope><name>tapaInstancia</name></member>
+      <member refid="class_main_1ab84385b0fee002c41ebabe65d0f6b68e" prot="public" virt="non-virtual"><scope>Main</scope><name>varillaMinutosInstancia</name></member>
+      <member refid="class_main_1a0d70aed3ef73633de54cec46c892c2cd" prot="public" virt="non-virtual"><scope>Main</scope><name>varillaMinutosReloj</name></member>
+      <member refid="class_main_1aeee46d744170c367fa6230ea8f6a03be" prot="public" virt="non-virtual"><scope>Main</scope><name>varillaSegundosInstancia</name></member>
+      <member refid="class_main_1ab8365d247119c87b8cf95d37146441d0" prot="public" virt="non-virtual"><scope>Main</scope><name>varillaSegundosReloj</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

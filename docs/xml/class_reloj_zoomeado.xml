@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_reloj_zoomeado" kind="class" language="C#" prot="public">
+    <compoundname>RelojZoomeado</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Area2D</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_reloj_zoomeado_1aec165f7c9ab811fcaec5870cc965c777" prot="public" static="yes" mutable="no">
+        <type>Boolean</type>
+        <definition>Boolean RelojZoomeado.zoooom</definition>
+        <argsstring></argsstring>
+        <name>zoooom</name>
+        <qualifiedname>RelojZoomeado.zoooom</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/scripts/RelojZoomeado.cs" line="9" column="23" bodyfile="escenas/escena1/scripts/RelojZoomeado.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_reloj_zoomeado_1a174f954be63dc07bcb23346d4686b4cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void RelojZoomeado._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>RelojZoomeado._Ready</qualifiedname>
+        <briefdescription>
+<para>Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/scripts/RelojZoomeado.cs" line="14" column="22" bodyfile="escenas/escena1/scripts/RelojZoomeado.cs" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_reloj_zoomeado_1aefe2905c0a82d825d2bc27602166efc0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RelojZoomeado._on_input_event</definition>
+        <argsstring>(Node viewport, InputEvent evento, int shap)</argsstring>
+        <name>_on_input_event</name>
+        <qualifiedname>RelojZoomeado._on_input_event</qualifiedname>
+        <param>
+          <type>Node</type>
+          <declname>viewport</declname>
+        </param>
+        <param>
+          <type>InputEvent</type>
+          <declname>evento</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>shap</declname>
+        </param>
+        <briefdescription>
+<para>Este metodo es una señal del propio godot que nos permite detectar cuando haces click sobre le objeto. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>viewport</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nodo del objeto parte de la API</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>evento</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nos permite detectar cuando se hace click</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>shap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable que se utiliza para la API</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/scripts/RelojZoomeado.cs" line="25" column="13" bodyfile="escenas/escena1/scripts/RelojZoomeado.cs" bodystart="25" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Clase que nos permite gestionar al reloj en zooom. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Area2D</label>
+      </node>
+      <node id="1">
+        <label>RelojZoomeado</label>
+        <link refid="class_reloj_zoomeado"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Area2D</label>
+      </node>
+      <node id="1">
+        <label>RelojZoomeado</label>
+        <link refid="class_reloj_zoomeado"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="escenas/escena1/scripts/RelojZoomeado.cs" line="7" column="15" bodyfile="escenas/escena1/scripts/RelojZoomeado.cs" bodystart="8" bodyend="39"/>
+    <listofallmembers>
+      <member refid="class_reloj_zoomeado_1aefe2905c0a82d825d2bc27602166efc0" prot="public" virt="non-virtual"><scope>RelojZoomeado</scope><name>_on_input_event</name></member>
+      <member refid="class_reloj_zoomeado_1a174f954be63dc07bcb23346d4686b4cb" prot="public" virt="non-virtual"><scope>RelojZoomeado</scope><name>_Ready</name></member>
+      <member refid="class_reloj_zoomeado_1aec165f7c9ab811fcaec5870cc965c777" prot="public" virt="non-virtual"><scope>RelojZoomeado</scope><name>zoooom</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

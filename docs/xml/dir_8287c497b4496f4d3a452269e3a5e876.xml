@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_8287c497b4496f4d3a452269e3a5e876" kind="dir">
+    <compoundname>escenas/MenuOpciones</compoundname>
+    <innerdir refid="dir_334b0a4485303f3dc3d36d8ed983fc83">escenas/MenuOpciones/Scripts</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="escenas/MenuOpciones/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_varilla_m" kind="class" language="C#" prot="public">
+    <compoundname>VarillaM</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Area2D</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_varilla_m_1a714eb3366b7544c4ec8a8eaf99d2ecca" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool VarillaM.puedoMover</definition>
+        <argsstring></argsstring>
+        <name>puedoMover</name>
+        <qualifiedname>VarillaM.puedoMover</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/scripts/VarillaM.cs" line="7" column="6" bodyfile="escenas/escena1/scripts/VarillaM.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_varilla_m_1a8b3ec2226c531a19233e42d92fd5a5f6" prot="public" static="yes" mutable="no">
+        <type>Boolean</type>
+        <definition>Boolean VarillaM.encontrado</definition>
+        <argsstring></argsstring>
+        <name>encontrado</name>
+        <qualifiedname>VarillaM.encontrado</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/scripts/VarillaM.cs" line="8" column="23" bodyfile="escenas/escena1/scripts/VarillaM.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_varilla_m_1ae4981f34ba51721b3527ce71918b12bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void VarillaM._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>VarillaM._Ready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/scripts/VarillaM.cs" line="14" column="22" bodyfile="escenas/escena1/scripts/VarillaM.cs" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_varilla_m_1af4b2c1d0553babb37de114913a3c5e1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void VarillaM._Process</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>_Process</name>
+        <qualifiedname>VarillaM._Process</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/scripts/VarillaM.cs" line="19" column="22" bodyfile="escenas/escena1/scripts/VarillaM.cs" bodystart="19" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_varilla_m_1a1a8ee93ae0eeb4e57130129684ea60a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void VarillaM._on_input_event</definition>
+        <argsstring>(Node viewport, InputEvent evento, int shap)</argsstring>
+        <name>_on_input_event</name>
+        <qualifiedname>VarillaM._on_input_event</qualifiedname>
+        <param>
+          <type>Node</type>
+          <declname>viewport</declname>
+        </param>
+        <param>
+          <type>InputEvent</type>
+          <declname>evento</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>shap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/scripts/VarillaM.cs" line="25" column="13" bodyfile="escenas/escena1/scripts/VarillaM.cs" bodystart="25" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_varilla_m_1a54f01ead71f30be644e8713897c23ffd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Boolean</type>
+        <definition>static Boolean VarillaM.devolverClickado</definition>
+        <argsstring>()</argsstring>
+        <name>devolverClickado</name>
+        <qualifiedname>VarillaM.devolverClickado</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/scripts/VarillaM.cs" line="39" column="23" bodyfile="escenas/escena1/scripts/VarillaM.cs" bodystart="39" bodyend="41"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Area2D</label>
+      </node>
+      <node id="1">
+        <label>VarillaM</label>
+        <link refid="class_varilla_m"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Area2D</label>
+      </node>
+      <node id="1">
+        <label>VarillaM</label>
+        <link refid="class_varilla_m"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="escenas/escena1/scripts/VarillaM.cs" line="5" column="15" bodyfile="escenas/escena1/scripts/VarillaM.cs" bodystart="5" bodyend="44"/>
+    <listofallmembers>
+      <member refid="class_varilla_m_1a1a8ee93ae0eeb4e57130129684ea60a4" prot="public" virt="non-virtual"><scope>VarillaM</scope><name>_on_input_event</name></member>
+      <member refid="class_varilla_m_1af4b2c1d0553babb37de114913a3c5e1d" prot="public" virt="non-virtual"><scope>VarillaM</scope><name>_Process</name></member>
+      <member refid="class_varilla_m_1ae4981f34ba51721b3527ce71918b12bf" prot="public" virt="non-virtual"><scope>VarillaM</scope><name>_Ready</name></member>
+      <member refid="class_varilla_m_1a54f01ead71f30be644e8713897c23ffd" prot="public" virt="non-virtual"><scope>VarillaM</scope><name>devolverClickado</name></member>
+      <member refid="class_varilla_m_1a8b3ec2226c531a19233e42d92fd5a5f6" prot="public" virt="non-virtual"><scope>VarillaM</scope><name>encontrado</name></member>
+      <member refid="class_varilla_m_1a714eb3366b7544c4ec8a8eaf99d2ecca" prot="private" virt="non-virtual"><scope>VarillaM</scope><name>puedoMover</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
