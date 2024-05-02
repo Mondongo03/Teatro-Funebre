@@ -1,5 +1,10 @@
 \doxysection{Referencia de la clase Menu\+De\+Pausa}
 \hypertarget{class_menu_de_pausa}{}\label{class_menu_de_pausa}\index{MenuDePausa@{MenuDePausa}}
+
+
+Clase que nos permite gestionar el menu de pausa dentro del juego.  
+
+
 Diagrama de herencia de Menu\+De\+Pausa\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,27 +14,47 @@ Diagrama de herencia de Menu\+De\+Pausa\begin{figure}[H]
 \doxysubsubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_menu_de_pausa_a1c2f0f5bb387af972864b242d398d3bc}\label{class_menu_de_pausa_a1c2f0f5bb387af972864b242d398d3bc} 
-override void {\bfseries \+\_\+\+Process} (double delta)
-\item 
+override void \mbox{\hyperlink{class_menu_de_pausa_a1c2f0f5bb387af972864b242d398d3bc}{\+\_\+\+Process}} (double delta)
+\begin{DoxyCompactList}\small\item\em Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla. \end{DoxyCompactList}\item 
 \Hypertarget{class_menu_de_pausa_a2c1ba5dc9896d4072cfe2d885961f8a2}\label{class_menu_de_pausa_a2c1ba5dc9896d4072cfe2d885961f8a2} 
 void {\bfseries \+\_\+on\+\_\+continuar\+\_\+pressed} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Metodo que se llama cuando clickas el boton de continuar. \end{DoxyCompactList}\item 
 \Hypertarget{class_menu_de_pausa_afe7c3eb09742bac08ee6fa0e3ac60539}\label{class_menu_de_pausa_afe7c3eb09742bac08ee6fa0e3ac60539} 
 void {\bfseries \+\_\+on\+\_\+opciones\+\_\+pressed} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Metodo que se llama cuando clickas el boton de opciones y las muestra en pantalla. \end{DoxyCompactList}\item 
 \Hypertarget{class_menu_de_pausa_a59bacf886a348a99e714735012d84853}\label{class_menu_de_pausa_a59bacf886a348a99e714735012d84853} 
 void {\bfseries \+\_\+on\+\_\+salir\+\_\+al\+\_\+menu\+\_\+principal\+\_\+pressed} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Metodo que se activa cuando pulsas el boton de salir al menu y te lleva a el. \end{DoxyCompactList}\item 
 \Hypertarget{class_menu_de_pausa_aad1566b03a17affddf91d9eb6d66ecc2}\label{class_menu_de_pausa_aad1566b03a17affddf91d9eb6d66ecc2} 
 void {\bfseries \+\_\+on\+\_\+exit\+\_\+pressed} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Metodo del boton exit de la pestaña de ajustes. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Atributos públicos}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_menu_de_pausa_a924f57e650f5b2afc99bc5cbfe1a8b1d}\label{class_menu_de_pausa_a924f57e650f5b2afc99bc5cbfe1a8b1d} 
 \mbox{\hyperlink{class_guardar_escena}{Guardar\+Escena}} {\bfseries guardar\+Escena} = new \mbox{\hyperlink{class_guardar_escena}{Guardar\+Escena}}()
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase que nos permite gestionar el menu de pausa dentro del juego. 
+
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{class_menu_de_pausa_a1c2f0f5bb387af972864b242d398d3bc}\label{class_menu_de_pausa_a1c2f0f5bb387af972864b242d398d3bc} 
+\index{MenuDePausa@{MenuDePausa}!\_Process@{\_Process}}
+\index{\_Process@{\_Process}!MenuDePausa@{MenuDePausa}}
+\doxysubsubsection{\texorpdfstring{\_Process()}{\_Process()}}
+{\footnotesize\ttfamily override void Menu\+De\+Pausa.\+\_\+\+Process (\begin{DoxyParamCaption}\item[{double}]{delta }\end{DoxyParamCaption})}
+
+
+
+Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em delta} & Es una varibale generada por Godot que almacena la posicion del objeto\\
+\hline
+\end{DoxyParams}
 
 
 La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}

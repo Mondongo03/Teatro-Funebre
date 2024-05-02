@@ -1,5 +1,10 @@
 \doxysection{Referencia de la clase Main}
 \hypertarget{class_main}{}\label{class_main}\index{Main@{Main}}
+
+
+Primera case del proyecto que nos per mite gestionar la primera escena al completo, como instanciar los objetos en ella.  
+
+
 Diagrama de herencia de Main\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -11,19 +16,18 @@ Diagrama de herencia de Main\begin{figure}[H]
 \item 
 \Hypertarget{class_main_afa38a52a0b6f8e0362539aea9114f285}\label{class_main_afa38a52a0b6f8e0362539aea9114f285} 
 override void {\bfseries \+\_\+\+Ready} ()
-\item 
-\Hypertarget{class_main_a86919ed599f9f8a27a81a3f71142dea4}\label{class_main_a86919ed599f9f8a27a81a3f71142dea4} 
-override void {\bfseries \+\_\+\+Process} (double delta)
-\item 
+\begin{DoxyCompactList}\small\item\em Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_main_a86919ed599f9f8a27a81a3f71142dea4}{\+\_\+\+Process}} (double delta)
+\begin{DoxyCompactList}\small\item\em Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla. \end{DoxyCompactList}\item 
 \Hypertarget{class_main_a0ab775342fc867755f3fd37cb8a738f9}\label{class_main_a0ab775342fc867755f3fd37cb8a738f9} 
 void {\bfseries Instanciar\+Escena} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Metodo que instancia todos los elementos de la escena y los añade a su respectivo padre. \end{DoxyCompactList}\item 
 \Hypertarget{class_main_aa263141de205b807204a92cae503339d}\label{class_main_aa263141de205b807204a92cae503339d} 
 void {\bfseries pop\+Pista\+\_\+1} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Metodo que gestina las pistas de la escena. \end{DoxyCompactList}\item 
 \Hypertarget{class_main_a11a5ace0e275706cd7b40f1dad42a000}\label{class_main_a11a5ace0e275706cd7b40f1dad42a000} 
 void {\bfseries \+\_\+on\+\_\+timer\+\_\+timeout} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Señal de godot que nos permite poner un contador y cuando llega a cero hace las acciones especificas. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Atributos públicos}
 \begin{DoxyCompactItemize}
 \item 
@@ -87,6 +91,27 @@ static Boolean {\bfseries varilla\+Minutos\+Reloj} = false
 \Hypertarget{class_main_ab8365d247119c87b8cf95d37146441d0}\label{class_main_ab8365d247119c87b8cf95d37146441d0} 
 static Boolean {\bfseries varilla\+Segundos\+Reloj} = false
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Primera case del proyecto que nos per mite gestionar la primera escena al completo, como instanciar los objetos en ella. 
+
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{class_main_a86919ed599f9f8a27a81a3f71142dea4}\label{class_main_a86919ed599f9f8a27a81a3f71142dea4} 
+\index{Main@{Main}!\_Process@{\_Process}}
+\index{\_Process@{\_Process}!Main@{Main}}
+\doxysubsubsection{\texorpdfstring{\_Process()}{\_Process()}}
+{\footnotesize\ttfamily override void Main.\+\_\+\+Process (\begin{DoxyParamCaption}\item[{double}]{delta }\end{DoxyParamCaption})}
+
+
+
+Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em delta} & Es una varibale generada por Godot que almacena la posicion del objeto\\
+\hline
+\end{DoxyParams}
 
 
 La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}

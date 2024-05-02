@@ -29,5 +29,21 @@ var menudata={children:[
 {text:"Índice de clases",url:"classes.html"},
 {text:"Jerarquía de clases",url:"hierarchy.html"},
 {text:"Miembros de clases",url:"functions.html",children:[
-{text:"Todos",url:"functions.html"},
-{text:"Funciones",url:"functions_func.html"}]}]}]}
+{text:"Todos",url:"functions.html",children:[
+{text:"_",url:"functions.html#index__5F"},
+{text:"a",url:"functions.html#index_a"},
+{text:"d",url:"functions.html#index_d"},
+{text:"g",url:"functions.html#index_g"},
+{text:"i",url:"functions.html#index_i"},
+{text:"p",url:"functions.html#index_p"},
+{text:"r",url:"functions.html#index_r"},
+{text:"s",url:"functions.html#index_s"}]},
+{text:"Funciones",url:"functions_func.html",children:[
+{text:"_",url:"functions_func.html#index__5F"},
+{text:"a",url:"functions_func.html#index_a"},
+{text:"d",url:"functions_func.html#index_d"},
+{text:"g",url:"functions_func.html#index_g"},
+{text:"i",url:"functions_func.html#index_i"},
+{text:"p",url:"functions_func.html#index_p"},
+{text:"r",url:"functions_func.html#index_r"},
+{text:"s",url:"functions_func.html#index_s"}]}]}]}]}

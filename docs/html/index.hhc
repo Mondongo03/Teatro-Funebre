@@ -41,6 +41,8 @@
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="escena2"><param name="Local" value="classescena2.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Process"><param name="Local" value="classescena2.html#a8ce0bbc52c856621da3a779b0ae8a2c4"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Ready"><param name="Local" value="classescena2.html#abc16a11164f23f593800ec2209c79321"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Flecha"><param name="Local" value="class_flecha.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
@@ -67,12 +69,23 @@
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Main"><param name="Local" value="class_main.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_on_timer_timeout"><param name="Local" value="class_main.html#a11a5ace0e275706cd7b40f1dad42a000"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Process"><param name="Local" value="class_main.html#a86919ed599f9f8a27a81a3f71142dea4"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Ready"><param name="Local" value="class_main.html#afa38a52a0b6f8e0362539aea9114f285"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="InstanciarEscena"><param name="Local" value="class_main.html#a0ab775342fc867755f3fd37cb8a738f9"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="popPista_1"><param name="Local" value="class_main.html#aa263141de205b807204a92cae503339d"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="MenuDePausa"><param name="Local" value="class_menu_de_pausa.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_on_continuar_pressed"><param name="Local" value="class_menu_de_pausa.html#a2c1ba5dc9896d4072cfe2d885961f8a2"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_on_exit_pressed"><param name="Local" value="class_menu_de_pausa.html#aad1566b03a17affddf91d9eb6d66ecc2"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_on_opciones_pressed"><param name="Local" value="class_menu_de_pausa.html#afe7c3eb09742bac08ee6fa0e3ac60539"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_on_salir_al_menu_principal_pressed"><param name="Local" value="class_menu_de_pausa.html#a59bacf886a348a99e714735012d84853"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Process"><param name="Local" value="class_menu_de_pausa.html#a1c2f0f5bb387af972864b242d398d3bc"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="MenuPrincipal"><param name="Local" value="class_menu_principal.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Ready"><param name="Local" value="class_menu_principal.html#a6953c17367442ffd867c76d3be25b770"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Monstruo"><param name="Local" value="class_monstruo.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
@@ -81,6 +94,8 @@
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="MoverPrueba"><param name="Local" value="class_mover_prueba.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_on_input_event"><param name="Local" value="class_mover_prueba.html#a668777f25f1d367ee23887b73638ceef"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Process"><param name="Local" value="class_mover_prueba.html#afd4753b90f682ac54158508148bca707"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="poster"><param name="Local" value="classposter.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
@@ -98,21 +113,36 @@
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_on_input_event"><param name="Local" value="class_reloj_zoomeado.html#aefe2905c0a82d825d2bc27602166efc0"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_Ready"><param name="Local" value="class_reloj_zoomeado.html#a174f954be63dc07bcb23346d4686b4cb"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="Tapa"><param name="Local" value="class_tapa.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="VarillaM"><param name="Local" value="class_varilla_m.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_on_input_event"><param name="Local" value="class_varilla_m.html#a1a8ee93ae0eeb4e57130129684ea60a4"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Process"><param name="Local" value="class_varilla_m.html#af4b2c1d0553babb37de114913a3c5e1d"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="VarillaS"><param name="Local" value="class_varilla_s.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_on_input_event"><param name="Local" value="class_varilla_s.html#a31586b27f848bef11e6f8d4bd008a019"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Process"><param name="Local" value="class_varilla_s.html#a235d4e491e12ef15e8461a6fe31028be"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="devolverClickado"><param name="Local" value="class_varilla_s.html#a2a11dba64aedeb1276d4cafe3bb66376"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="rotar"><param name="Local" value="class_varilla_s.html#ae3aac7597f9f871526e735d42f5a3b2a"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Ventana"><param name="Local" value="class_ventana.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_on_input_event"><param name="Local" value="class_ventana.html#aba2ccc20dd231ffc3df6ccb73250eb0a"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Video_settings"><param name="Local" value="class_video__settings.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_on_button_pressed"><param name="Local" value="class_video__settings.html#a21d4ba712079a60955f7024fa768ccf0"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_on_exit_pressed"><param name="Local" value="class_video__settings.html#a3f9c7411a2dfc6d9be1ccedb5dfc295a"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_on_option_button_item_selected"><param name="Local" value="class_video__settings.html#a267468e004f0b8605a9977aca4b6f6c3"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Process"><param name="Local" value="class_video__settings.html#a04edb2ab71420b97a0a22aa146952905"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Ready"><param name="Local" value="class_video__settings.html#a1e88cf45c4358a7b52da210f4b4fffef"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Volumen_settings"><param name="Local" value="class_volumen__settings.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_on_volumen_master_value_changed"><param name="Local" value="class_volumen__settings.html#a0416b8d1963f55b29c2e3869810f1a5c"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_on_volumen_musica_value_changed"><param name="Local" value="class_volumen__settings.html#ae074890ca437bea612c9a786dc58da2e"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_on_volumen_vfx_value_changed"><param name="Local" value="class_volumen__settings.html#a97c16949cb402d7ca9a6102e45dcf82c"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Ready"><param name="Local" value="class_volumen__settings.html#a743b9f5e4b486c352af3b8d9a1db5a08"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
     </UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="Índice de clases"><param name="Local" value="classes.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -131,7 +161,6 @@
       <LI><OBJECT type="text/sitemap"><param name="Name" value="MoverPrueba"><param name="Local" value="class_mover_prueba.html"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="Reloj"><param name="Local" value="class_reloj.html"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="RelojZoomeado"><param name="Local" value="class_reloj_zoomeado.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="Tapa"><param name="Local" value="class_tapa.html"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="VarillaM"><param name="Local" value="class_varilla_m.html"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="VarillaS"><param name="Local" value="class_varilla_s.html"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="Ventana"><param name="Local" value="class_ventana.html"><param name="ImageNumber" value="11"></OBJECT>

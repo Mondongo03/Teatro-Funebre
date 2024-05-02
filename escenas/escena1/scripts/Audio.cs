@@ -13,8 +13,6 @@ public partial class Audio : AudioStreamPlayer2D {
 	public override void _Ready() {
 		GD.Print("Lodeado");
 	   Stream = GD.Load("res://escenas/escena1/assets/ring.ogg") as AudioStream;
-
-
 	}
 	/// <summary>
 	/// Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla

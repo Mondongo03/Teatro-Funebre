@@ -1,5 +1,10 @@
 \doxysection{Referencia de la clase Ventana}
 \hypertarget{class_ventana}{}\label{class_ventana}\index{Ventana@{Ventana}}
+
+
+Clase que nos permite gestinar como funciona la logica de la ventana en la escena 1.  
+
+
 Diagrama de herencia de Ventana\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,15 +14,8 @@ Diagrama de herencia de Ventana\begin{figure}[H]
 \doxysubsubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_ventana_a49f6858868a2409b097ed3003160397d}\label{class_ventana_a49f6858868a2409b097ed3003160397d} 
-override void {\bfseries \+\_\+\+Ready} ()
-\item 
-\Hypertarget{class_ventana_a4222e5591df266e0b9006855fe8d135a}\label{class_ventana_a4222e5591df266e0b9006855fe8d135a} 
-override void {\bfseries \+\_\+\+Process} (double delta)
-\item 
-\Hypertarget{class_ventana_aba2ccc20dd231ffc3df6ccb73250eb0a}\label{class_ventana_aba2ccc20dd231ffc3df6ccb73250eb0a} 
-void {\bfseries \+\_\+on\+\_\+input\+\_\+event} (Node viewport, Input\+Event evento, int shap)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_ventana_aba2ccc20dd231ffc3df6ccb73250eb0a}{\+\_\+on\+\_\+input\+\_\+event}} (Node viewport, Input\+Event evento, int shap)
+\begin{DoxyCompactList}\small\item\em Este metodo es una señal del propio godot que nos permite detectar cuando haces click sobre le objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Atributos públicos estáticos}
 \begin{DoxyCompactItemize}
 \item 
@@ -27,6 +25,31 @@ static Boolean {\bfseries Ventanazoom} = false
 \Hypertarget{class_ventana_a1af05f265e9cd002c3decdc668d0d490}\label{class_ventana_a1af05f265e9cd002c3decdc668d0d490} 
 static Node2D {\bfseries ventana\+Zoomeada\+Instancia}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase que nos permite gestinar como funciona la logica de la ventana en la escena 1. 
+
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{class_ventana_aba2ccc20dd231ffc3df6ccb73250eb0a}\label{class_ventana_aba2ccc20dd231ffc3df6ccb73250eb0a} 
+\index{Ventana@{Ventana}!\_on\_input\_event@{\_on\_input\_event}}
+\index{\_on\_input\_event@{\_on\_input\_event}!Ventana@{Ventana}}
+\doxysubsubsection{\texorpdfstring{\_on\_input\_event()}{\_on\_input\_event()}}
+{\footnotesize\ttfamily void Ventana.\+\_\+on\+\_\+input\+\_\+event (\begin{DoxyParamCaption}\item[{Node}]{viewport,  }\item[{Input\+Event}]{evento,  }\item[{int}]{shap }\end{DoxyParamCaption})}
+
+
+
+Este metodo es una señal del propio godot que nos permite detectar cuando haces click sobre le objeto. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em viewport} & Nodo del objeto parte de la API\\
+\hline
+{\em evento} & Nos permite detectar cuando se hace click\\
+\hline
+{\em shap} & Variable que se utiliza para la API\\
+\hline
+\end{DoxyParams}
 
 
 La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
