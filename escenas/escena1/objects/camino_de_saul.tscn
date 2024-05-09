@@ -29,7 +29,7 @@ region = Rect2(138, 0, 46, 112)
 [sub_resource type="SpriteFrames" id="SpriteFrames_5danm"]
 animations = [{
 "frames": [{
-"duration": 1.0,
+"duration": 1.5,
 "texture": SubResource("AtlasTexture_sujht")
 }, {
 "duration": 1.0,
@@ -43,7 +43,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"CaminarDerecha",
-"speed": 8.0
+"speed": 4.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e5em2"]
@@ -65,7 +65,7 @@ rotation = -1.59474
 scale = Vector2(1.82503, 1.82503)
 sprite_frames = SubResource("SpriteFrames_5danm")
 animation = &"CaminarDerecha"
-frame_progress = 0.629753
+frame_progress = 0.261082
 
 [node name="Area2D" type="Area2D" parent="CaminarDeSaul/Saul" groups=["personaje"]]
 position = Vector2(-259.836, -731.512)

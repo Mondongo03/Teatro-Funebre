@@ -1,4 +1,9 @@
 is_global = true
+build_property.GodotDisabledSourceGenerators = 
+build_property.GodotProjectDir = /home/ruben/Escritorio/Teatro-Funebre/
+build_property.GodotProjectDirBase64 = 
+build_property.GodotSourceGenerators = 
+build_property.IsGodotToolsProject = 
 build_property.TargetFramework = net6.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
@@ -8,6 +13,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProyectoFinal
-build_property.ProjectDir = D:\Teatro-Funebre\
+build_property.ProjectDir = /home/ruben/Escritorio/Teatro-Funebre/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

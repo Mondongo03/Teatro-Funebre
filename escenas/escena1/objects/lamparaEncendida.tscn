@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cbtls7wibeht4"]
 
 [ext_resource type="Texture2D" uid="uid://dy2lv14nnevsh" path="res://escenas/escena1/assets/Lampara encendida.png" id="1_heay2"]
-[ext_resource type="Script" path="res://escenas/escena1/scripts/LamparaEncendida.cs" id="1_ojpgd"]
+[ext_resource type="Script" path="res://escenas/escena1/scripts/Lampara.cs" id="1_ojpgd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y4yhw"]
 size = Vector2(74, 121)

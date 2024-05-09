@@ -1,8 +1,156 @@
-[gd_scene load_steps=2 format=3 uid="uid://c2oa2o80al2mr"]
+[gd_scene load_steps=24 format=3 uid="uid://c2oa2o80al2mr"]
 
+[ext_resource type="Texture2D" uid="uid://doxlotlpcd7ec" path="res://escenas/menuInicio/assets/TeatroApertura.png" id="1_8uvw6"]
+[ext_resource type="Texture2D" uid="uid://cqy5ktuksl5k8" path="res://escenas/menuInicio/assets/Teatro.png" id="1_cbroq"]
 [ext_resource type="Script" path="res://escenas/menuInicio/Scripts/MenuPrincipal.cs" id="1_g6uly"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_0x88e"]
+atlas = ExtResource("1_8uvw6")
+region = Rect2(1200, 0, 1200, 799)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5qtsa"]
+atlas = ExtResource("1_8uvw6")
+region = Rect2(0, 0, 1200, 799)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_risng"]
+atlas = ExtResource("1_8uvw6")
+region = Rect2(2400, 0, 1200, 799)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6qwkv"]
+atlas = ExtResource("1_8uvw6")
+region = Rect2(3600, 0, 1200, 799)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xlbgj"]
+atlas = ExtResource("1_8uvw6")
+region = Rect2(4800, 0, 1200, 799)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mvkt7"]
+atlas = ExtResource("1_8uvw6")
+region = Rect2(6000, 0, 1200, 799)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rt4ld"]
+atlas = ExtResource("1_8uvw6")
+region = Rect2(7200, 0, 1200, 799)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b2ao5"]
+atlas = ExtResource("1_8uvw6")
+region = Rect2(8400, 0, 1200, 799)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yw3qt"]
+atlas = ExtResource("1_8uvw6")
+region = Rect2(9600, 0, 1200, 799)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1gkx2"]
+atlas = ExtResource("1_8uvw6")
+region = Rect2(10800, 0, 1200, 799)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w1uvt"]
+atlas = ExtResource("1_8uvw6")
+region = Rect2(12000, 0, 1200, 799)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v3beq"]
+atlas = ExtResource("1_8uvw6")
+region = Rect2(13200, 0, 1200, 799)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p506o"]
+atlas = ExtResource("1_8uvw6")
+region = Rect2(14400, 0, 1200, 799)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nj0si"]
+atlas = ExtResource("1_8uvw6")
+region = Rect2(15600, 0, 1200, 799)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s3fkw"]
+atlas = ExtResource("1_8uvw6")
+region = Rect2(16800, 0, 1200, 799)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pxmna"]
+atlas = ExtResource("1_8uvw6")
+region = Rect2(18000, 0, 1200, 799)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6sle0"]
+atlas = ExtResource("1_8uvw6")
+region = Rect2(19200, 0, 1200, 799)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ocx7s"]
+atlas = ExtResource("1_8uvw6")
+region = Rect2(20400, 0, 1200, 799)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6d3vv"]
+atlas = ExtResource("1_8uvw6")
+region = Rect2(21600, 0, 1200, 799)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uacol"]
+animations = [{
+"frames": [{
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_0x88e")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_5qtsa")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_risng")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_6qwkv")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_xlbgj")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_mvkt7")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_rt4ld")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_b2ao5")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_yw3qt")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_1gkx2")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_w1uvt")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_v3beq")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_p506o")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_nj0si")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_s3fkw")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_pxmna")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_6sle0")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_ocx7s")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_6d3vv")
+}],
+"loop": false,
+"name": &"Teatro",
+"speed": 24.0
+}]
+
 [node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(574.5, 324.75)
+scale = Vector2(0.962437, 0.812891)
+texture = ExtResource("1_cbroq")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 script = ExtResource("1_g6uly")
@@ -13,7 +161,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(1, 0, 1, 1)
+color = Color(1, 1, 1, 0)
 
 [node name="Control" type="Control" parent="CanvasLayer"]
 layout_mode = 3
@@ -26,19 +174,19 @@ size_flags_horizontal = 4
 
 [node name="newGame" type="Button" parent="CanvasLayer/Control"]
 layout_mode = 0
-offset_left = 497.0
-offset_top = 82.0
-offset_right = 651.0
-offset_bottom = 155.0
+offset_left = 179.0
+offset_top = 282.0
+offset_right = 333.0
+offset_bottom = 352.0
 text = "Nueva Partida"
 
 [node name="loadGame" type="Button" parent="CanvasLayer/Control"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.00347222
-anchor_top = -0.0123457
-anchor_right = 0.00347222
-anchor_bottom = -0.0123457
+anchor_left = -0.108507
+anchor_top = 0.0972222
+anchor_right = -0.108507
+anchor_bottom = 0.0972222
 offset_left = 493.0
 offset_top = 220.0
 offset_right = 646.0
@@ -49,10 +197,10 @@ metadata/_edit_use_anchors_ = true
 [node name="setting" type="Button" parent="CanvasLayer/Control"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.00347222
-anchor_top = -0.00154321
-anchor_right = 0.00347222
-anchor_bottom = -0.00154321
+anchor_left = 0.0555556
+anchor_top = -0.087963
+anchor_right = 0.0555556
+anchor_bottom = -0.087963
 offset_left = 493.0
 offset_top = 339.0
 offset_right = 647.0
@@ -63,16 +211,25 @@ metadata/_edit_use_anchors_ = true
 [node name="exit" type="Button" parent="CanvasLayer/Control"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.00347222
-anchor_top = 0.00462963
-anchor_right = 0.00347222
-anchor_bottom = 0.00462963
+anchor_left = 0.220486
+anchor_top = -0.283951
+anchor_right = 0.220486
+anchor_bottom = -0.283951
 offset_left = 493.0
 offset_top = 457.0
 offset_right = 646.0
 offset_bottom = 540.0
 text = "Salir del juego"
 metadata/_edit_use_anchors_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer/Control"]
+visible = false
+position = Vector2(576, 325)
+scale = Vector2(0.96, 0.81602)
+sprite_frames = SubResource("SpriteFrames_uacol")
+animation = &"Teatro"
+autoplay = "Teatro"
+speed_scale = 0.75
 
 [connection signal="pressed" from="CanvasLayer/Control/newGame" to="CanvasLayer" method="_onNewGameButtonPressed"]
 [connection signal="pressed" from="CanvasLayer/Control/loadGame" to="CanvasLayer" method="_onLoadGameButtonPressed"]

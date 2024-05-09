@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://3y2khlkisrjn" path="res://escenas/escena1/assets/suelo.png" id="10_e8ngq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yiuey"]
-size = Vector2(1153, 652)
+size = Vector2(1154, 652)
 
 [sub_resource type="Animation" id="Animation_rk4ht"]
 length = 0.001
@@ -92,7 +92,7 @@ texture = ExtResource("2_72pvx")
 [node name="Fondo" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fondo"]
-position = Vector2(577.5, 326)
+position = Vector2(577, 326)
 shape = SubResource("RectangleShape2D_yiuey")
 debug_color = Color(0.588235, 0.462745, 0.768627, 0.419608)
 

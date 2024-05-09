@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://ds5cnibsn50dv"]
+[gd_scene load_steps=5 format=3 uid="uid://ds5cnibsn50dv"]
 
 [ext_resource type="Texture2D" uid="uid://42o21mfgkct3" path="res://escenas/escena3/assets/Desvan.png" id="1_5mqr0"]
+[ext_resource type="Script" path="res://escenas/escena3/Ritual.cs" id="2_qk8qi"]
+[ext_resource type="PackedScene" uid="uid://jytp2qyvw1p2" path="res://escenas/escena3/objects/unicornioAmarillo.tscn" id="3_usbam"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2v5bv"]
 radius = 0.00220227
@@ -14,32 +16,43 @@ position = Vector2(0.0514, 0.02725)
 scale = Vector2(9.6e-05, 8.1125e-05)
 texture = ExtResource("1_5mqr0")
 
-[node name="Area2D5" type="Area2D" parent="."]
+[node name="AbajoIzquierda" type="Area2D" parent="." groups=["AbajoIzquierda"]]
 position = Vector2(0.0449, 0.0547)
+script = ExtResource("2_qk8qi")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D5"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AbajoIzquierda"]
 shape = SubResource("CircleShape2D_2v5bv")
 
-[node name="Area2D4" type="Area2D" parent="."]
+[node name="Derecha" type="Area2D" parent="." groups=["Derecha"]]
 position = Vector2(0.0655, 0.0426)
+script = ExtResource("2_qk8qi")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Derecha"]
 shape = SubResource("CircleShape2D_2v5bv")
 
-[node name="Area2D3" type="Area2D" parent="."]
+[node name="AbajoDerecha" type="Area2D" parent="." groups=["AbajoDerecha"]]
 position = Vector2(0.0607, 0.0547)
+script = ExtResource("2_qk8qi")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AbajoDerecha"]
 shape = SubResource("CircleShape2D_2v5bv")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Arriba" type="Area2D" parent="." groups=["Arriba"]]
 position = Vector2(0.0528, 0.0345)
+script = ExtResource("2_qk8qi")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arriba"]
 shape = SubResource("CircleShape2D_2v5bv")
 
-[node name="Area2D2" type="Area2D" parent="."]
+[node name="Izquierda" type="Area2D" parent="." groups=["Izquierda"]]
 position = Vector2(0.04, 0.0426)
+script = ExtResource("2_qk8qi")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Izquierda"]
 shape = SubResource("CircleShape2D_2v5bv")
+
+[node name="Unicornio" parent="." instance=ExtResource("3_usbam")]
+scale = Vector2(0.05, 0.05)
+
+[connection signal="child_entered_tree" from="Sprite2D" to="AbajoIzquierda" method="_on_child_entered_tree"]
+[connection signal="child_exiting_tree" from="Sprite2D" to="AbajoIzquierda" method="_on_child_exiting_tree"]

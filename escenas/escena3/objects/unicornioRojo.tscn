@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://b0vjvdvcajks8"]
+
+[ext_resource type="Script" path="res://escenas/escena3/Unicornio.cs" id="1_vrlh8"]
+[ext_resource type="Texture2D" uid="uid://xh8i80p0bypd" path="res://escenas/escena3/assets/UnicornioRojo.png" id="2_n27k3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6md40"]
+size = Vector2(47, 37)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f6f8t"]
+size = Vector2(45, 23)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1qsdf"]
+size = Vector2(34, 14)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yreuq"]
+size = Vector2(17, 37)
+
+[node name="Unicornio" type="Area2D" groups=["UnicornioRojo"]]
+z_index = 7
+texture_filter = 1
+script = ExtResource("1_vrlh8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0.498861, 0.498805)
+texture = ExtResource("2_n27k3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-12.5, -16.5)
+shape = SubResource("RectangleShape2D_6md40")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, 25.5)
+shape = SubResource("RectangleShape2D_f6f8t")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(-6, 9)
+shape = SubResource("RectangleShape2D_1qsdf")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+position = Vector2(28.5, 2.5)
+shape = SubResource("RectangleShape2D_yreuq")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
