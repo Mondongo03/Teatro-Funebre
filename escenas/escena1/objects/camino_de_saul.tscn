@@ -67,7 +67,7 @@ rotation = -1.59474
 scale = Vector2(1.82503, 1.82503)
 sprite_frames = SubResource("SpriteFrames_5danm")
 animation = &"CaminarDerecha"
-frame_progress = 0.629753
+frame_progress = 0.101488
 
 [node name="Area2D" type="Area2D" parent="CaminarDeSaul/Saul" groups=["personaje"]]
 position = Vector2(-259.836, -731.512)

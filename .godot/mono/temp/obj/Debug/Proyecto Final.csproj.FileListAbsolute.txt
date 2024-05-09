@@ -70,3 +70,4 @@ D:\Teatro-Funebre\.godot\mono\temp\obj\Debug\refint\Proyecto Final.dll
 D:\Teatro-Funebre\.godot\mono\temp\obj\Debug\Proyecto Final.pdb
 D:\Teatro-Funebre\.godot\mono\temp\obj\Debug\Proyecto Final.genruntimeconfig.cache
 D:\Teatro-Funebre\.godot\mono\temp\obj\Debug\ref\Proyecto Final.dll
+D:\Teatro-Funebre\.godot\mono\temp\bin\Debug\YourApi.XML

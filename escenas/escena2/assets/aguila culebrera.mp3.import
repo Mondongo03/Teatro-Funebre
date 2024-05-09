@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bho0hlm3eqi43"
+path="res://.godot/imported/aguila culebrera.mp3-9c95df131d9419c119ea2d317a00e681.mp3str"
+
+[deps]
+
+source_file="res://escenas/escena2/assets/aguila culebrera.mp3"
+dest_files=["res://.godot/imported/aguila culebrera.mp3-9c95df131d9419c119ea2d317a00e681.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

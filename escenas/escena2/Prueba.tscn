@@ -1,9 +1,58 @@
-[gd_scene load_steps=5 format=3 uid="uid://b3oscujcwaje6"]
+[gd_scene load_steps=16 format=3 uid="uid://b3oscujcwaje6"]
 
-[ext_resource type="Script" path="res://escenas/escena2/escena2.cs" id="1_7q1kv"]
-[ext_resource type="Texture2D" uid="uid://bka6kaocja8oa" path="res://escenas/escena2/assets/_9424859e-a0b3-45d1-ade3-76daa2be9243.jpg" id="1_hv644"]
+[ext_resource type="Script" path="res://escenas/escena2/scripts/escena2.cs" id="1_7q1kv"]
+[ext_resource type="Texture2D" uid="uid://ccvk0vtc15wlv" path="res://escenas/escena2/assets/Bosquebueno.png" id="2_2netn"]
 [ext_resource type="PackedScene" uid="uid://c0vydxagyq8pj" path="res://escenas/menuPausa/escenas/pausa.tscn" id="2_p1h3l"]
 [ext_resource type="AudioStream" uid="uid://ccfyo5w280mxv" path="res://escenas/escena2/assets/magic-forest-95823.mp3" id="4_m1gnl"]
+[ext_resource type="Texture2D" uid="uid://ddbckl1lokln0" path="res://escenas/escena1/assets/GnomoCD.png" id="5_cshg0"]
+[ext_resource type="Script" path="res://escenas/escena2/scripts/MueveTeEnElBosque.cs" id="5_hu44f"]
+[ext_resource type="PackedScene" uid="uid://cky2o76wpk0bl" path="res://escenas/escena2/objetos/pajaro_marron.tscn" id="7_wd4jo"]
+[ext_resource type="PackedScene" uid="uid://ciocjjv3ss2lc" path="res://escenas/escena2/objetos/pajaro_verde.tscn" id="8_83e7h"]
+
+[sub_resource type="Curve2D" id="Curve2D_a8trf"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -610, 4380, 0, 0, 0, 0, 5230, 4300)
+}
+point_count = 2
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mwxlf"]
+atlas = ExtResource("5_cshg0")
+region = Rect2(0, 0, 46, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iw85i"]
+atlas = ExtResource("5_cshg0")
+region = Rect2(46, 0, 46, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kq2li"]
+atlas = ExtResource("5_cshg0")
+region = Rect2(92, 0, 46, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_315g3"]
+atlas = ExtResource("5_cshg0")
+region = Rect2(138, 0, 46, 112)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0p44s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mwxlf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iw85i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kq2li")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_315g3")
+}],
+"loop": true,
+"name": &"AccionBosque",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yd10l"]
+size = Vector2(58.8438, 121.281)
 
 [node name="Node2D" type="Node2D" node_paths=PackedStringArray("audioStreamPlayer2D")]
 position = Vector2(62, 51)
@@ -12,12 +61,46 @@ script = ExtResource("1_7q1kv")
 audioStreamPlayer2D = NodePath("AudioStreamPlayer2D")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0.0549963, 0.0293472)
-scale = Vector2(0.000119539, 6.74363e-05)
-texture = ExtResource("1_hv644")
+position = Vector2(0.05145, 0.02735)
+scale = Vector2(9.60833e-05, 8.1125e-05)
+texture = ExtResource("2_2netn")
 
 [node name="CanvasLayer" parent="." instance=ExtResource("2_p1h3l")]
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_m1gnl")
 bus = &"Musica"
+
+[node name="Gnomo" type="Path2D" parent="."]
+scale = Vector2(1e-05, 1e-05)
+curve = SubResource("Curve2D_a8trf")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Gnomo" node_paths=PackedStringArray("animatedSprite2D")]
+position = Vector2(-610, 4380)
+rotation = -0.0136978
+scale = Vector2(10, 10)
+rotates = false
+loop = false
+script = ExtResource("5_hu44f")
+animatedSprite2D = NodePath("AnimatedSprite2D")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Gnomo/PathFollow2D"]
+position = Vector2(-1.4645e-06, 0.000299998)
+sprite_frames = SubResource("SpriteFrames_0p44s")
+animation = &"AccionBosque"
+frame_progress = 0.570453
+
+[node name="Area2D" type="Area2D" parent="Gnomo/PathFollow2D/AnimatedSprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Gnomo/PathFollow2D/AnimatedSprite2D/Area2D"]
+position = Vector2(-0.154823, 0.471313)
+rotation = 0.0454114
+scale = Vector2(1.00004, 0.999957)
+skew = -0.00197065
+shape = SubResource("RectangleShape2D_yd10l")
+
+[node name="PajaroMarron" parent="." instance=ExtResource("7_wd4jo")]
+position = Vector2(-0.0084, 0.0002)
+rotation = -3.79388e-05
+
+[node name="PajaroVerde" parent="." instance=ExtResource("8_83e7h")]

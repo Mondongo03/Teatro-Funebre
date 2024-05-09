@@ -1,0 +1,64 @@
+[gd_scene load_steps=8 format=3 uid="uid://cky2o76wpk0bl"]
+
+[ext_resource type="Script" path="res://escenas/escena2/scripts/VolareMarron.cs" id="1_1xx6i"]
+[ext_resource type="Texture2D" uid="uid://dsffmqfgnuqnw" path="res://escenas/escena2/assets/Secuencia pajaro.png" id="2_gvtya"]
+
+[sub_resource type="Curve2D" id="Curve2D_tumcl"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 12340, 180, 0, 0, 0, 0, -1000, 190)
+}
+point_count = 2
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_slvwu"]
+atlas = ExtResource("2_gvtya")
+region = Rect2(1, 96, 91, 91)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o4fqv"]
+atlas = ExtResource("2_gvtya")
+region = Rect2(92, 96, 91, 91)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4i425"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_slvwu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o4fqv")
+}],
+"loop": true,
+"name": &"volar",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_by2m6"]
+size = Vector2(80.8072, 60.6055)
+
+[node name="PajaroMarron" type="Path2D"]
+position = Vector2(-0.0084, 0.0002)
+scale = Vector2(1e-05, 1e-05)
+curve = SubResource("Curve2D_tumcl")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="." node_paths=PackedStringArray("animatedSprite2D")]
+position = Vector2(12340, 180)
+rotation = -3.14082
+rotates = false
+script = ExtResource("1_1xx6i")
+animatedSprite2D = NodePath("AnimatedSprite2D")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="PathFollow2D"]
+position = Vector2(202.25, 202.25)
+rotation = 3.14022
+scale = Vector2(5.44506, 5.44506)
+sprite_frames = SubResource("SpriteFrames_4i425")
+animation = &"volar"
+
+[node name="Area2D" type="Area2D" parent="PathFollow2D/AnimatedSprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/AnimatedSprite2D/Area2D"]
+position = Vector2(5.09636, -6.84107)
+shape = SubResource("RectangleShape2D_by2m6")
+
+[node name="_Timer_23416" type="Timer" parent="PathFollow2D"]
+wait_time = 0.2
+one_shot = true

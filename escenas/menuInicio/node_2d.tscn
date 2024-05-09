@@ -1,25 +1,25 @@
-[gd_scene load_steps=3 format=3 uid="uid://c2oa2o80al2mr"]
+[gd_scene load_steps=5 format=3 uid="uid://c2oa2o80al2mr"]
 
 [ext_resource type="Script" path="res://escenas/menuInicio/Scripts/MenuPrincipal.cs" id="1_g6uly"]
 [ext_resource type="AudioStream" uid="uid://by62m2jx7gtpo" path="res://escenas/menuInicio/assets/a-jazz-piano-110481.mp3" id="2_ccdak"]
+[ext_resource type="PackedScene" uid="uid://b6n3doltr7qhs" path="res://escenas/menuPausa/escenas/color_rect.tscn" id="3_m0ls1"]
+[ext_resource type="Texture2D" uid="uid://cubhr6jspk6tx" path="res://escenas/menuInicio/assets/Teatro.png" id="3_ovf0w"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." node_paths=PackedStringArray("newGameButton", "loadGameButton", "settingsButton", "exitButton", "audioStreamPlayer2D")]
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(575.5, 324.75)
+scale = Vector2(0.960768, 0.811639)
+texture = ExtResource("3_ovf0w")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." node_paths=PackedStringArray("newGameButton", "loadGameButton", "settingsButton", "exitButton", "audioStreamPlayer2D", "animatedSprite2D")]
 script = ExtResource("1_g6uly")
 newGameButton = NodePath("Control/newGame")
 loadGameButton = NodePath("Control/loadGame")
 settingsButton = NodePath("Control/setting")
 exitButton = NodePath("Control/exit")
 audioStreamPlayer2D = NodePath("../AudioStreamPlayer2D")
-
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(1, 0, 1, 1)
+animatedSprite2D = NodePath("Control/ColorRect")
 
 [node name="Control" type="Control" parent="CanvasLayer"]
 layout_mode = 3
@@ -32,23 +32,23 @@ size_flags_horizontal = 4
 
 [node name="newGame" type="Button" parent="CanvasLayer/Control"]
 layout_mode = 0
-offset_left = 497.0
-offset_top = 82.0
-offset_right = 651.0
-offset_bottom = 155.0
+offset_left = 212.0
+offset_top = 286.0
+offset_right = 366.0
+offset_bottom = 359.0
 text = "Nueva Partida"
 
 [node name="loadGame" type="Button" parent="CanvasLayer/Control"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.00347222
-anchor_top = -0.0123457
-anchor_right = 0.00347222
-anchor_bottom = -0.0123457
-offset_left = 493.0
-offset_top = 220.0
-offset_right = 646.0
-offset_bottom = 291.0
+anchor_left = -0.171007
+anchor_top = 0.0972222
+anchor_right = -0.171007
+anchor_bottom = 0.0972222
+offset_left = 603.0
+offset_top = 223.0
+offset_right = 756.0
+offset_bottom = 294.0
 text = "Cargar Partida"
 metadata/_edit_use_anchors_ = true
 
@@ -56,29 +56,31 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.00347222
-anchor_top = -0.00154321
+anchor_top = -0.0864198
 anchor_right = 0.00347222
-anchor_bottom = -0.00154321
-offset_left = 493.0
-offset_top = 339.0
-offset_right = 647.0
-offset_bottom = 412.0
+anchor_bottom = -0.0864198
+offset_left = 603.0
+offset_top = 342.0
+offset_right = 757.0
+offset_bottom = 415.0
 text = "Ajustes"
 metadata/_edit_use_anchors_ = true
 
 [node name="exit" type="Button" parent="CanvasLayer/Control"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.00347222
-anchor_top = 0.00462963
-anchor_right = 0.00347222
-anchor_bottom = 0.00462963
-offset_left = 493.0
-offset_top = 457.0
-offset_right = 646.0
-offset_bottom = 540.0
+anchor_left = 0.181424
+anchor_top = -0.285494
+anchor_right = 0.181424
+anchor_bottom = -0.285494
+offset_left = 603.0
+offset_top = 460.0
+offset_right = 756.0
+offset_bottom = 543.0
 text = "Salir del juego"
 metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" parent="CanvasLayer/Control" instance=ExtResource("3_m0ls1")]
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_ccdak")
@@ -88,3 +90,4 @@ bus = &"Musica"
 [connection signal="pressed" from="CanvasLayer/Control/loadGame" to="CanvasLayer" method="_onLoadGameButtonPressed"]
 [connection signal="pressed" from="CanvasLayer/Control/setting" to="CanvasLayer" method="_onSettingsButtonPressed"]
 [connection signal="pressed" from="CanvasLayer/Control/exit" to="CanvasLayer" method="_onExitButtonPressed"]
+[connection signal="animation_finished" from="CanvasLayer/Control/ColorRect" to="CanvasLayer" method="_on_color_rect_animation_finished"]

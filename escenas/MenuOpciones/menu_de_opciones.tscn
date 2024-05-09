@@ -1,18 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://d185gqiy5ayuv"]
+[gd_scene load_steps=5 format=3 uid="uid://d185gqiy5ayuv"]
 
+[ext_resource type="Texture2D" uid="uid://cubhr6jspk6tx" path="res://escenas/menuInicio/assets/Teatro.png" id="1_6gudu"]
 [ext_resource type="PackedScene" uid="uid://dtwowptmwky12" path="res://escenas/MenuOpciones/volum_settings.tscn" id="1_11s8k"]
 [ext_resource type="PackedScene" uid="uid://qns0gr0343f" path="res://escenas/MenuOpciones/video_settings.tscn" id="2_g8cv6"]
+[ext_resource type="PackedScene" uid="uid://b6n3doltr7qhs" path="res://escenas/menuPausa/escenas/color_rect.tscn" id="4_nwvkw"]
 
 [node name="MenuDeOpciones" type="Node2D"]
 position = Vector2(23, -1)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(554.5, 324.75)
+scale = Vector2(0.965776, 0.81164)
+texture = ExtResource("1_6gudu")
 
 [node name="CanvasLayer" parent="." instance=ExtResource("1_11s8k")]
 
 [node name="VideoSettings" parent="." instance=ExtResource("2_g8cv6")]
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = -25.0
-offset_top = -1.0
-offset_right = 1140.0
-offset_bottom = 661.0
-color = Color(1, 0, 1, 1)
+[node name="ColorRect" parent="." instance=ExtResource("4_nwvkw")]
+position = Vector2(555, 323.25)
+scale = Vector2(0.960801, 0.810388)

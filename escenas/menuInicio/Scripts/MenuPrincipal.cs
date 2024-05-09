@@ -17,6 +17,8 @@ public partial class MenuPrincipal : CanvasLayer
     [Export] 
     public Button exitButton;
     [Export] public AudioStreamPlayer2D audioStreamPlayer2D;
+
+    [Export] public AnimatedSprite2D animatedSprite2D;
     public static GuardarEscena guardarEscena = new GuardarEscena();
 
     /// <summary>
@@ -25,7 +27,7 @@ public partial class MenuPrincipal : CanvasLayer
     public override void _Ready()
     {
         audioStreamPlayer2D.Play();
-
+        animatedSprite2D.Play("abrir");
     }
 
     /// <summary>
@@ -51,8 +53,7 @@ public partial class MenuPrincipal : CanvasLayer
     /// </summary>
     private void _onSettingsButtonPressed()
     {
-        GD.Print("Abriendo configuración...");
-        GetTree().ChangeSceneToFile("escenas/MenuOpciones/menu_de_opciones.tscn");
+        animatedSprite2D.Play("cerrar");
     }
 
     /// <summary>
@@ -61,5 +62,13 @@ public partial class MenuPrincipal : CanvasLayer
     private void _onExitButtonPressed()
     {
         GetTree().Quit();
+    }
+
+    private void _on_color_rect_animation_finished()
+    {
+        if(animatedSprite2D.Animation.ToString().Equals("cerrar"))
+        {
+            GetTree().ChangeSceneToFile("escenas/MenuOpciones/menu_de_opciones.tscn");
+        }
     }
 }
