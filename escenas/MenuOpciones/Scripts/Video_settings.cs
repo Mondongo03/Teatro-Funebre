@@ -11,7 +11,6 @@ public partial class Video_settings : CanvasLayer
 {
 	[ExportGroup("resolucion")]
 	[Export] private OptionButton optionButton;
-	[Export] private Button exit;
 
 	private static GameData gameData = new GameData();
 	private static bool pantalla = false;
@@ -39,11 +38,6 @@ public partial class Video_settings : CanvasLayer
 	/// <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
 	public override void _Process(double delta)
     {
-		if(pantalla){
-			exit.Hide();
-		}else{
-			exit.Visible = true;
-		}
     }
 
 	/// <summary>

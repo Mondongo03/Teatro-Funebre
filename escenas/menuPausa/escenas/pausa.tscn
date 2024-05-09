@@ -64,10 +64,10 @@ visible = false
 [node name="Exit" type="Button" parent="Menu de pausa"]
 visible = false
 layout_mode = 0
-offset_left = 387.0
-offset_top = 414.0
-offset_right = 718.0
-offset_bottom = 445.0
+offset_left = 418.0
+offset_top = 442.0
+offset_right = 749.0
+offset_bottom = 473.0
 text = "Salir"
 
 [connection signal="pressed" from="Menu de pausa/Continuar" to="Menu de pausa" method="_on_continuar_pressed"]

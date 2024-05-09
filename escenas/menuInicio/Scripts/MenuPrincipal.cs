@@ -17,7 +17,6 @@ public partial class MenuPrincipal : CanvasLayer
     [Export] 
     public Button exitButton;
     [Export] public AudioStreamPlayer2D audioStreamPlayer2D;
-
     [Export] public AnimatedSprite2D animatedSprite2D;
     public static GuardarEscena guardarEscena = new GuardarEscena();
 

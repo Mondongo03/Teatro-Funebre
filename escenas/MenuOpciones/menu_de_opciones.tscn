@@ -1,22 +1,51 @@
-[gd_scene load_steps=5 format=3 uid="uid://d185gqiy5ayuv"]
+[gd_scene load_steps=6 format=3 uid="uid://d185gqiy5ayuv"]
 
-[ext_resource type="Texture2D" uid="uid://cubhr6jspk6tx" path="res://escenas/menuInicio/assets/Teatro.png" id="1_6gudu"]
+[ext_resource type="Texture2D" uid="uid://cqy5ktuksl5k8" path="res://escenas/menuInicio/assets/Teatro.png" id="1_6gudu"]
 [ext_resource type="PackedScene" uid="uid://dtwowptmwky12" path="res://escenas/MenuOpciones/volum_settings.tscn" id="1_11s8k"]
+[ext_resource type="Script" path="res://escenas/MenuOpciones/Scripts/MenuOpciones.cs" id="1_ub83f"]
 [ext_resource type="PackedScene" uid="uid://qns0gr0343f" path="res://escenas/MenuOpciones/video_settings.tscn" id="2_g8cv6"]
-[ext_resource type="PackedScene" uid="uid://b6n3doltr7qhs" path="res://escenas/menuPausa/escenas/color_rect.tscn" id="4_nwvkw"]
+[ext_resource type="PackedScene" path="res://escenas/menuPausa/escenas/color_rect.tscn" id="4_nwvkw"]
 
-[node name="MenuDeOpciones" type="Node2D"]
+[node name="MenuDeOpciones" type="Node2D" node_paths=PackedStringArray("animatedSprite2D", "videoSettings", "audioSettings", "button")]
 position = Vector2(23, -1)
+script = ExtResource("1_ub83f")
+animatedSprite2D = NodePath("Control/ColorRect")
+videoSettings = NodePath("Control/VideoSettings")
+audioSettings = NodePath("Control/CanvasLayer")
+button = NodePath("Control/Button")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(554.5, 324.75)
 scale = Vector2(0.965776, 0.81164)
 texture = ExtResource("1_6gudu")
 
-[node name="CanvasLayer" parent="." instance=ExtResource("1_11s8k")]
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="VideoSettings" parent="." instance=ExtResource("2_g8cv6")]
+[node name="CanvasLayer" parent="Control" instance=ExtResource("1_11s8k")]
+process_physics_priority = -3
+visible = false
 
-[node name="ColorRect" parent="." instance=ExtResource("4_nwvkw")]
+[node name="VideoSettings" parent="Control" instance=ExtResource("2_g8cv6")]
+visible = false
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 395.0
+offset_top = 440.0
+offset_right = 724.0
+offset_bottom = 472.0
+text = "Salir"
+
+[node name="ColorRect" parent="Control" instance=ExtResource("4_nwvkw")]
 position = Vector2(555, 323.25)
 scale = Vector2(0.960801, 0.810388)
+autoplay = ""
+
+[connection signal="pressed" from="Control/Button" to="." method="_on_button_pressed"]
+[connection signal="animation_finished" from="Control/ColorRect" to="." method="_on_color_rect_animation_finished"]

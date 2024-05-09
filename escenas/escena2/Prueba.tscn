@@ -100,7 +100,6 @@ skew = -0.00197065
 shape = SubResource("RectangleShape2D_yd10l")
 
 [node name="PajaroMarron" parent="." instance=ExtResource("7_wd4jo")]
-position = Vector2(-0.0084, 0.0002)
 rotation = -3.79388e-05
 
 [node name="PajaroVerde" parent="." instance=ExtResource("8_83e7h")]
