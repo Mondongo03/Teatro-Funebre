@@ -1,8 +1,8 @@
-res://escenas/escena3/objects/unicornioAmarillo.tscn
-res://escenas/escena3/node_2d.tscn
 res://escenas/menuInicio/node_2d.tscn
+res://escenas/escena3/objects/unicornioAmarillo.tscn
 res://escenas/escena3/objects/unicornioVerde.tscn
 res://escenas/escena3/objects/unicornioBlanco.tscn
+res://escenas/escena3/objects/unicornioNaranja.tscn
 res://escenas/escena1/Main.cs
 res://escenas/escena1/scripts/Audio.cs
 res://escenas/escena1/scripts/Cajetilla.cs
@@ -22,10 +22,12 @@ res://escenas/escena1/scripts/VarillaS.cs
 res://escenas/escena1/scripts/Ventana.cs
 res://escenas/escena2/scripts/MoverPrueba.cs
 res://escenas/escena3/MainDesvan.cs
-res://escenas/escena3/Ritual.cs
-res://escenas/escena3/Unicornio.cs
+res://escenas/escena3/scripts/Ritual.cs
+res://escenas/escena3/scripts/Unicornio.cs
 res://escenas/Guardar/Scripts/GuardarEscena.cs
 res://escenas/menuInicio/Scripts/MenuPrincipal.cs
 res://escenas/MenuOpciones/Scripts/Video_settings.cs
 res://escenas/MenuOpciones/Scripts/Volumen_settings.cs
 res://escenas/menuPausa/scripts/MenuDePausa.cs
+res://escenas/escena3/node_2d.tscn
+res://escenas/escena3/objects/unicornioRojo.tscn

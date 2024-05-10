@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://b0vjvdvcajks8"]
 
-[ext_resource type="Script" path="res://escenas/escena3/Unicornio.cs" id="1_vrlh8"]
+[ext_resource type="Script" path="res://escenas/escena3/scripts/Unicornio.cs" id="1_vrlh8"]
 [ext_resource type="Texture2D" uid="uid://xh8i80p0bypd" path="res://escenas/escena3/assets/UnicornioRojo.png" id="2_n27k3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6md40"]

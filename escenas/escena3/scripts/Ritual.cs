@@ -6,6 +6,8 @@ using System.Collections.Generic;
 public partial class Ritual : Area2D {
 	List<string> grupos = new List<string>();
 
+	public static int slotCorrecto = 0;
+
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready() {
 		
@@ -21,7 +23,7 @@ public partial class Ritual : Area2D {
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-			
+			GD.Print(slotCorrecto);
 		
 	}
 
@@ -31,21 +33,41 @@ public partial class Ritual : Area2D {
 
 	public void _on_area_entered(Area2D area) {
         if(grupos[0].Equals("Arriba") && area.IsInGroup("UnicornioRojo")){
-			GD.Print("Arriba: Okkkk");
+			slotCorrecto++;
 		}
-		 if(grupos[0].Equals("Izquierda") && area.IsInGroup("UnicornioVerde")){
-			GD.Print("Derecha: Okkkk");
+		 if(grupos[0].Equals("Derecha") && area.IsInGroup("UnicornioVerde")){
+			slotCorrecto++;
 		}
 		 if(grupos[0].Equals("Izquierda") && area.IsInGroup("UnicornioAmarillo")){
-			GD.Print("Izquierda: Okkkk");
+			slotCorrecto++;
 		}
 		
 		 if(grupos[0].Equals("AbajoIzquierda") && area.IsInGroup("UnicornioNaranja")){
-			GD.Print("AbajoIzquierda: Okkkk");
+			slotCorrecto++;
 		}
 		if(grupos[0].Equals("AbajoDerecha") && area.IsInGroup("UnicornioBlanco")){
-			GD.Print("AbajoDerecha: Okkkk");
+			slotCorrecto++;
 		}
-		GD.Print(area.GetGroups());
+		
+    }
+
+	public void _on_area_exited(Area2D area) {
+        if(grupos[0].Equals("Arriba") && area.IsInGroup("UnicornioRojo")){
+			slotCorrecto--;
+		}
+		 if(grupos[0].Equals("Derecha") && area.IsInGroup("UnicornioVerde")){
+			slotCorrecto--;
+		}
+		 if(grupos[0].Equals("Izquierda") && area.IsInGroup("UnicornioAmarillo")){
+			slotCorrecto--;
+		}
+		
+		 if(grupos[0].Equals("AbajoIzquierda") && area.IsInGroup("UnicornioNaranja")){
+			slotCorrecto--;
+		}
+		if(grupos[0].Equals("AbajoDerecha") && area.IsInGroup("UnicornioBlanco")){
+			slotCorrecto--;
+		}
+		
     }
 }

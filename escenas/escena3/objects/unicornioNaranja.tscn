@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://dbn80bwod74wb"]
 
-[ext_resource type="Script" path="res://escenas/escena3/Unicornio.cs" id="1_k3p0b"]
+[ext_resource type="Script" path="res://escenas/escena3/scripts/Unicornio.cs" id="1_todat"]
 [ext_resource type="Texture2D" uid="uid://bxq8lyq5ulq43" path="res://escenas/escena3/assets/UnicornioNaranja.png" id="2_eip84"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6md40"]
@@ -18,7 +18,7 @@ size = Vector2(17, 37)
 [node name="Unicornio" type="Area2D" groups=["UnicornioNaranja"]]
 z_index = 7
 texture_filter = 1
-script = ExtResource("1_k3p0b")
+script = ExtResource("1_todat")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
