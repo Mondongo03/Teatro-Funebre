@@ -1712,6 +1712,17 @@
             Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
         </member>
+        <member name="M:MueveTeEnElBosque._Ready">
+            <summary>
+            Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script
+            </summary>
+        </member>
+        <member name="M:MueveTeEnElBosque._Process(System.Double)">
+            <summary>
+            Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla
+            </summary>
+            <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
+        </member>
         <member name="T:MueveTeEnElBosque.MethodName">
             <summary>
             Cached StringNames for the methods contained in this class, for fast lookup.
@@ -1725,6 +1736,11 @@
         <member name="F:MueveTeEnElBosque.MethodName._Process">
             <summary>
             Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:MueveTeEnElBosque.MethodName._on_area_2d_area_entered">
+            <summary>
+            Cached name for the '_on_area_2d_area_entered' method.
             </summary>
         </member>
         <member name="M:MueveTeEnElBosque.GetGodotMethodList">
@@ -1791,6 +1807,89 @@
             <summary>
             Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
+        </member>
+        <member name="T:pocion.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:pocion.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:pocion.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:pocion.MethodName._on_input_event">
+            <summary>
+            Cached name for the '_on_input_event' method.
+            </summary>
+        </member>
+        <member name="M:pocion.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:pocion.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:pocion.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:pocion.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:pocion.PropertyName.puedoMover">
+            <summary>
+            Cached name for the 'puedoMover' field.
+            </summary>
+        </member>
+        <member name="M:pocion.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:pocion.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:pocion.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:pocion.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:pocion.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:pocion.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="T:VolareMarron">
+            <summary>
+            Clase del pajaro Marron que controla sus movimientos, velocidad y ratio de aparicion 
+            </summary>
+        </member>
+        <member name="M:VolareMarron._Ready">
+            <summary>
+            Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script
+            </summary>
+        </member>
+        <member name="M:VolareMarron._Process(System.Double)">
+            <summary>
+            Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla
+            </summary>
+            <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
         </member>
         <member name="T:VolareMarron.MethodName">
             <summary>
@@ -1871,6 +1970,22 @@
             <summary>
             Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
+        </member>
+        <member name="T:VolareVerde">
+            <summary>
+            Clase del pajaro Verde que controla sus movimientos, velocidad y ratio de aparicion 
+            </summary>
+        </member>
+        <member name="M:VolareVerde._Ready">
+            <summary>
+            Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script
+            </summary>
+        </member>
+        <member name="M:VolareVerde._Process(System.Double)">
+            <summary>
+            Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla
+            </summary>
+            <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
         </member>
         <member name="T:VolareVerde.MethodName">
             <summary>
@@ -2189,6 +2304,11 @@
             Cached name for the 'animatedSprite2D' field.
             </summary>
         </member>
+        <member name="F:MenuPrincipal.PropertyName.opcion">
+            <summary>
+            Cached name for the 'opcion' field.
+            </summary>
+        </member>
         <member name="M:MenuPrincipal.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
             <inheritdoc/>
         </member>
@@ -2221,6 +2341,56 @@
             Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
         </member>
+        <member name="M:MenuOpciones._on_volumen_master_value_changed(System.Single)">
+            <summary>
+            Metodo que nos permite cambiar el porcentaje de sonido del buffer master
+            </summary>
+            <param name="volumen">Parametro de volumen deseado</param>
+        </member>
+        <member name="M:MenuOpciones._on_volumen_vfx_value_changed(System.Single)">
+            <summary>
+            Metodo que nos permite cambiar el porcentaje de sonido del buffer efectos de sonido
+            </summary>
+            <param name="volumen">Parametro de volumen deseado</param>
+        </member>
+        <member name="M:MenuOpciones._on_volumen_musica_value_changed(System.Single)">
+            <summary>
+            Metodo que nos permite cambiar el porcentaje de sonido del buffer musica
+            </summary>
+            <param name="volumen">Parametro de volumen deseado</param>
+        </member>
+        <member name="M:MenuOpciones.setPantalla(System.Boolean)">
+            <summary>
+            Setter de pantalla
+            </summary>
+            <param name="s">Cambia el bool de pantalla</param>
+        </member>
+        <member name="M:MenuOpciones.AddResolutionToButton">
+            <summary>
+            Metodo que nos permite gestionar el cambio de resolucion
+            </summary>
+        </member>
+        <member name="M:MenuOpciones.Save">
+            <summary>
+            Metodo que guarda las opciones elegidas por el usuario
+            </summary>
+        </member>
+        <member name="M:MenuOpciones._on_button_pressed">
+            <summary>
+            Señal de godot que se activa sola cuando haces click en el boton vinculado
+            </summary>
+        </member>
+        <member name="M:MenuOpciones._on_option_button_item_selected(System.Int32)">
+            <summary>
+            Metodo que gestiona el desplegable de resoluciones y aplica la resolucion seleccionada
+            </summary>
+            <param name="mySelectedRez">Cambia la resolucion actual</param>
+        </member>
+        <member name="M:MenuOpciones.ApplyGameDataVideoSettings">
+            <summary>
+            Metodo que aplica todos los cambios en el juego
+            </summary>
+        </member>
         <member name="T:MenuOpciones.MethodName">
             <summary>
             Cached StringNames for the methods contained in this class, for fast lookup.
@@ -2241,9 +2411,54 @@
             Cached name for the '_on_color_rect_animation_finished' method.
             </summary>
         </member>
+        <member name="F:MenuOpciones.MethodName._on_exit_pressed">
+            <summary>
+            Cached name for the '_on_exit_pressed' method.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.MethodName._on_volumen_master_value_changed">
+            <summary>
+            Cached name for the '_on_volumen_master_value_changed' method.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.MethodName._on_volumen_vfx_value_changed">
+            <summary>
+            Cached name for the '_on_volumen_vfx_value_changed' method.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.MethodName._on_volumen_musica_value_changed">
+            <summary>
+            Cached name for the '_on_volumen_musica_value_changed' method.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.MethodName.setPantalla">
+            <summary>
+            Cached name for the 'setPantalla' method.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.MethodName.AddResolutionToButton">
+            <summary>
+            Cached name for the 'AddResolutionToButton' method.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.MethodName.Save">
+            <summary>
+            Cached name for the 'Save' method.
+            </summary>
+        </member>
         <member name="F:MenuOpciones.MethodName._on_button_pressed">
             <summary>
             Cached name for the '_on_button_pressed' method.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.MethodName._on_option_button_item_selected">
+            <summary>
+            Cached name for the '_on_option_button_item_selected' method.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.MethodName.ApplyGameDataVideoSettings">
+            <summary>
+            Cached name for the 'ApplyGameDataVideoSettings' method.
             </summary>
         </member>
         <member name="M:MenuOpciones.GetGodotMethodList">
@@ -2269,19 +2484,59 @@
             Cached name for the 'animatedSprite2D' field.
             </summary>
         </member>
-        <member name="F:MenuOpciones.PropertyName.videoSettings">
-            <summary>
-            Cached name for the 'videoSettings' field.
-            </summary>
-        </member>
-        <member name="F:MenuOpciones.PropertyName.audioSettings">
-            <summary>
-            Cached name for the 'audioSettings' field.
-            </summary>
-        </member>
         <member name="F:MenuOpciones.PropertyName.button">
             <summary>
             Cached name for the 'button' field.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.PropertyName.master">
+            <summary>
+            Cached name for the 'master' field.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.PropertyName.vfx">
+            <summary>
+            Cached name for the 'vfx' field.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.PropertyName.music">
+            <summary>
+            Cached name for the 'music' field.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.PropertyName.master_slider">
+            <summary>
+            Cached name for the 'master_slider' field.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.PropertyName.vfx_slider">
+            <summary>
+            Cached name for the 'vfx_slider' field.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.PropertyName.music_slider">
+            <summary>
+            Cached name for the 'music_slider' field.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.PropertyName.master_porcentual">
+            <summary>
+            Cached name for the 'master_porcentual' field.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.PropertyName.vfx_porcentual">
+            <summary>
+            Cached name for the 'vfx_porcentual' field.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.PropertyName.music_porcentual">
+            <summary>
+            Cached name for the 'music_porcentual' field.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.PropertyName.optionButton">
+            <summary>
+            Cached name for the 'optionButton' field.
             </summary>
         </member>
         <member name="M:MenuOpciones.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">

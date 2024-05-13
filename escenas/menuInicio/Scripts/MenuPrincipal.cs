@@ -19,6 +19,7 @@ public partial class MenuPrincipal : CanvasLayer
     [Export] public AudioStreamPlayer2D audioStreamPlayer2D;
     [Export] public AnimatedSprite2D animatedSprite2D;
     public static GuardarEscena guardarEscena = new GuardarEscena();
+    bool opcion = false;
 
     /// <summary>
     /// Called when the node enters the scene tree for the first time.
@@ -53,6 +54,7 @@ public partial class MenuPrincipal : CanvasLayer
     private void _onSettingsButtonPressed()
     {
         animatedSprite2D.Play("cerrar");
+        opcion = true;
     }
 
     /// <summary>
@@ -60,14 +62,18 @@ public partial class MenuPrincipal : CanvasLayer
     /// </summary>
     private void _onExitButtonPressed()
     {
-        GetTree().Quit();
+        animatedSprite2D.Play("cerrar");
+        opcion = false;
     }
 
     private void _on_color_rect_animation_finished()
     {
-        if(animatedSprite2D.Animation.ToString().Equals("cerrar"))
+        if(animatedSprite2D.Animation.ToString().Equals("cerrar") && opcion)
         {
             GetTree().ChangeSceneToFile("escenas/MenuOpciones/menu_de_opciones.tscn");
+        }else if (animatedSprite2D.Animation.ToString().Equals("cerrar") && !opcion)
+        {
+            GetTree().Quit();
         }
     }
 }

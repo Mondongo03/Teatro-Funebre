@@ -42,6 +42,7 @@ curve = SubResource("Curve2D_lvetu")
 position = Vector2(12310, 820)
 rotation = 3.14159
 rotates = false
+loop = false
 script = ExtResource("1_ri7uc")
 animatedSprite2D = NodePath("AnimatedSprite2D")
 

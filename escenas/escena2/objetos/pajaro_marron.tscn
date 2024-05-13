@@ -43,6 +43,7 @@ curve = SubResource("Curve2D_tumcl")
 position = Vector2(12340, 180)
 rotation = -3.14082
 rotates = false
+loop = false
 script = ExtResource("1_1xx6i")
 animatedSprite2D = NodePath("AnimatedSprite2D")
 

@@ -1,18 +1,21 @@
-[gd_scene load_steps=6 format=3 uid="uid://d185gqiy5ayuv"]
+[gd_scene load_steps=4 format=3 uid="uid://d185gqiy5ayuv"]
 
 [ext_resource type="Texture2D" uid="uid://cqy5ktuksl5k8" path="res://escenas/menuInicio/assets/Teatro.png" id="1_6gudu"]
-[ext_resource type="PackedScene" uid="uid://dtwowptmwky12" path="res://escenas/MenuOpciones/volum_settings.tscn" id="1_11s8k"]
 [ext_resource type="Script" path="res://escenas/MenuOpciones/Scripts/MenuOpciones.cs" id="1_ub83f"]
-[ext_resource type="PackedScene" uid="uid://qns0gr0343f" path="res://escenas/MenuOpciones/video_settings.tscn" id="2_g8cv6"]
 [ext_resource type="PackedScene" path="res://escenas/menuPausa/escenas/color_rect.tscn" id="4_nwvkw"]
 
-[node name="MenuDeOpciones" type="Node2D" node_paths=PackedStringArray("animatedSprite2D", "videoSettings", "audioSettings", "button")]
+[node name="MenuDeOpciones" type="Node2D" node_paths=PackedStringArray("animatedSprite2D", "button", "master_slider", "vfx_slider", "music_slider", "master_porcentual", "vfx_porcentual", "music_porcentual", "optionButton")]
 position = Vector2(23, -1)
 script = ExtResource("1_ub83f")
 animatedSprite2D = NodePath("Control/ColorRect")
-videoSettings = NodePath("Control/VideoSettings")
-audioSettings = NodePath("Control/CanvasLayer")
 button = NodePath("Control/Button")
+master_slider = NodePath("Control/VolumenMaster")
+vfx_slider = NodePath("Control/VolumenVFX")
+music_slider = NodePath("Control/VolumenMusica")
+master_porcentual = NodePath("Control/MasterPorcentual")
+vfx_porcentual = NodePath("Control/VFXPorcentual")
+music_porcentual = NodePath("Control/MusicaPorcentual")
+optionButton = NodePath("Control/OptionButton")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(554.5, 324.75)
@@ -27,12 +30,31 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="CanvasLayer" parent="Control" instance=ExtResource("1_11s8k")]
-process_physics_priority = -3
-visible = false
+[node name="Resolucion" type="Label" parent="Control"]
+offset_left = 390.0
+offset_top = 325.0
+offset_right = 583.0
+offset_bottom = 348.0
+text = "Resolucion de la pantalla"
 
-[node name="VideoSettings" parent="Control" instance=ExtResource("2_g8cv6")]
-visible = false
+[node name="OptionButton" type="OptionButton" parent="Control"]
+offset_left = 394.0
+offset_top = 357.0
+offset_right = 542.0
+offset_bottom = 386.0
+
+[node name="Button2" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 3.3
+anchor_right = 0.5
+anchor_bottom = 3.3
+offset_left = 393.0
+offset_top = 405.0
+offset_right = 722.0
+offset_bottom = 436.0
+text = "Aplicar"
 
 [node name="Button" type="Button" parent="Control"]
 layout_mode = 0
@@ -42,10 +64,75 @@ offset_right = 724.0
 offset_bottom = 472.0
 text = "Salir"
 
+[node name="Master" type="Label" parent="Control"]
+offset_left = 394.0
+offset_top = 131.0
+offset_right = 526.0
+offset_bottom = 154.0
+text = "Volumne general"
+
+[node name="VolumenMaster" type="HSlider" parent="Control"]
+offset_left = 398.0
+offset_top = 166.0
+offset_right = 665.0
+offset_bottom = 182.0
+
+[node name="MasterPorcentual" type="Label" parent="Control"]
+offset_left = 675.0
+offset_top = 162.0
+offset_right = 807.0
+offset_bottom = 185.0
+
+[node name="VFX" type="Label" parent="Control"]
+offset_left = 395.0
+offset_top = 248.0
+offset_right = 531.0
+offset_bottom = 271.0
+text = "Efectos de sonido"
+
+[node name="VolumenVFX" type="HSlider" parent="Control"]
+offset_left = 399.0
+offset_top = 283.0
+offset_right = 666.0
+offset_bottom = 299.0
+
+[node name="VFXPorcentual" type="Label" parent="Control"]
+offset_left = 676.0
+offset_top = 279.0
+offset_right = 808.0
+offset_bottom = 302.0
+
+[node name="Musica" type="Label" parent="Control"]
+offset_left = 394.0
+offset_top = 186.0
+offset_right = 526.0
+offset_bottom = 209.0
+text = "Musica"
+
+[node name="VolumenMusica" type="HSlider" parent="Control"]
+offset_left = 398.0
+offset_top = 221.0
+offset_right = 665.0
+offset_bottom = 237.0
+
+[node name="MusicaPorcentual" type="Label" parent="Control"]
+offset_left = 676.0
+offset_top = 218.0
+offset_right = 808.0
+offset_bottom = 241.0
+
 [node name="ColorRect" parent="Control" instance=ExtResource("4_nwvkw")]
 position = Vector2(555, 323.25)
 scale = Vector2(0.960801, 0.810388)
+animation = &"cerrar"
 autoplay = ""
+frame = 18
+frame_progress = 1.0
 
-[connection signal="pressed" from="Control/Button" to="." method="_on_button_pressed"]
+[connection signal="item_selected" from="Control/OptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="pressed" from="Control/Button2" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Control/Button" to="." method="_on_exit_pressed"]
+[connection signal="value_changed" from="Control/VolumenMaster" to="." method="_on_volumen_master_value_changed"]
+[connection signal="value_changed" from="Control/VolumenVFX" to="." method="_on_volumen_vfx_value_changed"]
+[connection signal="value_changed" from="Control/VolumenMusica" to="." method="_on_volumen_musica_value_changed"]
 [connection signal="animation_finished" from="Control/ColorRect" to="." method="_on_color_rect_animation_finished"]

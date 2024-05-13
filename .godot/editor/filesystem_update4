@@ -1,9 +1,5 @@
-res://escenas/MenuOpciones/menu_de_opciones.tscn
-res://escenas/escena1/Main.cs
-res://escenas/menuInicio/node_2d.tscn
 res://escenas/escena2/Prueba.tscn
-res://escenas/escena1/objects/camino_de_saul.tscn
-res://escenas/escena1/node_2d.tscn
+res://escenas/escena1/Main.cs
 res://escenas/escena1/scripts/Audio.cs
 res://escenas/escena1/scripts/Cajetilla.cs
 res://escenas/escena1/scripts/Cajon.cs
@@ -24,6 +20,7 @@ res://escenas/escena1/scripts/Ventana.cs
 res://escenas/escena2/scripts/escena2.cs
 res://escenas/escena2/scripts/MoverPrueba.cs
 res://escenas/escena2/scripts/MueveTeEnElBosque.cs
+res://escenas/escena2/scripts/pocion.cs
 res://escenas/escena2/scripts/VolareMarron.cs
 res://escenas/escena2/scripts/VolareVerde.cs
 res://escenas/escena3/script/Desvan.cs
@@ -33,6 +30,14 @@ res://escenas/MenuOpciones/Scripts/MenuOpciones.cs
 res://escenas/MenuOpciones/Scripts/Video_settings.cs
 res://escenas/MenuOpciones/Scripts/Volumen_settings.cs
 res://escenas/menuPausa/scripts/MenuDePausa.cs
+res://escenas/escena1/node_2d.tscn
+res://escenas/menuInicio/node_2d.tscn
+res://escenas/escena2/objetos/pajaro_verde.tscn
+res://escenas/escena2/objetos/pajaro_marron.tscn
+res://escenas/escena1/objects/camino_de_saul.tscn
+res://escenas/escena1/objects/varillaM.tscn
+res://escenas/MenuOpciones/menu_de_opciones.tscn
 res://escenas/MenuOpciones/video_settings.tscn
 res://escenas/MenuOpciones/volum_settings.tscn
-res://escenas/menuPausa/escenas/pausa.tscn
+res://escenas/escena1/objects/flecha.tscn
+res://escenas/escena2/objetos/flecha.tscn

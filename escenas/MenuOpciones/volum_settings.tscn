@@ -11,70 +11,61 @@ master_porcentual = NodePath("MasterPorcentual")
 vfx_porcentual = NodePath("VFXPorcentual")
 music_porcentual = NodePath("MusicaPorcentual")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-visible = false
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(1, 0, 1, 1)
-
 [node name="Master" type="Label" parent="."]
-offset_left = 416.0
+offset_left = 417.0
 offset_top = 130.0
-offset_right = 548.0
+offset_right = 549.0
 offset_bottom = 153.0
 text = "Volumne general"
 
 [node name="VolumenMaster" type="HSlider" parent="."]
-offset_left = 420.0
+offset_left = 421.0
 offset_top = 165.0
-offset_right = 687.0
+offset_right = 688.0
 offset_bottom = 181.0
 
 [node name="MasterPorcentual" type="Label" parent="."]
-offset_left = 697.0
+offset_left = 698.0
 offset_top = 161.0
-offset_right = 829.0
+offset_right = 830.0
 offset_bottom = 184.0
 
 [node name="VFX" type="Label" parent="."]
-offset_left = 417.0
+offset_left = 418.0
 offset_top = 247.0
-offset_right = 553.0
+offset_right = 554.0
 offset_bottom = 270.0
 text = "Efectos de sonido"
 
 [node name="VolumenVFX" type="HSlider" parent="."]
-offset_left = 421.0
+offset_left = 422.0
 offset_top = 282.0
-offset_right = 688.0
+offset_right = 689.0
 offset_bottom = 298.0
 
 [node name="VFXPorcentual" type="Label" parent="."]
-offset_left = 698.0
+offset_left = 699.0
 offset_top = 278.0
-offset_right = 830.0
+offset_right = 831.0
 offset_bottom = 301.0
 
 [node name="Musica" type="Label" parent="."]
-offset_left = 416.0
+offset_left = 417.0
 offset_top = 185.0
-offset_right = 548.0
+offset_right = 549.0
 offset_bottom = 208.0
 text = "Musica"
 
 [node name="VolumenMusica" type="HSlider" parent="."]
-offset_left = 420.0
+offset_left = 421.0
 offset_top = 220.0
-offset_right = 687.0
+offset_right = 688.0
 offset_bottom = 236.0
 
 [node name="MusicaPorcentual" type="Label" parent="."]
-offset_left = 698.0
+offset_left = 699.0
 offset_top = 217.0
-offset_right = 830.0
+offset_right = 831.0
 offset_bottom = 240.0
 
 [connection signal="value_changed" from="VolumenMaster" to="." method="_on_volumen_master_value_changed"]
