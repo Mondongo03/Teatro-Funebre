@@ -41,3 +41,7 @@ res://escenas/MenuOpciones/video_settings.tscn
 res://escenas/MenuOpciones/volum_settings.tscn
 res://escenas/escena1/objects/flecha.tscn
 res://escenas/escena2/objetos/flecha.tscn
+res://escenas/escena1/scripts/Lampara.cs
+res://escenas/escena3/MainDesvan.cs
+res://escenas/escena3/scripts/Ritual.cs
+res://escenas/escena3/scripts/Unicornio.cs

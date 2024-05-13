@@ -1,0 +1,97 @@
+[gd_scene load_steps=13 format=3 uid="uid://dmiq6b6x1xr3n"]
+
+[ext_resource type="Script" path="res://escenas/escena3/MainDesvan.cs" id="1_e4q1i"]
+[ext_resource type="Texture2D" uid="uid://42o21mfgkct3" path="res://escenas/escena3/assets/Desvan.png" id="2_j38e6"]
+[ext_resource type="Script" path="res://escenas/escena3/scripts/Ritual.cs" id="3_4p4qt"]
+[ext_resource type="PackedScene" uid="uid://bo4efp45vqav7" path="res://escenas/escena3/objects/unicornioBlanco.tscn" id="5_lfdpm"]
+[ext_resource type="PackedScene" uid="uid://dbn80bwod74wb" path="res://escenas/escena3/objects/unicornioNaranja.tscn" id="6_yuq7b"]
+[ext_resource type="PackedScene" uid="uid://csv2tv2imk5dn" path="res://escenas/escena3/objects/unicornioVerde.tscn" id="7_d7t70"]
+[ext_resource type="PackedScene" uid="uid://b0vjvdvcajks8" path="res://escenas/escena3/objects/unicornioRojo.tscn" id="8_dmmbf"]
+[ext_resource type="PackedScene" uid="uid://jytp2qyvw1p2" path="res://escenas/escena3/objects/unicornioAmarillo.tscn" id="11_xf2oq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ibdlg"]
+radius = 35.2278
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qnmh5"]
+radius = 33.1361
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vd343"]
+radius = 34.0147
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8sr8f"]
+radius = 38.1182
+
+[node name="Node2D2" type="Node2D" groups=["Persist"]]
+script = ExtResource("1_e4q1i")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(576, 325)
+scale = Vector2(0.96, 0.8125)
+texture = ExtResource("2_j38e6")
+
+[node name="Izquierda" type="Area2D" parent="." groups=["Izquierda"]]
+position = Vector2(463, 481)
+script = ExtResource("3_4p4qt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Izquierda"]
+shape = SubResource("CircleShape2D_ibdlg")
+debug_color = Color(0.87451, 0.321569, 0.333333, 0.419608)
+
+[node name="AbajoIzquierda" type="Area2D" parent="." groups=["AbajoIzquierda"]]
+position = Vector2(511, 601)
+script = ExtResource("3_4p4qt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AbajoIzquierda"]
+shape = SubResource("CircleShape2D_qnmh5")
+debug_color = Color(0.941176, 0.917647, 0, 0.419608)
+
+[node name="Derecha" type="Area2D" parent="." groups=["Derecha"]]
+position = Vector2(716, 479)
+script = ExtResource("3_4p4qt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Derecha"]
+shape = SubResource("CircleShape2D_vd343")
+
+[node name="Arriba" type="Area2D" parent="." groups=["Arriba"]]
+position = Vector2(590, 398)
+script = ExtResource("3_4p4qt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arriba"]
+shape = SubResource("CircleShape2D_8sr8f")
+debug_color = Color(0.329412, 0.623529, 0, 0.419608)
+
+[node name="AbajoDerecha" type="Area2D" parent="Arriba" groups=["AbajoDerecha"]]
+position = Vector2(432, 804)
+script = ExtResource("3_4p4qt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arriba/AbajoDerecha"]
+position = Vector2(-363, -600)
+shape = SubResource("CircleShape2D_qnmh5")
+debug_color = Color(0.941176, 0.917647, 0, 0.419608)
+
+[node name="Unicornio" parent="." instance=ExtResource("11_xf2oq")]
+position = Vector2(348, 483)
+
+[node name="Unicornio2" parent="." instance=ExtResource("5_lfdpm")]
+position = Vector2(221, 470)
+
+[node name="Unicornio3" parent="." instance=ExtResource("6_yuq7b")]
+position = Vector2(113, 570)
+
+[node name="Unicornio4" parent="." instance=ExtResource("7_d7t70")]
+position = Vector2(109, 458)
+
+[node name="Unicornio5" parent="." instance=ExtResource("8_dmmbf")]
+position = Vector2(248, 573)
+
+[connection signal="child_entered_tree" from="Sprite2D2" to="." method="_on_sprite_2d_2_child_entered_tree"]
+[connection signal="area_entered" from="Izquierda" to="Izquierda" method="_on_area_entered"]
+[connection signal="area_exited" from="Izquierda" to="Izquierda" method="_on_area_exited"]
+[connection signal="area_entered" from="AbajoIzquierda" to="AbajoIzquierda" method="_on_area_entered"]
+[connection signal="area_exited" from="AbajoIzquierda" to="AbajoIzquierda" method="_on_area_exited"]
+[connection signal="area_entered" from="Derecha" to="Derecha" method="_on_area_entered"]
+[connection signal="area_exited" from="Derecha" to="Derecha" method="_on_area_exited"]
+[connection signal="area_entered" from="Arriba" to="Arriba" method="_on_area_entered"]
+[connection signal="area_exited" from="Arriba" to="Arriba" method="_on_area_exited"]
+[connection signal="area_entered" from="Arriba/AbajoDerecha" to="Arriba/AbajoDerecha" method="_on_area_entered"]
+[connection signal="area_exited" from="Arriba/AbajoDerecha" to="Arriba/AbajoDerecha" method="_on_area_exited"]
