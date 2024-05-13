@@ -18,7 +18,7 @@ public partial class Flecha : Area2D
     {
         if (evento.IsActionPressed("click_izquierdo"))
         {
-            GetTree().ChangeSceneToFile("res://escenas/escena3/Desvan.tscn");
+            GetTree().ChangeSceneToFile("res://escenas/escena3/node_2d.tscn");
         }
     }
 }

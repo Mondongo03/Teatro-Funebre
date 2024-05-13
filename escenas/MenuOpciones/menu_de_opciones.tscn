@@ -31,6 +31,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Resolucion" type="Label" parent="Control"]
+layout_mode = 0
 offset_left = 390.0
 offset_top = 325.0
 offset_right = 583.0
@@ -38,6 +39,7 @@ offset_bottom = 348.0
 text = "Resolucion de la pantalla"
 
 [node name="OptionButton" type="OptionButton" parent="Control"]
+layout_mode = 0
 offset_left = 394.0
 offset_top = 357.0
 offset_right = 542.0
@@ -65,6 +67,7 @@ offset_bottom = 472.0
 text = "Salir"
 
 [node name="Master" type="Label" parent="Control"]
+layout_mode = 0
 offset_left = 394.0
 offset_top = 131.0
 offset_right = 526.0
@@ -72,18 +75,21 @@ offset_bottom = 154.0
 text = "Volumne general"
 
 [node name="VolumenMaster" type="HSlider" parent="Control"]
+layout_mode = 0
 offset_left = 398.0
 offset_top = 166.0
 offset_right = 665.0
 offset_bottom = 182.0
 
 [node name="MasterPorcentual" type="Label" parent="Control"]
+layout_mode = 0
 offset_left = 675.0
 offset_top = 162.0
 offset_right = 807.0
 offset_bottom = 185.0
 
 [node name="VFX" type="Label" parent="Control"]
+layout_mode = 0
 offset_left = 395.0
 offset_top = 248.0
 offset_right = 531.0
@@ -91,18 +97,21 @@ offset_bottom = 271.0
 text = "Efectos de sonido"
 
 [node name="VolumenVFX" type="HSlider" parent="Control"]
+layout_mode = 0
 offset_left = 399.0
 offset_top = 283.0
 offset_right = 666.0
 offset_bottom = 299.0
 
 [node name="VFXPorcentual" type="Label" parent="Control"]
+layout_mode = 0
 offset_left = 676.0
 offset_top = 279.0
 offset_right = 808.0
 offset_bottom = 302.0
 
 [node name="Musica" type="Label" parent="Control"]
+layout_mode = 0
 offset_left = 394.0
 offset_top = 186.0
 offset_right = 526.0
@@ -110,12 +119,14 @@ offset_bottom = 209.0
 text = "Musica"
 
 [node name="VolumenMusica" type="HSlider" parent="Control"]
+layout_mode = 0
 offset_left = 398.0
 offset_top = 221.0
 offset_right = 665.0
 offset_bottom = 237.0
 
 [node name="MusicaPorcentual" type="Label" parent="Control"]
+layout_mode = 0
 offset_left = 676.0
 offset_top = 218.0
 offset_right = 808.0
