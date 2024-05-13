@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://c34wlb4ehiaqw"
+=======
+uid="uid://c6ltakdr3cy78"
+>>>>>>> f11ef13520905c2d637fd4966a4df62139872481
 path="res://.godot/imported/ChimeneaDesvan.png-7962e6abe3bb8e4ecc32474dda02a4d6.ctex"
 metadata={
 "vram_texture": false

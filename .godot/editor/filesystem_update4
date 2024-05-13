@@ -42,4 +42,7 @@ res://escenas/menuPausa/scripts/MenuDePausa.cs
 res://escenas/escena3/node_2d.tscn
 res://escenas/escena3/objects/unicornioRojo.tscn
 res://escenas/escena1/node_2d.tscn
+<<<<<<< HEAD
 >>>>>>> 9255035 (Sprite Cartas)
+=======
+>>>>>>> f11ef13520905c2d637fd4966a4df62139872481
