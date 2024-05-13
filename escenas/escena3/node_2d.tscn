@@ -84,6 +84,8 @@ position = Vector2(109, 458)
 [node name="Unicornio5" parent="." instance=ExtResource("8_dmmbf")]
 position = Vector2(248, 573)
 
+[node name="Chimenea" type="Area2D" parent="."]
+
 [connection signal="child_entered_tree" from="Sprite2D2" to="." method="_on_sprite_2d_2_child_entered_tree"]
 [connection signal="area_entered" from="Izquierda" to="Izquierda" method="_on_area_entered"]
 [connection signal="area_exited" from="Izquierda" to="Izquierda" method="_on_area_exited"]

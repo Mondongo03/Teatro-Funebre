@@ -10,7 +10,7 @@ GameData.cs::CSharpScript::-1::1714060452::0::1::::<><>::
 ::res://escenas/escena1/::1715267244
 Main.cs::CSharpScript::-1::1715267244::0::1::::<><>::
 node_2d.tscn::PackedScene::8019070129756456321::1715267244::0::1::::<><>::res://escenas/escena1/Main.cs<>uid://df3xdc8uy6hdl
-::res://escenas/escena1/assets/::1715273094
+::res://escenas/escena1/assets/::1715609335
 1336.png::CompressedTexture2D::3233817626518974133::1714060452::1714060452::1::::<><>::
 1709576603766.jpg::CompressedTexture2D::2289363194234139788::1714060452::1714060452::1::::<><>::
 cajetilla.png::CompressedTexture2D::678966686036491467::1714060452::1714060452::1::::<><>::
@@ -99,9 +99,10 @@ MoverPrueba.cs::CSharpScript::-1::1714060452::0::1::::<><>::
 ::res://escenas/escena3/::1715348955
 MainDesvan.cs::CSharpScript::-1::1714484902::0::1::::<><>::
 node_2d.tscn::PackedScene::8019070129756456321::1715348955::0::1::::<><>::res://escenas/escena3/MainDesvan.cs<>uid://42o21mfgkct3::::res://escenas/escena3/assets/Desvan.png<>res://escenas/escena3/scripts/Ritual.cs<>uid://bo4efp45vqav7::::res://escenas/escena3/objects/unicornioBlanco.tscn<>uid://dbn80bwod74wb::::res://escenas/escena3/objects/unicornioNaranja.tscn<>uid://csv2tv2imk5dn::::res://escenas/escena3/objects/unicornioVerde.tscn<>uid://b0vjvdvcajks8::::res://escenas/escena3/objects/unicornioRojo.tscn<>uid://jytp2qyvw1p2::::res://escenas/escena3/objects/unicornioAmarillo.tscn
-::res://escenas/escena3/assets/::1715351830
+::res://escenas/escena3/assets/::1715352411
 ChimeneaDesvan.png::CompressedTexture2D::6972557829000268145::1715351830::1715351834::1::::<><>::
 Desvan.png::CompressedTexture2D::2092114303577063674::1714060452::1714060452::1::::<><>::
+Gundulf.png::CompressedTexture2D::5490099957819595222::1715352411::1715610443::1::::<><>::
 UnicornioAmarillo.png::CompressedTexture2D::214805233898437180::1714402585::1714402793::1::::<><>::
 UnicornioBlanco.png::CompressedTexture2D::1934864849450651496::1714060452::1714060452::1::::<><>::
 UnicornioNaranja.png::CompressedTexture2D::4035818722594564878::1714060452::1714060452::1::::<><>::

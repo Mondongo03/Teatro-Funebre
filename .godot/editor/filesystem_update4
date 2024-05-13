@@ -31,3 +31,4 @@ res://escenas/MenuOpciones/Scripts/Volumen_settings.cs
 res://escenas/menuPausa/scripts/MenuDePausa.cs
 res://escenas/escena3/node_2d.tscn
 res://escenas/escena3/objects/unicornioRojo.tscn
+res://escenas/escena1/node_2d.tscn
