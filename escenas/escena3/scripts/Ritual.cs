@@ -8,7 +8,7 @@ public partial class Ritual : Area2D {
 
 	public static int slotCorrecto = 0;
 
-	// Called when the node enters the scene tree for the first time.
+	
 	public override void _Ready() {
 		
 
@@ -20,17 +20,20 @@ public partial class Ritual : Area2D {
         }
 	}
 
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
+	/// <summary>
+	/// Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla
+	/// </summary>
+	/// <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
 	public override void _Process(double delta)
 	{
 			GD.Print(slotCorrecto);
 		
 	}
 
-	public void _on_tree_entered(Area2D area){
-		
-	}
-
+	/// <summary>
+	/// Señal de godot que nos permite comprobar si la area de un objeto colisiona contra la area del objeto
+	/// </summary>
+	/// <param name="area">Variable de la colision del objeto que colisiona con el objeto</param>
 	public void _on_area_entered(Area2D area) {
         if(grupos[0].Equals("Arriba") && area.IsInGroup("UnicornioRojo")){
 			slotCorrecto++;
@@ -51,6 +54,10 @@ public partial class Ritual : Area2D {
 		
     }
 
+	/// <summary>
+	/// Este metodo es una señal de godot, detecta cuando salga del area objeto
+	/// </summary>
+	/// <param name="area">Variable de la area del objeto que colisiona con el objeto</param>
 	public void _on_area_exited(Area2D area) {
         if(grupos[0].Equals("Arriba") && area.IsInGroup("UnicornioRojo")){
 			slotCorrecto--;

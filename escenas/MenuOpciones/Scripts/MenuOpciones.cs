@@ -4,6 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Xml.Linq;
 
+/// <summary>
+/// Clase que gestiona el menudo de opcines del menu principal
+/// </summary>
 public partial class MenuOpciones : Node
 {
 	[Export] public AnimatedSprite2D animatedSprite2D;
@@ -15,6 +18,10 @@ public partial class MenuOpciones : Node
 	[ExportGroup("resolucion")]
 	[Export] private OptionButton optionButton;
 	private static bool pantalla = false;
+
+	/// <summary>
+	/// 
+	/// </summary>
 	public override void _Ready()
 	{
 		AddResolutionToButton();
@@ -32,11 +39,17 @@ public partial class MenuOpciones : Node
 		music = AudioServer.GetBusIndex("Musica");
 	}
 
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
+	/// <summary>
+	/// Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla
+	/// </summary>
+	/// <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
 	public override void _Process(double delta)
 	{
 	}
 
+	/// <summary>
+	/// Es una señal de godot que se auto llama cuando la animacion vinculada a esta señal llega a su fin
+	/// </summary>
 	private void _on_color_rect_animation_finished()
 	{
 		if (animatedSprite2D.Animation.ToString().Equals("cerrar"))
@@ -45,6 +58,9 @@ public partial class MenuOpciones : Node
 		}
 	}
 
+	/// <summary>
+	/// Señal de godot que se activa sola cuando haces click en el boton vinculado
+	/// </summary>
 	private void _on_exit_pressed()
 	{
 		animatedSprite2D.Play("cerrar");
