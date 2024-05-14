@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://btoir8gnpgd8t"]
+
+[ext_resource type="Texture2D" uid="uid://cpj05a40q8hiq" path="res://escenas/escena2/assets/TextBox1.png" id="1_wbip3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0kbql"]
+size = Vector2(59, 56)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l2lu5"]
+size = Vector2(334, 85)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n10ij"]
+size = Vector2(93, 20)
+
+[node name="TextBox1" type="Area2D"]
+position = Vector2(796, 251)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_wbip3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-110.5, -42)
+shape = SubResource("RectangleShape2D_0kbql")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(0, 27.5)
+shape = SubResource("RectangleShape2D_l2lu5")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(-38.5, -24)
+shape = SubResource("RectangleShape2D_n10ij")

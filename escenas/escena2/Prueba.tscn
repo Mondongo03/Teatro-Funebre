@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://b3oscujcwaje6"]
+[gd_scene load_steps=26 format=3 uid="uid://b3oscujcwaje6"]
 
 [ext_resource type="Script" path="res://escenas/escena2/scripts/escena2.cs" id="1_7q1kv"]
 [ext_resource type="Texture2D" uid="uid://ccvk0vtc15wlv" path="res://escenas/escena2/assets/Bosquebueno.png" id="2_2netn"]
@@ -11,14 +11,14 @@
 [ext_resource type="Texture2D" uid="uid://dkcnnqo4jbiag" path="res://escenas/escena1/assets/GnomoCI.png" id="7_wijr8"]
 [ext_resource type="PackedScene" uid="uid://ciocjjv3ss2lc" path="res://escenas/escena2/objetos/pajaro_verde.tscn" id="8_83e7h"]
 [ext_resource type="Texture2D" uid="uid://cly82xjk5esrx" path="res://escenas/escena2/assets/Cartacerrada.png" id="9_4wxrt"]
-[ext_resource type="Texture2D" uid="uid://ctqywg7ac0aoq" path="res://escenas/escena2/assets/BoteSangre.png" id="12_88t6q"]
-[ext_resource type="Script" path="res://escenas/escena2/scripts/pocion.cs" id="13_oebrj"]
+[ext_resource type="PackedScene" uid="uid://suhwt3dfugp" path="res://escenas/escena2/objetos/ramoncin.tscn" id="12_cpiaa"]
+[ext_resource type="Texture2D" uid="uid://ddafdgx5w4o55" path="res://escenas/escena2/assets/TextBox1.png" id="13_alch0"]
 
 [sub_resource type="Curve2D" id="Curve2D_a8trf"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, -610, 4380, 0, 0, 0, 0, 5230, 4300, 0, 0, 0, 0, 5230, 3800, 0, 0, 0, 0, 5240, 4890)
+"points": PackedVector2Array(0, 0, 0, 0, -610, 4380, 0, 0, 0, 0, 1320, 4400, 0, 0, 0, 0, 4760, 4340, 0, 0, 0, 0, 4740, 3890, 0, 0, 0, 0, 4750, 4820)
 }
-point_count = 4
+point_count = 5
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mwxlf"]
 atlas = ExtResource("5_cshg0")
@@ -104,18 +104,14 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yd10l"]
 size = Vector2(58.8438, 121.281)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_pu1wf"]
-size = Vector2(115.224, 142.09)
-
 [node name="Node2D" type="Node2D" node_paths=PackedStringArray("audioStreamPlayer2D")]
 position = Vector2(62, 51)
-scale = Vector2(10000, 10000)
 script = ExtResource("1_7q1kv")
 audioStreamPlayer2D = NodePath("AudioStreamPlayer2D")
 
 [node name="Fondo" type="Sprite2D" parent="."]
-position = Vector2(0.05145, 0.02735)
-scale = Vector2(9.60833e-05, 8.1125e-05)
+position = Vector2(514, 272)
+scale = Vector2(0.96, 0.813)
 texture = ExtResource("2_2netn")
 
 [node name="CanvasLayer" parent="." instance=ExtResource("2_p1h3l")]
@@ -125,7 +121,8 @@ stream = ExtResource("4_m1gnl")
 bus = &"Musica"
 
 [node name="Gnomo" type="Path2D" parent="."]
-scale = Vector2(1e-05, 1e-05)
+position = Vector2(26, -4)
+scale = Vector2(0.1, 0.1)
 curve = SubResource("Curve2D_a8trf")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Gnomo" node_paths=PackedStringArray("animatedSprite2D")]
@@ -151,27 +148,26 @@ skew = -0.00197065
 shape = SubResource("RectangleShape2D_yd10l")
 
 [node name="PajaroMarron" parent="." instance=ExtResource("7_wd4jo")]
+position = Vector2(-66, -14)
 rotation = -3.79388e-05
+scale = Vector2(0.1, 0.1)
 
 [node name="PajaroVerde" parent="." instance=ExtResource("8_83e7h")]
+position = Vector2(-44, -25)
+scale = Vector2(0.1, 0.1)
 
 [node name="Carta" type="Sprite2D" parent="."]
-position = Vector2(0.0498, 0.0164)
+position = Vector2(487, 181)
 rotation = -0.539621
-scale = Vector2(2.85e-05, 2.7075e-05)
+scale = Vector2(0.2691, 0.309366)
 texture = ExtResource("9_4wxrt")
 
-[node name="Area2D" type="Area2D" parent="." groups=["Pocion"]]
-position = Vector2(0.00185, 0.00185)
-scale = Vector2(2.23333e-05, 2.23333e-05)
-script = ExtResource("13_oebrj")
+[node name="Area2D2" parent="." instance=ExtResource("12_cpiaa")]
 
-[node name="Pocion" type="Sprite2D" parent="Area2D"]
-texture = ExtResource("12_88t6q")
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(505, 384)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-47.6119, 61.0448)
-shape = SubResource("RectangleShape2D_pu1wf")
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+texture = ExtResource("13_alch0")
 
 [connection signal="area_entered" from="Gnomo/PathFollow2D/AnimatedSprite2D/Area2D" to="Gnomo/PathFollow2D" method="_on_area_2d_area_entered"]
-[connection signal="input_event" from="Area2D" to="Area2D" method="_on_input_event"]

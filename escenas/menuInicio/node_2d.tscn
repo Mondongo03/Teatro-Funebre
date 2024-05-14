@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://escenas/menuInicio/Scripts/MenuPrincipal.cs" id="1_g6uly"]
 [ext_resource type="AudioStream" uid="uid://by62m2jx7gtpo" path="res://escenas/menuInicio/assets/a-jazz-piano-110481.mp3" id="2_ccdak"]
-[ext_resource type="PackedScene" path="res://escenas/menuPausa/escenas/color_rect.tscn" id="3_m0ls1"]
-[ext_resource type="Texture2D" uid="uid://cqy5ktuksl5k8" path="res://escenas/menuInicio/assets/Teatro.png" id="3_ovf0w"]
+[ext_resource type="PackedScene" uid="uid://b6n3doltr7qhs" path="res://escenas/menuPausa/escenas/color_rect.tscn" id="3_m0ls1"]
+[ext_resource type="Texture2D" uid="uid://cubhr6jspk6tx" path="res://escenas/menuInicio/assets/Teatro.png" id="3_ovf0w"]
 
 [node name="Node2D" type="Node2D"]
 
