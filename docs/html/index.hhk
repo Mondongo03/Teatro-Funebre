@@ -233,11 +233,6 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_mueve_te_en_el_bosque.html#a4d2d4985f6f3afb8d20452e52e22aa0c"><param name="Name" value="_Ready()"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pocion.html"><param name="Name" value="Pocion"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pocion.html"><param name="Name" value="Pocion"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pocion.html#ab661e4feaed37c59ab21b773a426ccdf"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj.html"><param name="Name" value="Reloj"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj.html"><param name="Name" value="Reloj"></OBJECT>
   <UL>
@@ -585,10 +580,6 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_mover_prueba.html#a668777f25f1d367ee23887b73638ceef"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_mover_prueba.html#a668777f25f1d367ee23887b73638ceef"><param name="Name" value="MoverPrueba"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pocion.html#ab661e4feaed37c59ab21b773a426ccdf"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pocion.html#ab661e4feaed37c59ab21b773a426ccdf"><param name="Name" value="Pocion"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj.html#a4ba980f5e8ff96726f708c5f9200442d"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
   <UL>

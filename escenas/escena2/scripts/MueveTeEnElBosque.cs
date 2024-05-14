@@ -1,6 +1,9 @@
 using Godot;
 using System;
 
+/// <summary>
+/// Script que nos permite gestionar el movimiento de gnomo en el boque
+/// </summary>
 public partial class MueveTeEnElBosque : PathFollow2D
 {
 	float speed = 0.2f;
