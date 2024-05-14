@@ -1,0 +1,150 @@
+\doxysection{Referencia de la clase Menu\+Opciones}
+\hypertarget{class_menu_opciones}{}\label{class_menu_opciones}\index{MenuOpciones@{MenuOpciones}}
+
+
+Clase que gestiona el menudo de opcines del menu principal.  
+
+
+Diagrama de herencia de Menu\+Opciones\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_menu_opciones}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_menu_opciones_a03901de86f8f2d733bdb1e6b34ea14d3}\label{class_menu_opciones_a03901de86f8f2d733bdb1e6b34ea14d3} 
+override void {\bfseries \+\_\+\+Ready} ()
+\item 
+override void \mbox{\hyperlink{class_menu_opciones_a3559f98a694829908cd3ce7df7a2a097}{\+\_\+\+Process}} (double delta)
+\begin{DoxyCompactList}\small\item\em Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_opciones_acaa573154c03ebfacd177d3496046845}{\+\_\+on\+\_\+volumen\+\_\+master\+\_\+value\+\_\+changed}} (float volumen)
+\begin{DoxyCompactList}\small\item\em Metodo que nos permite cambiar el porcentaje de sonido del buffer master. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_opciones_a97e4cb5ea1825e0a20ca98d33f5aeac6}{\+\_\+on\+\_\+volumen\+\_\+vfx\+\_\+value\+\_\+changed}} (float volumen)
+\begin{DoxyCompactList}\small\item\em Metodo que nos permite cambiar el porcentaje de sonido del buffer efectos de sonido. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_opciones_a0cfe1ffec23588a451b9348d43c51f15}{\+\_\+on\+\_\+volumen\+\_\+musica\+\_\+value\+\_\+changed}} (float volumen)
+\begin{DoxyCompactList}\small\item\em Metodo que nos permite cambiar el porcentaje de sonido del buffer musica. \end{DoxyCompactList}\item 
+\Hypertarget{class_menu_opciones_ad974b016665081c44c0e5ea2358e6eb7}\label{class_menu_opciones_ad974b016665081c44c0e5ea2358e6eb7} 
+void {\bfseries \+\_\+on\+\_\+button\+\_\+pressed} ()
+\begin{DoxyCompactList}\small\item\em Señal de godot que se activa sola cuando haces click en el boton vinculado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_opciones_af0f7868a7dc22b55ed81593faeb2cc6a}{\+\_\+on\+\_\+option\+\_\+button\+\_\+item\+\_\+selected}} (int my\+Selected\+Rez)
+\begin{DoxyCompactList}\small\item\em Metodo que gestiona el desplegable de resoluciones y aplica la resolucion seleccionada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_menu_opciones_acb185e2280a78152bd7ae7e660f3e531}{set\+Pantalla}} (bool s)
+\begin{DoxyCompactList}\small\item\em Setter de pantalla. \end{DoxyCompactList}\item 
+\Hypertarget{class_menu_opciones_adf2554c57b7f196b2954647e1cb0ceca}\label{class_menu_opciones_adf2554c57b7f196b2954647e1cb0ceca} 
+static void {\bfseries Apply\+Game\+Data\+Video\+Settings} ()
+\begin{DoxyCompactList}\small\item\em Metodo que aplica todos los cambios en el juego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_menu_opciones_ac5a3f1d427c75ac1152d1fbbe1bdee53}\label{class_menu_opciones_ac5a3f1d427c75ac1152d1fbbe1bdee53} 
+Animated\+Sprite2D {\bfseries animated\+Sprite2D}
+\item 
+\Hypertarget{class_menu_opciones_a60e6599d57c16ddd8e91ce034ccbb4ac}\label{class_menu_opciones_a60e6599d57c16ddd8e91ce034ccbb4ac} 
+Button {\bfseries button}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase que gestiona el menudo de opcines del menu principal. 
+
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{class_menu_opciones_af0f7868a7dc22b55ed81593faeb2cc6a}\label{class_menu_opciones_af0f7868a7dc22b55ed81593faeb2cc6a} 
+\index{MenuOpciones@{MenuOpciones}!\_on\_option\_button\_item\_selected@{\_on\_option\_button\_item\_selected}}
+\index{\_on\_option\_button\_item\_selected@{\_on\_option\_button\_item\_selected}!MenuOpciones@{MenuOpciones}}
+\doxysubsubsection{\texorpdfstring{\_on\_option\_button\_item\_selected()}{\_on\_option\_button\_item\_selected()}}
+{\footnotesize\ttfamily void Menu\+Opciones.\+\_\+on\+\_\+option\+\_\+button\+\_\+item\+\_\+selected (\begin{DoxyParamCaption}\item[{int}]{my\+Selected\+Rez }\end{DoxyParamCaption})}
+
+
+
+Metodo que gestiona el desplegable de resoluciones y aplica la resolucion seleccionada. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em my\+Selected\+Rez} & Cambia la resolucion actual\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_menu_opciones_acaa573154c03ebfacd177d3496046845}\label{class_menu_opciones_acaa573154c03ebfacd177d3496046845} 
+\index{MenuOpciones@{MenuOpciones}!\_on\_volumen\_master\_value\_changed@{\_on\_volumen\_master\_value\_changed}}
+\index{\_on\_volumen\_master\_value\_changed@{\_on\_volumen\_master\_value\_changed}!MenuOpciones@{MenuOpciones}}
+\doxysubsubsection{\texorpdfstring{\_on\_volumen\_master\_value\_changed()}{\_on\_volumen\_master\_value\_changed()}}
+{\footnotesize\ttfamily void Menu\+Opciones.\+\_\+on\+\_\+volumen\+\_\+master\+\_\+value\+\_\+changed (\begin{DoxyParamCaption}\item[{float}]{volumen }\end{DoxyParamCaption})}
+
+
+
+Metodo que nos permite cambiar el porcentaje de sonido del buffer master. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em volumen} & Parametro de volumen deseado\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_menu_opciones_a0cfe1ffec23588a451b9348d43c51f15}\label{class_menu_opciones_a0cfe1ffec23588a451b9348d43c51f15} 
+\index{MenuOpciones@{MenuOpciones}!\_on\_volumen\_musica\_value\_changed@{\_on\_volumen\_musica\_value\_changed}}
+\index{\_on\_volumen\_musica\_value\_changed@{\_on\_volumen\_musica\_value\_changed}!MenuOpciones@{MenuOpciones}}
+\doxysubsubsection{\texorpdfstring{\_on\_volumen\_musica\_value\_changed()}{\_on\_volumen\_musica\_value\_changed()}}
+{\footnotesize\ttfamily void Menu\+Opciones.\+\_\+on\+\_\+volumen\+\_\+musica\+\_\+value\+\_\+changed (\begin{DoxyParamCaption}\item[{float}]{volumen }\end{DoxyParamCaption})}
+
+
+
+Metodo que nos permite cambiar el porcentaje de sonido del buffer musica. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em volumen} & Parametro de volumen deseado\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_menu_opciones_a97e4cb5ea1825e0a20ca98d33f5aeac6}\label{class_menu_opciones_a97e4cb5ea1825e0a20ca98d33f5aeac6} 
+\index{MenuOpciones@{MenuOpciones}!\_on\_volumen\_vfx\_value\_changed@{\_on\_volumen\_vfx\_value\_changed}}
+\index{\_on\_volumen\_vfx\_value\_changed@{\_on\_volumen\_vfx\_value\_changed}!MenuOpciones@{MenuOpciones}}
+\doxysubsubsection{\texorpdfstring{\_on\_volumen\_vfx\_value\_changed()}{\_on\_volumen\_vfx\_value\_changed()}}
+{\footnotesize\ttfamily void Menu\+Opciones.\+\_\+on\+\_\+volumen\+\_\+vfx\+\_\+value\+\_\+changed (\begin{DoxyParamCaption}\item[{float}]{volumen }\end{DoxyParamCaption})}
+
+
+
+Metodo que nos permite cambiar el porcentaje de sonido del buffer efectos de sonido. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em volumen} & Parametro de volumen deseado\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_menu_opciones_a3559f98a694829908cd3ce7df7a2a097}\label{class_menu_opciones_a3559f98a694829908cd3ce7df7a2a097} 
+\index{MenuOpciones@{MenuOpciones}!\_Process@{\_Process}}
+\index{\_Process@{\_Process}!MenuOpciones@{MenuOpciones}}
+\doxysubsubsection{\texorpdfstring{\_Process()}{\_Process()}}
+{\footnotesize\ttfamily override void Menu\+Opciones.\+\_\+\+Process (\begin{DoxyParamCaption}\item[{double}]{delta }\end{DoxyParamCaption})}
+
+
+
+Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em delta} & Es una varibale generada por Godot que almacena la posicion del objeto\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_menu_opciones_acb185e2280a78152bd7ae7e660f3e531}\label{class_menu_opciones_acb185e2280a78152bd7ae7e660f3e531} 
+\index{MenuOpciones@{MenuOpciones}!setPantalla@{setPantalla}}
+\index{setPantalla@{setPantalla}!MenuOpciones@{MenuOpciones}}
+\doxysubsubsection{\texorpdfstring{setPantalla()}{setPantalla()}}
+{\footnotesize\ttfamily static void Menu\+Opciones.\+set\+Pantalla (\begin{DoxyParamCaption}\item[{bool}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Setter de pantalla. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em s} & Cambia el bool de pantalla\\
+\hline
+\end{DoxyParams}
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+escenas/\+Menu\+Opciones/\+Scripts/Menu\+Opciones.\+cs\end{DoxyCompactItemize}
