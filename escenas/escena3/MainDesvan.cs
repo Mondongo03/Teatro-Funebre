@@ -1,6 +1,9 @@
 using Godot;
 using System;
 
+/// <summary>
+/// Escript que nos permite gestionar como funciona la escena 3
+/// </summary>
 public partial class MainDesvan : Node2D
 {
 	[Export] public AudioStreamPlayer2D audioStreamPlayer2D;

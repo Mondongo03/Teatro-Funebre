@@ -20,7 +20,7 @@ public partial class MenuOpciones : Node
 	private static bool pantalla = false;
 
 	/// <summary>
-	/// 
+	/// Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script
 	/// </summary>
 	public override void _Ready()
 	{

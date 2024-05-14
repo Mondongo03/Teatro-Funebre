@@ -2,7 +2,9 @@ using Godot;
 using System;
 using System.Collections.Generic;
 
-
+/// <summary>
+/// Script que nos permite gestionar el ritual de la escena 3
+/// </summary>
 public partial class Ritual : Area2D {
 	List<string> grupos = new List<string>();
 

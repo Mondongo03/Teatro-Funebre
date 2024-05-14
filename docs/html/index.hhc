@@ -51,6 +51,10 @@
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="GuardarEscena"><param name="Local" value="class_guardar_escena.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Process"><param name="Local" value="class_guardar_escena.html#a2e6f8c9a3a434cfdc090297303f775ea"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Ready"><param name="Local" value="class_guardar_escena.html#a275a3410b2d6b2f97adacf4e7a5a9752"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LoadGame"><param name="Local" value="class_guardar_escena.html#af2ab5816996f0a57583890874bd0795c"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SaveGame"><param name="Local" value="class_guardar_escena.html#ac13b1b0c92c3a9c1ca08ee926b632f4c"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="InteractuarCon"><param name="Local" value="class_interactuar_con.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
@@ -59,6 +63,9 @@
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Lampara"><param name="Local" value="class_lampara.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_on_input_event"><param name="Local" value="class_lampara.html#afd2d506d97def4bcac34a3b863fd0a26"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="apagarLampara"><param name="Local" value="class_lampara.html#afc99b2f0eea1698ff28203a50c161fc9"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="encenderLampara"><param name="Local" value="class_lampara.html#affe53bdaf559db6a0a195af6f301dec1"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Main"><param name="Local" value="class_main.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
@@ -87,6 +94,7 @@
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_on_volumen_musica_value_changed"><param name="Local" value="class_menu_opciones.html#a0cfe1ffec23588a451b9348d43c51f15"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_on_volumen_vfx_value_changed"><param name="Local" value="class_menu_opciones.html#a97e4cb5ea1825e0a20ca98d33f5aeac6"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_Process"><param name="Local" value="class_menu_opciones.html#a3559f98a694829908cd3ce7df7a2a097"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Ready"><param name="Local" value="class_menu_opciones.html#a03901de86f8f2d733bdb1e6b34ea14d3"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="MenuPrincipal"><param name="Local" value="class_menu_principal.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>

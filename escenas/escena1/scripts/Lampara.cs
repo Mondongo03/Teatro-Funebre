@@ -3,57 +3,69 @@ using System;
 using System.Numerics;
 using System.Reflection.Metadata;
 
-public partial class Lampara : Area2D {
-
+/// <summary>
+/// Script que nos permite gestionar como funciona la lampara de la primera escena
+/// </summary>
+public partial class Lampara : Area2D
+{
 	public static bool encendido = false;
-	
-	public override void _Ready()
+
+	/// <summary>
+    /// Este metodo es una señal del propio godot que nos permite detectar cuando haces click sobre le objeto
+    /// </summary>
+    /// <param name="viewport">Nodo del objeto parte de la API</param>
+    /// <param name="evento">Nos permite detectar cuando se hace click</param>
+    /// <param name="shap">Variable que se utiliza para la API</param>
+	public void _on_input_event(Node viewport, InputEvent evento, int shap)
 	{
-	}
+		if (evento.IsActionPressed("click_izquierdo"))
+		{
+			if (encendido)
+			{
+				apagarLampara();
 
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta) {
-	}
+			}
+			else
+			{
+				encenderLampara();
+			}
 
-public void _on_input_event(Node viewport, InputEvent evento, int shap){
-	if(evento.IsActionPressed("click_izquierdo")){
-		if(encendido){
-			apagarLampara();
-			
 		}
-		else {
-			encenderLampara();
-		}
-    	
 	}
-}
 
-public void apagarLampara(){
+	/// <summary>
+	/// Metodo creado para gestionar que se apage la
+	/// </summary>
+	public void apagarLampara()
+	{
 		QueueFree();
 		PackedScene lamparaApagada = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/lamparaApagada.tscn");
-		Main.lamparaApagadaInstancia = lamparaApagada.Instantiate() as Node2D; // Cast the instance to Node
-		//Main.lamparaApagadaInstancia.ZIndex = 2;
-		Main.lamparaApagadaInstancia.Position = new Vector2I(0,0);
+		Main.lamparaApagadaInstancia = lamparaApagada.Instantiate() as Node2D; 
+																			   
+		Main.lamparaApagadaInstancia.Position = new Vector2I(0, 0);
 		GD.Print("antes de apagarla");
 		AddChild(Main.lamparaApagadaInstancia);
-		
+
 		encendido = false;
-		
-		
-}
 
 
-public void encenderLampara(){
-			QueueFree();
-			PackedScene lamparaEncendida = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/lamparaEncendida.tscn");
-			Main.lamparaEncendidaInstancia = lamparaEncendida.Instantiate() as Node2D; // Cast the instance to Node
-			//Main.lamparaEncendidaInstancia.ZIndex = 10;
-			Main.lamparaEncendidaInstancia.Position = new Vector2I(0,0);
-			GD.Print("antes de encenderla");
-			AddChild(Main.lamparaEncendidaInstancia);
-			
-			encendido = true;
-			
-			
-}
+	}
+
+	/// <summary>
+	/// Metodo creado para gestionar que se encender la lampara
+	/// </summary>
+	public void encenderLampara()
+	{
+		QueueFree();
+		PackedScene lamparaEncendida = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/lamparaEncendida.tscn");
+		Main.lamparaEncendidaInstancia = lamparaEncendida.Instantiate() as Node2D;
+																				   
+		Main.lamparaEncendidaInstancia.Position = new Vector2I(0, 0);
+		GD.Print("antes de encenderla");
+		AddChild(Main.lamparaEncendidaInstancia);
+
+		encendido = true;
+
+
+	}
 }

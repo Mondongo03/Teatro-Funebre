@@ -81,6 +81,22 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_reloj.html#a63fafa4326b917b7058c6b1a3d7165fc"><param name="Name" value="Reloj"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_guardar_escena.html"><param name="Name" value="GuardarEscena"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_guardar_escena.html"><param name="Name" value="GuardarEscena"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_guardar_escena.html#af2ab5816996f0a57583890874bd0795c"><param name="Name" value="LoadGame()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_guardar_escena.html"><param name="Name" value="GuardarEscena"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_guardar_escena.html#ac13b1b0c92c3a9c1ca08ee926b632f4c"><param name="Name" value="SaveGame(Node tree)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_guardar_escena.html"><param name="Name" value="GuardarEscena"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_guardar_escena.html#a2e6f8c9a3a434cfdc090297303f775ea"><param name="Name" value="_Process(double delta)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_guardar_escena.html"><param name="Name" value="GuardarEscena"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_guardar_escena.html#a275a3410b2d6b2f97adacf4e7a5a9752"><param name="Name" value="_Ready()"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_main.html#a0ab775342fc867755f3fd37cb8a738f9"><param name="Name" value="InstanciarEscena()"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_interactuar_con.html"><param name="Name" value="InteractuarCon"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_interactuar_con.html"><param name="Name" value="InteractuarCon"></OBJECT>
@@ -92,6 +108,19 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_interactuar_con.html#a6885c28c6fc972ad434cb3c486de2cb1"><param name="Name" value="_on_hueco_area_entered(Area2D area)"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_lampara.html"><param name="Name" value="Lampara"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_lampara.html"><param name="Name" value="Lampara"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_lampara.html#afd2d506d97def4bcac34a3b863fd0a26"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_lampara.html"><param name="Name" value="Lampara"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_lampara.html#afc99b2f0eea1698ff28203a50c161fc9"><param name="Name" value="apagarLampara()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_lampara.html"><param name="Name" value="Lampara"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_lampara.html#affe53bdaf559db6a0a195af6f301dec1"><param name="Name" value="encenderLampara()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_guardar_escena.html#af2ab5816996f0a57583890874bd0795c"><param name="Name" value="LoadGame()"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_main.html"><param name="Name" value="Main"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_main.html"><param name="Name" value="Main"></OBJECT>
   <UL>
@@ -143,6 +172,10 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_menu_opciones.html"><param name="Name" value="MenuOpciones"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_menu_opciones.html#a3559f98a694829908cd3ce7df7a2a097"><param name="Name" value="_Process(double delta)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_menu_opciones.html"><param name="Name" value="MenuOpciones"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_menu_opciones.html#a03901de86f8f2d733bdb1e6b34ea14d3"><param name="Name" value="_Ready()"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_menu_opciones.html"><param name="Name" value="MenuOpciones"></OBJECT>
   <UL>
@@ -248,6 +281,7 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_ritual.html#a1401d88dd1c14866333458fdcd78e4dc"><param name="Name" value="_on_area_exited(Area2D area)"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_guardar_escena.html#ac13b1b0c92c3a9c1ca08ee926b632f4c"><param name="Name" value="SaveGame(Node tree)"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cajon.html#ac948fe19176e8db5e31ce038b79b5203"><param name="Name" value="SetZoom(Boolean value)"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_cajon.html#ac948fe19176e8db5e31ce038b79b5203"><param name="Name" value="Cajon"></OBJECT>
@@ -380,6 +414,10 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_escalera.html#adab5ebd5d2f26418fd59f4ef1d175986"><param name="Name" value="Escalera"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_guardar_escena.html#a2e6f8c9a3a434cfdc090297303f775ea"><param name="Name" value="_Process(double delta)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_guardar_escena.html#a2e6f8c9a3a434cfdc090297303f775ea"><param name="Name" value="GuardarEscena"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_interactuar_con.html#aa2acaeb177e4ffbdddd00b6ce5af038f"><param name="Name" value="_Process(double delta)"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_interactuar_con.html#aa2acaeb177e4ffbdddd00b6ce5af038f"><param name="Name" value="InteractuarCon"></OBJECT>
@@ -448,9 +486,17 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_escalera.html#a114e89faa95a8e20e0f14310217391f4"><param name="Name" value="Escalera"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_guardar_escena.html#a275a3410b2d6b2f97adacf4e7a5a9752"><param name="Name" value="_Ready()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_guardar_escena.html#a275a3410b2d6b2f97adacf4e7a5a9752"><param name="Name" value="GuardarEscena"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_main.html#afa38a52a0b6f8e0362539aea9114f285"><param name="Name" value="_Ready()"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_main.html#afa38a52a0b6f8e0362539aea9114f285"><param name="Name" value="Main"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_menu_opciones.html#a03901de86f8f2d733bdb1e6b34ea14d3"><param name="Name" value="_Ready()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_menu_opciones.html#a03901de86f8f2d733bdb1e6b34ea14d3"><param name="Name" value="MenuOpciones"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_menu_principal.html#a6953c17367442ffd867c76d3be25b770"><param name="Name" value="_Ready()"></OBJECT>
   <UL>
@@ -527,6 +573,10 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_flecha.html#a59886881ec23317528c43bdc441a9770"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_flecha.html#a59886881ec23317528c43bdc441a9770"><param name="Name" value="Flecha"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_lampara.html#afd2d506d97def4bcac34a3b863fd0a26"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_lampara.html#afd2d506d97def4bcac34a3b863fd0a26"><param name="Name" value="Lampara"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_monstruo.html#ac1b66ec27c62ebb92e9f2fd7c577e22c"><param name="Name" value="_on_input_event(Node viewport, InputEvent evento, int shap)"></OBJECT>
   <UL>
@@ -608,6 +658,7 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_volumen__settings.html#a97c16949cb402d7ca9a6102e45dcf82c"><param name="Name" value="Volumen_settings"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_lampara.html#afc99b2f0eea1698ff28203a50c161fc9"><param name="Name" value="apagarLampara()"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classcajon_zoomeado.html"><param name="Name" value="cajonZoomeado"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classcajon_zoomeado.html"><param name="Name" value="cajonZoomeado"></OBJECT>
   <UL>
@@ -622,6 +673,7 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_varilla_s.html#a2a11dba64aedeb1276d4cafe3bb66376"><param name="Name" value="VarillaS"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_lampara.html#affe53bdaf559db6a0a195af6f301dec1"><param name="Name" value="encenderLampara()"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classescena2.html"><param name="Name" value="escena2"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classescena2.html"><param name="Name" value="escena2"></OBJECT>
   <UL>

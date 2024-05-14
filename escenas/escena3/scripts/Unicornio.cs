@@ -3,7 +3,7 @@ using Microsoft.VisualBasic;
 using System;
 
 /// <summary>
-/// 
+/// Script que comparten todos los unicornios que nos permite gestionar que no se muevan al mismo tiempo y que hagan su funcion en el ritual
 /// </summary>
 public partial class Unicornio : Area2D
 {

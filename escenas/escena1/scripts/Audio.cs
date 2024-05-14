@@ -1,7 +1,6 @@
 using System.IO;
 using Godot;
 
-
 /// <summary>
 /// Esta clase es para getionar el efecto de sonido de la primera escena
 /// </summary>
