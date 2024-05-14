@@ -1,5 +1,3 @@
-*.editorconfig
+/.godot/**
 
-*.cache
-
-*.json
+/.vscode/**
