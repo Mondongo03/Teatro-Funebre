@@ -68,13 +68,11 @@ public partial class VarillaS : Area2D
 		if (evento.IsActionPressed("click_izquierdo"))
 		{
 			puedoMover = true;
-			encontrado = true;
 
 		}
 		if (evento.IsActionReleased("click_izquierdo"))
 		{
 			puedoMover = false;
-			encontrado = true;
 		}
 	}
 

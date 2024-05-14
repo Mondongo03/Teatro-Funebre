@@ -27,6 +27,12 @@ public partial class Reloj : Area2D
 			audioStreamPlayer2D.Play();
 			suena = true;
 		}
+		if (RelojZoomeado.zoooom){
+			Cajon.SetZoom(true);
+		}else
+		{
+			Cajon.SetZoom(false);
+		}
 	}
 
 	/// <summary>
@@ -37,7 +43,7 @@ public partial class Reloj : Area2D
 	{
 		if (collisionObject2D.IsInGroup("VarillaM") && Main.varillaMinutosInstancia != null)
 		{
-
+			VarillaM.encontrado = true;
 			collisionObject2D.QueueFree();
 			Main.varillaMinutosReloj = true;
 			PackedScene miniVarillaM = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/miniVarillaM.tscn");
@@ -47,6 +53,7 @@ public partial class Reloj : Area2D
 		}
 		if (collisionObject2D.IsInGroup("VarillaS"))
 		{
+			VarillaS.encontrado = true;
 			Main.varillaSegundosReloj = true;
 			collisionObject2D.QueueFree();
 			PackedScene miniVarillaS = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/miniVarillaS.tscn");

@@ -1,7 +1,7 @@
-res://escenas/escena2/Prueba.tscn
-res://escenas/escena1/Main.cs
-res://escenas/escena1/node_2d.tscn
 res://escenas/menuInicio/node_2d.tscn
+res://escenas/escena1/Main.cs
+res://escenas/escena2/Prueba.tscn
+res://escenas/escena1/node_2d.tscn
 res://escenas/MenuOpciones/menu_de_opciones.tscn
 res://escenas/MenuOpciones/video_settings.tscn
 res://escenas/MenuOpciones/volum_settings.tscn

@@ -1,11 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1715624013
+::res://::1715624752
 default_bus_layout.tres::AudioBusLayout::8290156155602436559::1714060549::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1714053602::0::1::::<><>::
 icon.svg::CompressedTexture2D::7770810540553058061::1714053602::1715270199::1::::<><>::
 README.md::TextFile::-1::1714053602::0::1::::<><>::
 ::res://bin/::1715270248
-YourApi.XML::TextFile::-1::1715622413::0::1::::<><>::
+YourApi.XML::TextFile::-1::1715624185::0::1::::<><>::
 ::res://docs/::1715270249
 ::res://docs/html/::1715270257
 bc_s.png::CompressedTexture2D::696043313071319004::1715270248::1715270248::1::::<><>::
@@ -281,7 +281,7 @@ VarillaS.cs::CSharpScript::-1::1715270250::0::1::::<>Area2D<>::
 Ventana.cs::CSharpScript::-1::1715270250::0::1::::<>Area2D<>::
 ::res://escenas/escena2/::1715624323
 Prueba.tscn::PackedScene::4381707136062974251::1715624323::0::1::::<><>::res://escenas/escena2/scripts/escena2.cs<>uid://ccvk0vtc15wlv::::res://escenas/escena2/assets/Bosquebueno.png<>uid://c0vydxagyq8pj::::res://escenas/menuPausa/escenas/pausa.tscn<>uid://ccfyo5w280mxv::::res://escenas/escena2/assets/magic-forest-95823.mp3<>uid://ddbckl1lokln0::::res://escenas/escena1/assets/GnomoCD.png<>res://escenas/escena2/scripts/MueveTeEnElBosque.cs<>uid://bmcqrepalobj6::::res://escenas/escena1/assets/1336.png<>uid://cky2o76wpk0bl::::res://escenas/escena2/objetos/pajaro_marron.tscn<>uid://dkcnnqo4jbiag::::res://escenas/escena1/assets/GnomoCI.png<>uid://ciocjjv3ss2lc::::res://escenas/escena2/objetos/pajaro_verde.tscn<>uid://cly82xjk5esrx::::res://escenas/escena2/assets/Cartacerrada.png<>uid://ctqywg7ac0aoq::::res://escenas/escena2/assets/BoteSangre.png<>res://escenas/escena2/scripts/pocion.cs
-::res://escenas/escena2/assets/::1715624475
+::res://escenas/escena2/assets/::1715624478
 aguila culebrera.mp3::AudioStreamMP3::2908174900665341398::1715270250::1715270250::1::::<><>::
 Bosquebueno.png::CompressedTexture2D::4957223934741266675::1715270250::1715270250::1::::<><>::
 BoteSangre.png::CompressedTexture2D::6140956300443574612::1715618555::1715618557::1::::<><>::

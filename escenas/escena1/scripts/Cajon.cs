@@ -43,4 +43,22 @@ public partial class Cajon : Area2D
 		}
 	}
 
+	/// <summary>
+	/// Getter de la variable zooom
+	/// </summary>
+	/// <returns>Devuelve la variable zooom</returns>
+	public static Boolean GetZoom()
+	{
+		return zoooom;
+	}
+
+	/// <summary>
+	/// Setter de la variable zooom
+	/// </summary>
+	/// <param name="value">Cambio de la variable zooom</param>
+	public static void SetZoom(Boolean value)
+	{
+		zoooom = value;
+	}
+
 }

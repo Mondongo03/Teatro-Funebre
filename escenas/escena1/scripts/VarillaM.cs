@@ -34,13 +34,11 @@ public partial class VarillaM : Area2D
 		{
 
 			puedoMover = true;
-			encontrado = true;
 
 		}
 		if (evento.IsActionReleased("click_izquierdo"))
 		{
 			puedoMover = false;
-			encontrado = true;
 
 		}
 	}
