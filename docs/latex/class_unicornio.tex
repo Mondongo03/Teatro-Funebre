@@ -1,0 +1,65 @@
+\doxysection{Referencia de la clase Unicornio}
+\hypertarget{class_unicornio}{}\label{class_unicornio}\index{Unicornio@{Unicornio}}
+
+
+Script que comparten todos los unicornios que nos permite gestionar que no se muevan al mismo tiempo y que hagan su funcion en el ritual.  
+
+
+Diagrama de herencia de Unicornio\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_unicornio}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_unicornio_a71e7da345da5f268d082d29c4467194a}{\+\_\+\+Process}} (double delta)
+\begin{DoxyCompactList}\small\item\em Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_unicornio_aeb4acc98655a1eb27bc3c1f7dad1faff}{\+\_\+on\+\_\+input\+\_\+event}} (Node viewport, Input\+Event evento, int shap)
+\begin{DoxyCompactList}\small\item\em Este metodo es una señal del propio godot que nos permite detectar cuando haces click sobre le objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Script que comparten todos los unicornios que nos permite gestionar que no se muevan al mismo tiempo y que hagan su funcion en el ritual. 
+
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{class_unicornio_aeb4acc98655a1eb27bc3c1f7dad1faff}\label{class_unicornio_aeb4acc98655a1eb27bc3c1f7dad1faff} 
+\index{Unicornio@{Unicornio}!\_on\_input\_event@{\_on\_input\_event}}
+\index{\_on\_input\_event@{\_on\_input\_event}!Unicornio@{Unicornio}}
+\doxysubsubsection{\texorpdfstring{\_on\_input\_event()}{\_on\_input\_event()}}
+{\footnotesize\ttfamily void Unicornio.\+\_\+on\+\_\+input\+\_\+event (\begin{DoxyParamCaption}\item[{Node}]{viewport,  }\item[{Input\+Event}]{evento,  }\item[{int}]{shap }\end{DoxyParamCaption})}
+
+
+
+Este metodo es una señal del propio godot que nos permite detectar cuando haces click sobre le objeto. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em viewport} & Nodo del objeto parte de la API\\
+\hline
+{\em evento} & Nos permite detectar cuando se hace click\\
+\hline
+{\em shap} & Variable que se utiliza para la API\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_unicornio_a71e7da345da5f268d082d29c4467194a}\label{class_unicornio_a71e7da345da5f268d082d29c4467194a} 
+\index{Unicornio@{Unicornio}!\_Process@{\_Process}}
+\index{\_Process@{\_Process}!Unicornio@{Unicornio}}
+\doxysubsubsection{\texorpdfstring{\_Process()}{\_Process()}}
+{\footnotesize\ttfamily override void Unicornio.\+\_\+\+Process (\begin{DoxyParamCaption}\item[{double}]{delta }\end{DoxyParamCaption})}
+
+
+
+Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em delta} & Es una varibale generada por Godot que almacena la posicion del objeto\\
+\hline
+\end{DoxyParams}
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+escenas/escena3/scripts/Unicornio.\+cs\end{DoxyCompactItemize}

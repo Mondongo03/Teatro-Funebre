@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_audio" kind="class" language="C#" prot="public">
+    <compoundname>Audio</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AudioStreamPlayer2D</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_audio_1a96bf111bbcec18b07d67892268b4c8d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Audio._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>Audio._Ready</qualifiedname>
+        <briefdescription>
+<para>Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/scripts/Audio.cs" line="13" column="22" bodyfile="escenas/escena1/scripts/Audio.cs" bodystart="13" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_audio_1a09b9059b397fb79f35c1d93050a16b9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Audio._Process</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>_Process</name>
+        <qualifiedname>Audio._Process</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+<para>Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Es una varibale generada por Godot que almacena la posicion del objeto</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/scripts/Audio.cs" line="23" column="22" bodyfile="escenas/escena1/scripts/Audio.cs" bodystart="23" bodyend="29"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Esta clase es para getionar el efecto de sonido de la primera escena. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Audio</label>
+        <link refid="class_audio"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AudioStreamPlayer2D</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Audio</label>
+        <link refid="class_audio"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AudioStreamPlayer2D</label>
+      </node>
+    </collaborationgraph>
+    <location file="escenas/escena1/scripts/Audio.cs" line="8" column="15" bodyfile="escenas/escena1/scripts/Audio.cs" bodystart="8" bodyend="30"/>
+    <listofallmembers>
+      <member refid="class_audio_1a09b9059b397fb79f35c1d93050a16b9e" prot="public" virt="non-virtual"><scope>Audio</scope><name>_Process</name></member>
+      <member refid="class_audio_1a96bf111bbcec18b07d67892268b4c8d4" prot="public" virt="non-virtual"><scope>Audio</scope><name>_Ready</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

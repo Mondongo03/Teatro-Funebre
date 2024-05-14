@@ -4,38 +4,45 @@ using System.IO;
 using System.Linq;
 using System.Xml.Linq;
 
+/// <summary>
+/// Menu de las opciones de video del juego
+/// </summary>
 public partial class Video_settings : CanvasLayer
 {
 	[ExportGroup("resolucion")]
 	[Export] private OptionButton optionButton;
-	[Export] private Button exit;
 
 	private static GameData gameData = new GameData();
 	private static bool pantalla = false;
 
+	/// <summary>
+	/// Setter de pantalla
+	/// </summary>
+	/// <param name="s">Cambia el bool de pantalla</param>
 	public static void setPantalla(bool s)
 	{
 		pantalla = s;
 	}
 
-
-
+	/// <summary>
+	/// Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script
+	/// </summary>
 	public override void _Ready()
     {
-
 		AddResolutionToButton();
-
     }
 
+	/// <summary>
+	/// Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla
+	/// </summary>
+	/// <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
 	public override void _Process(double delta)
     {
-		if(pantalla){
-			exit.Hide();
-		}else{
-			exit.Visible = true;
-		}
     }
 
+	/// <summary>
+	/// Metodo que nos permite gestionar el cambio de resolucion
+	/// </summary>
 	private void AddResolutionToButton()
 	{
 		foreach(var item in gameData.windowResolutions){
@@ -44,26 +51,21 @@ public partial class Video_settings : CanvasLayer
 		}
 	}
 
+	/// <summary>
+	/// Metodo que guarda las opciones elegidas por el usuario
+	/// </summary>
 	private void Save()
 	{
-    	// Obtener la ruta del directorio de usuario en Godot
     	string userDataDir = OS.GetUserDataDir();
-
-    	// Crear la ruta completa del directorio de configuración
     	string configFolderPath = Path.Combine(userDataDir, "config");
 
     	try
     	{
-    	    // Crear el directorio de configuración si no existe
     	    if (!Directory.Exists(configFolderPath))
     	    {
     	        Directory.CreateDirectory(configFolderPath);
     	    }
-
-    	    // Crear y guardar el archivo de configuración en el directorio
     	    XElement xmlData = new XElement("Settings", new XElement("Resolution", optionButton.Selected));
-
-    	    // Guardar el XML en un archivo dentro del directorio de configuración
     	    string filePath = Path.Combine(configFolderPath, "settings.xml");
         	xmlData.Save(filePath);
     	}
@@ -73,23 +75,30 @@ public partial class Video_settings : CanvasLayer
    		}
 	}
 
-
+	/// <summary>
+	/// Señal de godot que se activa sola cuando haces click en el boton vinculado
+	/// </summary>
 	public void _on_button_pressed()
 	{
 		ApplyGameDataVideoSettings();
 		Save();
 	}
 
+	/// <summary>
+	/// Metodo que gestiona el desplegable de resoluciones y aplica la resolucion seleccionada
+	/// </summary>
+	/// <param name="mySelectedRez">Cambia la resolucion actual</param>
 	public void _on_option_button_item_selected(int mySelectedRez)
 	{
 		gameData.resolutionIndex = mySelectedRez;
 	}
 
+	/// <summary>
+	/// Metodo que aplica todos los cambios en el juego
+	/// </summary>
 	public static void ApplyGameDataVideoSettings() 
 	{
-        // Verificar si hay resoluciones disponibles en el diccionario
         if (gameData.windowResolutions.Count > 0) {
-        	// Obtener la resolución según el índice especificado en gameData.resolutionIndex
         	int key = gameData.windowResolutions.Keys.ElementAt(gameData.resolutionIndex);
         	int value = gameData.windowResolutions[key];
 			GD.Print(key + "," + value);
@@ -101,14 +110,15 @@ public partial class Video_settings : CanvasLayer
 
 			DisplayServer.WindowSetPosition(newPosition);
         } else {
-        	// Si no hay resoluciones disponibles, usar la resolución predeterminada o alguna lógica alternativa
-        	// Esto es solo un ejemplo, puedes manejarlo según tus necesidades
         	DisplayServer.WindowSetSize(new Vector2I(1280, 720));
 
 			DisplayServer.WindowSetPosition((DisplayServer.WindowGetSize() - new Vector2I(1280, 720)) / 2);
         }
     }
 	
+	/// <summary>
+	/// Metodo que nos permite gestionar cuando alguien le da al boton de exit
+	/// </summary>
 	public void _on_exit_pressed()
 	{
 		GetTree().ChangeSceneToFile("escenas/menuInicio/node_2d.tscn");

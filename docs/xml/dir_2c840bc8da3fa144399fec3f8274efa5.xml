@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_2c840bc8da3fa144399fec3f8274efa5" kind="dir">
+    <compoundname>escenas/Guardar</compoundname>
+    <innerdir refid="dir_b1c9aff880b468ed2584d9e3c6601926">escenas/Guardar/Scripts</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="escenas/Guardar/"/>
+  </compounddef>
+</doxygen>

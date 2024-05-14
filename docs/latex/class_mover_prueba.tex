@@ -1,0 +1,65 @@
+\doxysection{Referencia de la clase Mover\+Prueba}
+\hypertarget{class_mover_prueba}{}\label{class_mover_prueba}\index{MoverPrueba@{MoverPrueba}}
+
+
+Clase que gestiona los objetos que se pueden iteractuar de la segunda escena.  
+
+
+Diagrama de herencia de Mover\+Prueba\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mover_prueba}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_mover_prueba_afd4753b90f682ac54158508148bca707}{\+\_\+\+Process}} (double delta)
+\begin{DoxyCompactList}\small\item\em Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mover_prueba_a668777f25f1d367ee23887b73638ceef}{\+\_\+on\+\_\+input\+\_\+event}} (Node viewport, Input\+Event evento, int shap)
+\begin{DoxyCompactList}\small\item\em Este metodo es una señal del propio godot que nos permite detectar cuando haces click sobre le objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase que gestiona los objetos que se pueden iteractuar de la segunda escena. 
+
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{class_mover_prueba_a668777f25f1d367ee23887b73638ceef}\label{class_mover_prueba_a668777f25f1d367ee23887b73638ceef} 
+\index{MoverPrueba@{MoverPrueba}!\_on\_input\_event@{\_on\_input\_event}}
+\index{\_on\_input\_event@{\_on\_input\_event}!MoverPrueba@{MoverPrueba}}
+\doxysubsubsection{\texorpdfstring{\_on\_input\_event()}{\_on\_input\_event()}}
+{\footnotesize\ttfamily void Mover\+Prueba.\+\_\+on\+\_\+input\+\_\+event (\begin{DoxyParamCaption}\item[{Node}]{viewport,  }\item[{Input\+Event}]{evento,  }\item[{int}]{shap }\end{DoxyParamCaption})}
+
+
+
+Este metodo es una señal del propio godot que nos permite detectar cuando haces click sobre le objeto. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em viewport} & Nodo del objeto parte de la API\\
+\hline
+{\em evento} & Nos permite detectar cuando se hace click\\
+\hline
+{\em shap} & Variable que se utiliza para la API\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mover_prueba_afd4753b90f682ac54158508148bca707}\label{class_mover_prueba_afd4753b90f682ac54158508148bca707} 
+\index{MoverPrueba@{MoverPrueba}!\_Process@{\_Process}}
+\index{\_Process@{\_Process}!MoverPrueba@{MoverPrueba}}
+\doxysubsubsection{\texorpdfstring{\_Process()}{\_Process()}}
+{\footnotesize\ttfamily override void Mover\+Prueba.\+\_\+\+Process (\begin{DoxyParamCaption}\item[{double}]{delta }\end{DoxyParamCaption})}
+
+
+
+Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em delta} & Es una varibale generada por Godot que almacena la posicion del objeto\\
+\hline
+\end{DoxyParams}
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+escenas/escena2/scripts/Mover\+Prueba.\+cs\end{DoxyCompactItemize}

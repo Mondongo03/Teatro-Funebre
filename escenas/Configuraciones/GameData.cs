@@ -2,6 +2,9 @@ using Godot;
 using System;
 using System.Collections.Generic;
 
+/// <summary>
+/// Clase que nos permite controlar los datos del juego como los ajustes de pantalla y de sonido
+/// </summary>
 public class GameData {  
 
     //The default resolution and also the resolution the user selected
@@ -10,8 +13,10 @@ public class GameData {
     //If true, run the game full screen
     public bool isFullScreen = false;
 
-    //Windowed Resolution Presets, Only Come into Effect when ScreenMode is Windowed.
-    //Godot does not change the resolution of the monitor when it goes FullScreen, it uses the resolution as-is.
+    /// <summary>
+    /// Windowed Resolution Presets, Only Come into Effect when ScreenMode is Windowed.
+    /// Godot does not change the resolution of the monitor when it goes FullScreen, it uses the resolution as-is. 
+    /// </summary>
     public Dictionary<int, int> windowResolutions = new Dictionary<int, int>() {
         { 480, 270 },
         { 960, 540 },

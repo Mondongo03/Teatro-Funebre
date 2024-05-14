@@ -1,12 +1,177 @@
-[gd_scene load_steps=2 format=3 uid="uid://b3oscujcwaje6"]
+[gd_scene load_steps=27 format=3 uid="uid://b3oscujcwaje6"]
 
-[ext_resource type="Texture2D" uid="uid://bka6kaocja8oa" path="res://escenas/escena2/assets/_9424859e-a0b3-45d1-ade3-76daa2be9243.jpg" id="1_hv644"]
+[ext_resource type="Script" path="res://escenas/escena2/scripts/escena2.cs" id="1_7q1kv"]
+[ext_resource type="Texture2D" uid="uid://ccvk0vtc15wlv" path="res://escenas/escena2/assets/Bosquebueno.png" id="2_2netn"]
+[ext_resource type="PackedScene" uid="uid://c0vydxagyq8pj" path="res://escenas/menuPausa/escenas/pausa.tscn" id="2_p1h3l"]
+[ext_resource type="AudioStream" uid="uid://ccfyo5w280mxv" path="res://escenas/escena2/assets/magic-forest-95823.mp3" id="4_m1gnl"]
+[ext_resource type="Texture2D" uid="uid://ddbckl1lokln0" path="res://escenas/escena1/assets/GnomoCD.png" id="5_cshg0"]
+[ext_resource type="Script" path="res://escenas/escena2/scripts/MueveTeEnElBosque.cs" id="5_hu44f"]
+[ext_resource type="Texture2D" uid="uid://bmcqrepalobj6" path="res://escenas/escena1/assets/1336.png" id="7_iq1fv"]
+[ext_resource type="PackedScene" uid="uid://cky2o76wpk0bl" path="res://escenas/escena2/objetos/pajaro_marron.tscn" id="7_wd4jo"]
+[ext_resource type="Texture2D" uid="uid://dkcnnqo4jbiag" path="res://escenas/escena1/assets/GnomoCI.png" id="7_wijr8"]
+[ext_resource type="PackedScene" uid="uid://ciocjjv3ss2lc" path="res://escenas/escena2/objetos/pajaro_verde.tscn" id="8_83e7h"]
+[ext_resource type="Texture2D" uid="uid://cly82xjk5esrx" path="res://escenas/escena2/assets/Cartacerrada.png" id="9_4wxrt"]
+[ext_resource type="Texture2D" uid="uid://ctqywg7ac0aoq" path="res://escenas/escena2/assets/BoteSangre.png" id="12_88t6q"]
+[ext_resource type="Script" path="res://escenas/escena2/scripts/pocion.cs" id="13_oebrj"]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="Curve2D" id="Curve2D_a8trf"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -610, 4380, 0, 0, 0, 0, 5230, 4300, 0, 0, 0, 0, 5230, 3800, 0, 0, 0, 0, 5240, 4890)
+}
+point_count = 4
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mwxlf"]
+atlas = ExtResource("5_cshg0")
+region = Rect2(0, 0, 46, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iw85i"]
+atlas = ExtResource("5_cshg0")
+region = Rect2(46, 0, 46, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kq2li"]
+atlas = ExtResource("5_cshg0")
+region = Rect2(92, 0, 46, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_315g3"]
+atlas = ExtResource("5_cshg0")
+region = Rect2(138, 0, 46, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ed2i5"]
+atlas = ExtResource("7_iq1fv")
+region = Rect2(0, 0, 374, 374)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qel3s"]
+atlas = ExtResource("7_wijr8")
+region = Rect2(0, 0, 59, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_meaod"]
+atlas = ExtResource("7_wijr8")
+region = Rect2(59, 0, 59, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bwu1x"]
+atlas = ExtResource("7_wijr8")
+region = Rect2(118, 0, 59, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dva0a"]
+atlas = ExtResource("7_wijr8")
+region = Rect2(177, 0, 59, 112)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0p44s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mwxlf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iw85i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kq2li")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_315g3")
+}],
+"loop": true,
+"name": &"AccionBosque",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ed2i5")
+}],
+"loop": true,
+"name": &"AlSueloBosque",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qel3s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_meaod")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bwu1x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dva0a")
+}],
+"loop": true,
+"name": &"SaltarBosque",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yd10l"]
+size = Vector2(58.8438, 121.281)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pu1wf"]
+size = Vector2(115.224, 142.09)
+
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("audioStreamPlayer2D")]
 position = Vector2(62, 51)
 scale = Vector2(10000, 10000)
+script = ExtResource("1_7q1kv")
+audioStreamPlayer2D = NodePath("AudioStreamPlayer2D")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0.0549963, 0.0293472)
-scale = Vector2(0.000119539, 6.74363e-05)
-texture = ExtResource("1_hv644")
+[node name="Fondo" type="Sprite2D" parent="."]
+position = Vector2(0.05145, 0.02735)
+scale = Vector2(9.60833e-05, 8.1125e-05)
+texture = ExtResource("2_2netn")
+
+[node name="CanvasLayer" parent="." instance=ExtResource("2_p1h3l")]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_m1gnl")
+bus = &"Musica"
+
+[node name="Gnomo" type="Path2D" parent="."]
+scale = Vector2(1e-05, 1e-05)
+curve = SubResource("Curve2D_a8trf")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Gnomo" node_paths=PackedStringArray("animatedSprite2D")]
+position = Vector2(-610, 4380)
+scale = Vector2(10, 10)
+rotates = false
+loop = false
+script = ExtResource("5_hu44f")
+animatedSprite2D = NodePath("AnimatedSprite2D")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Gnomo/PathFollow2D"]
+position = Vector2(-1.4645e-06, 0.000299998)
+sprite_frames = SubResource("SpriteFrames_0p44s")
+animation = &"AccionBosque"
+
+[node name="Area2D" type="Area2D" parent="Gnomo/PathFollow2D/AnimatedSprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Gnomo/PathFollow2D/AnimatedSprite2D/Area2D" groups=["personaje"]]
+position = Vector2(-0.154823, 0.471313)
+rotation = 0.0454114
+scale = Vector2(1.00004, 0.999957)
+skew = -0.00197065
+shape = SubResource("RectangleShape2D_yd10l")
+
+[node name="PajaroMarron" parent="." instance=ExtResource("7_wd4jo")]
+rotation = -3.79388e-05
+
+[node name="PajaroVerde" parent="." instance=ExtResource("8_83e7h")]
+
+[node name="Carta" type="Sprite2D" parent="."]
+position = Vector2(0.0498, 0.0164)
+rotation = -0.539621
+scale = Vector2(2.85e-05, 2.7075e-05)
+texture = ExtResource("9_4wxrt")
+
+[node name="Area2D" type="Area2D" parent="." groups=["Pocion"]]
+position = Vector2(0.00185, 0.00185)
+scale = Vector2(2.23333e-05, 2.23333e-05)
+script = ExtResource("13_oebrj")
+
+[node name="Pocion" type="Sprite2D" parent="Area2D"]
+texture = ExtResource("12_88t6q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-47.6119, 61.0448)
+shape = SubResource("RectangleShape2D_pu1wf")
+
+[connection signal="area_entered" from="Gnomo/PathFollow2D/AnimatedSprite2D/Area2D" to="Gnomo/PathFollow2D" method="_on_area_2d_area_entered"]
+[connection signal="input_event" from="Area2D" to="Area2D" method="_on_input_event"]

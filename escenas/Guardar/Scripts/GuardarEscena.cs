@@ -1,18 +1,30 @@
 using Godot;
 using System;
 
+/// <summary>
+/// Clase que nos permite guardar la artida
+/// </summary>
 public partial class GuardarEscena : Node
 {
-	// Called when the node enters the scene tree for the first time.
+	/// <summary>
+	/// Called when the node enters the scene tree for the first time.
+	/// </summary>
 	public override void _Ready()
 	{
 	}
 
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
+	/// <summary>
+	/// Called every frame. 'delta' is the elapsed time since the previous frame.
+	/// </summary>
+	/// <param name="delta"></param>
 	public override void _Process(double delta)
 	{
 	}
 
+	/// <summary>
+	/// Metodo que nos permite guardar las escenas
+	/// </summary>
+	/// <param name="tree">Esta variable es el tree de las escenas</param>
 	public void SaveGame(Node tree)
 	{
 	    using var saveGame = FileAccess.Open("user://savegame.save", FileAccess.ModeFlags.Write);
@@ -45,8 +57,10 @@ public partial class GuardarEscena : Node
 	    }
 	}
 
-	// Note: This can be called from anywhere inside the tree. This function is
-	// path independent.
+	/// <summary>
+	/// Note: This can be called from anywhere inside the tree. This function is
+	/// path independent.
+	/// </summary>
 	public void LoadGame()
 	{
 	    if (!FileAccess.FileExists("user://savegame.save"))

@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_lampara_encendida" kind="class" language="C#" prot="public">
+    <compoundname>LamparaEncendida</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Area2D</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_lampara_encendida_1a5be1d7897209fae9fe46a281228be616" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LamparaEncendida._on_input_event</definition>
+        <argsstring>(Node viewport, InputEvent evento, int shap)</argsstring>
+        <name>_on_input_event</name>
+        <qualifiedname>LamparaEncendida._on_input_event</qualifiedname>
+        <param>
+          <type>Node</type>
+          <declname>viewport</declname>
+        </param>
+        <param>
+          <type>InputEvent</type>
+          <declname>evento</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>shap</declname>
+        </param>
+        <briefdescription>
+<para>Este metodo es una señal del propio godot que nos permite detectar cuando haces click sobre le objeto. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>viewport</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nodo del objeto parte de la API</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>evento</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nos permite detectar cuando se hace click</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>shap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable que se utiliza para la API</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/scripts/LamparaEncendida.cs" line="18" column="13" bodyfile="escenas/escena1/scripts/LamparaEncendida.cs" bodystart="18" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Clase que nos permite gestinar cuando se enciende y se apaga la lampara de la primera escena. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Area2D</label>
+      </node>
+      <node id="1">
+        <label>LamparaEncendida</label>
+        <link refid="class_lampara_encendida"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Area2D</label>
+      </node>
+      <node id="1">
+        <label>LamparaEncendida</label>
+        <link refid="class_lampara_encendida"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="escenas/escena1/scripts/LamparaEncendida.cs" line="9" column="15" bodyfile="escenas/escena1/scripts/LamparaEncendida.cs" bodystart="10" bodyend="27"/>
+    <listofallmembers>
+      <member refid="class_lampara_encendida_1a5be1d7897209fae9fe46a281228be616" prot="public" virt="non-virtual"><scope>LamparaEncendida</scope><name>_on_input_event</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

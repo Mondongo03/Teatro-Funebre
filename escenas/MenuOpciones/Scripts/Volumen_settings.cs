@@ -1,6 +1,9 @@
 using Godot;
 using System;
 
+/// <summary>
+/// Clase que gestiona las opciones de sonido
+/// </summary>
 public partial class Volumen_settings : CanvasLayer
 {
 	private int master,vfx,music;
@@ -11,7 +14,9 @@ public partial class Volumen_settings : CanvasLayer
 
 	private static GameData gameData = new GameData();
 
-	// Called when the node enters the scene tree for the first time.
+	/// <summary>
+	/// Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script
+	/// </summary>
 	public override void _Ready()
 	{
 		master_slider.Value = gameData.masterVolume;
@@ -27,6 +32,10 @@ public partial class Volumen_settings : CanvasLayer
 		music = AudioServer.GetBusIndex("Musica");
 	}
 
+	/// <summary>
+	/// Metodo que nos permite cambiar el porcentaje de sonido del buffer master
+	/// </summary>
+	/// <param name="volumen">Parametro de volumen deseado</param>
 	public void _on_volumen_master_value_changed(float volumen)
 	{
 		master_porcentual.Text = (int)volumen + "%";
@@ -34,6 +43,10 @@ public partial class Volumen_settings : CanvasLayer
 		gameData.masterVolume = volumen;
 	}
 
+	/// <summary>
+	/// Metodo que nos permite cambiar el porcentaje de sonido del buffer efectos de sonido
+	/// </summary>
+	/// <param name="volumen">Parametro de volumen deseado</param>
 	public void _on_volumen_vfx_value_changed(float volumen)
 	{
 		vfx_porcentual.Text = (int)volumen + "%";
@@ -41,6 +54,10 @@ public partial class Volumen_settings : CanvasLayer
 		gameData.sfxVolume = volumen;
 	}
 
+	/// <summary>
+	/// Metodo que nos permite cambiar el porcentaje de sonido del buffer musica
+	/// </summary>
+	/// <param name="volumen">Parametro de volumen deseado</param>
 	public void _on_volumen_musica_value_changed(float volumen)
 	{
 		music_porcentual.Text = (int)volumen + "%";

@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_menu_de_pausa" kind="class" language="C#" prot="public">
+    <compoundname>MenuDePausa</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Control</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_menu_de_pausa_1a343239885a20b6f5f2b436b8f3ed99b0" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button MenuDePausa.continuar</definition>
+        <argsstring></argsstring>
+        <name>continuar</name>
+        <qualifiedname>MenuDePausa.continuar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/menuPausa/scripts/MenuDePausa.cs" line="6" column="17" bodyfile="escenas/menuPausa/scripts/MenuDePausa.cs" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_de_pausa_1a2ba2d32d13dd65eff507743153a354c6" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button MenuDePausa.opciones</definition>
+        <argsstring></argsstring>
+        <name>opciones</name>
+        <qualifiedname>MenuDePausa.opciones</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/menuPausa/scripts/MenuDePausa.cs" line="6" column="26" bodyfile="escenas/menuPausa/scripts/MenuDePausa.cs" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_de_pausa_1a3df5931d26480bd56995a6ffd7f025e7" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button MenuDePausa.salir</definition>
+        <argsstring></argsstring>
+        <name>salir</name>
+        <qualifiedname>MenuDePausa.salir</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/menuPausa/scripts/MenuDePausa.cs" line="6" column="34" bodyfile="escenas/menuPausa/scripts/MenuDePausa.cs" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_de_pausa_1a70ff00022ebc826c2296520641831749" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button MenuDePausa.exit</definition>
+        <argsstring></argsstring>
+        <name>exit</name>
+        <qualifiedname>MenuDePausa.exit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/menuPausa/scripts/MenuDePausa.cs" line="6" column="39" bodyfile="escenas/menuPausa/scripts/MenuDePausa.cs" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_de_pausa_1af6927b4bc5e2bc52a93d347b6f89b83e" prot="private" static="no" mutable="no">
+        <type>CanvasLayer</type>
+        <definition>CanvasLayer MenuDePausa.video</definition>
+        <argsstring></argsstring>
+        <name>video</name>
+        <qualifiedname>MenuDePausa.video</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/menuPausa/scripts/MenuDePausa.cs" line="7" column="22" bodyfile="escenas/menuPausa/scripts/MenuDePausa.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_de_pausa_1aae8e1318d7ee3be7894d28e914325c1b" prot="private" static="no" mutable="no">
+        <type>CanvasLayer</type>
+        <definition>CanvasLayer MenuDePausa.sonido</definition>
+        <argsstring></argsstring>
+        <name>sonido</name>
+        <qualifiedname>MenuDePausa.sonido</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/menuPausa/scripts/MenuDePausa.cs" line="7" column="27" bodyfile="escenas/menuPausa/scripts/MenuDePausa.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_menu_de_pausa_1a924f57e650f5b2afc99bc5cbfe1a8b1d" prot="public" static="no" mutable="no">
+        <type><ref refid="class_guardar_escena" kindref="compound">GuardarEscena</ref></type>
+        <definition>GuardarEscena MenuDePausa.guardarEscena</definition>
+        <argsstring></argsstring>
+        <name>guardarEscena</name>
+        <qualifiedname>MenuDePausa.guardarEscena</qualifiedname>
+        <initializer>= new <ref refid="class_guardar_escena" kindref="compound">GuardarEscena</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/menuPausa/scripts/MenuDePausa.cs" line="9" column="22" bodyfile="escenas/menuPausa/scripts/MenuDePausa.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_menu_de_pausa_1a1c2f0f5bb387af972864b242d398d3bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void MenuDePausa._Process</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>_Process</name>
+        <qualifiedname>MenuDePausa._Process</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/menuPausa/scripts/MenuDePausa.cs" line="11" column="22" bodyfile="escenas/menuPausa/scripts/MenuDePausa.cs" bodystart="11" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_de_pausa_1a2c1ba5dc9896d4072cfe2d885961f8a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MenuDePausa._on_continuar_pressed</definition>
+        <argsstring>()</argsstring>
+        <name>_on_continuar_pressed</name>
+        <qualifiedname>MenuDePausa._on_continuar_pressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/menuPausa/scripts/MenuDePausa.cs" line="25" column="13" bodyfile="escenas/menuPausa/scripts/MenuDePausa.cs" bodystart="25" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_de_pausa_1afe7c3eb09742bac08ee6fa0e3ac60539" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MenuDePausa._on_opciones_pressed</definition>
+        <argsstring>()</argsstring>
+        <name>_on_opciones_pressed</name>
+        <qualifiedname>MenuDePausa._on_opciones_pressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/menuPausa/scripts/MenuDePausa.cs" line="31" column="13" bodyfile="escenas/menuPausa/scripts/MenuDePausa.cs" bodystart="31" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_de_pausa_1a59bacf886a348a99e714735012d84853" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MenuDePausa._on_salir_al_menu_principal_pressed</definition>
+        <argsstring>()</argsstring>
+        <name>_on_salir_al_menu_principal_pressed</name>
+        <qualifiedname>MenuDePausa._on_salir_al_menu_principal_pressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/menuPausa/scripts/MenuDePausa.cs" line="42" column="13" bodyfile="escenas/menuPausa/scripts/MenuDePausa.cs" bodystart="42" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_de_pausa_1aad1566b03a17affddf91d9eb6d66ecc2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MenuDePausa._on_exit_pressed</definition>
+        <argsstring>()</argsstring>
+        <name>_on_exit_pressed</name>
+        <qualifiedname>MenuDePausa._on_exit_pressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/menuPausa/scripts/MenuDePausa.cs" line="48" column="13" bodyfile="escenas/menuPausa/scripts/MenuDePausa.cs" bodystart="48" bodyend="57"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Control</label>
+      </node>
+      <node id="1">
+        <label>MenuDePausa</label>
+        <link refid="class_menu_de_pausa"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Control</label>
+      </node>
+      <node id="3">
+        <label>GuardarEscena</label>
+        <link refid="class_guardar_escena"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MenuDePausa</label>
+        <link refid="class_menu_de_pausa"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>guardarEscena</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Node</label>
+      </node>
+    </collaborationgraph>
+    <location file="escenas/menuPausa/scripts/MenuDePausa.cs" line="4" column="15" bodyfile="escenas/menuPausa/scripts/MenuDePausa.cs" bodystart="5" bodyend="58"/>
+    <listofallmembers>
+      <member refid="class_menu_de_pausa_1a2c1ba5dc9896d4072cfe2d885961f8a2" prot="public" virt="non-virtual"><scope>MenuDePausa</scope><name>_on_continuar_pressed</name></member>
+      <member refid="class_menu_de_pausa_1aad1566b03a17affddf91d9eb6d66ecc2" prot="public" virt="non-virtual"><scope>MenuDePausa</scope><name>_on_exit_pressed</name></member>
+      <member refid="class_menu_de_pausa_1afe7c3eb09742bac08ee6fa0e3ac60539" prot="public" virt="non-virtual"><scope>MenuDePausa</scope><name>_on_opciones_pressed</name></member>
+      <member refid="class_menu_de_pausa_1a59bacf886a348a99e714735012d84853" prot="public" virt="non-virtual"><scope>MenuDePausa</scope><name>_on_salir_al_menu_principal_pressed</name></member>
+      <member refid="class_menu_de_pausa_1a1c2f0f5bb387af972864b242d398d3bc" prot="public" virt="non-virtual"><scope>MenuDePausa</scope><name>_Process</name></member>
+      <member refid="class_menu_de_pausa_1a343239885a20b6f5f2b436b8f3ed99b0" prot="private" virt="non-virtual"><scope>MenuDePausa</scope><name>continuar</name></member>
+      <member refid="class_menu_de_pausa_1a70ff00022ebc826c2296520641831749" prot="private" virt="non-virtual"><scope>MenuDePausa</scope><name>exit</name></member>
+      <member refid="class_menu_de_pausa_1a924f57e650f5b2afc99bc5cbfe1a8b1d" prot="public" virt="non-virtual"><scope>MenuDePausa</scope><name>guardarEscena</name></member>
+      <member refid="class_menu_de_pausa_1a2ba2d32d13dd65eff507743153a354c6" prot="private" virt="non-virtual"><scope>MenuDePausa</scope><name>opciones</name></member>
+      <member refid="class_menu_de_pausa_1a3df5931d26480bd56995a6ffd7f025e7" prot="private" virt="non-virtual"><scope>MenuDePausa</scope><name>salir</name></member>
+      <member refid="class_menu_de_pausa_1aae8e1318d7ee3be7894d28e914325c1b" prot="private" virt="non-virtual"><scope>MenuDePausa</scope><name>sonido</name></member>
+      <member refid="class_menu_de_pausa_1af6927b4bc5e2bc52a93d347b6f89b83e" prot="private" virt="non-virtual"><scope>MenuDePausa</scope><name>video</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

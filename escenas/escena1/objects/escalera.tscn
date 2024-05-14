@@ -1,14 +1,28 @@
-[gd_scene load_steps=4 format=3 uid="uid://btochiwf1oi3t"]
+[gd_scene load_steps=7 format=3 uid="uid://btochiwf1oi3t"]
 
 [ext_resource type="Script" path="res://escenas/escena1/scripts/Escalera.cs" id="1_bmlsf"]
-[ext_resource type="Texture2D" uid="uid://v016i1qmlgtg" path="res://escenas/escena1/assets/escalera.png" id="1_kmmfh"]
+[ext_resource type="Texture2D" uid="uid://c0641vgxltr67" path="res://escenas/escena1/assets/escalera.png" id="1_kmmfh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wbf4y"]
 size = Vector2(112, 515)
 
-[node name="Escalera" type="Area2D"]
+[sub_resource type="Animation" id="Animation_mpomm"]
+resource_name = "cosa"
+length = 0.5
+
+[sub_resource type="Animation" id="Animation_ppjyj"]
+length = 0.5
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7id4c"]
+_data = {
+"RESET": SubResource("Animation_ppjyj"),
+"cosa": SubResource("Animation_mpomm")
+}
+
+[node name="Escalera" type="Area2D" node_paths=PackedStringArray("animationPlayer")]
 position = Vector2(711, 325)
 script = ExtResource("1_bmlsf")
+animationPlayer = NodePath("AnimationPlayer")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(33, 194.5)
@@ -18,5 +32,10 @@ shape = SubResource("RectangleShape2D_wbf4y")
 texture_filter = 1
 position = Vector2(33, 194)
 texture = ExtResource("1_kmmfh")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_7id4c")
+}
 
 [connection signal="input_event" from="." to="." method="_on_input_event"]

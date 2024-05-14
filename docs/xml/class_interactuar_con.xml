@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_interactuar_con" kind="class" language="C#" prot="public">
+    <compoundname>InteractuarCon</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Area2D</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_interactuar_con_1a04d3273516af4fcc3542f3198e7de9a6" prot="private" static="no" mutable="no">
+        <type><ref refid="class_despertarse" kindref="compound">Despertarse</ref></type>
+        <definition>Despertarse InteractuarCon.despertarse</definition>
+        <argsstring></argsstring>
+        <name>despertarse</name>
+        <qualifiedname>InteractuarCon.despertarse</qualifiedname>
+        <initializer>= new <ref refid="class_despertarse" kindref="compound">Despertarse</ref>()</initializer>
+        <briefdescription>
+<para>Instanciacio de la clase <ref refid="class_despertarse" kindref="compound">Despertarse</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/scripts/InteractuarCon.cs" line="12" column="13" bodyfile="escenas/escena1/scripts/InteractuarCon.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interactuar_con_1a794cc7c40f9a134c568e3a5f5f08eea0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool InteractuarCon.bolaInside</definition>
+        <argsstring></argsstring>
+        <name>bolaInside</name>
+        <qualifiedname>InteractuarCon.bolaInside</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/scripts/InteractuarCon.cs" line="14" column="14" bodyfile="escenas/escena1/scripts/InteractuarCon.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interactuar_con_1aee37964996d68db9894f777abf11864a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool InteractuarCon.godotInside</definition>
+        <argsstring></argsstring>
+        <name>godotInside</name>
+        <qualifiedname>InteractuarCon.godotInside</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/scripts/InteractuarCon.cs" line="15" column="14" bodyfile="escenas/escena1/scripts/InteractuarCon.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_interactuar_con_1ab34b1194f716150caa030ccb245b0811" prot="public" static="yes" mutable="no">
+        <type>Boolean</type>
+        <definition>Boolean InteractuarCon.clickado</definition>
+        <argsstring></argsstring>
+        <name>clickado</name>
+        <qualifiedname>InteractuarCon.clickado</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/scripts/InteractuarCon.cs" line="17" column="23" bodyfile="escenas/escena1/scripts/InteractuarCon.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interactuar_con_1ad9c5ef7b68e9839ba7edca9b34df9f83" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int InteractuarCon.slotsOcupados</definition>
+        <argsstring></argsstring>
+        <name>slotsOcupados</name>
+        <qualifiedname>InteractuarCon.slotsOcupados</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/scripts/InteractuarCon.cs" line="18" column="19" bodyfile="escenas/escena1/scripts/InteractuarCon.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_interactuar_con_1aa2acaeb177e4ffbdddd00b6ce5af038f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void InteractuarCon._Process</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>_Process</name>
+        <qualifiedname>InteractuarCon._Process</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+<para>Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Es una varibale generada por Godot que almacena la posicion del objeto</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/scripts/InteractuarCon.cs" line="24" column="22" bodyfile="escenas/escena1/scripts/InteractuarCon.cs" bodystart="24" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_interactuar_con_1a6885c28c6fc972ad434cb3c486de2cb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void InteractuarCon._on_hueco_area_entered</definition>
+        <argsstring>(Area2D area)</argsstring>
+        <name>_on_hueco_area_entered</name>
+        <qualifiedname>InteractuarCon._on_hueco_area_entered</qualifiedname>
+        <param>
+          <type>Area2D</type>
+          <declname>area</declname>
+        </param>
+        <briefdescription>
+<para>Metodo que nos permite ejecutar codigo cuando algo entra en el area, este metodo es una señal de godot. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Es la variable que nos dice el donde a entrado un objeto</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="escenas/escena1/scripts/InteractuarCon.cs" line="36" column="13" bodyfile="escenas/escena1/scripts/InteractuarCon.cs" bodystart="36" bodyend="43"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Esta clase es la clase que se utiliza para detectar cuando entra y sale un objeto de una area especifica. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Area2D</label>
+      </node>
+      <node id="1">
+        <label>InteractuarCon</label>
+        <link refid="class_interactuar_con"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Area2D</label>
+      </node>
+      <node id="1">
+        <label>InteractuarCon</label>
+        <link refid="class_interactuar_con"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="escenas/escena1/scripts/InteractuarCon.cs" line="7" column="15" bodyfile="escenas/escena1/scripts/InteractuarCon.cs" bodystart="8" bodyend="44"/>
+    <listofallmembers>
+      <member refid="class_interactuar_con_1a6885c28c6fc972ad434cb3c486de2cb1" prot="public" virt="non-virtual"><scope>InteractuarCon</scope><name>_on_hueco_area_entered</name></member>
+      <member refid="class_interactuar_con_1aa2acaeb177e4ffbdddd00b6ce5af038f" prot="public" virt="non-virtual"><scope>InteractuarCon</scope><name>_Process</name></member>
+      <member refid="class_interactuar_con_1a794cc7c40f9a134c568e3a5f5f08eea0" prot="private" virt="non-virtual"><scope>InteractuarCon</scope><name>bolaInside</name></member>
+      <member refid="class_interactuar_con_1ab34b1194f716150caa030ccb245b0811" prot="public" virt="non-virtual"><scope>InteractuarCon</scope><name>clickado</name></member>
+      <member refid="class_interactuar_con_1a04d3273516af4fcc3542f3198e7de9a6" prot="private" virt="non-virtual"><scope>InteractuarCon</scope><name>despertarse</name></member>
+      <member refid="class_interactuar_con_1aee37964996d68db9894f777abf11864a" prot="private" virt="non-virtual"><scope>InteractuarCon</scope><name>godotInside</name></member>
+      <member refid="class_interactuar_con_1ad9c5ef7b68e9839ba7edca9b34df9f83" prot="public" virt="non-virtual"><scope>InteractuarCon</scope><name>slotsOcupados</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

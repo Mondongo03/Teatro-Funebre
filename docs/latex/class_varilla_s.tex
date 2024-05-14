@@ -1,0 +1,110 @@
+\doxysection{Referencia de la clase VarillaS}
+\hypertarget{class_varilla_s}{}\label{class_varilla_s}\index{VarillaS@{VarillaS}}
+
+
+Clase que nos perimte gestionar la varilla mas pequeña para saber cuando esta en el reloj y hacer su movimiento.  
+
+
+Diagrama de herencia de VarillaS\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_varilla_s}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_varilla_s_a235d4e491e12ef15e8461a6fe31028be}{\+\_\+\+Process}} (double delta)
+\begin{DoxyCompactList}\small\item\em Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_varilla_s_a31586b27f848bef11e6f8d4bd008a019}{\+\_\+on\+\_\+input\+\_\+event}} (Node viewport, Input\+Event evento, int shap)
+\begin{DoxyCompactList}\small\item\em Este metodo es una señal del propio godot que nos permite detectar cuando haces click sobre le objeto. \end{DoxyCompactList}\item 
+Boolean \mbox{\hyperlink{class_varilla_s_a2a11dba64aedeb1276d4cafe3bb66376}{devolver\+Clickado}} ()
+\begin{DoxyCompactList}\small\item\em Getter de encontrado. \end{DoxyCompactList}\item 
+\Hypertarget{class_varilla_s_ae3aac7597f9f871526e735d42f5a3b2a}\label{class_varilla_s_ae3aac7597f9f871526e735d42f5a3b2a} 
+void {\bfseries rotar} ()
+\begin{DoxyCompactList}\small\item\em Metodo que nos permite girar las abujas del reloj cuando este esta en pantalla grande. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static Boolean \mbox{\hyperlink{class_varilla_s_aa14cf2716dfc35d541128673eff96716}{Get\+Clickado}} ()
+\begin{DoxyCompactList}\small\item\em Getter de encontrado pero estatico. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_varilla_s_abc9a778c6e7acb49dcbefd33fe0476b5}\label{class_varilla_s_abc9a778c6e7acb49dcbefd33fe0476b5} 
+static bool {\bfseries encontrado} = false
+\item 
+\Hypertarget{class_varilla_s_a019b3c34f531fd231e1504cf76a6ad2c}\label{class_varilla_s_a019b3c34f531fd231e1504cf76a6ad2c} 
+static bool {\bfseries ring} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase que nos perimte gestionar la varilla mas pequeña para saber cuando esta en el reloj y hacer su movimiento. 
+
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{class_varilla_s_a31586b27f848bef11e6f8d4bd008a019}\label{class_varilla_s_a31586b27f848bef11e6f8d4bd008a019} 
+\index{VarillaS@{VarillaS}!\_on\_input\_event@{\_on\_input\_event}}
+\index{\_on\_input\_event@{\_on\_input\_event}!VarillaS@{VarillaS}}
+\doxysubsubsection{\texorpdfstring{\_on\_input\_event()}{\_on\_input\_event()}}
+{\footnotesize\ttfamily void Varilla\+S.\+\_\+on\+\_\+input\+\_\+event (\begin{DoxyParamCaption}\item[{Node}]{viewport,  }\item[{Input\+Event}]{evento,  }\item[{int}]{shap }\end{DoxyParamCaption})}
+
+
+
+Este metodo es una señal del propio godot que nos permite detectar cuando haces click sobre le objeto. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em viewport} & Nodo del objeto parte de la API\\
+\hline
+{\em evento} & Nos permite detectar cuando se hace click\\
+\hline
+{\em shap} & Variable que se utiliza para la API\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_varilla_s_a235d4e491e12ef15e8461a6fe31028be}\label{class_varilla_s_a235d4e491e12ef15e8461a6fe31028be} 
+\index{VarillaS@{VarillaS}!\_Process@{\_Process}}
+\index{\_Process@{\_Process}!VarillaS@{VarillaS}}
+\doxysubsubsection{\texorpdfstring{\_Process()}{\_Process()}}
+{\footnotesize\ttfamily override void Varilla\+S.\+\_\+\+Process (\begin{DoxyParamCaption}\item[{double}]{delta }\end{DoxyParamCaption})}
+
+
+
+Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em delta} & Es una varibale generada por Godot que almacena la posicion del objeto\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_varilla_s_a2a11dba64aedeb1276d4cafe3bb66376}\label{class_varilla_s_a2a11dba64aedeb1276d4cafe3bb66376} 
+\index{VarillaS@{VarillaS}!devolverClickado@{devolverClickado}}
+\index{devolverClickado@{devolverClickado}!VarillaS@{VarillaS}}
+\doxysubsubsection{\texorpdfstring{devolverClickado()}{devolverClickado()}}
+{\footnotesize\ttfamily Boolean Varilla\+S.\+devolver\+Clickado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter de encontrado. 
+
+\begin{DoxyReturn}{Devuelve}
+Devuleve encontrado
+\end{DoxyReturn}
+\Hypertarget{class_varilla_s_aa14cf2716dfc35d541128673eff96716}\label{class_varilla_s_aa14cf2716dfc35d541128673eff96716} 
+\index{VarillaS@{VarillaS}!GetClickado@{GetClickado}}
+\index{GetClickado@{GetClickado}!VarillaS@{VarillaS}}
+\doxysubsubsection{\texorpdfstring{GetClickado()}{GetClickado()}}
+{\footnotesize\ttfamily static Boolean Varilla\+S.\+Get\+Clickado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Getter de encontrado pero estatico. 
+
+\begin{DoxyReturn}{Devuelve}
+Devuleve encontrado
+\end{DoxyReturn}
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+escenas/escena1/scripts/Varilla\+S.\+cs\end{DoxyCompactItemize}

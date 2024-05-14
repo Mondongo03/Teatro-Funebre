@@ -1,0 +1,70 @@
+\doxysection{Referencia de la clase Interactuar\+Con}
+\hypertarget{class_interactuar_con}{}\label{class_interactuar_con}\index{InteractuarCon@{InteractuarCon}}
+
+
+Esta clase es la clase que se utiliza para detectar cuando entra y sale un objeto de una area especifica.  
+
+
+Diagrama de herencia de Interactuar\+Con\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_interactuar_con}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_interactuar_con_aa2acaeb177e4ffbdddd00b6ce5af038f}{\+\_\+\+Process}} (double delta)
+\begin{DoxyCompactList}\small\item\em Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_interactuar_con_a6885c28c6fc972ad434cb3c486de2cb1}{\+\_\+on\+\_\+hueco\+\_\+area\+\_\+entered}} (Area2D area)
+\begin{DoxyCompactList}\small\item\em Metodo que nos permite ejecutar codigo cuando algo entra en el area, este metodo es una señal de godot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_interactuar_con_ab34b1194f716150caa030ccb245b0811}\label{class_interactuar_con_ab34b1194f716150caa030ccb245b0811} 
+static Boolean {\bfseries clickado} = false
+\item 
+\Hypertarget{class_interactuar_con_ad9c5ef7b68e9839ba7edca9b34df9f83}\label{class_interactuar_con_ad9c5ef7b68e9839ba7edca9b34df9f83} 
+static int {\bfseries slots\+Ocupados} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Esta clase es la clase que se utiliza para detectar cuando entra y sale un objeto de una area especifica. 
+
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{class_interactuar_con_a6885c28c6fc972ad434cb3c486de2cb1}\label{class_interactuar_con_a6885c28c6fc972ad434cb3c486de2cb1} 
+\index{InteractuarCon@{InteractuarCon}!\_on\_hueco\_area\_entered@{\_on\_hueco\_area\_entered}}
+\index{\_on\_hueco\_area\_entered@{\_on\_hueco\_area\_entered}!InteractuarCon@{InteractuarCon}}
+\doxysubsubsection{\texorpdfstring{\_on\_hueco\_area\_entered()}{\_on\_hueco\_area\_entered()}}
+{\footnotesize\ttfamily void Interactuar\+Con.\+\_\+on\+\_\+hueco\+\_\+area\+\_\+entered (\begin{DoxyParamCaption}\item[{Area2D}]{area }\end{DoxyParamCaption})}
+
+
+
+Metodo que nos permite ejecutar codigo cuando algo entra en el area, este metodo es una señal de godot. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em area} & Es la variable que nos dice el donde a entrado un objeto\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_interactuar_con_aa2acaeb177e4ffbdddd00b6ce5af038f}\label{class_interactuar_con_aa2acaeb177e4ffbdddd00b6ce5af038f} 
+\index{InteractuarCon@{InteractuarCon}!\_Process@{\_Process}}
+\index{\_Process@{\_Process}!InteractuarCon@{InteractuarCon}}
+\doxysubsubsection{\texorpdfstring{\_Process()}{\_Process()}}
+{\footnotesize\ttfamily override void Interactuar\+Con.\+\_\+\+Process (\begin{DoxyParamCaption}\item[{double}]{delta }\end{DoxyParamCaption})}
+
+
+
+Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em delta} & Es una varibale generada por Godot que almacena la posicion del objeto\\
+\hline
+\end{DoxyParams}
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+escenas/escena1/scripts/Interactuar\+Con.\+cs\end{DoxyCompactItemize}

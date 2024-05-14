@@ -44,9 +44,9 @@ shape = SubResource("RectangleShape2D_bog13")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 process_mode = 3
-speed_scale = 2.0
 libraries = {
 "": SubResource("AnimationLibrary_1ft67")
 }
+speed_scale = 2.0
 
 [connection signal="input_event" from="." to="." method="_on_input_event"]

@@ -1,15 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://dikf7h5mdpxda"]
+[gd_scene load_steps=5 format=3 uid="uid://dikf7h5mdpxda"]
 
 [ext_resource type="Texture2D" uid="uid://cwlyqtudp0r0y" path="res://escenas/escena1/assets/reloj.png" id="1_3g218"]
 [ext_resource type="Script" path="res://escenas/escena1/scripts/Reloj.cs" id="1_mfbsu"]
+[ext_resource type="AudioStream" uid="uid://c7lfedn15vthe" path="res://escenas/escena1/assets/ring.ogg" id="3_f0irr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_lhlpg"]
 radius = 27.6586
 
-[node name="Area2D2" type="Area2D"]
+[node name="Area2D2" type="Area2D" node_paths=PackedStringArray("audioStreamPlayer2D")]
 z_index = 1
 position = Vector2(341, 298)
 script = ExtResource("1_mfbsu")
+audioStreamPlayer2D = NodePath("AudioStreamPlayer2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_lhlpg")
@@ -18,6 +20,10 @@ shape = SubResource("CircleShape2D_lhlpg")
 position = Vector2(0, -4)
 scale = Vector2(0.435417, 0.435417)
 texture = ExtResource("1_3g218")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_f0irr")
+bus = &"Ejecftos de sonido"
 
 [connection signal="area_entered" from="." to="." method="_on_reloj_entered"]
 [connection signal="area_exited" from="." to="." method="_on_reloj_exited"]

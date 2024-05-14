@@ -1,0 +1,78 @@
+\doxysection{Referencia de la clase Game\+Data}
+\hypertarget{class_game_data}{}\label{class_game_data}\index{GameData@{GameData}}
+
+
+Clase que nos permite controlar los datos del juego como los ajustes de pantalla y de sonido.  
+
+
+\doxysubsubsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_game_data_a67880be10262264d8a33dbf8ddd5d193}\label{class_game_data_a67880be10262264d8a33dbf8ddd5d193} 
+int {\bfseries resolution\+Index} = 3
+\item 
+\Hypertarget{class_game_data_a836ae4ffa84dc14862e88dea3310b70a}\label{class_game_data_a836ae4ffa84dc14862e88dea3310b70a} 
+bool {\bfseries is\+Full\+Screen} = false
+\item 
+Dictionary$<$ int, int $>$ \mbox{\hyperlink{class_game_data_adad710c517777cb0d52923ad85a7e903}{window\+Resolutions}}
+\begin{DoxyCompactList}\small\item\em Windowed Resolution Presets, Only Come into Effect when Screen\+Mode is Windowed. Godot does not change the resolution of the monitor when it goes Full\+Screen, it uses the resolution as-\/is. \end{DoxyCompactList}\item 
+\Hypertarget{class_game_data_a137e9905bc38bc096d0eb51e87eb2e7b}\label{class_game_data_a137e9905bc38bc096d0eb51e87eb2e7b} 
+float {\bfseries dialogue\+BG\+\_\+alpha} = 0.\+4f
+\item 
+\Hypertarget{class_game_data_af3e1c2fc03a5af25fe3fd97868204e2b}\label{class_game_data_af3e1c2fc03a5af25fe3fd97868204e2b} 
+int {\bfseries font\+Size\+Max} = 11
+\item 
+\Hypertarget{class_game_data_ae96d9c591a774b9ce3191ef6897dc08c}\label{class_game_data_ae96d9c591a774b9ce3191ef6897dc08c} 
+float {\bfseries master\+Volume} = 1
+\item 
+\Hypertarget{class_game_data_ad51c3cc29a6e3afa8bdea3045cf006b9}\label{class_game_data_ad51c3cc29a6e3afa8bdea3045cf006b9} 
+float {\bfseries sfx\+Volume} = 1
+\item 
+\Hypertarget{class_game_data_a24c2e5fa58eb06a99451780c1956f0b0}\label{class_game_data_a24c2e5fa58eb06a99451780c1956f0b0} 
+float {\bfseries music\+Volume} = 0.\+40f
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_game_data_a50616374e4c825c5dec491324ef6c40c}\label{class_game_data_a50616374e4c825c5dec491324ef6c40c} 
+const float {\bfseries default\+\_\+master\+Max\+Volume} = 1
+\item 
+\Hypertarget{class_game_data_adbfa4695ef00e1cd995acc5592a4a72c}\label{class_game_data_adbfa4695ef00e1cd995acc5592a4a72c} 
+const float {\bfseries default\+\_\+music\+Max\+Volume} = 0.\+40f
+\item 
+\Hypertarget{class_game_data_aaf9bc457422e28f0313b9f4071b1f312}\label{class_game_data_aaf9bc457422e28f0313b9f4071b1f312} 
+const float {\bfseries default\+\_\+soundfx\+Max\+Volume} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase que nos permite controlar los datos del juego como los ajustes de pantalla y de sonido. 
+
+\doxysubsection{Documentación de datos miembro}
+\Hypertarget{class_game_data_adad710c517777cb0d52923ad85a7e903}\label{class_game_data_adad710c517777cb0d52923ad85a7e903} 
+\index{GameData@{GameData}!windowResolutions@{windowResolutions}}
+\index{windowResolutions@{windowResolutions}!GameData@{GameData}}
+\doxysubsubsection{\texorpdfstring{windowResolutions}{windowResolutions}}
+{\footnotesize\ttfamily Dictionary$<$int, int$>$ Game\+Data.\+window\+Resolutions}
+
+{\bfseries Valor inicial\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{new}\ Dictionary<int,\ int>()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ 480,\ 270\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ 960,\ 540\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ 1280,\ 720\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ 1920,\ 1080\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ 2560,\ 1440\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ 3840,\ 2160\ \},}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+Windowed Resolution Presets, Only Come into Effect when Screen\+Mode is Windowed. Godot does not change the resolution of the monitor when it goes Full\+Screen, it uses the resolution as-\/is. 
+
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+escenas/\+Configuraciones/Game\+Data.\+cs\end{DoxyCompactItemize}

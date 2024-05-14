@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_b84c739d9000038dfe8233709c93c87b" kind="dir">
+    <compoundname>escenas/escena3</compoundname>
+    <innerdir refid="dir_0c89bb28b5c3ee454ad955de5a3fc79c">escenas/escena3/script</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="escenas/escena3/"/>
+  </compounddef>
+</doxygen>

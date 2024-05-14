@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_e7707b95b95bee32ae548fdcfc8f9c84" kind="dir">
+    <compoundname>escenas/menuInicio</compoundname>
+    <innerdir refid="dir_817e899b64178711492eebc8524a377f">escenas/menuInicio/Scripts</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="escenas/menuInicio/"/>
+  </compounddef>
+</doxygen>

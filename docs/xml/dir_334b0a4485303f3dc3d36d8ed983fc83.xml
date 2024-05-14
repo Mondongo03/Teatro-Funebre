@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_334b0a4485303f3dc3d36d8ed983fc83" kind="dir">
+    <compoundname>escenas/MenuOpciones/Scripts</compoundname>
+    <innerfile refid="_video__settings_8cs">Video_settings.cs</innerfile>
+    <innerfile refid="_volumen__settings_8cs">Volumen_settings.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="escenas/MenuOpciones/Scripts/"/>
+  </compounddef>
+</doxygen>

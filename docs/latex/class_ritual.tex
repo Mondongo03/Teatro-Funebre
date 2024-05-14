@@ -1,0 +1,87 @@
+\doxysection{Referencia de la clase Ritual}
+\hypertarget{class_ritual}{}\label{class_ritual}\index{Ritual@{Ritual}}
+
+
+Script que nos permite gestionar el ritual de la escena 3.  
+
+
+Diagrama de herencia de Ritual\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ritual}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_ritual_ad6dab8be49737a0f38fa8e8a8d659bce}\label{class_ritual_ad6dab8be49737a0f38fa8e8a8d659bce} 
+override void {\bfseries \+\_\+\+Ready} ()
+\item 
+override void \mbox{\hyperlink{class_ritual_a50fbe6099e1c165c14c9e0c5b3137ec7}{\+\_\+\+Process}} (double delta)
+\begin{DoxyCompactList}\small\item\em Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ritual_a36af94e3c29ec163e286c2692db0b553}{\+\_\+on\+\_\+area\+\_\+entered}} (Area2D area)
+\begin{DoxyCompactList}\small\item\em Señal de godot que nos permite comprobar si la area de un objeto colisiona contra la area del objeto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ritual_a1401d88dd1c14866333458fdcd78e4dc}{\+\_\+on\+\_\+area\+\_\+exited}} (Area2D area)
+\begin{DoxyCompactList}\small\item\em Este metodo es una señal de godot, detecta cuando salga del area objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_ritual_a50fe4fab1e0de265338b4ea67bcc508c}\label{class_ritual_a50fe4fab1e0de265338b4ea67bcc508c} 
+static int {\bfseries slot\+Correcto} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Script que nos permite gestionar el ritual de la escena 3. 
+
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{class_ritual_a36af94e3c29ec163e286c2692db0b553}\label{class_ritual_a36af94e3c29ec163e286c2692db0b553} 
+\index{Ritual@{Ritual}!\_on\_area\_entered@{\_on\_area\_entered}}
+\index{\_on\_area\_entered@{\_on\_area\_entered}!Ritual@{Ritual}}
+\doxysubsubsection{\texorpdfstring{\_on\_area\_entered()}{\_on\_area\_entered()}}
+{\footnotesize\ttfamily void Ritual.\+\_\+on\+\_\+area\+\_\+entered (\begin{DoxyParamCaption}\item[{Area2D}]{area }\end{DoxyParamCaption})}
+
+
+
+Señal de godot que nos permite comprobar si la area de un objeto colisiona contra la area del objeto. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em area} & Variable de la colision del objeto que colisiona con el objeto\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_ritual_a1401d88dd1c14866333458fdcd78e4dc}\label{class_ritual_a1401d88dd1c14866333458fdcd78e4dc} 
+\index{Ritual@{Ritual}!\_on\_area\_exited@{\_on\_area\_exited}}
+\index{\_on\_area\_exited@{\_on\_area\_exited}!Ritual@{Ritual}}
+\doxysubsubsection{\texorpdfstring{\_on\_area\_exited()}{\_on\_area\_exited()}}
+{\footnotesize\ttfamily void Ritual.\+\_\+on\+\_\+area\+\_\+exited (\begin{DoxyParamCaption}\item[{Area2D}]{area }\end{DoxyParamCaption})}
+
+
+
+Este metodo es una señal de godot, detecta cuando salga del area objeto. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em area} & Variable de la area del objeto que colisiona con el objeto\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_ritual_a50fbe6099e1c165c14c9e0c5b3137ec7}\label{class_ritual_a50fbe6099e1c165c14c9e0c5b3137ec7} 
+\index{Ritual@{Ritual}!\_Process@{\_Process}}
+\index{\_Process@{\_Process}!Ritual@{Ritual}}
+\doxysubsubsection{\texorpdfstring{\_Process()}{\_Process()}}
+{\footnotesize\ttfamily override void Ritual.\+\_\+\+Process (\begin{DoxyParamCaption}\item[{double}]{delta }\end{DoxyParamCaption})}
+
+
+
+Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em delta} & Es una varibale generada por Godot que almacena la posicion del objeto\\
+\hline
+\end{DoxyParams}
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+escenas/escena3/scripts/Ritual.\+cs\end{DoxyCompactItemize}

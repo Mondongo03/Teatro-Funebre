@@ -1,0 +1,93 @@
+\doxysection{Referencia de la clase Video\+\_\+settings}
+\hypertarget{class_video__settings}{}\label{class_video__settings}\index{Video\_settings@{Video\_settings}}
+
+
+Menu de las opciones de video del juego.  
+
+
+Diagrama de herencia de Video\+\_\+settings\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_video__settings}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_video__settings_a1e88cf45c4358a7b52da210f4b4fffef}\label{class_video__settings_a1e88cf45c4358a7b52da210f4b4fffef} 
+override void {\bfseries \+\_\+\+Ready} ()
+\begin{DoxyCompactList}\small\item\em Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_video__settings_a04edb2ab71420b97a0a22aa146952905}{\+\_\+\+Process}} (double delta)
+\begin{DoxyCompactList}\small\item\em Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla. \end{DoxyCompactList}\item 
+\Hypertarget{class_video__settings_a21d4ba712079a60955f7024fa768ccf0}\label{class_video__settings_a21d4ba712079a60955f7024fa768ccf0} 
+void {\bfseries \+\_\+on\+\_\+button\+\_\+pressed} ()
+\begin{DoxyCompactList}\small\item\em Señal de godot que se activa sola cuando haces click en el boton vinculado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_video__settings_a267468e004f0b8605a9977aca4b6f6c3}{\+\_\+on\+\_\+option\+\_\+button\+\_\+item\+\_\+selected}} (int my\+Selected\+Rez)
+\begin{DoxyCompactList}\small\item\em Metodo que gestiona el desplegable de resoluciones y aplica la resolucion seleccionada. \end{DoxyCompactList}\item 
+\Hypertarget{class_video__settings_a3f9c7411a2dfc6d9be1ccedb5dfc295a}\label{class_video__settings_a3f9c7411a2dfc6d9be1ccedb5dfc295a} 
+void {\bfseries \+\_\+on\+\_\+exit\+\_\+pressed} ()
+\begin{DoxyCompactList}\small\item\em Metodo que nos permite gestionar cuando alguien le da al boton de exit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_video__settings_a96a9260779d3de411b1746a84c6cfa6c}{set\+Pantalla}} (bool s)
+\begin{DoxyCompactList}\small\item\em Setter de pantalla. \end{DoxyCompactList}\item 
+\Hypertarget{class_video__settings_a05ddf03066bb09a9a8b8ba6332c6f8f4}\label{class_video__settings_a05ddf03066bb09a9a8b8ba6332c6f8f4} 
+static void {\bfseries Apply\+Game\+Data\+Video\+Settings} ()
+\begin{DoxyCompactList}\small\item\em Metodo que aplica todos los cambios en el juego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Menu de las opciones de video del juego. 
+
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{class_video__settings_a267468e004f0b8605a9977aca4b6f6c3}\label{class_video__settings_a267468e004f0b8605a9977aca4b6f6c3} 
+\index{Video\_settings@{Video\_settings}!\_on\_option\_button\_item\_selected@{\_on\_option\_button\_item\_selected}}
+\index{\_on\_option\_button\_item\_selected@{\_on\_option\_button\_item\_selected}!Video\_settings@{Video\_settings}}
+\doxysubsubsection{\texorpdfstring{\_on\_option\_button\_item\_selected()}{\_on\_option\_button\_item\_selected()}}
+{\footnotesize\ttfamily void Video\+\_\+settings.\+\_\+on\+\_\+option\+\_\+button\+\_\+item\+\_\+selected (\begin{DoxyParamCaption}\item[{int}]{my\+Selected\+Rez }\end{DoxyParamCaption})}
+
+
+
+Metodo que gestiona el desplegable de resoluciones y aplica la resolucion seleccionada. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em my\+Selected\+Rez} & Cambia la resolucion actual\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_video__settings_a04edb2ab71420b97a0a22aa146952905}\label{class_video__settings_a04edb2ab71420b97a0a22aa146952905} 
+\index{Video\_settings@{Video\_settings}!\_Process@{\_Process}}
+\index{\_Process@{\_Process}!Video\_settings@{Video\_settings}}
+\doxysubsubsection{\texorpdfstring{\_Process()}{\_Process()}}
+{\footnotesize\ttfamily override void Video\+\_\+settings.\+\_\+\+Process (\begin{DoxyParamCaption}\item[{double}]{delta }\end{DoxyParamCaption})}
+
+
+
+Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em delta} & Es una varibale generada por Godot que almacena la posicion del objeto\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_video__settings_a96a9260779d3de411b1746a84c6cfa6c}\label{class_video__settings_a96a9260779d3de411b1746a84c6cfa6c} 
+\index{Video\_settings@{Video\_settings}!setPantalla@{setPantalla}}
+\index{setPantalla@{setPantalla}!Video\_settings@{Video\_settings}}
+\doxysubsubsection{\texorpdfstring{setPantalla()}{setPantalla()}}
+{\footnotesize\ttfamily static void Video\+\_\+settings.\+set\+Pantalla (\begin{DoxyParamCaption}\item[{bool}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Setter de pantalla. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em s} & Cambia el bool de pantalla\\
+\hline
+\end{DoxyParams}
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+escenas/\+Menu\+Opciones/\+Scripts/Video\+\_\+settings.\+cs\end{DoxyCompactItemize}
