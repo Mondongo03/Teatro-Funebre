@@ -27,6 +27,7 @@ public partial class RespuestasRamon : Area2D
 	void _on_input_event(Node viewport, InputEvent @event, long shape_idx) {
 		if(@event.IsActionPressed("click_izquierdo")&& this.IsInGroup("Si")){
 			jugar = true;
+			GetTree().ChangeSceneToFile("res://escenas/escena2.5/CartasCartitas.tscn");
 			GD.Print("Jugar");
 		}
 		else if(@event.IsActionPressed("click_izquierdo")&& this.IsInGroup("No")){
