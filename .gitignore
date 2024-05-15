@@ -1,4 +1,4 @@
 /.godot/**
 /.vscode/**
-/project.godot
+.godot
 .csproj
