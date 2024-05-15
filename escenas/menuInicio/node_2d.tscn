@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://b6n3doltr7qhs" path="res://escenas/menuPausa/escenas/color_rect.tscn" id="3_m0ls1"]
 [ext_resource type="Texture2D" uid="uid://cubhr6jspk6tx" path="res://escenas/menuInicio/assets/Teatro.png" id="3_ovf0w"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D2" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(575.5, 324.75)
@@ -70,7 +70,7 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.181424
-anchor_top = -0.271605
+anchor_top = -0.285494
 anchor_right = 0.181424
 anchor_bottom = -0.285494
 offset_left = 603.0

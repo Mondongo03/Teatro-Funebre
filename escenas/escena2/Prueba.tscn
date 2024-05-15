@@ -11,8 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://dkcnnqo4jbiag" path="res://escenas/escena1/assets/GnomoCI.png" id="7_wijr8"]
 [ext_resource type="PackedScene" uid="uid://ciocjjv3ss2lc" path="res://escenas/escena2/objetos/pajaro_verde.tscn" id="8_83e7h"]
 [ext_resource type="Texture2D" uid="uid://cly82xjk5esrx" path="res://escenas/escena2/assets/Cartacerrada.png" id="9_4wxrt"]
-[ext_resource type="PackedScene" path="res://escenas/escena2/objetos/ramoncin.tscn" id="12_cpiaa"]
-[ext_resource type="PackedScene" path="res://escenas/escena2/objetos/ojo.tscn" id="13_daars"]
+[ext_resource type="PackedScene" uid="uid://suhwt3dfugp" path="res://escenas/escena2/objetos/ramoncin.tscn" id="12_cpiaa"]
+[ext_resource type="PackedScene" uid="uid://ca4548st4trsg" path="res://escenas/escena2/objetos/ojo.tscn" id="13_daars"]
 [ext_resource type="Texture2D" uid="uid://ws0qsjmt73jk" path="res://escenas/escena2/assets/gnomoTullidoSinOjo.png" id="14_eadh0"]
 [ext_resource type="Script" path="res://escenas/escena2/scripts/GnomoSinCosas.cs" id="14_wdqc6"]
 
@@ -109,7 +109,7 @@ size = Vector2(58.8438, 121.281)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wnx72"]
 size = Vector2(119, 43)
 
-[node name="Node2D" type="Node2D" node_paths=PackedStringArray("audioStreamPlayer2D")]
+[node name="Node2D2" type="Node2D" node_paths=PackedStringArray("audioStreamPlayer2D")]
 position = Vector2(62, 51)
 script = ExtResource("1_7q1kv")
 audioStreamPlayer2D = NodePath("AudioStreamPlayer2D")
