@@ -27,11 +27,11 @@ script = ExtResource("2_iy6x0")
 texture = ExtResource("3_rukdd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TarotSol"]
-position = Vector2(-0.5, -0.5)
+position = Vector2(0, -1)
 shape = SubResource("RectangleShape2D_yo0go")
 
 [node name="TarotEstrella" type="Area2D" parent="." groups=["Estrella"]]
-position = Vector2(539, 270)
+position = Vector2(513, 271)
 script = ExtResource("2_iy6x0")
 
 [node name="Sprite2D" type="Sprite2D" parent="TarotEstrella"]
@@ -42,7 +42,7 @@ position = Vector2(-0.5, -0.5)
 shape = SubResource("RectangleShape2D_yo0go")
 
 [node name="TarotLuna" type="Area2D" parent="." groups=["Luna"]]
-position = Vector2(902, 271)
+position = Vector2(898, 271)
 script = ExtResource("2_iy6x0")
 
 [node name="Sprite2D" type="Sprite2D" parent="TarotLuna"]
