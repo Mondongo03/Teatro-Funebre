@@ -4,8 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 public partial class CartasCartitas : Node2D
 {
+	float speed = 0.3f;
+	bool remenar;
+	[Export] public PathFollow2D sol, estrella, luna;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready() {
+		remenar = true;
+
 		int[] cartas = { 0, 1, 2 };
 
 		Random rnd = new Random();
@@ -23,5 +28,11 @@ public partial class CartasCartitas : Node2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
+		if (remenar)
+		{
+			sol.ProgressRatio += (float)delta*speed;
+			estrella.ProgressRatio += (float)delta*speed;
+			luna.ProgressRatio += (float)delta*speed;
+		}
 	}
 }
