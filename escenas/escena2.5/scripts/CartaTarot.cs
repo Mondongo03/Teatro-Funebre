@@ -3,9 +3,13 @@ using System;
 
 public partial class CartaTarot : Area2D {
 	Sprite2D sprite;
+	Timer timer;
 	
 	public override void _Ready() {
 		sprite = GetChild<Sprite2D>(0);
+		timer = new Timer();
+        AddChild(timer);
+        timer.OneShot = true;
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -25,17 +29,22 @@ public partial class CartaTarot : Area2D {
 			}
 		}
 	}
-	void voltearCarta(int numero){
+	async void voltearCarta(int numero){
 		CartasCartitas.intento++;
 		if(CartasCartitas.cartas[numero] == 0) {
 			this.sprite.Texture = (Texture2D)GD.Load("res://escenas/escena2.5/assets/CartaTarotSol.png");
 		}
-		if(CartasCartitas.cartas[numero] == 1) {
+		else if(CartasCartitas.cartas[numero] == 1) {
 			this.sprite.Texture = (Texture2D)GD.Load("res://escenas/escena2.5/assets/CartaTarotEstrella.png");
 			CartasCartitas.victoria = true;
 		}
-		if(CartasCartitas.cartas[numero] == 2) {
+		else if(CartasCartitas.cartas[numero] == 2) {
 			this.sprite.Texture = (Texture2D)GD.Load("res://escenas/escena2.5/assets/CartaTarotLuna.png");
+		}
+		timer.Start(1);
+        await ToSignal(timer, "timeout");
+		if(!CartasCartitas.victoria){
+			this.sprite.Texture = (Texture2D)GD.Load("res://escenas/escena2.5/assets/CartaTarotGenerica.png");
 		}
 	}
 }

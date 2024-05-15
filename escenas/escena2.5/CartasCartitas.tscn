@@ -1,11 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://baxy0ipg86kv0"]
+[gd_scene load_steps=6 format=3 uid="uid://baxy0ipg86kv0"]
 
 [ext_resource type="Texture2D" uid="uid://ncua43enph81" path="res://escenas/escena2.5/assets/Tablero.png" id="1_441ri"]
 [ext_resource type="Script" path="res://escenas/escena2.5/CartasCartitas.cs" id="1_ytof7"]
 [ext_resource type="Script" path="res://escenas/escena2.5/scripts/CartaTarot.cs" id="2_iy6x0"]
-[ext_resource type="Texture2D" uid="uid://debofqdwywftc" path="res://escenas/escena2.5/assets/CartaTarotSol.png" id="3_rukdd"]
-[ext_resource type="Texture2D" uid="uid://4qrr21pwi3ia" path="res://escenas/escena2.5/assets/CartaTarotEstrella.png" id="4_ilc3o"]
-[ext_resource type="Texture2D" uid="uid://cep474lnhqyh7" path="res://escenas/escena2.5/assets/CartaTarotLuna.png" id="5_442et"]
+[ext_resource type="Texture2D" uid="uid://exa43sox7400" path="res://escenas/escena2.5/assets/CartaTarotGenerica.png" id="4_agud0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yo0go"]
 size = Vector2(319, 589)
@@ -24,7 +22,7 @@ position = Vector2(130, 271)
 script = ExtResource("2_iy6x0")
 
 [node name="Sprite2D" type="Sprite2D" parent="TarotSol"]
-texture = ExtResource("3_rukdd")
+texture = ExtResource("4_agud0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TarotSol"]
 position = Vector2(0, -1)
@@ -35,7 +33,7 @@ position = Vector2(513, 271)
 script = ExtResource("2_iy6x0")
 
 [node name="Sprite2D" type="Sprite2D" parent="TarotEstrella"]
-texture = ExtResource("4_ilc3o")
+texture = ExtResource("4_agud0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TarotEstrella"]
 position = Vector2(-0.5, -0.5)
@@ -46,7 +44,7 @@ position = Vector2(898, 271)
 script = ExtResource("2_iy6x0")
 
 [node name="Sprite2D" type="Sprite2D" parent="TarotLuna"]
-texture = ExtResource("5_442et")
+texture = ExtResource("4_agud0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TarotLuna"]
 position = Vector2(-0.5, -0.5)
