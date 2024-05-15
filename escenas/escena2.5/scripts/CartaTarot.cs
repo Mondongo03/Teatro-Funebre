@@ -1,9 +1,11 @@
 using Godot;
 using System;
 
-public partial class CartaTarot : Area2D
-{
+public partial class CartaTarot : Area2D {
+	Sprite2D sprite;
+	
 	public override void _Ready() {
+		sprite = GetChild<Sprite2D>(0);
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -11,10 +13,29 @@ public partial class CartaTarot : Area2D
 	
 	}
 	private void _on_input_event(Node viewport, InputEvent @event, long shape_idx) {
-	 if(@event.IsActionPressed("click_izquierdo")){
-			GD.Print(this.IsInGroup(""));
-			
+	 if(@event.IsActionPressed("click_izquierdo") && CartasCartitas.intento ==0){
+			if(this.IsInGroup("Sol")) {
+				voltearCarta(0);
+			}
+			else if(this.IsInGroup("Estrella")) {
+				voltearCarta(1);
+			}
+			else if(this.IsInGroup("Luna")) {
+				voltearCarta(2);
+			}
 		}
-		
+	}
+	void voltearCarta(int numero){
+		CartasCartitas.intento++;
+		if(CartasCartitas.cartas[numero] == 0) {
+			this.sprite.Texture = (Texture2D)GD.Load("res://escenas/escena2.5/assets/CartaTarotSol.png");
+		}
+		if(CartasCartitas.cartas[numero] == 1) {
+			this.sprite.Texture = (Texture2D)GD.Load("res://escenas/escena2.5/assets/CartaTarotEstrella.png");
+			CartasCartitas.victoria = true;
+		}
+		if(CartasCartitas.cartas[numero] == 2) {
+			this.sprite.Texture = (Texture2D)GD.Load("res://escenas/escena2.5/assets/CartaTarotLuna.png");
+		}
 	}
 }
