@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqughqgrgtlpg"
-path="res://.godot/imported/Gundulf.png-76650082ddfd58207511bcdfd60d6734.ctex"
+uid="uid://bxtxfypxsdj1a"
+path="res://.godot/imported/TextBox2.png-459cfb8cc5b9bfc4ac764f2467967d03.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://escenas/escena3/assets/Gundulf.png"
-dest_files=["res://.godot/imported/Gundulf.png-76650082ddfd58207511bcdfd60d6734.ctex"]
+source_file="res://escenas/escena2/assets/TextBox2.png"
+dest_files=["res://.godot/imported/TextBox2.png-459cfb8cc5b9bfc4ac764f2467967d03.ctex"]
 
 [params]
 

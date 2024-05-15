@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqughqgrgtlpg"
-path="res://.godot/imported/Gundulf.png-76650082ddfd58207511bcdfd60d6734.ctex"
+uid="uid://wbvj7yjxk45f"
+path="res://.godot/imported/Opcion2NoBrillante.png-1476645c74ef2e4c3168b6cf3f4d3ce3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://escenas/escena3/assets/Gundulf.png"
-dest_files=["res://.godot/imported/Gundulf.png-76650082ddfd58207511bcdfd60d6734.ctex"]
+source_file="res://escenas/escena2/assets/Opcion2NoBrillante.png"
+dest_files=["res://.godot/imported/Opcion2NoBrillante.png-1476645c74ef2e4c3168b6cf3f4d3ce3.ctex"]
 
 [params]
 

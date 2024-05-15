@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqughqgrgtlpg"
-path="res://.godot/imported/Gundulf.png-76650082ddfd58207511bcdfd60d6734.ctex"
+uid="uid://debofqdwywftc"
+path="res://.godot/imported/CartaTarotSol.png-21a68feed24004fef9d7603f63359ca1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://escenas/escena3/assets/Gundulf.png"
-dest_files=["res://.godot/imported/Gundulf.png-76650082ddfd58207511bcdfd60d6734.ctex"]
+source_file="res://escenas/escena2.5/assets/CartaTarotSol.png"
+dest_files=["res://.godot/imported/CartaTarotSol.png-21a68feed24004fef9d7603f63359ca1.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqughqgrgtlpg"
-path="res://.godot/imported/Gundulf.png-76650082ddfd58207511bcdfd60d6734.ctex"
+uid="uid://4qrr21pwi3ia"
+path="res://.godot/imported/CartaTarotEstrella.png-81f2502f062c4b0faf974c70ec352028.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://escenas/escena3/assets/Gundulf.png"
-dest_files=["res://.godot/imported/Gundulf.png-76650082ddfd58207511bcdfd60d6734.ctex"]
+source_file="res://escenas/escena2.5/assets/CartaTarotEstrella.png"
+dest_files=["res://.godot/imported/CartaTarotEstrella.png-81f2502f062c4b0faf974c70ec352028.ctex"]
 
 [params]
 

@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://suhwt3dfugp"]
+
+[ext_resource type="Texture2D" uid="uid://brk4kqu3bs0yx" path="res://escenas/escena2/assets/Cartas.png" id="1_yetxn"]
+[ext_resource type="Script" path="res://escenas/escena2/scripts/Ramon.cs" id="2_cun48"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y8t8w"]
+size = Vector2(208, 98)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7nnxu"]
+radius = 13.0384
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_w4mmr"]
+radius = 36.0
+height = 94.0
+
+[node name="Area2D2" type="Area2D" groups=["Ramon"]]
+position = Vector2(801, 412)
+script = ExtResource("2_cun48")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_yetxn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 37)
+shape = SubResource("RectangleShape2D_y8t8w")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-73, -12)
+shape = SubResource("CircleShape2D_7nnxu")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(10, -39)
+shape = SubResource("CapsuleShape2D_w4mmr")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

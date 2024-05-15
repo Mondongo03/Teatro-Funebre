@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqughqgrgtlpg"
-path="res://.godot/imported/Gundulf.png-76650082ddfd58207511bcdfd60d6734.ctex"
+uid="uid://ws0qsjmt73jk"
+path="res://.godot/imported/gnomoTullidoSinOjo.png-f738ff636a68a5669b3818453e7c1116.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://escenas/escena3/assets/Gundulf.png"
-dest_files=["res://.godot/imported/Gundulf.png-76650082ddfd58207511bcdfd60d6734.ctex"]
+source_file="res://escenas/escena2/assets/gnomoTullidoSinOjo.png"
+dest_files=["res://.godot/imported/gnomoTullidoSinOjo.png-f738ff636a68a5669b3818453e7c1116.ctex"]
 
 [params]
 

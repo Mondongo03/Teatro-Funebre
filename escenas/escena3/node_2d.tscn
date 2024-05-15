@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dmiq6b6x1xr3n"]
+[gd_scene load_steps=13 format=3 uid="uid://dmiq6b6x1xr3n"]
 
 [ext_resource type="Script" path="res://escenas/escena3/MainDesvan.cs" id="1_e4q1i"]
 [ext_resource type="Texture2D" uid="uid://42o21mfgkct3" path="res://escenas/escena3/assets/Desvan.png" id="2_j38e6"]
@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://dbn80bwod74wb" path="res://escenas/escena3/objects/unicornioNaranja.tscn" id="6_yuq7b"]
 [ext_resource type="PackedScene" uid="uid://csv2tv2imk5dn" path="res://escenas/escena3/objects/unicornioVerde.tscn" id="7_d7t70"]
 [ext_resource type="PackedScene" uid="uid://b0vjvdvcajks8" path="res://escenas/escena3/objects/unicornioRojo.tscn" id="8_dmmbf"]
-[ext_resource type="PackedScene" uid="uid://c0vydxagyq8pj" path="res://escenas/menuPausa/escenas/pausa.tscn" id="9_kcr45"]
 [ext_resource type="PackedScene" uid="uid://jytp2qyvw1p2" path="res://escenas/escena3/objects/unicornioAmarillo.tscn" id="11_xf2oq"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ibdlg"]
@@ -22,9 +21,8 @@ radius = 34.0147
 [sub_resource type="CircleShape2D" id="CircleShape2D_8sr8f"]
 radius = 38.1182
 
-[node name="Node2D2" type="Node2D" node_paths=PackedStringArray("audioStreamPlayer2D") groups=["Persist"]]
+[node name="Node2D2" type="Node2D" groups=["Persist"]]
 script = ExtResource("1_e4q1i")
-audioStreamPlayer2D = NodePath("AudioStreamPlayer2D")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(576, 325)
@@ -86,9 +84,7 @@ position = Vector2(109, 458)
 [node name="Unicornio5" parent="." instance=ExtResource("8_dmmbf")]
 position = Vector2(248, 573)
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-
-[node name="CanvasLayer" parent="." instance=ExtResource("9_kcr45")]
+[node name="Chimenea" type="Area2D" parent="."]
 
 [connection signal="child_entered_tree" from="Sprite2D2" to="." method="_on_sprite_2d_2_child_entered_tree"]
 [connection signal="area_entered" from="Izquierda" to="Izquierda" method="_on_area_entered"]

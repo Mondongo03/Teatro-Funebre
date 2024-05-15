@@ -8,14 +8,14 @@ public partial class MueveTeEnElBosque : PathFollow2D
 {
 	float speed = 0.2f;
 	[Export] public AnimatedSprite2D animatedSprite2D;
-	bool comaenzar;
+	public static bool comenzar;
 
 	/// <summary>
 	/// Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script
 	/// </summary>
 	public override void _Ready()
 	{
-		comaenzar = true;
+		comenzar = true;
 		
 	}
 
@@ -25,7 +25,7 @@ public partial class MueveTeEnElBosque : PathFollow2D
 	/// <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
 	public override void _Process(double delta)
 	{
-		if(comaenzar){
+		if(comenzar){
 			animatedSprite2D.Play("AccionBosque");
 			ProgressRatio += (float)delta * speed;
 
@@ -37,7 +37,7 @@ public partial class MueveTeEnElBosque : PathFollow2D
 			if (ProgressRatio == 1){
 				animatedSprite2D.Stop();
 				animatedSprite2D.Play("AlSueloBosque");
-				comaenzar = false;
+				comenzar = false;
 			}
 		}
 	}
