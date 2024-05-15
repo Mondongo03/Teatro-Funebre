@@ -109,7 +109,7 @@ size = Vector2(58.8438, 121.281)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wnx72"]
 size = Vector2(119, 43)
 
-[node name="Node2D" type="Node2D" node_paths=PackedStringArray("audioStreamPlayer2D")]
+[node name="Node2D2" type="Node2D" node_paths=PackedStringArray("audioStreamPlayer2D")]
 position = Vector2(62, 51)
 script = ExtResource("1_7q1kv")
 audioStreamPlayer2D = NodePath("AudioStreamPlayer2D")

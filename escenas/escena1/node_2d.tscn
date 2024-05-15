@@ -54,12 +54,11 @@ _data = {
 "cosa": SubResource("Animation_n5gus")
 }
 
-[node name="Node2D" type="Node2D" node_paths=PackedStringArray("animationPlayer", "audioStreamPlayer2D", "gnomo") groups=["Persist"]]
+[node name="Node2D2" type="Node2D" node_paths=PackedStringArray("animationPlayer", "audioStreamPlayer2D") groups=["Persist"]]
 modulate = Color(1, 1, 1, 0)
 script = ExtResource("1_h6e1c")
 animationPlayer = NodePath("AnimationPlayer")
 audioStreamPlayer2D = NodePath("AudioStreamPlayer2D")
-gnomo = NodePath("CaminoDeSaul")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(576, 325)
