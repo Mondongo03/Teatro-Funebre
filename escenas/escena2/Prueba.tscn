@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://b3oscujcwaje6"]
+[gd_scene load_steps=29 format=3 uid="uid://b3oscujcwaje6"]
 
 [ext_resource type="Script" path="res://escenas/escena2/scripts/escena2.cs" id="1_7q1kv"]
 [ext_resource type="Texture2D" uid="uid://ccvk0vtc15wlv" path="res://escenas/escena2/assets/Bosquebueno.png" id="2_2netn"]
@@ -6,13 +6,15 @@
 [ext_resource type="AudioStream" uid="uid://ccfyo5w280mxv" path="res://escenas/escena2/assets/magic-forest-95823.mp3" id="4_m1gnl"]
 [ext_resource type="Texture2D" uid="uid://ddbckl1lokln0" path="res://escenas/escena1/assets/GnomoCD.png" id="5_cshg0"]
 [ext_resource type="Script" path="res://escenas/escena2/scripts/MueveTeEnElBosque.cs" id="5_hu44f"]
-[ext_resource type="Texture2D" uid="uid://bmcqrepalobj6" path="res://escenas/escena1/assets/1336.png" id="7_iq1fv"]
+[ext_resource type="Texture2D" uid="uid://dmktsu6ivmapm" path="res://escenas/escena2/assets/gnomoTullido.png" id="7_6nu0k"]
 [ext_resource type="PackedScene" uid="uid://cky2o76wpk0bl" path="res://escenas/escena2/objetos/pajaro_marron.tscn" id="7_wd4jo"]
 [ext_resource type="Texture2D" uid="uid://dkcnnqo4jbiag" path="res://escenas/escena1/assets/GnomoCI.png" id="7_wijr8"]
 [ext_resource type="PackedScene" uid="uid://ciocjjv3ss2lc" path="res://escenas/escena2/objetos/pajaro_verde.tscn" id="8_83e7h"]
 [ext_resource type="Texture2D" uid="uid://cly82xjk5esrx" path="res://escenas/escena2/assets/Cartacerrada.png" id="9_4wxrt"]
 [ext_resource type="PackedScene" uid="uid://suhwt3dfugp" path="res://escenas/escena2/objetos/ramoncin.tscn" id="12_cpiaa"]
-[ext_resource type="Texture2D" uid="uid://ddafdgx5w4o55" path="res://escenas/escena2/assets/TextBox1.png" id="13_alch0"]
+[ext_resource type="PackedScene" uid="uid://ca4548st4trsg" path="res://escenas/escena2/objetos/ojo.tscn" id="13_daars"]
+[ext_resource type="Texture2D" uid="uid://ws0qsjmt73jk" path="res://escenas/escena2/assets/gnomoTullidoSinOjo.png" id="14_eadh0"]
+[ext_resource type="Script" path="res://escenas/escena2/scripts/GnomoSinCosas.cs" id="14_wdqc6"]
 
 [sub_resource type="Curve2D" id="Curve2D_a8trf"]
 _data = {
@@ -36,9 +38,9 @@ region = Rect2(92, 0, 46, 112)
 atlas = ExtResource("5_cshg0")
 region = Rect2(138, 0, 46, 112)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ed2i5"]
-atlas = ExtResource("7_iq1fv")
-region = Rect2(0, 0, 374, 374)
+[sub_resource type="AtlasTexture" id="AtlasTexture_ues7p"]
+atlas = ExtResource("7_6nu0k")
+region = Rect2(0, 0, 120, 46)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qel3s"]
 atlas = ExtResource("7_wijr8")
@@ -77,7 +79,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ed2i5")
+"texture": SubResource("AtlasTexture_ues7p")
 }],
 "loop": true,
 "name": &"AlSueloBosque",
@@ -103,6 +105,9 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yd10l"]
 size = Vector2(58.8438, 121.281)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wnx72"]
+size = Vector2(119, 43)
 
 [node name="Node2D" type="Node2D" node_paths=PackedStringArray("audioStreamPlayer2D")]
 position = Vector2(62, 51)
@@ -134,9 +139,10 @@ script = ExtResource("5_hu44f")
 animatedSprite2D = NodePath("AnimatedSprite2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Gnomo/PathFollow2D"]
-position = Vector2(-1.4645e-06, 0.000299998)
+position = Vector2(0, 50)
 sprite_frames = SubResource("SpriteFrames_0p44s")
-animation = &"AccionBosque"
+animation = &"AlSueloBosque"
+frame_progress = 0.760668
 
 [node name="Area2D" type="Area2D" parent="Gnomo/PathFollow2D/AnimatedSprite2D"]
 
@@ -164,10 +170,21 @@ texture = ExtResource("9_4wxrt")
 
 [node name="Area2D2" parent="." instance=ExtResource("12_cpiaa")]
 
-[node name="Area2D" type="Area2D" parent="."]
-position = Vector2(505, 384)
+[node name="Area2D" parent="." instance=ExtResource("13_daars")]
 
-[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
-texture = ExtResource("13_alch0")
+[node name="Area2D3" type="Area2D" parent="." groups=["GnomoSinCosas"]]
+position = Vector2(501, 528)
+script = ExtResource("14_wdqc6")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D3"]
+visible = false
+texture = ExtResource("14_eadh0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_wnx72")
 
 [connection signal="area_entered" from="Gnomo/PathFollow2D/AnimatedSprite2D/Area2D" to="Gnomo/PathFollow2D" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="Area2D2" to="Area2D2" method="_on_area_entered"]
+[connection signal="area_entered" from="Area2D3" to="Area2D3" method="_on_area_entered"]
+[connection signal="area_exited" from="Area2D3" to="Area2D3" method="_on_area_exited"]

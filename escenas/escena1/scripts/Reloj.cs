@@ -33,8 +33,7 @@ public partial class Reloj : Area2D
 	/// Señal de godot que nos permite comprobar si la colision de un objeto colisiona contra la colision del reloj
 	/// </summary>
 	/// <param name="collisionObject2D">Variable de la colision del objeto que colisiona con el reloj</param>
-	public void _on_reloj_entered(CollisionObject2D collisionObject2D)
-	{
+	public void _on_reloj_entered(CollisionObject2D collisionObject2D) {
 		if (collisionObject2D.IsInGroup("VarillaM") && Main.varillaMinutosInstancia != null)
 		{
 

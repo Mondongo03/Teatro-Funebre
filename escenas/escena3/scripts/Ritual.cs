@@ -10,62 +10,51 @@ public partial class Ritual : Area2D {
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready() {
-		
-
-        // Obtener los grupos como una lista de strings
-        foreach (StringName nombreGrupo in GetGroups())
-        {
-            grupos.Add(nombreGrupo.ToString());
-			GD.Print(nombreGrupo);
-        }
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
-	{
-			GD.Print(slotCorrecto);
-		
+	public override void _Process(double delta) {
 	}
 
-	public void _on_tree_entered(Area2D area){
+	public void _on_tree_entered(Area2D area) {
 		
 	}
 
 	public void _on_area_entered(Area2D area) {
-        if(grupos[0].Equals("Arriba") && area.IsInGroup("UnicornioRojo")){
+        if(this.IsInGroup("Arriba") && area.IsInGroup("UnicornioRojo")){
 			slotCorrecto++;
 		}
-		 if(grupos[0].Equals("Derecha") && area.IsInGroup("UnicornioVerde")){
+		 if(this.IsInGroup("Derecha") && area.IsInGroup("UnicornioVerde")){
 			slotCorrecto++;
 		}
-		 if(grupos[0].Equals("Izquierda") && area.IsInGroup("UnicornioAmarillo")){
+		 if(this.IsInGroup("Izquierda") && area.IsInGroup("UnicornioAmarillo")){
 			slotCorrecto++;
 		}
 		
-		 if(grupos[0].Equals("AbajoIzquierda") && area.IsInGroup("UnicornioNaranja")){
+		 if(this.IsInGroup("AbajoIzquierda") && area.IsInGroup("UnicornioNaranja")){
 			slotCorrecto++;
 		}
-		if(grupos[0].Equals("AbajoDerecha") && area.IsInGroup("UnicornioBlanco")){
+		if(this.IsInGroup("AbajoDerecha") && area.IsInGroup("UnicornioBlanco")){
 			slotCorrecto++;
 		}
 		
     }
 
 	public void _on_area_exited(Area2D area) {
-        if(grupos[0].Equals("Arriba") && area.IsInGroup("UnicornioRojo")){
+        if(this.IsInGroup("Arriba") && area.IsInGroup("UnicornioRojo")){
 			slotCorrecto--;
 		}
-		 if(grupos[0].Equals("Derecha") && area.IsInGroup("UnicornioVerde")){
+		 if(this.IsInGroup("Derecha") && area.IsInGroup("UnicornioVerde")){
 			slotCorrecto--;
 		}
-		 if(grupos[0].Equals("Izquierda") && area.IsInGroup("UnicornioAmarillo")){
+		 if(this.IsInGroup("Izquierda") && area.IsInGroup("UnicornioAmarillo")){
 			slotCorrecto--;
 		}
 		
-		 if(grupos[0].Equals("AbajoIzquierda") && area.IsInGroup("UnicornioNaranja")){
+		 if(this.IsInGroup("AbajoIzquierda") && area.IsInGroup("UnicornioNaranja")){
 			slotCorrecto--;
 		}
-		if(grupos[0].Equals("AbajoDerecha") && area.IsInGroup("UnicornioBlanco")){
+		if(this.IsInGroup("AbajoDerecha") && area.IsInGroup("UnicornioBlanco")){
 			slotCorrecto--;
 		}
 		
