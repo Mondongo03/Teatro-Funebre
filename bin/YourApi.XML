@@ -1630,6 +1630,11 @@
             Cached name for the 'remenar' field.
             </summary>
         </member>
+        <member name="F:CartasCartitas.PropertyName.timer">
+            <summary>
+            Cached name for the 'timer' field.
+            </summary>
+        </member>
         <member name="F:CartasCartitas.PropertyName.sol">
             <summary>
             Cached name for the 'sol' field.
