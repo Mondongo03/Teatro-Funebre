@@ -42,6 +42,10 @@ public partial class MueveTeEnElBosque : PathFollow2D
 		}
 	}
 
+	/// <summary>
+	/// Señal de godot que nos permite comprobar si la colision de un objeto colisiona contra otro objeto
+	/// </summary>
+	/// <param name="collisionObject2D">Variable de la colision del objeto que colisiona con el objeto</param>
 	public void _on_area_2d_area_entered(CollisionObject2D collisionObject2D)
 	{
 		if(collisionObject2D.IsInGroup("pocion"))
