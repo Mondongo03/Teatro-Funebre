@@ -1597,6 +1597,11 @@
             Cached name for the '_Process' method.
             </summary>
         </member>
+        <member name="F:CartasCartitas.MethodName.barajarCartas">
+            <summary>
+            Cached name for the 'barajarCartas' method.
+            </summary>
+        </member>
         <member name="M:CartasCartitas.GetGodotMethodList">
             <summary>
             Get the method information for all the methods declared in this class.
@@ -1692,6 +1697,11 @@
             Cached name for the '_on_input_event' method.
             </summary>
         </member>
+        <member name="F:CartaTarot.MethodName.voltearCarta">
+            <summary>
+            Cached name for the 'voltearCarta' method.
+            </summary>
+        </member>
         <member name="M:CartaTarot.GetGodotMethodList">
             <summary>
             Get the method information for all the methods declared in this class.
@@ -1708,6 +1718,29 @@
         <member name="T:CartaTarot.PropertyName">
             <summary>
             Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:CartaTarot.PropertyName.sprite">
+            <summary>
+            Cached name for the 'sprite' field.
+            </summary>
+        </member>
+        <member name="F:CartaTarot.PropertyName.timer">
+            <summary>
+            Cached name for the 'timer' field.
+            </summary>
+        </member>
+        <member name="M:CartaTarot.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CartaTarot.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CartaTarot.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
             </summary>
         </member>
         <member name="M:CartaTarot.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
@@ -1957,6 +1990,12 @@
             Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla
             </summary>
             <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
+        </member>
+        <member name="M:MueveTeEnElBosque._on_area_2d_area_entered(Godot.CollisionObject2D)">
+            <summary>
+            Señal de godot que nos permite comprobar si la colision de un objeto colisiona contra otro objeto
+            </summary>
+            <param name="collisionObject2D">Variable de la colision del objeto que colisiona con el objeto</param>
         </member>
         <member name="T:MueveTeEnElBosque.MethodName">
             <summary>
