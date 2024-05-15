@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://rl71y7tee20r"
-path="res://.godot/imported/mag_d.svg-cd9646503103104c86e678adfe39aff4.ctex"
+path="res://.godot/imported/mag_d.svg-b437c4adf3f03578e4aa4843f9c967c2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/html/search/mag_d.svg"
-dest_files=["res://.godot/imported/mag_d.svg-cd9646503103104c86e678adfe39aff4.ctex"]
+source_file="res://docs/search/mag_d.svg"
+dest_files=["res://.godot/imported/mag_d.svg-b437c4adf3f03578e4aa4843f9c967c2.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btdgkjrfa03he"
-path="res://.godot/imported/class_escalera.png-422684bbe3fc3514eec0b4300cf1fb4b.ctex"
+path="res://.godot/imported/class_escalera.png-da44bb297a839d7c3452b8f3949ddebe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/html/class_escalera.png"
-dest_files=["res://.godot/imported/class_escalera.png-422684bbe3fc3514eec0b4300cf1fb4b.ctex"]
+source_file="res://docs/class_escalera.png"
+dest_files=["res://.godot/imported/class_escalera.png-da44bb297a839d7c3452b8f3949ddebe.ctex"]
 
 [params]
 

@@ -6,10 +6,11 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y4yhw"]
 size = Vector2(74, 121)
 
-[node name="Area2D2" type="Area2D"]
+[node name="Area2D2" type="Area2D" node_paths=PackedStringArray("sprite2D")]
 texture_filter = 1
 position = Vector2(522, 268)
 script = ExtResource("1_ojpgd")
+sprite2D = NodePath("Sprite2D")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(23.5, 23.5)

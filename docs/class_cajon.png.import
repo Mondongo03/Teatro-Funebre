@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b253p0cxkwbjv"
-path="res://.godot/imported/class_cajon.png-80544b15b640e93f8bf08f6270cda129.ctex"
+path="res://.godot/imported/class_cajon.png-0d6605b56e500230176851adeed6adea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/html/class_cajon.png"
-dest_files=["res://.godot/imported/class_cajon.png-80544b15b640e93f8bf08f6270cda129.ctex"]
+source_file="res://docs/class_cajon.png"
+dest_files=["res://.godot/imported/class_cajon.png-0d6605b56e500230176851adeed6adea.ctex"]
 
 [params]
 

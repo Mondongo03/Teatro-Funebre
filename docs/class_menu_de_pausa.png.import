@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvxb7u583l7cx"
-path="res://.godot/imported/class_menu_de_pausa.png-2d0f00a58330f131de90efa553049672.ctex"
+path="res://.godot/imported/class_menu_de_pausa.png-a33fcc11158d4ff120c05040062ace55.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/html/class_menu_de_pausa.png"
-dest_files=["res://.godot/imported/class_menu_de_pausa.png-2d0f00a58330f131de90efa553049672.ctex"]
+source_file="res://docs/class_menu_de_pausa.png"
+dest_files=["res://.godot/imported/class_menu_de_pausa.png-a33fcc11158d4ff120c05040062ace55.ctex"]
 
 [params]
 

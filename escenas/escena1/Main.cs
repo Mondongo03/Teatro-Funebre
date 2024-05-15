@@ -1,130 +1,98 @@
 using Godot;
 using System;
-using System.Numerics;
-using System.Threading;
 
 /// <summary>
-/// Primera case del proyecto que nos per mite gestionar la primera escena al completo, como instanciar los objetos en ella
+/// Primera clase del proyecto que nos permite gestionar la primera escena al completo, como instanciar los objetos en ella
 /// </summary>
 public partial class Main : Node2D
 {
-	int slotsOcupados;
-	Area2D pista_1;
-	Node2D godotInstancia2;
-	public static Node2D varillaMinutosInstancia;
-	public static Node2D varillaSegundosInstancia;
-	public static Node2D relojZoomeadoInstancia;
-	public static Node2D fondoNegroInstancia;
-	public static Node2D cajonZoomeadoInstancia;
-	public static Node2D huecoInstancia;
-	public static Node2D escaleraInstancia;
-	public static Node2D cajetillaInstancia;
-	public static Node2D tapaInstancia;
-	public static Node2D pista_1Instancia;
-	public static Node2D lamparaEncendidaInstancia;
-	public static Node2D lamparaApagadaInstancia;
-	public static Node2D relojInstancia;
-	public static Node2D posterInstancia;
-	public static Node2D monstruoInstancia;
-	Boolean clickadoBola = false;
-	Boolean clickadoVarillaM = false;
-	public static Boolean varillaMinutosReloj = false;
-	public static Boolean varillaSegundosReloj = false;
-	[Export] public AnimationPlayer animationPlayer;
-	[Export] public AudioStreamPlayer2D audioStreamPlayer2D;
+    int slotsOcupados;
+    Area2D pista_1;
+    Node2D godotInstancia2;
+    public static Node2D varillaMinutosInstancia,varillaSegundosInstancia,relojZoomeadoInstancia,fondoNegroInstancia,cajonZoomeadoInstancia,huecoInstancia,escaleraInstancia,cajetillaInstancia,tapaInstancia,pista_1Instancia,lamparaEncendidaInstancia,lamparaApagadaInstancia,relojInstancia,posterInstancia,monstruoInstancia;
+    Boolean clickadoBola, clickadoVarillaM = false;
+    public static Boolean varillaMinutosReloj, varillaSegundosReloj = false;
+    [Export] public AnimationPlayer animationPlayer;
+    [Export] public AudioStreamPlayer2D audioStreamPlayer2D;
+    [Export] public Path2D gnomo;
 
-	/// <summary>
-	/// Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script
-	/// </summary>
-	public override void _Ready()
-	{
-		audioStreamPlayer2D.Play();
-		animationPlayer.Play("cosa");
-		InstanciarEscena();
-	}
-	
-	/// <summary>
-	/// Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla
-	/// </summary>
-	/// <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
-	public override void _Process(double delta)
-	{
-		if (varillaMinutosInstancia != null)
-		{
-			clickadoVarillaM = VarillaM.devolverClickado();
-		}
-	}
+    /// <summary>
+    /// Esta función se llama automáticamente cuando se instancia el objeto al cual está asociado el script
+    /// </summary>
+    public override void _Ready()
+    {
+        audioStreamPlayer2D.Play();
+        animationPlayer.Play("cosa");
+        InstanciarEscena();
 
-	/// <summary>
-	/// Metodo que instancia todos los elementos de la escena y los añade a su respectivo padre
-	/// </summary>
-	public void InstanciarEscena()
-	{
+        if (Reloj.terminado)
+        {
+            gnomo.QueueFree();
+        }
+    }
 
+    /// <summary>
+    /// Este método está siempre en ejecución mientras el objeto que tiene asociado el script esté en pantalla
+    /// </summary>
+    /// <param name="delta">Es una variable generada por Godot que almacena la posición del objeto</param>
+    public override void _Process(double delta)
+    {
+        if (varillaMinutosInstancia != null)
+        {
+            clickadoVarillaM = VarillaM.devolverClickado();
+        }
+    }
 
-		PackedScene reloj = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/reloj.tscn");
-		relojInstancia = reloj.Instantiate() as Node2D; // Cast the instance to Node
-		AddChild(relojInstancia);
+    /// <summary>
+    /// Método que instancia todos los elementos de la escena y los añade a su respectivo padre
+    /// </summary>
+    public void InstanciarEscena()
+    {
+        if (!Reloj.terminado)
+        {
+            InstanciarYAgregarNodo("res://escenas/escena1/objects/varillaM.tscn", ref varillaMinutosInstancia);
+            InstanciarYAgregarNodo("res://escenas/escena1/objects/varillaS.tscn", ref varillaSegundosInstancia);
+        }
 
-		PackedScene varillaMinutos = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/varillaM.tscn");
-		varillaMinutosInstancia = varillaMinutos.Instantiate() as Node2D; // Cast the instance to Node
-		AddChild(varillaMinutosInstancia);
+        InstanciarYAgregarNodo("res://escenas/escena1/objects/reloj.tscn", ref relojInstancia);
+        InstanciarYAgregarNodo("res://escenas/escena1/objects/hueco.tscn", ref huecoInstancia);
+        InstanciarYAgregarNodo("res://escenas/escena1/objects/escalera.tscn", ref escaleraInstancia);
+        InstanciarYAgregarNodo("res://escenas/escena1/objects/cajetilla.tscn", ref cajetillaInstancia);
+        InstanciarYAgregarNodo("res://escenas/escena1/objects/tapa.tscn", ref tapaInstancia);
+        InstanciarYAgregarNodo("res://escenas/escena1/objects/pista_1.tscn", ref pista_1Instancia);
+        InstanciarYAgregarNodo("res://escenas/escena1/objects/lamparaApagada.tscn", ref lamparaApagadaInstancia);
+        InstanciarYAgregarNodo("res://escenas/escena1/objects/poster.tscn", ref posterInstancia);
+        InstanciarYAgregarNodo("res://escenas/escena1/objects/monstruo.tscn", ref monstruoInstancia);
+    }
 
-		PackedScene varillaSegundos = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/varillaS.tscn");
-		varillaSegundosInstancia = varillaSegundos.Instantiate() as Node2D; // Cast the instance to Node
-		AddChild(varillaSegundosInstancia);
+    /// <summary>
+    /// Método que instancia un nodo y lo agrega al árbol de escenas
+    /// </summary>
+    /// <param name="rutaEscena">Ruta de la escena a instanciar</param>
+    /// <param name="node2D">Referencia al nodo instanciado</param>
+    private void InstanciarYAgregarNodo(string rutaEscena, ref Node2D node2D)
+    {
+        PackedScene escena = (PackedScene)ResourceLoader.Load(rutaEscena);
+        node2D = escena.Instantiate() as Node2D;
+        AddChild(node2D);
+    }
 
-		PackedScene hueco = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/hueco.tscn");
-		huecoInstancia = hueco.Instantiate() as Node2D; // Cast the instance to Node
-		AddChild(huecoInstancia);
+    /// <summary>
+    /// Método que gestiona las pistas de la escena
+    /// </summary>
+    public void popPista_1()
+    {
+        pista_1Instancia.Position = new Vector2I(334, 255);
+    }
 
-		PackedScene escalera = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/escalera.tscn");
-		escaleraInstancia = escalera.Instantiate() as Node2D; // Cast the instance to Node
-		AddChild(escaleraInstancia);
-
-		PackedScene cajetilla = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/cajetilla.tscn");
-		cajetillaInstancia = cajetilla.Instantiate() as Node2D;
-		AddChild(cajetillaInstancia);
-
-		PackedScene tapa = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/tapa.tscn");
-		tapaInstancia = tapa.Instantiate() as Node2D;
-		AddChild(tapaInstancia);
-
-		PackedScene pista_1 = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/pista_1.tscn");
-		pista_1Instancia = pista_1.Instantiate() as Node2D;
-		AddChild(pista_1Instancia);
-
-		PackedScene lamparaApagada = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/lamparaApagada.tscn");
-		lamparaApagadaInstancia = lamparaApagada.Instantiate() as Node2D;
-		AddChild(lamparaApagadaInstancia);
-
-		PackedScene poster = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/poster.tscn");
-		posterInstancia = poster.Instantiate() as Node2D;
-		AddChild(posterInstancia);
-
-		PackedScene monstruo = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/monstruo.tscn");
-		monstruoInstancia = monstruo.Instantiate() as Node2D;
-		AddChild(monstruoInstancia);
-
-	}
-
-	/// <summary>
-	/// Metodo que gestina las pistas de la escena
-	/// </summary>
-	public void popPista_1()
-	{
-		pista_1Instancia.Position = new Vector2I(334, 255);
-	}
-
-	/// <summary>
-	/// Señal de godot que nos permite poner un contador y cuando llega a cero hace las acciones especificas
-	/// </summary>
-	public void _on_timer_timeout()
-	{
-		if (VarillaM.encontrado == false || VarillaS.encontrado == false)
-		{
-			popPista_1();
-		}
-	}
+    /// <summary>
+    /// Señal de Godot que nos permite poner un contador y cuando llega a cero hace las acciones específicas
+    /// </summary>
+    public void _on_timer_timeout()
+    {
+        if (!VarillaM.encontrado || !VarillaS.encontrado)
+        {
+            popPista_1();
+        }
+    }
 }
-

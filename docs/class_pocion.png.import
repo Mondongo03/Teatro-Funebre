@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://317l3m66b78j"
-path="res://.godot/imported/class_pocion.png-988a28f372686631d32c8a13bc23895f.ctex"
+path="res://.godot/imported/class_pocion.png-544a065e846b5de6d8e0b7e0f0ce3d7f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/html/class_pocion.png"
-dest_files=["res://.godot/imported/class_pocion.png-988a28f372686631d32c8a13bc23895f.ctex"]
+source_file="res://docs/class_pocion.png"
+dest_files=["res://.godot/imported/class_pocion.png-544a065e846b5de6d8e0b7e0f0ce3d7f.ctex"]
 
 [params]
 

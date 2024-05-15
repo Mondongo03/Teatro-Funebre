@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://wtmu2r67nngr"
-path="res://.godot/imported/class_interactuar_con.png-dfd9ed4849e9cc44af4acfa9e163b1fb.ctex"
+path="res://.godot/imported/class_interactuar_con.png-cb28a0a16e5c47ccec1e8f474b60d5a8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/html/class_interactuar_con.png"
-dest_files=["res://.godot/imported/class_interactuar_con.png-dfd9ed4849e9cc44af4acfa9e163b1fb.ctex"]
+source_file="res://docs/class_interactuar_con.png"
+dest_files=["res://.godot/imported/class_interactuar_con.png-cb28a0a16e5c47ccec1e8f474b60d5a8.ctex"]
 
 [params]
 

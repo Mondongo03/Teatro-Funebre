@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cffiuusx3p2be"
-path="res://.godot/imported/class_varilla_m.png-2c41bec73968a3cd9fab6b92fb303a5c.ctex"
+path="res://.godot/imported/class_varilla_m.png-89ab3f18282d9c139c558bf13e3735d5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/html/class_varilla_m.png"
-dest_files=["res://.godot/imported/class_varilla_m.png-2c41bec73968a3cd9fab6b92fb303a5c.ctex"]
+source_file="res://docs/class_varilla_m.png"
+dest_files=["res://.godot/imported/class_varilla_m.png-89ab3f18282d9c139c558bf13e3735d5.ctex"]
 
 [params]
 

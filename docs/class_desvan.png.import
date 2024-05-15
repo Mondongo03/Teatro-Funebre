@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dk6yq6iluefc7"
-path="res://.godot/imported/class_desvan.png-6f13ab98b43e1cf623032aa2554e870c.ctex"
+path="res://.godot/imported/class_desvan.png-904df2b8e0446b8afa0d33e658befb54.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/html/class_desvan.png"
-dest_files=["res://.godot/imported/class_desvan.png-6f13ab98b43e1cf623032aa2554e870c.ctex"]
+source_file="res://docs/class_desvan.png"
+dest_files=["res://.godot/imported/class_desvan.png-904df2b8e0446b8afa0d33e658befb54.ctex"]
 
 [params]
 

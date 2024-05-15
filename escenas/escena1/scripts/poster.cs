@@ -4,7 +4,7 @@ using System;
 /// <summary>
 /// Clase que gestiona las fisicas del poster para que haga su interaccion
 /// </summary>
-public partial class poster : Area2D
+public partial class Poster : Area2D
 {
 	[Export]
 	public AnimationPlayer animationPlayer;

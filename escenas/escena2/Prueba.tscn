@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://b3oscujcwaje6"]
+[gd_scene load_steps=24 format=3 uid="uid://b3oscujcwaje6"]
 
 [ext_resource type="Script" path="res://escenas/escena2/scripts/escena2.cs" id="1_7q1kv"]
 [ext_resource type="Texture2D" uid="uid://ccvk0vtc15wlv" path="res://escenas/escena2/assets/Bosquebueno.png" id="2_2netn"]
@@ -11,8 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://dkcnnqo4jbiag" path="res://escenas/escena1/assets/GnomoCI.png" id="7_wijr8"]
 [ext_resource type="PackedScene" uid="uid://ciocjjv3ss2lc" path="res://escenas/escena2/objetos/pajaro_verde.tscn" id="8_83e7h"]
 [ext_resource type="Texture2D" uid="uid://cly82xjk5esrx" path="res://escenas/escena2/assets/Cartacerrada.png" id="9_4wxrt"]
-[ext_resource type="Texture2D" uid="uid://ctqywg7ac0aoq" path="res://escenas/escena2/assets/BoteSangre.png" id="12_88t6q"]
-[ext_resource type="Script" path="res://escenas/escena2/scripts/pocion.cs" id="13_oebrj"]
 
 [sub_resource type="Curve2D" id="Curve2D_a8trf"]
 _data = {
@@ -104,9 +102,6 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yd10l"]
 size = Vector2(58.8438, 121.281)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_pu1wf"]
-size = Vector2(115.224, 142.09)
-
 [node name="Node2D" type="Node2D" node_paths=PackedStringArray("audioStreamPlayer2D")]
 position = Vector2(62, 51)
 scale = Vector2(10000, 10000)
@@ -161,17 +156,4 @@ rotation = -0.539621
 scale = Vector2(2.85e-05, 2.7075e-05)
 texture = ExtResource("9_4wxrt")
 
-[node name="Area2D" type="Area2D" parent="." groups=["Pocion"]]
-position = Vector2(0.00185, 0.00185)
-scale = Vector2(2.23333e-05, 2.23333e-05)
-script = ExtResource("13_oebrj")
-
-[node name="Pocion" type="Sprite2D" parent="Area2D"]
-texture = ExtResource("12_88t6q")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-47.6119, 61.0448)
-shape = SubResource("RectangleShape2D_pu1wf")
-
 [connection signal="area_entered" from="Gnomo/PathFollow2D/AnimatedSprite2D/Area2D" to="Gnomo/PathFollow2D" method="_on_area_2d_area_entered"]
-[connection signal="input_event" from="Area2D" to="Area2D" method="_on_input_event"]

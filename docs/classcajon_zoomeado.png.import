@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tix2y6b4paue"
-path="res://.godot/imported/classcajon_zoomeado.png-0e2b6a929d91cb6389e5dd264aeaf812.ctex"
+path="res://.godot/imported/classcajon_zoomeado.png-e2d1708598899ba6a5aa36c67b7d3061.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/html/classcajon_zoomeado.png"
-dest_files=["res://.godot/imported/classcajon_zoomeado.png-0e2b6a929d91cb6389e5dd264aeaf812.ctex"]
+source_file="res://docs/classcajon_zoomeado.png"
+dest_files=["res://.godot/imported/classcajon_zoomeado.png-e2d1708598899ba6a5aa36c67b7d3061.ctex"]
 
 [params]
 

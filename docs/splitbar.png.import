@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwtcf18s3k13y"
-path="res://.godot/imported/splitbar.png-d89116c4d49e05a4fd39867aaf7ac479.ctex"
+path="res://.godot/imported/splitbar.png-a4463bf2b4a79238135656acda63240e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/html/splitbar.png"
-dest_files=["res://.godot/imported/splitbar.png-d89116c4d49e05a4fd39867aaf7ac479.ctex"]
+source_file="res://docs/splitbar.png"
+dest_files=["res://.godot/imported/splitbar.png-a4463bf2b4a79238135656acda63240e.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://nqg75cp1hq8t"
-path="res://.godot/imported/class_lampara_apagada.png-1cd7f5d936fa379f5bbbd0b706a35c1f.ctex"
+path="res://.godot/imported/class_lampara_apagada.png-12b97bc563a1e4ccd32ed965fb5d7ce0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/html/class_lampara_apagada.png"
-dest_files=["res://.godot/imported/class_lampara_apagada.png-1cd7f5d936fa379f5bbbd0b706a35c1f.ctex"]
+source_file="res://docs/class_lampara_apagada.png"
+dest_files=["res://.godot/imported/class_lampara_apagada.png-12b97bc563a1e4ccd32ed965fb5d7ce0.ctex"]
 
 [params]
 

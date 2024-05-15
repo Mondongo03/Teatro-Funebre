@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://decw8va7y6de2"
-path="res://.godot/imported/class_volare_verde.png-673be4d20b7e6aa761ef972398341dff.ctex"
+path="res://.godot/imported/class_volare_verde.png-014675f4ba1fb8d7bcfd3de6110ed4cf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/html/class_volare_verde.png"
-dest_files=["res://.godot/imported/class_volare_verde.png-673be4d20b7e6aa761ef972398341dff.ctex"]
+source_file="res://docs/class_volare_verde.png"
+dest_files=["res://.godot/imported/class_volare_verde.png-014675f4ba1fb8d7bcfd3de6110ed4cf.ctex"]
 
 [params]
 

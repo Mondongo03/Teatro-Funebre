@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djamo82yy1iih"
-path="res://.godot/imported/doxygen.svg-2dab9a53c85ff736e96573197e6cacbc.ctex"
+path="res://.godot/imported/doxygen.svg-9b0677c5a336943f868d2278d90da736.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/html/doxygen.svg"
-dest_files=["res://.godot/imported/doxygen.svg-2dab9a53c85ff736e96573197e6cacbc.ctex"]
+source_file="res://docs/doxygen.svg"
+dest_files=["res://.godot/imported/doxygen.svg-9b0677c5a336943f868d2278d90da736.ctex"]
 
 [params]
 

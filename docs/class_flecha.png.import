@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xeekr8tuow2s"
-path="res://.godot/imported/class_flecha.png-c1c429c27a9d5e48686d8e5d9f5bee6c.ctex"
+path="res://.godot/imported/class_flecha.png-a3c561f60589da511976ace8909e982e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/html/class_flecha.png"
-dest_files=["res://.godot/imported/class_flecha.png-c1c429c27a9d5e48686d8e5d9f5bee6c.ctex"]
+source_file="res://docs/class_flecha.png"
+dest_files=["res://.godot/imported/class_flecha.png-a3c561f60589da511976ace8909e982e.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bi3qo08rgjasy"
-path="res://.godot/imported/class_lampara.png-a7ca2df4d37c32e74fab5db962f6e8ef.ctex"
+path="res://.godot/imported/class_lampara.png-130dfc81ca06d2582e062731042e784c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/html/class_lampara.png"
-dest_files=["res://.godot/imported/class_lampara.png-a7ca2df4d37c32e74fab5db962f6e8ef.ctex"]
+source_file="res://docs/class_lampara.png"
+dest_files=["res://.godot/imported/class_lampara.png-130dfc81ca06d2582e062731042e784c.ctex"]
 
 [params]
 

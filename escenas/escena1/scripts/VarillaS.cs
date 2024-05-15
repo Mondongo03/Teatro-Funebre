@@ -53,8 +53,7 @@ public partial class VarillaS : Area2D
 			Position = GetGlobalMousePosition();
 		}
 
-		Main.varillaMinutosInstancia.Rotation = (float)((Main.varillaSegundosInstancia.Rotation / 5) * 0.846);
-
+		Main.varillaMinutosInstancia.Rotation = (Main.varillaSegundosInstancia.Rotation / 5) * 0.846f;
 	}
 
 	/// <summary>

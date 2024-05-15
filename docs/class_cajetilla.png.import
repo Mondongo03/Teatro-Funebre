@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4r3g8bhboiyi"
-path="res://.godot/imported/class_cajetilla.png-085ea2d4e701cc3b3553cc78cd1bc209.ctex"
+path="res://.godot/imported/class_cajetilla.png-bb380841ff9f2d1647686f158648f70c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/html/class_cajetilla.png"
-dest_files=["res://.godot/imported/class_cajetilla.png-085ea2d4e701cc3b3553cc78cd1bc209.ctex"]
+source_file="res://docs/class_cajetilla.png"
+dest_files=["res://.godot/imported/class_cajetilla.png-bb380841ff9f2d1647686f158648f70c.ctex"]
 
 [params]
 

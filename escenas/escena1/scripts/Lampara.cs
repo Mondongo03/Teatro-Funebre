@@ -8,7 +8,8 @@ using System.Reflection.Metadata;
 /// </summary>
 public partial class Lampara : Area2D
 {
-	public static bool encendido = false;
+	[Export] public Sprite2D sprite2D;
+	public bool encendido = false;
 
 	/// <summary>
     /// Este metodo es una señal del propio godot que nos permite detectar cuando haces click sobre le objeto
@@ -22,50 +23,14 @@ public partial class Lampara : Area2D
 		{
 			if (encendido)
 			{
-				apagarLampara();
-
+				sprite2D.Texture = (Texture2D)GD.Load("res://escenas/escena1/assets/Lampara apagada.png");
+				encendido = false;
 			}
 			else
 			{
-				encenderLampara();
+				sprite2D.Texture = (Texture2D)GD.Load("res://escenas/escena1/assets/Lampara encendida.png");
+				encendido = true;
 			}
-
 		}
-	}
-
-	/// <summary>
-	/// Metodo creado para gestionar que se apage la
-	/// </summary>
-	public void apagarLampara()
-	{
-		QueueFree();
-		PackedScene lamparaApagada = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/lamparaApagada.tscn");
-		Main.lamparaApagadaInstancia = lamparaApagada.Instantiate() as Node2D; 
-																			   
-		Main.lamparaApagadaInstancia.Position = new Vector2I(0, 0);
-		GD.Print("antes de apagarla");
-		AddChild(Main.lamparaApagadaInstancia);
-
-		encendido = false;
-
-
-	}
-
-	/// <summary>
-	/// Metodo creado para gestionar que se encender la lampara
-	/// </summary>
-	public void encenderLampara()
-	{
-		QueueFree();
-		PackedScene lamparaEncendida = (PackedScene)ResourceLoader.Load("res://escenas/escena1/objects/lamparaEncendida.tscn");
-		Main.lamparaEncendidaInstancia = lamparaEncendida.Instantiate() as Node2D;
-																				   
-		Main.lamparaEncendidaInstancia.Position = new Vector2I(0, 0);
-		GD.Print("antes de encenderla");
-		AddChild(Main.lamparaEncendidaInstancia);
-
-		encendido = true;
-
-
 	}
 }
