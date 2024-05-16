@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dnq5ucg7rkahe"]
 
 [ext_resource type="Texture2D" uid="uid://bcdoinpyx4xb7" path="res://escenas/escena1/assets/poster.png" id="1_c00e0"]
-[ext_resource type="Script" path="res://escenas/escena1/scripts/poster.cs" id="1_qgttb"]
+[ext_resource type="Script" path="res://escenas/escena1/scripts/Poster.cs" id="1_ciekx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bog13"]
 size = Vector2(175, 236)
@@ -31,7 +31,7 @@ position = Vector2(265, 50)
 disable_mode = 1
 gravity_point = true
 gravity_point_unit_distance = 0.445
-script = ExtResource("1_qgttb")
+script = ExtResource("1_ciekx")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-107.765, 109.829)

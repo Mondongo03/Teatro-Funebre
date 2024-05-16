@@ -14,6 +14,18 @@ public partial class Reloj : Area2D
     [Export] public AudioStreamPlayer2D audioStreamPlayer2D;
 
     /// <summary>
+    /// Esta función se llama automáticamente cuando se instancia el objeto al cual está asociado el script
+    /// </summary>
+    public override void _Ready()
+    {
+        if(terminado)
+        {
+            InstanciarYAgregarNodo("res://escenas/escena1/objects/miniVarillaM.tscn", ref miniVarillaMInstancia);
+            InstanciarYAgregarNodo("res://escenas/escena1/objects/miniVarillaS.tscn", ref miniVarillaSInstancia);
+        }
+    }
+
+    /// <summary>
 	/// Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla
 	/// </summary>
 	/// <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>

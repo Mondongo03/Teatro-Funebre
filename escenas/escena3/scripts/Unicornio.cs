@@ -30,7 +30,7 @@ public partial class Unicornio : Area2D
     /// <param name="shap">Variable que se utiliza para la API</param>
     public void _on_input_event(Node viewport, InputEvent evento, int shap)
     {
-        if (evento.IsActionPressed("click_izquierdo") && Ritual.slotCorrecto != 5)
+        if (evento.IsActionPressed("click_izquierdo") && !MainDesvan.getRitualAcabado())
         {
             puedoMover = true;
             objetoEnMovimiento = this;

@@ -7,10 +7,8 @@ using System;
 /// </summary>
 public partial class VarillaS : Area2D
 {
-
 	bool puedoMover = false;
 	public static bool encontrado = false;
-
 	public static bool ring = false;
 
 	/// <summary>

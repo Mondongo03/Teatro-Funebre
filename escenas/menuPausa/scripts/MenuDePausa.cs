@@ -61,6 +61,7 @@ public partial class MenuDePausa : Control
 	public void _on_salir_al_menu_principal_pressed()
 	{
 		GetTree().Paused = false;
+
 		GetTree().ChangeSceneToFile("escenas/menuInicio/node_2d.tscn");
 	}
 

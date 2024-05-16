@@ -52,6 +52,10 @@ public partial class Main : Node2D
         {
             InstanciarYAgregarNodo("res://escenas/escena1/objects/varillaM.tscn", ref varillaMinutosInstancia);
             InstanciarYAgregarNodo("res://escenas/escena1/objects/varillaS.tscn", ref varillaSegundosInstancia);
+            VarillaM.encontrado = false;
+            VarillaS.encontrado = false;
+            varillaMinutosReloj = false;
+            varillaSegundosReloj = false;
         }
 
         InstanciarYAgregarNodo("res://escenas/escena1/objects/reloj.tscn", ref relojInstancia);

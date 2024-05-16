@@ -6,18 +6,13 @@ using System.Collections.Generic;
 public partial class Ritual : Area2D {
 	List<string> grupos = new List<string>();
 
-	public static int slotCorrecto = 0;
-
-	// Called when the node enters the scene tree for the first time.
-	public override void _Ready() {
-	}
-
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta) {
-	}
-
-	public void _on_tree_entered(Area2D area) {
-		
+	public int slotCorrecto;
+	public override void _Process(double delta)
+	{
+		if(slotCorrecto == 5)
+		{
+			MainDesvan.setRitualAcabado(true);
+		}
 	}
 
 	public void _on_area_entered(Area2D area) {

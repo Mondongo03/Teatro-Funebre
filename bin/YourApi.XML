@@ -1104,6 +1104,11 @@
             Clase que nos permite gestionar cómo funciona el Reloj y que pueda almacenar objetos dentro del mismo
             </summary>
         </member>
+        <member name="M:Reloj._Ready">
+            <summary>
+            Esta función se llama automáticamente cuando se instancia el objeto al cual está asociado el script
+            </summary>
+        </member>
         <member name="M:Reloj._Process(System.Double)">
             <summary>
             Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla
@@ -1163,6 +1168,11 @@
         <member name="T:Reloj.MethodName">
             <summary>
             Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Reloj.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
             </summary>
         </member>
         <member name="F:Reloj.MethodName._Process">
@@ -2612,6 +2622,16 @@
             Cached name for the '_Process' method.
             </summary>
         </member>
+        <member name="F:MainDesvan.MethodName.setRitualAcabado">
+            <summary>
+            Cached name for the 'setRitualAcabado' method.
+            </summary>
+        </member>
+        <member name="F:MainDesvan.MethodName.getRitualAcabado">
+            <summary>
+            Cached name for the 'getRitualAcabado' method.
+            </summary>
+        </member>
         <member name="M:MainDesvan.GetGodotMethodList">
             <summary>
             Get the method information for all the methods declared in this class.
@@ -2628,6 +2648,31 @@
         <member name="T:MainDesvan.PropertyName">
             <summary>
             Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:MainDesvan.PropertyName.unicornioRojo">
+            <summary>
+            Cached name for the 'unicornioRojo' field.
+            </summary>
+        </member>
+        <member name="F:MainDesvan.PropertyName.unicornioVerde">
+            <summary>
+            Cached name for the 'unicornioVerde' field.
+            </summary>
+        </member>
+        <member name="F:MainDesvan.PropertyName.unicornioAmarillo">
+            <summary>
+            Cached name for the 'unicornioAmarillo' field.
+            </summary>
+        </member>
+        <member name="F:MainDesvan.PropertyName.unicornioNaranja">
+            <summary>
+            Cached name for the 'unicornioNaranja' field.
+            </summary>
+        </member>
+        <member name="F:MainDesvan.PropertyName.unicornioBlanco">
+            <summary>
+            Cached name for the 'unicornioBlanco' field.
             </summary>
         </member>
         <member name="F:MainDesvan.PropertyName.audioStreamPlayer2D">
@@ -2672,19 +2717,9 @@
             Cached StringNames for the methods contained in this class, for fast lookup.
             </summary>
         </member>
-        <member name="F:Ritual.MethodName._Ready">
-            <summary>
-            Cached name for the '_Ready' method.
-            </summary>
-        </member>
         <member name="F:Ritual.MethodName._Process">
             <summary>
             Cached name for the '_Process' method.
-            </summary>
-        </member>
-        <member name="F:Ritual.MethodName._on_tree_entered">
-            <summary>
-            Cached name for the '_on_tree_entered' method.
             </summary>
         </member>
         <member name="F:Ritual.MethodName._on_area_entered">
@@ -2713,6 +2748,24 @@
         <member name="T:Ritual.PropertyName">
             <summary>
             Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Ritual.PropertyName.slotCorrecto">
+            <summary>
+            Cached name for the 'slotCorrecto' field.
+            </summary>
+        </member>
+        <member name="M:Ritual.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Ritual.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Ritual.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
             </summary>
         </member>
         <member name="M:Ritual.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">

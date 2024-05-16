@@ -6,8 +6,7 @@ using System;
 /// </summary>
 public partial class Poster : Area2D
 {
-	[Export]
-	public AnimationPlayer animationPlayer;
+	[Export] public AnimationPlayer animationPlayer;
 
 	public static Boolean animacionTerminada = false;
 
