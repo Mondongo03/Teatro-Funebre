@@ -1968,6 +1968,12 @@
             </summary>
             <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
         </member>
+        <member name="M:MueveTeEnElBosque._on_area_2d_area_entered(Godot.CollisionObject2D)">
+            <summary>
+            Señal de godot que nos permite comprobar si la colision de un objeto colisiona contra otro objeto
+            </summary>
+            <param name="collisionObject2D">Variable de la colision del objeto que colisiona con el objeto</param>
+        </member>
         <member name="T:MueveTeEnElBosque.MethodName">
             <summary>
             Cached StringNames for the methods contained in this class, for fast lookup.
@@ -2748,24 +2754,6 @@
         <member name="T:Ritual.PropertyName">
             <summary>
             Cached StringNames for the properties and fields contained in this class, for fast lookup.
-            </summary>
-        </member>
-        <member name="F:Ritual.PropertyName.slotCorrecto">
-            <summary>
-            Cached name for the 'slotCorrecto' field.
-            </summary>
-        </member>
-        <member name="M:Ritual.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
-            <inheritdoc/>
-        </member>
-        <member name="M:Ritual.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
-            <inheritdoc/>
-        </member>
-        <member name="M:Ritual.GetGodotPropertyList">
-            <summary>
-            Get the property information for all the properties declared in this class.
-            This method is used by Godot to register the available properties in the editor.
-            Do not call this method.
             </summary>
         </member>
         <member name="M:Ritual.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">

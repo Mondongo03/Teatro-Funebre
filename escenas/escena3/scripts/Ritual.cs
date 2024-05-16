@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public partial class Ritual : Area2D {
 	List<string> grupos = new List<string>();
 
-	public int slotCorrecto;
+	public static int slotCorrecto;
 	public override void _Process(double delta)
 	{
 		if(slotCorrecto == 5)

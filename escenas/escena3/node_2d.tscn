@@ -23,7 +23,7 @@ radius = 34.0147
 [sub_resource type="CircleShape2D" id="CircleShape2D_8sr8f"]
 radius = 38.1182
 
-[node name="Node2D2" type="Node2D" node_paths=PackedStringArray("unicornioRojo", "unicornioVerde", "unicornioAmarillo", "unicornioNaranja", "unicornioBlanco", "audioStreamPlayer2D") groups=["Persist"]]
+[node name="Node2D3" type="Node2D" node_paths=PackedStringArray("unicornioRojo", "unicornioVerde", "unicornioAmarillo", "unicornioNaranja", "unicornioBlanco", "audioStreamPlayer2D") groups=["Persist"]]
 script = ExtResource("1_e4q1i")
 unicornioRojo = NodePath("UnicornioRojo")
 unicornioVerde = NodePath("UnicornioVerde")
