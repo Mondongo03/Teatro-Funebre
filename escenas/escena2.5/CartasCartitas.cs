@@ -10,6 +10,7 @@ public partial class CartasCartitas : Node2D {
 	float speed = 0.6f;
 	bool remenar;
 	Timer timer;
+	public static bool animacionBarajarCartas = false;
 	[Export] public PathFollow2D sol, estrella, luna;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready() {
@@ -40,6 +41,8 @@ public partial class CartasCartitas : Node2D {
 			estrella.ProgressRatio += (float)delta * speed;
 			luna.ProgressRatio += (float)delta * speed;
 		}
+		if(luna.ProgressRatio!=1 && sol.ProgressRatio!=0 && estrella.ProgressRatio!=0) animacionBarajarCartas = true;
+		else animacionBarajarCartas = false;
 	}
 	void barajarCartas(){
 		Random rnd = new Random();

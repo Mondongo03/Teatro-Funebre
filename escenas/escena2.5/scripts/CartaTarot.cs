@@ -17,7 +17,7 @@ public partial class CartaTarot : Area2D {
 	
 	}
 	private void _on_input_event(Node viewport, InputEvent @event, long shape_idx) {
-	 if(@event.IsActionPressed("click_izquierdo") && CartasCartitas.intento ==0){
+	 if(@event.IsActionPressed("click_izquierdo") && CartasCartitas.intento ==0 && !CartasCartitas.animacionBarajarCartas){
 			if(this.IsInGroup("Sol")) {
 				voltearCarta(0);
 			}
