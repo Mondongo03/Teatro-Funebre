@@ -7,7 +7,7 @@ public partial class CartasCartitas : Node2D {
 	public static int[] cartas = { 0, 1, 2 };
 	public static int intento = 0;
 	public static bool victoria = false;
-	float speed = 0.6f;
+	float speed = 1f;
 	bool remenar;
 	Timer timer;
 	public static bool animacionBarajarCartas = false;
@@ -40,8 +40,9 @@ public partial class CartasCartitas : Node2D {
 			sol.ProgressRatio += (float)delta * speed;
 			estrella.ProgressRatio += (float)delta * speed;
 			luna.ProgressRatio += (float)delta * speed;
+			CartaTarot.clickDisponible = true;
 		}
-		if(luna.ProgressRatio!=1 && sol.ProgressRatio!=0 && estrella.ProgressRatio!=0) animacionBarajarCartas = true;
+		if(luna.ProgressRatio!=1 && sol.ProgressRatio!=1 && estrella.ProgressRatio!=1) animacionBarajarCartas = true;
 		else animacionBarajarCartas = false;
 	}
 	void barajarCartas(){
@@ -49,11 +50,5 @@ public partial class CartasCartitas : Node2D {
 
 		// Ordenar el array aleatoriamente
 		cartas = cartas.OrderBy(x => rnd.Next()).ToArray();
-
-		// Imprimir los elementos del array
-		foreach (int numero in cartas)
-		{
-			GD.Print(numero);
-		}
 	}
 }
