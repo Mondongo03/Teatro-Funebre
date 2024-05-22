@@ -6,6 +6,7 @@ using System;
 /// </summary>
 public partial class escena2 : Node2D
 {
+	public static Node2D ojo;
 	[Export] public AudioStreamPlayer2D audioStreamPlayer2D;
 
 	/// <summary>
@@ -14,6 +15,7 @@ public partial class escena2 : Node2D
 	public override void _Ready()
 	{
 		audioStreamPlayer2D.Play();
+		instanciarYAgregarNodo("res://escenas/escena2/objetos/ojo.tscn", ref ojo);
 	}
 
 	/// <summary>
@@ -23,4 +25,10 @@ public partial class escena2 : Node2D
 	public override void _Process(double delta)
 	{
 	}
+	private void instanciarYAgregarNodo(string rutaEscena, ref Node2D node2D)
+    {
+        PackedScene escena = (PackedScene)ResourceLoader.Load(rutaEscena);
+        node2D = escena.Instantiate() as Node2D;
+        AddChild(node2D);
+    }
 }

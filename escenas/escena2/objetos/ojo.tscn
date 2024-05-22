@@ -7,17 +7,17 @@
 radius = 16.1245
 
 [node name="Area2D" type="Area2D" groups=["Ojo"]]
-position = Vector2(549, 560)
+position = Vector2(487, 518)
 script = ExtResource("1_thi7b")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
 texture_filter = 1
-position = Vector2(-55.5, -43.5)
+position = Vector2(3, -1)
 texture = ExtResource("2_liq58")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-55, -43)
+position = Vector2(2, 0)
 shape = SubResource("CircleShape2D_sh7rf")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

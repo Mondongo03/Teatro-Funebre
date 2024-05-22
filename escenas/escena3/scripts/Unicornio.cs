@@ -18,7 +18,7 @@ public partial class Unicornio : Area2D
     {
         if (puedoMover && objetoEnMovimiento == this)
         {
-            Position = GetGlobalMousePosition();
+            this.GlobalPosition = GetGlobalMousePosition();
         }
     }
 

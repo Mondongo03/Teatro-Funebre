@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://b3oscujcwaje6"]
+[gd_scene load_steps=35 format=3 uid="uid://b3oscujcwaje6"]
 
 [ext_resource type="Script" path="res://escenas/escena2/scripts/escena2.cs" id="1_7q1kv"]
 [ext_resource type="PackedScene" uid="uid://c0vydxagyq8pj" path="res://escenas/menuPausa/escenas/pausa.tscn" id="2_p1h3l"]
@@ -12,9 +12,15 @@
 [ext_resource type="PackedScene" uid="uid://ciocjjv3ss2lc" path="res://escenas/escena2/objetos/pajaro_verde.tscn" id="8_83e7h"]
 [ext_resource type="Texture2D" uid="uid://cly82xjk5esrx" path="res://escenas/escena2/assets/Cartacerrada.png" id="9_4wxrt"]
 [ext_resource type="PackedScene" uid="uid://suhwt3dfugp" path="res://escenas/escena2/objetos/ramoncin.tscn" id="12_cpiaa"]
-[ext_resource type="PackedScene" uid="uid://ca4548st4trsg" path="res://escenas/escena2/objetos/ojo.tscn" id="13_daars"]
 [ext_resource type="Texture2D" uid="uid://ws0qsjmt73jk" path="res://escenas/escena2/assets/gnomoTullidoSinOjo.png" id="14_eadh0"]
 [ext_resource type="Script" path="res://escenas/escena2/scripts/GnomoSinCosas.cs" id="14_wdqc6"]
+[ext_resource type="PackedScene" uid="uid://csicptbljjd3v" path="res://escenas/escena2/objetos/cofre.tscn" id="16_3ddve"]
+[ext_resource type="PackedScene" uid="uid://jytp2qyvw1p2" path="res://escenas/escena3/objects/unicornioAmarillo.tscn" id="17_ay4hq"]
+[ext_resource type="PackedScene" uid="uid://bo4efp45vqav7" path="res://escenas/escena3/objects/unicornioBlanco.tscn" id="18_u4uet"]
+[ext_resource type="PackedScene" uid="uid://dya1l2sbg42fq" path="res://escenas/escena1/objects/varillaS.tscn" id="18_ukgrk"]
+[ext_resource type="PackedScene" uid="uid://dbn80bwod74wb" path="res://escenas/escena3/objects/unicornioNaranja.tscn" id="19_6lwup"]
+[ext_resource type="PackedScene" uid="uid://b0vjvdvcajks8" path="res://escenas/escena3/objects/unicornioRojo.tscn" id="20_faohd"]
+[ext_resource type="PackedScene" uid="uid://csv2tv2imk5dn" path="res://escenas/escena3/objects/unicornioVerde.tscn" id="21_dwgw0"]
 
 [sub_resource type="Curve2D" id="Curve2D_a8trf"]
 _data = {
@@ -170,8 +176,6 @@ texture = ExtResource("9_4wxrt")
 
 [node name="Area2D2" parent="." instance=ExtResource("12_cpiaa")]
 
-[node name="Area2D" parent="." instance=ExtResource("13_daars")]
-
 [node name="Area2D3" type="Area2D" parent="." groups=["GnomoSinCosas"]]
 position = Vector2(501, 528)
 script = ExtResource("14_wdqc6")
@@ -183,6 +187,26 @@ texture = ExtResource("14_eadh0")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
 position = Vector2(-0.5, 0.5)
 shape = SubResource("RectangleShape2D_wnx72")
+
+[node name="Area2D5" parent="." instance=ExtResource("16_3ddve")]
+
+[node name="Area2D4" parent="." instance=ExtResource("18_ukgrk")]
+position = Vector2(192, 495)
+
+[node name="Unicornio" parent="." instance=ExtResource("17_ay4hq")]
+position = Vector2(164, 440)
+
+[node name="Unicornio2" parent="." instance=ExtResource("18_u4uet")]
+position = Vector2(359, 434)
+
+[node name="Unicornio3" parent="." instance=ExtResource("19_6lwup")]
+position = Vector2(224, 560)
+
+[node name="Unicornio4" parent="." instance=ExtResource("20_faohd")]
+position = Vector2(86, 540)
+
+[node name="Unicornio5" parent="." instance=ExtResource("21_dwgw0")]
+position = Vector2(348, 534)
 
 [connection signal="area_entered" from="Gnomo/PathFollow2D/AnimatedSprite2D/Area2D" to="Gnomo/PathFollow2D" method="_on_area_2d_area_entered"]
 [connection signal="area_entered" from="Area2D2" to="Area2D2" method="_on_area_entered"]

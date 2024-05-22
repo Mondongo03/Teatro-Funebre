@@ -4,7 +4,7 @@ using System;
 public partial class CartaTarot : Area2D {
 	Sprite2D sprite;
 	Timer timer;
-	public static bool clickDisponible = true;
+	public static bool clickDisponible = false;
 	
 	public override void _Ready() {
 		sprite = GetChild<Sprite2D>(0);
@@ -42,6 +42,8 @@ public partial class CartaTarot : Area2D {
 		}
 		else if(CartasCartitas.cartas[1] == numero) {
 			this.sprite.Texture = (Texture2D)GD.Load("res://escenas/escena2.5/assets/CartaTarotEstrella.png");
+			timer.Start(1);
+			await ToSignal(timer, "timeout");
 			CartasCartitas.victoria = true;
 		}
 		else if(CartasCartitas.cartas[2] == numero) {

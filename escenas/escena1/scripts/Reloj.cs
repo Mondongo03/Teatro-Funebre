@@ -117,8 +117,7 @@ public partial class Reloj : Area2D
     /// <param name="rutaEscena">Ruta de la escena a instanciar</param>
     /// <param name="zIndex">Referencia al indice deseado en el nodo</param>
     /// <param name="node2D">Referencia al nodo instanciado</param>
-    private void InstanciarYAgregarNodo(string rutaEscena, int zIndex, ref Node2D node2D)
-    {
+    private void InstanciarYAgregarNodo(string rutaEscena, int zIndex, ref Node2D node2D) {
         PackedScene escena = (PackedScene)ResourceLoader.Load(rutaEscena);
         node2D = escena.Instantiate() as Node2D;
         node2D.ZIndex = zIndex;

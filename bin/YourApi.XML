@@ -36,7 +36,7 @@
             Método que instancia todos los elementos de la escena y los añade a su respectivo padre
             </summary>
         </member>
-        <member name="M:Main.InstanciarYAgregarNodo(System.String,Godot.Node2D@)">
+        <member name="M:Main.instanciarYAgregarNodo(System.String,Godot.Node2D@)">
             <summary>
             Método que instancia un nodo y lo agrega al árbol de escenas
             </summary>

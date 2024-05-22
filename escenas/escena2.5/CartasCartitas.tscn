@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://baxy0ipg86kv0"]
+[gd_scene load_steps=10 format=3 uid="uid://baxy0ipg86kv0"]
 
 [ext_resource type="Texture2D" uid="uid://ncua43enph81" path="res://escenas/escena2.5/assets/Tablero.png" id="1_441ri"]
 [ext_resource type="Script" path="res://escenas/escena2.5/CartasCartitas.cs" id="1_ytof7"]
 [ext_resource type="Script" path="res://escenas/escena2.5/scripts/CartaTarot.cs" id="2_iy6x0"]
 [ext_resource type="Texture2D" uid="uid://exa43sox7400" path="res://escenas/escena2.5/assets/CartaTarotGenerica.png" id="4_i1op6"]
+[ext_resource type="PackedScene" uid="uid://bphrtx8xcw83m" path="res://escenas/escena2.5/objects/TextoInicio.tscn" id="5_aelvl"]
 
 [sub_resource type="Curve2D" id="Curve2D_8oj4t"]
 _data = {
@@ -98,6 +99,13 @@ texture = ExtResource("4_i1op6")
 position = Vector2(-0.5, -0.5)
 shape = SubResource("RectangleShape2D_yo0go")
 
+[node name="Area2D" parent="." groups=["TextoInicioCartas"] instance=ExtResource("5_aelvl")]
+position = Vector2(536, 426)
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_ytof7")
+
 [connection signal="input_event" from="Sol/PathFollow2D/TarotSol" to="Sol/PathFollow2D/TarotSol" method="_on_input_event"]
 [connection signal="input_event" from="Estrella/PathFollow2D/TarotEstrella" to="Estrella/PathFollow2D/TarotEstrella" method="_on_input_event"]
 [connection signal="input_event" from="Luna/Path2D/TarotLuna" to="Luna/Path2D/TarotLuna" method="_on_input_event"]
+[connection signal="input_event" from="Area2D" to="Area2D" method="_on_input_event"]

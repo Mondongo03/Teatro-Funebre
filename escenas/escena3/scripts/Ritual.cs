@@ -4,7 +4,6 @@ using System.Collections.Generic;
 
 
 public partial class Ritual : Area2D {
-	List<string> grupos = new List<string>();
 
 	public static int slotCorrecto = 0;
 

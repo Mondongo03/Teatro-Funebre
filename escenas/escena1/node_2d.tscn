@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dmiq6b6x1xr3n"]
+[gd_scene load_steps=15 format=3 uid="uid://dmiq6b6x1xr3n"]
 
 [ext_resource type="Script" path="res://escenas/escena1/Main.cs" id="1_h6e1c"]
 [ext_resource type="Texture2D" uid="uid://df3xdc8uy6hdl" path="res://escenas/escena1/assets/FondoInicio.png" id="2_72pvx"]
@@ -7,6 +7,7 @@
 [ext_resource type="AudioStream" uid="uid://uhi3i8urinhu" path="res://escenas/escena1/assets/ost_escena1.mp3" id="5_gckte"]
 [ext_resource type="PackedScene" uid="uid://c0vydxagyq8pj" path="res://escenas/menuPausa/escenas/pausa.tscn" id="8_uorag"]
 [ext_resource type="PackedScene" uid="uid://ce2fov1ogsk42" path="res://escenas/escena1/objects/ventana_shape.tscn" id="9_hhauv"]
+[ext_resource type="PackedScene" uid="uid://csicptbljjd3v" path="res://escenas/escena2/objetos/cofre.tscn" id="9_jixtf"]
 [ext_resource type="Texture2D" uid="uid://3y2khlkisrjn" path="res://escenas/escena1/assets/suelo.png" id="10_e8ngq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yiuey"]
@@ -97,5 +98,10 @@ libraries = {
 }
 
 [node name="VentanaShape" parent="." instance=ExtResource("9_hhauv")]
+
+[node name="Area2D5" parent="." instance=ExtResource("9_jixtf")]
+position = Vector2(1385, 915)
+
+[node name="Area2D6" parent="." instance=ExtResource("9_jixtf")]
 
 [connection signal="child_entered_tree" from="Sprite2D2" to="." method="_on_sprite_2d_2_child_entered_tree"]

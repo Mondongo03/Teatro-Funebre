@@ -17,6 +17,7 @@ public partial class Ramon : Area2D
 	/// <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
 	public override void _Process(double delta)
 	{
+		
 		if (RespuestasRamon.pasar && stepTexto != 4)
 		{
 			if (instanciaTextoActual != null)
@@ -38,8 +39,7 @@ public partial class Ramon : Area2D
     private void _on_input_event(Node viewport, InputEvent @event, long shape_idx)
 	{
 
-		if (@event.IsActionPressed("click_izquierdo"))
-		{
+		if (@event.IsActionPressed("click_izquierdo") && !CartasCartitas.victoria) {
 
 			if (stepTexto == 0)
 			{
@@ -73,6 +73,9 @@ public partial class Ramon : Area2D
 			{
 				mostrarTexto(texto5, "res://escenas/escena2/objetos/textBox6Ramon.tscn");
 			}
+		}
+		else {
+			
 		}
 	}
 

@@ -18,7 +18,7 @@ public partial class VarillaM : Area2D
 	{
 		if (puedoMover && !Main.varillaMinutosReloj)
 		{
-			Position = GetGlobalMousePosition();
+			this.GlobalPosition = GetGlobalMousePosition();
 		}
 	}
 

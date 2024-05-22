@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://csicptbljjd3v"]
+
+[ext_resource type="Script" path="res://escenas/escena2/scripts/Cofre.cs" id="1_ltvxc"]
+[ext_resource type="Texture2D" uid="uid://c8r3x2kgnetws" path="res://escenas/escena2/assets/cofre.png" id="2_sloqn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sdonf"]
+size = Vector2(67, 52)
+
+[node name="Area2D5" type="Area2D" groups=["Cofre"]]
+position = Vector2(646, 447)
+script = ExtResource("1_ltvxc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 14)
+texture = ExtResource("2_sloqn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 15)
+shape = SubResource("RectangleShape2D_sdonf")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]
+[connection signal="input_event" from="." to="." method="_on_input_event"]
