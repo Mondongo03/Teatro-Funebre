@@ -35,7 +35,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xiee5"]
 size = Vector2(42, 37)
 
-[node name="Area2D" type="Area2D"]
+[node name="Area2D" type="Area2D" groups=["HaciaDesvan"]]
 position = Vector2(587, 92)
 script = ExtResource("1_cbocp")
 
@@ -43,6 +43,7 @@ script = ExtResource("1_cbocp")
 sprite_frames = SubResource("SpriteFrames_fxcoq")
 animation = &"Flecha"
 autoplay = "Flecha"
+frame_progress = 0.446598
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(-69, 11, 0, -45, 69, 11)

@@ -19,7 +19,7 @@ public partial class VarillaS : Area2D
 	/// <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
 	public override void _Process(double delta)
 	{
-		//GD.Print(this.GlobalPosition);
+		//GD.Print(this.GlobalPosition)
 		if (Main.varillaSegundosReloj && Main.varillaMinutosReloj && !Reloj.terminado)
 		{
 			if (Cajon.encontrado)

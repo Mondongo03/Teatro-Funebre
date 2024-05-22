@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://b3oscujcwaje6"]
+[gd_scene load_steps=36 format=3 uid="uid://b3oscujcwaje6"]
 
 [ext_resource type="Script" path="res://escenas/escena2/scripts/escena2.cs" id="1_7q1kv"]
 [ext_resource type="PackedScene" uid="uid://c0vydxagyq8pj" path="res://escenas/menuPausa/escenas/pausa.tscn" id="2_p1h3l"]
@@ -21,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://dbn80bwod74wb" path="res://escenas/escena3/objects/unicornioNaranja.tscn" id="19_6lwup"]
 [ext_resource type="PackedScene" uid="uid://b0vjvdvcajks8" path="res://escenas/escena3/objects/unicornioRojo.tscn" id="20_faohd"]
 [ext_resource type="PackedScene" uid="uid://csv2tv2imk5dn" path="res://escenas/escena3/objects/unicornioVerde.tscn" id="21_dwgw0"]
+[ext_resource type="PackedScene" uid="uid://bv5ynspws8yl4" path="res://escenas/escena2/objetos/flechaIzquierda.tscn" id="22_qmkqx"]
 
 [sub_resource type="Curve2D" id="Curve2D_a8trf"]
 _data = {
@@ -207,6 +208,9 @@ position = Vector2(86, 540)
 
 [node name="Unicornio5" parent="." instance=ExtResource("21_dwgw0")]
 position = Vector2(348, 534)
+
+[node name="Area2D" parent="." instance=ExtResource("22_qmkqx")]
+position = Vector2(6, 359)
 
 [connection signal="area_entered" from="Gnomo/PathFollow2D/AnimatedSprite2D/Area2D" to="Gnomo/PathFollow2D" method="_on_area_2d_area_entered"]
 [connection signal="area_entered" from="Area2D2" to="Area2D2" method="_on_area_entered"]

@@ -26,7 +26,7 @@ public partial class Ojo : Area2D
 	/// </summary>
 	public override void _Process(double delta)
 	{
-		GD.Print(Position);
+		//GD.Print(Position);
 		if (puedoMover)
 		{
 			this.GlobalPosition = GetGlobalMousePosition();

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dmiq6b6x1xr3n"]
+[gd_scene load_steps=16 format=3 uid="uid://dmiq6b6x1xr3n"]
 
 [ext_resource type="Script" path="res://escenas/escena3/MainDesvan.cs" id="1_e4q1i"]
 [ext_resource type="Texture2D" uid="uid://42o21mfgkct3" path="res://escenas/escena3/assets/Desvan.png" id="2_j38e6"]
@@ -7,6 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://dbn80bwod74wb" path="res://escenas/escena3/objects/unicornioNaranja.tscn" id="6_yuq7b"]
 [ext_resource type="PackedScene" uid="uid://csv2tv2imk5dn" path="res://escenas/escena3/objects/unicornioVerde.tscn" id="7_d7t70"]
 [ext_resource type="PackedScene" uid="uid://b0vjvdvcajks8" path="res://escenas/escena3/objects/unicornioRojo.tscn" id="8_dmmbf"]
+[ext_resource type="PackedScene" uid="uid://csicptbljjd3v" path="res://escenas/escena2/objetos/cofre.tscn" id="9_ux4vi"]
+[ext_resource type="PackedScene" uid="uid://ca4548st4trsg" path="res://escenas/escena2/objetos/ojo.tscn" id="10_356cr"]
+[ext_resource type="PackedScene" uid="uid://5n7ii84ox5c" path="res://escenas/escena3/objects/flechaAbajo.tscn" id="11_o0nmo"]
 [ext_resource type="PackedScene" uid="uid://jytp2qyvw1p2" path="res://escenas/escena3/objects/unicornioAmarillo.tscn" id="11_xf2oq"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ibdlg"]
@@ -61,11 +64,11 @@ shape = SubResource("CircleShape2D_8sr8f")
 debug_color = Color(0.329412, 0.623529, 0, 0.419608)
 
 [node name="AbajoDerecha" type="Area2D" parent="Arriba" groups=["AbajoDerecha"]]
-position = Vector2(432, 804)
+position = Vector2(85, 203)
 script = ExtResource("3_4p4qt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Arriba/AbajoDerecha"]
-position = Vector2(-363, -600)
+position = Vector2(2, 0)
 shape = SubResource("CircleShape2D_qnmh5")
 debug_color = Color(0.941176, 0.917647, 0, 0.419608)
 
@@ -84,7 +87,14 @@ position = Vector2(109, 458)
 [node name="Unicornio5" parent="." instance=ExtResource("8_dmmbf")]
 position = Vector2(248, 573)
 
-[node name="Chimenea" type="Area2D" parent="."]
+[node name="Area2D5" parent="." instance=ExtResource("9_ux4vi")]
+position = Vector2(1023, 575)
+
+[node name="Area2D" parent="." instance=ExtResource("10_356cr")]
+position = Vector2(854, 538)
+
+[node name="Area2D3" parent="." groups=["HaciaCasa"] instance=ExtResource("11_o0nmo")]
+position = Vector2(798, 590)
 
 [connection signal="child_entered_tree" from="Sprite2D2" to="." method="_on_sprite_2d_2_child_entered_tree"]
 [connection signal="area_entered" from="Izquierda" to="Izquierda" method="_on_area_entered"]

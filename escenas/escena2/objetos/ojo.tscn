@@ -1,20 +1,20 @@
 [gd_scene load_steps=4 format=3 uid="uid://ca4548st4trsg"]
 
-[ext_resource type="Script" path="res://escenas/escena2/scripts/Ojo.cs" id="1_thi7b"]
-[ext_resource type="Texture2D" uid="uid://qh1qfl2k1gma" path="res://escenas/escena2/assets/ojo.png" id="2_liq58"]
+[ext_resource type="Script" path="res://escenas/escena2/scripts/Ojo.cs" id="1_a6unn"]
+[ext_resource type="Texture2D" uid="uid://qh1qfl2k1gma" path="res://escenas/escena2/assets/ojo.png" id="2_10ols"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sh7rf"]
 radius = 16.1245
 
 [node name="Area2D" type="Area2D" groups=["Ojo"]]
 position = Vector2(487, 518)
-script = ExtResource("1_thi7b")
+script = ExtResource("1_a6unn")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
 texture_filter = 1
 position = Vector2(3, -1)
-texture = ExtResource("2_liq58")
+texture = ExtResource("2_10ols")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, 0)
