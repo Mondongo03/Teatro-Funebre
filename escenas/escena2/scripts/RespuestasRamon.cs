@@ -3,9 +3,8 @@ using System;
 
 /// <summary>
 /// Clase que nos permite gestionar las respuesta que da el jugador a Ramon
-/// </summary>
-public partial class RespuestasRamon : Area2D
-{
+
+public partial class RespuestasRamon : Area2D {
 	Sprite2D sprite1;
 	Sprite2D sprite2;
 	public static bool jugar = false;

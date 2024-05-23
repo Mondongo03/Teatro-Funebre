@@ -91,7 +91,7 @@ libraries = {
 
 [node name="VentanaShape" parent="." instance=ExtResource("9_hhauv")]
 
-[node name="Area2D5" parent="." instance=ExtResource("9_jixtf")]
-position = Vector2(1032, 535)
+[node name="Cofre" parent="." instance=ExtResource("9_jixtf")]
+position = Vector2(1068, 135)
 
 [connection signal="child_entered_tree" from="Sprite2D2" to="." method="_on_sprite_2d_2_child_entered_tree"]

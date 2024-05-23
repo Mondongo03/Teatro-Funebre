@@ -37,10 +37,8 @@ public partial class Main : Node2D
     /// Este método está siempre en ejecución mientras el objeto que tiene asociado el script esté en pantalla
     /// </summary>
     /// <param name="delta">Es una variable generada por Godot que almacena la posición del objeto</param>
-    public override void _Process(double delta)
-    {
-        if (varillaMinutosInstancia != null)
-        {
+    public override void _Process(double delta) {
+        if (varillaMinutosInstancia != null) {
             clickadoVarillaM = VarillaM.devolverClickado();
         }
     }

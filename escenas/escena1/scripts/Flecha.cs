@@ -17,6 +17,7 @@ public partial class Flecha : Area2D
     public void _on_input_event(Node viewport, InputEvent evento, int shap)
     {
         if (evento.IsActionPressed("click_izquierdo")){
+            if(Cofre.abierto) Cofre.cerrarCofre();
             if(this.IsInGroup("HaciaDesvan")) GetTree().ChangeSceneToFile("res://escenas/escena3/node_2d.tscn");
             if(this.IsInGroup("HaciaCasa")) GetTree().ChangeSceneToFile("res://escenas/escena1/node_2d.tscn");
             if(this.IsInGroup("HaciaBosque")) GetTree().ChangeSceneToFile("res://escenas/escena2/Prueba.tscn");

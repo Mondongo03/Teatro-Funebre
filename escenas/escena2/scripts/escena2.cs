@@ -6,7 +6,7 @@ using System;
 /// </summary>
 public partial class escena2 : Node2D
 {
-	public static Node2D ojo;
+	public static Node2D ojo, cofre;
 	[Export] public AudioStreamPlayer2D audioStreamPlayer2D;
 
 	/// <summary>
@@ -16,6 +16,9 @@ public partial class escena2 : Node2D
 	{
 		audioStreamPlayer2D.Play();
 		instanciarYAgregarNodo("res://escenas/escena2/objetos/ojo.tscn", ref ojo);
+
+		//instanciarYAgregarNodo("res://escenas/escena2/objetos/cofre.tscn", ref cofre);
+		//cofre.Visible = false;
 	}
 
 	/// <summary>
