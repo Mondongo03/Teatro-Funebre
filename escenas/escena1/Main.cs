@@ -16,6 +16,8 @@ public partial class Main : Node2D
     [Export] public AudioStreamPlayer2D audioStreamPlayer2D;
     [Export] public Path2D gnomo;
 
+    bool comprobanteArray = false;
+
     /// <summary>
     /// Esta función se llama automáticamente cuando se instancia el objeto al cual está asociado el script
     /// </summary>
@@ -70,11 +72,17 @@ public partial class Main : Node2D
     /// </summary>
     /// <param name="rutaEscena">Ruta de la escena a instanciar</param>
     /// <param name="node2D">Referencia al nodo instanciado</param>
-    private void instanciarYAgregarNodo(string rutaEscena, ref Node2D node2D)
-    {
+    private void instanciarYAgregarNodo(String rutaEscena, ref Node2D node2D) {
+
+        foreach(String objeto in Cofre.objetosGuardados){
+            if(objeto.Equals(rutaEscena)) comprobanteArray = true;
+        }
+        if(!comprobanteArray){
         PackedScene escena = (PackedScene)ResourceLoader.Load(rutaEscena);
         node2D = escena.Instantiate() as Node2D;
         AddChild(node2D);
+        }
+        comprobanteArray = false;
     }
 
     /// <summary>

@@ -18,6 +18,7 @@ size = Vector2(17, 37)
 [node name="Unicornio" type="Area2D" groups=["UnicornioRojo"]]
 z_index = 7
 texture_filter = 1
+position = Vector2(255, 498)
 script = ExtResource("1_vrlh8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
