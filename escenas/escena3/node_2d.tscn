@@ -1,8 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://dmiq6b6x1xr3n"]
+[gd_scene load_steps=23 format=3 uid="uid://dmiq6b6x1xr3n"]
 
 [ext_resource type="Script" path="res://escenas/escena3/MainDesvan.cs" id="1_e4q1i"]
 [ext_resource type="Texture2D" uid="uid://42o21mfgkct3" path="res://escenas/escena3/assets/Desvan.png" id="2_j38e6"]
 [ext_resource type="Script" path="res://escenas/escena3/scripts/Ritual.cs" id="3_4p4qt"]
+[ext_resource type="Texture2D" uid="uid://bdr81hyiuvl8q" path="res://escenas/escena3/assets/particulasUA.png" id="6_ntve5"]
+[ext_resource type="Texture2D" uid="uid://btjx02araocap" path="res://escenas/escena3/assets/particulasUN.png" id="7_v1t88"]
+[ext_resource type="Texture2D" uid="uid://b5vjy6lkhr83l" path="res://escenas/escena3/assets/particulas.png" id="8_8il74"]
 [ext_resource type="PackedScene" uid="uid://csicptbljjd3v" path="res://escenas/escena2/objetos/cofre.tscn" id="9_ux4vi"]
 [ext_resource type="PackedScene" uid="uid://5n7ii84ox5c" path="res://escenas/escena3/objects/flechaAbajo.tscn" id="11_o0nmo"]
 
@@ -17,6 +20,87 @@ radius = 34.0147
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8sr8f"]
 radius = 38.1182
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xqfom"]
+atlas = ExtResource("6_ntve5")
+region = Rect2(0, 0, 9, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3htdg"]
+atlas = ExtResource("6_ntve5")
+region = Rect2(9, 0, 9, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idn11"]
+atlas = ExtResource("6_ntve5")
+region = Rect2(18, 0, 9, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i18w4"]
+atlas = ExtResource("7_v1t88")
+region = Rect2(0, 0, 9, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ihrbp"]
+atlas = ExtResource("7_v1t88")
+region = Rect2(9, 0, 9, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v15gu"]
+atlas = ExtResource("7_v1t88")
+region = Rect2(18, 0, 9, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2eyov"]
+atlas = ExtResource("8_8il74")
+region = Rect2(0, 0, 9, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t34ax"]
+atlas = ExtResource("8_8il74")
+region = Rect2(9, 0, 9, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q2lb6"]
+atlas = ExtResource("8_8il74")
+region = Rect2(18, 0, 9, 88)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kblxs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xqfom")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3htdg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idn11")
+}],
+"loop": true,
+"name": &"ParticulasUA",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i18w4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ihrbp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v15gu")
+}],
+"loop": true,
+"name": &"ParticulasUN",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2eyov")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t34ax")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q2lb6")
+}],
+"loop": true,
+"name": &"ParticulasUR",
+"speed": 5.0
+}]
 
 [node name="Node2D2" type="Node2D" groups=["Persist"]]
 script = ExtResource("1_e4q1i")
@@ -71,6 +155,42 @@ position = Vector2(798, 590)
 
 [node name="Area2D5" parent="." instance=ExtResource("9_ux4vi")]
 position = Vector2(1071, 189)
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(590, 440)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+sprite_frames = SubResource("SpriteFrames_kblxs")
+animation = &"ParticulasUR"
+autoplay = "ParticulasUR"
+frame = 2
+frame_progress = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2(535, 488)
+rotation = -1.5708
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D2"]
+sprite_frames = SubResource("SpriteFrames_kblxs")
+animation = &"ParticulasUA"
+autoplay = "ParticulasUA"
+frame_progress = 0.762367
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+
+[node name="Area2D4" type="Area2D" parent="."]
+position = Vector2(557, 536)
+rotation = -2.61799
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D4"]
+sprite_frames = SubResource("SpriteFrames_kblxs")
+animation = &"ParticulasUN"
+autoplay = "ParticulasUN"
+frame_progress = 0.236639
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
 
 [connection signal="child_entered_tree" from="Sprite2D2" to="." method="_on_sprite_2d_2_child_entered_tree"]
 [connection signal="area_entered" from="Izquierda" to="Izquierda" method="_on_area_entered"]
