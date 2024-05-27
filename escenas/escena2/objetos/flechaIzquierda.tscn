@@ -1,0 +1,58 @@
+[gd_scene load_steps=8 format=3 uid="uid://bv5ynspws8yl4"]
+
+[ext_resource type="Script" path="res://escenas/escena1/scripts/Flecha.cs" id="1_mbp6o"]
+[ext_resource type="Texture2D" uid="uid://c3rflxdb8gc6r" path="res://escenas/escena3/assets/flechaFakeGif.png" id="2_kvuoi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_10mpi"]
+atlas = ExtResource("2_kvuoi")
+region = Rect2(0, 0, 136, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fq707"]
+atlas = ExtResource("2_kvuoi")
+region = Rect2(136, 0, 136, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yr6la"]
+atlas = ExtResource("2_kvuoi")
+region = Rect2(272, 0, 136, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fxcoq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_10mpi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fq707")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yr6la")
+}],
+"loop": true,
+"name": &"Flecha",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xiee5"]
+size = Vector2(42, 38)
+
+[node name="Area2D" type="Area2D" groups=["HaciaCasa"]]
+position = Vector2(587, 92)
+script = ExtResource("1_mbp6o")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+rotation = 1.5708
+sprite_frames = SubResource("SpriteFrames_fxcoq")
+animation = &"Flecha"
+autoplay = "Flecha"
+frame_progress = 0.534756
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+rotation = -1.5708
+polygon = PackedVector2Array(-69, 11, 0, -45, 41.2706, -11.505, 69, 11)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(28, -2)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_xiee5")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kujc0ll2avxr"
-path="res://.godot/imported/curtain.png-67074f5ebd73c7fe7c919325d918f02b.ctex"
+uid="uid://c3uhr6ynmo126"
+path="res://.godot/imported/FondoCofre.png-079c6fc7ae24fe0b0d383b567a349508.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://escenas/escena2/assets/curtain.png"
-dest_files=["res://.godot/imported/curtain.png-67074f5ebd73c7fe7c919325d918f02b.ctex"]
+source_file="res://escenas/escena2/assets/FondoCofre.png"
+dest_files=["res://.godot/imported/FondoCofre.png-079c6fc7ae24fe0b0d383b567a349508.ctex"]
 
 [params]
 

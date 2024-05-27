@@ -18,6 +18,7 @@ size = Vector2(17, 37)
 [node name="Unicornio" type="Area2D" groups=["UnicornioAmarillo"]]
 z_index = 7
 texture_filter = 1
+position = Vector2(342, 489)
 script = ExtResource("1_cgu4h")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

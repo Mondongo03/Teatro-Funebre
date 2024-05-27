@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mhoc7"]
 size = Vector2(1285, 708)
 
-[node name="Area2D2" type="Area2D"]
+[node name="Area2D2" type="Area2D" groups=["CajonZoomeado"]]
 z_index = 4
 script = ExtResource("1_igapj")
 

@@ -16,6 +16,8 @@ public partial class Main : Node2D
     [Export] public AudioStreamPlayer2D audioStreamPlayer2D;
     [Export] public Path2D gnomo;
 
+    bool comprobanteArray = false;
+
     /// <summary>
     /// Esta función se llama automáticamente cuando se instancia el objeto al cual está asociado el script
     /// </summary>
@@ -35,10 +37,8 @@ public partial class Main : Node2D
     /// Este método está siempre en ejecución mientras el objeto que tiene asociado el script esté en pantalla
     /// </summary>
     /// <param name="delta">Es una variable generada por Godot que almacena la posición del objeto</param>
-    public override void _Process(double delta)
-    {
-        if (varillaMinutosInstancia != null)
-        {
+    public override void _Process(double delta) {
+        if (varillaMinutosInstancia != null) {
             clickadoVarillaM = VarillaM.devolverClickado();
         }
     }
@@ -58,15 +58,15 @@ public partial class Main : Node2D
             varillaSegundosReloj = false;
         }
 
-        InstanciarYAgregarNodo("res://escenas/escena1/objects/reloj.tscn", ref relojInstancia);
-        InstanciarYAgregarNodo("res://escenas/escena1/objects/hueco.tscn", ref huecoInstancia);
-        InstanciarYAgregarNodo("res://escenas/escena1/objects/escalera.tscn", ref escaleraInstancia);
-        InstanciarYAgregarNodo("res://escenas/escena1/objects/cajetilla.tscn", ref cajetillaInstancia);
-        InstanciarYAgregarNodo("res://escenas/escena1/objects/tapa.tscn", ref tapaInstancia);
-        InstanciarYAgregarNodo("res://escenas/escena1/objects/pista_1.tscn", ref pista_1Instancia);
-        InstanciarYAgregarNodo("res://escenas/escena1/objects/lamparaApagada.tscn", ref lamparaApagadaInstancia);
-        InstanciarYAgregarNodo("res://escenas/escena1/objects/poster.tscn", ref posterInstancia);
-        InstanciarYAgregarNodo("res://escenas/escena1/objects/monstruo.tscn", ref monstruoInstancia);
+        instanciarYAgregarNodo("res://escenas/escena1/objects/reloj.tscn", ref relojInstancia);
+        instanciarYAgregarNodo("res://escenas/escena1/objects/hueco.tscn", ref huecoInstancia);
+        instanciarYAgregarNodo("res://escenas/escena1/objects/escalera.tscn", ref escaleraInstancia);
+        instanciarYAgregarNodo("res://escenas/escena1/objects/cajetilla.tscn", ref cajetillaInstancia);
+        instanciarYAgregarNodo("res://escenas/escena1/objects/tapa.tscn", ref tapaInstancia);
+        instanciarYAgregarNodo("res://escenas/escena1/objects/pista_1.tscn", ref pista_1Instancia);
+        instanciarYAgregarNodo("res://escenas/escena1/objects/lamparaApagada.tscn", ref lamparaApagadaInstancia);
+        instanciarYAgregarNodo("res://escenas/escena1/objects/poster.tscn", ref posterInstancia);
+        instanciarYAgregarNodo("res://escenas/escena1/objects/monstruo.tscn", ref monstruoInstancia);
     }
 
     /// <summary>
@@ -74,11 +74,17 @@ public partial class Main : Node2D
     /// </summary>
     /// <param name="rutaEscena">Ruta de la escena a instanciar</param>
     /// <param name="node2D">Referencia al nodo instanciado</param>
-    private void InstanciarYAgregarNodo(string rutaEscena, ref Node2D node2D)
-    {
+    private void instanciarYAgregarNodo(String rutaEscena, ref Node2D node2D) {
+
+        foreach(String objeto in Cofre.objetosGuardados){
+            if(objeto.Equals(rutaEscena)) comprobanteArray = true;
+        }
+        if(!comprobanteArray){
         PackedScene escena = (PackedScene)ResourceLoader.Load(rutaEscena);
         node2D = escena.Instantiate() as Node2D;
         AddChild(node2D);
+        }
+        comprobanteArray = false;
     }
 
     /// <summary>

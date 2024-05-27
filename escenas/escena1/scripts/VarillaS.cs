@@ -17,6 +17,7 @@ public partial class VarillaS : Area2D
 	/// <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
 	public override void _Process(double delta)
 	{
+		//GD.Print(this.GlobalPosition)
 		if (Main.varillaSegundosReloj && Main.varillaMinutosReloj && !Reloj.terminado)
 		{
 			if (Cajon.encontrado)
@@ -48,7 +49,7 @@ public partial class VarillaS : Area2D
 		}
 		if (puedoMover)
 		{
-			Position = GetGlobalMousePosition();
+			this.GlobalPosition = GetGlobalMousePosition();
 		}
 
 		Main.varillaMinutosInstancia.Rotation = (Main.varillaSegundosInstancia.Rotation / 5) * 0.846f;
