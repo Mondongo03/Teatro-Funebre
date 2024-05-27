@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://b3oscujcwaje6"]
+[gd_scene load_steps=34 format=3 uid="uid://b3oscujcwaje6"]
 
 [ext_resource type="Script" path="res://escenas/escena2/scripts/escena2.cs" id="1_7q1kv"]
 [ext_resource type="PackedScene" uid="uid://c0vydxagyq8pj" path="res://escenas/menuPausa/escenas/pausa.tscn" id="2_p1h3l"]
@@ -12,7 +12,6 @@
 [ext_resource type="PackedScene" uid="uid://ciocjjv3ss2lc" path="res://escenas/escena2/objetos/pajaro_verde.tscn" id="8_83e7h"]
 [ext_resource type="Texture2D" uid="uid://cly82xjk5esrx" path="res://escenas/escena2/assets/Cartacerrada.png" id="9_4wxrt"]
 [ext_resource type="PackedScene" uid="uid://suhwt3dfugp" path="res://escenas/escena2/objetos/ramoncin.tscn" id="12_cpiaa"]
-[ext_resource type="Texture2D" uid="uid://ws0qsjmt73jk" path="res://escenas/escena2/assets/gnomoTullidoSinOjo.png" id="14_eadh0"]
 [ext_resource type="Script" path="res://escenas/escena2/scripts/GnomoSinCosas.cs" id="14_wdqc6"]
 [ext_resource type="PackedScene" uid="uid://csicptbljjd3v" path="res://escenas/escena2/objetos/cofre.tscn" id="16_3ddve"]
 [ext_resource type="PackedScene" uid="uid://68yuviru404j" path="res://Pistas-Textos/pista.tscn" id="17_64kkr"]
@@ -186,7 +185,7 @@ script = ExtResource("14_wdqc6")
 [node name="Sprite2D" type="Sprite2D" parent="Area2D3"]
 visible = false
 texture_filter = 1
-texture = ExtResource("14_eadh0")
+texture = ExtResource("7_6nu0k")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
 position = Vector2(-0.5, 0.5)

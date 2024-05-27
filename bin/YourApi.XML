@@ -2440,12 +2440,6 @@
             </summary>
             <param name="collisionObject2D">Variable de la colision del objeto que colisiona con el objeto</param>
         </member>
-        <member name="M:Ramon._on_area_exited(Godot.CollisionObject2D)">
-            <summary>
-            Señal de godot que nos permite comprobar si la colision de un objeto deja de  colisionar contra otro objeto
-            </summary>
-            <param name="collisionObject2D">Variable de la colision del objeto que colisiona con el objeto</param>
-        </member>
         <member name="T:Ramon.MethodName">
             <summary>
             Cached StringNames for the methods contained in this class, for fast lookup.
@@ -2469,11 +2463,6 @@
         <member name="F:Ramon.MethodName._on_area_entered">
             <summary>
             Cached name for the '_on_area_entered' method.
-            </summary>
-        </member>
-        <member name="F:Ramon.MethodName._on_area_exited">
-            <summary>
-            Cached name for the '_on_area_exited' method.
             </summary>
         </member>
         <member name="M:Ramon.GetGodotMethodList">

@@ -58,10 +58,8 @@ public partial class Ramon : Area2D
 			else if (stepTexto == 3)
 			{
 				mostrarTexto(texto4, "res://escenas/escena2/objetos/textBox4Ramon.tscn");
-				if (GnomoSinCosas.sprite.Visible == false)
-				{
-					stepTexto++;
-				}
+				if (GnomoSinCosas.tullido) stepTexto++;
+				
 			}
 			else if (stepTexto == 4)
 			{
@@ -108,11 +106,4 @@ public partial class Ramon : Area2D
 		}
 	}
 
-	/// <summary>
-	/// Señal de godot que nos permite comprobar si la colision de un objeto deja de  colisionar contra otro objeto
-	/// </summary>
-	/// <param name="collisionObject2D">Variable de la colision del objeto que colisiona con el objeto</param>
-	private void _on_area_exited(CollisionObject2D collisionObject2D)
-	{
-	}
 }

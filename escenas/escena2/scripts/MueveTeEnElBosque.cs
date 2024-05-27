@@ -8,14 +8,12 @@ public partial class MueveTeEnElBosque : PathFollow2D
 {
 	float speed = 0.2f;
 	[Export] public AnimatedSprite2D animatedSprite2D;
-	public static bool comenzar;
+	public static bool comenzar = true;
 
 	/// <summary>
 	/// Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script
 	/// </summary>
-	public override void _Ready()
-	{
-		comenzar = true;
+	public override void _Ready() {
 		
 	}
 
@@ -39,6 +37,10 @@ public partial class MueveTeEnElBosque : PathFollow2D
 				animatedSprite2D.Play("AlSueloBosque");
 				comenzar = false;
 			}
+		}
+		else{
+			GnomoSinCosas.animacionTerminada = true;
+			QueueFree();
 		}
 	}
 
