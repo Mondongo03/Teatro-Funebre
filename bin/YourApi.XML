@@ -2884,31 +2884,6 @@
             Cached StringNames for the properties and fields contained in this class, for fast lookup.
             </summary>
         </member>
-        <member name="F:MainDesvan.PropertyName.unicornioRojo">
-            <summary>
-            Cached name for the 'unicornioRojo' field.
-            </summary>
-        </member>
-        <member name="F:MainDesvan.PropertyName.unicornioVerde">
-            <summary>
-            Cached name for the 'unicornioVerde' field.
-            </summary>
-        </member>
-        <member name="F:MainDesvan.PropertyName.unicornioAmarillo">
-            <summary>
-            Cached name for the 'unicornioAmarillo' field.
-            </summary>
-        </member>
-        <member name="F:MainDesvan.PropertyName.unicornioNaranja">
-            <summary>
-            Cached name for the 'unicornioNaranja' field.
-            </summary>
-        </member>
-        <member name="F:MainDesvan.PropertyName.unicornioBlanco">
-            <summary>
-            Cached name for the 'unicornioBlanco' field.
-            </summary>
-        </member>
         <member name="F:MainDesvan.PropertyName.audioStreamPlayer2D">
             <summary>
             Cached name for the 'audioStreamPlayer2D' field.

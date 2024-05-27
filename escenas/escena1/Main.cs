@@ -50,8 +50,8 @@ public partial class Main : Node2D
     {
         if (!Reloj.terminado)
         {
-            InstanciarYAgregarNodo("res://escenas/escena1/objects/varillaM.tscn", ref varillaMinutosInstancia);
-            InstanciarYAgregarNodo("res://escenas/escena1/objects/varillaS.tscn", ref varillaSegundosInstancia);
+            instanciarYAgregarNodo("res://escenas/escena1/objects/varillaM.tscn", ref varillaMinutosInstancia);
+            instanciarYAgregarNodo("res://escenas/escena1/objects/varillaS.tscn", ref varillaSegundosInstancia);
             VarillaM.encontrado = false;
             VarillaS.encontrado = false;
             varillaMinutosReloj = false;

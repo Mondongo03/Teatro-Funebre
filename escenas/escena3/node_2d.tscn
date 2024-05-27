@@ -1,4 +1,4 @@
-[gd_scene load_steps=100 format=3 uid="uid://dmiq6b6x1xr3n"]
+[gd_scene load_steps=101 format=3 uid="uid://dmiq6b6x1xr3n"]
 
 [ext_resource type="Script" path="res://escenas/escena3/MainDesvan.cs" id="1_e4q1i"]
 [ext_resource type="Texture2D" uid="uid://42o21mfgkct3" path="res://escenas/escena3/assets/Desvan.png" id="2_j38e6"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://p1hpr0c2tkr2" path="res://escenas/escena3/assets/particulasUV.png" id="10_n0whu"]
 [ext_resource type="PackedScene" uid="uid://5n7ii84ox5c" path="res://escenas/escena3/objects/flechaAbajo.tscn" id="11_o0nmo"]
 [ext_resource type="Texture2D" uid="uid://ba0pi8ja35xqr" path="res://escenas/escena3/assets/Reloj.png" id="12_tvtou"]
+[ext_resource type="PackedScene" uid="uid://c0vydxagyq8pj" path="res://escenas/menuPausa/escenas/pausa.tscn" id="13_mg5dv"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ibdlg"]
 radius = 35.2278
@@ -760,6 +761,8 @@ autoplay = "ParticulasUV"
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
 sprite_frames = SubResource("SpriteFrames_pn0wq")
 frame_progress = 0.315747
+
+[node name="CanvasLayer" parent="." instance=ExtResource("13_mg5dv")]
 
 [connection signal="child_entered_tree" from="Sprite2D2" to="." method="_on_sprite_2d_2_child_entered_tree"]
 [connection signal="area_entered" from="Izquierda" to="Izquierda" method="_on_area_entered"]
