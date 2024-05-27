@@ -31,7 +31,7 @@ public partial class Main : Node2D
             gnomo.QueueFree();
         }
         if(Despertarse.funciona){
-            
+            flechaDerechaInstancia.Visible = true;
         }
     }
 
@@ -43,9 +43,7 @@ public partial class Main : Node2D
         if (varillaMinutosInstancia != null) {
             clickadoVarillaM = VarillaM.devolverClickado();
         }
-        if(Despertarse.funciona){
-            flechaDerechaInstancia.Visible = true;
-        }
+        
     }
 
     /// <summary>
@@ -57,10 +55,6 @@ public partial class Main : Node2D
         {
             instanciarYAgregarNodo("res://escenas/escena1/objects/varillaM.tscn", ref varillaMinutosInstancia);
             instanciarYAgregarNodo("res://escenas/escena1/objects/varillaS.tscn", ref varillaSegundosInstancia);
-            VarillaM.encontrado = false;
-            VarillaS.encontrado = false;
-            varillaMinutosReloj = false;
-            varillaSegundosReloj = false;
         }
 
         instanciarYAgregarNodo("res://escenas/escena1/objects/reloj.tscn", ref relojInstancia);

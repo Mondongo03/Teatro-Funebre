@@ -1,18 +1,18 @@
 [gd_scene load_steps=7 format=3 uid="uid://c2s3adecfv1df"]
 
-[ext_resource type="Script" path="res://escenas/escena1/scripts/Flecha.cs" id="1_787h1"]
-[ext_resource type="Texture2D" uid="uid://dxobl0irfyym7" path="res://escenas/escena1/assets/flechaFakeGif.png" id="2_16shc"]
+[ext_resource type="Script" path="res://escenas/escena1/scripts/Flecha.cs" id="1_oce04"]
+[ext_resource type="Texture2D" uid="uid://dxobl0irfyym7" path="res://escenas/escena1/assets/flechaFakeGif.png" id="2_yh8qd"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u50vx"]
-atlas = ExtResource("2_16shc")
+atlas = ExtResource("2_yh8qd")
 region = Rect2(0, 0, 136, 100)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t1ou0"]
-atlas = ExtResource("2_16shc")
+atlas = ExtResource("2_yh8qd")
 region = Rect2(136, 0, 136, 100)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jdl53"]
-atlas = ExtResource("2_16shc")
+atlas = ExtResource("2_yh8qd")
 region = Rect2(272, 0, 136, 100)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8dqwb"]
@@ -33,12 +33,12 @@ animations = [{
 }]
 
 [node name="FlechaDerecha" type="Area2D" groups=["HaciaBosque"]]
+visible = false
 position = Vector2(1066, 473)
 rotation = 1.5708
-script = ExtResource("1_787h1")
+script = ExtResource("1_oce04")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-visible = false
 sprite_frames = SubResource("SpriteFrames_8dqwb")
 animation = &"Flecha"
 autoplay = "Flecha"
