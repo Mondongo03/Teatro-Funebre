@@ -10,6 +10,8 @@ public partial class Ojo : Area2D
 	Sprite2D sprite;
 	bool puedoMover = false;
 
+	public static bool guardado = false;
+
 	 
 
 	/// <summary>
@@ -24,16 +26,14 @@ public partial class Ojo : Area2D
 	/// <summary>
 	/// Señal de godot que nos permite saber cuando el raton entra en el area de un objeto
 	/// </summary>
-	public override void _Process(double delta)
+	public override void _Process(double delta) 
 	{
-		//GD.Print(Position);
-		if (puedoMover)
-		{
-			this.GlobalPosition = GetGlobalMousePosition();
+		if (puedoMover) this.GlobalPosition = GetGlobalMousePosition();
+		
+		if(Cofre.abierto && guardado){
+			sprite.Visible = true;
 		}
-		if(Cofre.abierto){
-			this.Visible = true;
-		}
+		
 	}
 
 	/// <summary>
@@ -59,8 +59,7 @@ public partial class Ojo : Area2D
 	/// Señal de godot que nos permite comprobar si la colision de un objeto colisiona contra otro objeto
 	/// </summary>
 	/// <param name="collisionObject2D">Variable de la colision del objeto que colisiona con el objeto</param>
-	private void _on_area_entered(CollisionObject2D collisionObject2D)
-	{
+	private void _on_area_entered(CollisionObject2D collisionObject2D) {
 		if (collisionObject2D.IsInGroup("GnomoSinCosas") && !MueveTeEnElBosque.comenzar)
 		{
 			sprite.Visible = false;

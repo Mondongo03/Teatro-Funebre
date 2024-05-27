@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kujc0ll2avxr"
-path="res://.godot/imported/curtain.png-67074f5ebd73c7fe7c919325d918f02b.ctex"
+uid="uid://cm0tjgn0nc6pw"
+path="res://.godot/imported/huesoInGnomo.png-052670528effb22d858c8332d5520104.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://escenas/escena2/assets/curtain.png"
-dest_files=["res://.godot/imported/curtain.png-67074f5ebd73c7fe7c919325d918f02b.ctex"]
+source_file="res://escenas/escena2/assets/huesoInGnomo.png"
+dest_files=["res://.godot/imported/huesoInGnomo.png-052670528effb22d858c8332d5520104.ctex"]
 
 [params]
 

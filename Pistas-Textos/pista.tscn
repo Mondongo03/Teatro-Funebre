@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://68yuviru404j"]
+
+[ext_resource type="Texture2D" uid="uid://1qk2aekn014y" path="res://escenas/Pistas/IconoPista.png" id="1_2rfda"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rfenn"]
+size = Vector2(66, 67)
+
+[node name="Pista" type="Area2D"]
+position = Vector2(1017, 26)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_2rfda")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_rfenn")

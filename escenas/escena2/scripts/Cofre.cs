@@ -33,6 +33,7 @@ public partial class Cofre : Area2D {
             GD.Print("Entra");
             GD.Print(objetosGuardados[0]);
             GD.Print(scrptsGuardados[0]);
+            if(collisionObject2D.IsInGroup("Ojo")) Ojo.guardado = true;
         }
     }
 
@@ -42,6 +43,7 @@ public partial class Cofre : Area2D {
             objetosGuardados.RemoveAll((slot) => slot == collisionPath);
             nodosCreados.RemoveAll((node) => node.SceneFilePath == collisionPath);
             GD.Print("Sale");
+            if(collisionObject2D.IsInGroup("Ojo")) Ojo.guardado = false;
         }
     }
 
