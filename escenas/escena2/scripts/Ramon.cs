@@ -102,8 +102,7 @@ public partial class Ramon : Area2D
 	/// <param name="collisionObject2D">Variable de la colision del objeto que colisiona con el objeto</param>
 	private void _on_area_entered(CollisionObject2D collisionObject2D)
 	{
-		if (collisionObject2D.IsInGroup("Ojo") && !ojoEnseñado)
-		{
+		if (collisionObject2D.IsInGroup("Ojo") && !ojoEnseñado) {
 			ojoEnseñado = true;
 			stepTexto++;
 		}
@@ -115,9 +114,5 @@ public partial class Ramon : Area2D
 	/// <param name="collisionObject2D">Variable de la colision del objeto que colisiona con el objeto</param>
 	private void _on_area_exited(CollisionObject2D collisionObject2D)
 	{
-		if (collisionObject2D.IsInGroup("Ojo") && !ojoEnseñado)
-		{
-
-		}
 	}
 }

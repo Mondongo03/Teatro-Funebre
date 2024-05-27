@@ -1,0 +1,56 @@
+[gd_scene load_steps=7 format=3 uid="uid://c2s3adecfv1df"]
+
+[ext_resource type="Script" path="res://escenas/escena1/scripts/Flecha.cs" id="1_787h1"]
+[ext_resource type="Texture2D" uid="uid://dxobl0irfyym7" path="res://escenas/escena1/assets/flechaFakeGif.png" id="2_16shc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u50vx"]
+atlas = ExtResource("2_16shc")
+region = Rect2(0, 0, 136, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t1ou0"]
+atlas = ExtResource("2_16shc")
+region = Rect2(136, 0, 136, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jdl53"]
+atlas = ExtResource("2_16shc")
+region = Rect2(272, 0, 136, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8dqwb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u50vx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t1ou0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jdl53")
+}],
+"loop": true,
+"name": &"Flecha",
+"speed": 5.0
+}]
+
+[node name="FlechaDerecha" type="Area2D" groups=["HaciaBosque"]]
+position = Vector2(1066, 473)
+rotation = 1.5708
+script = ExtResource("1_787h1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
+sprite_frames = SubResource("SpriteFrames_8dqwb")
+animation = &"Flecha"
+autoplay = "Flecha"
+frame = 2
+frame_progress = 0.100979
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-0.26083, 0.522942)
+scale = Vector2(1.00808, 1.06791)
+polygon = PackedVector2Array(-20, 43, -21, 4, 20, 5, 20, 42)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-69, 6, 73, 7, -2, -50)
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

@@ -2036,6 +2036,11 @@
             Cached name for the '_on_area_exited' method.
             </summary>
         </member>
+        <member name="F:Hueso.MethodName.comprobarSkin">
+            <summary>
+            Cached name for the 'comprobarSkin' method.
+            </summary>
+        </member>
         <member name="M:Hueso.GetGodotMethodList">
             <summary>
             Get the method information for all the methods declared in this class.
