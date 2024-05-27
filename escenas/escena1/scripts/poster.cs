@@ -24,8 +24,7 @@ public partial class Poster : Area2D
 	/// <param name="viewport">Nodo del objeto parte de la API</param>
 	/// <param name="evento">Nos permite detectar cuando se hace click</param>
 	/// <param name="shap">Variable que se utiliza para la API</param>
-	public void _on_input_event(Node viewport, InputEvent evento, int shap)
-	{
+	void _on_input_event_poster(Node viewport, InputEvent evento, int shap) {
 		if (evento.IsActionPressed("click_izquierdo") && animacionTerminada == false)
 		{
 			animationPlayer.Play("rotacionPoster");

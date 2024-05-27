@@ -36,7 +36,6 @@ public partial class Reloj : Area2D
             audioStreamPlayer2D.Play();
             suena = true;
         }
-        Cajon.SetZoom(RelojZoomeado.zoooom);
     }
 
     /// <summary>
@@ -69,7 +68,7 @@ public partial class Reloj : Area2D
 	/// <param name="shap">Variable que se utiliza para la API</param>
     public void _on_input_event(Node viewport, InputEvent evento, int shap)
     {
-        if (evento.IsActionPressed("click_izquierdo") && !RelojZoomeado.zoooom && !Cajon.zoooom)
+        if (evento.IsActionPressed("click_izquierdo") && !zoooom && !Cajon.zoooom)
         {
             if (!VarillaM.encontrado && !VarillaS.encontrado)
             {

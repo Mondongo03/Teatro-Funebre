@@ -303,18 +303,6 @@
             <param name="evento">Nos permite detectar cuando se hace click</param>
             <param name="shap">Variable que se utiliza para la API</param>
         </member>
-        <member name="M:Cajon.GetZoom">
-            <summary>
-            Getter de la variable zooom
-            </summary>
-            <returns>Devuelve la variable zooom</returns>
-        </member>
-        <member name="M:Cajon.SetZoom(System.Boolean)">
-            <summary>
-            Setter de la variable zooom
-            </summary>
-            <param name="value">Cambio de la variable zooom</param>
-        </member>
         <member name="T:Cajon.MethodName">
             <summary>
             Cached StringNames for the methods contained in this class, for fast lookup.
@@ -323,16 +311,6 @@
         <member name="F:Cajon.MethodName._on_input_event">
             <summary>
             Cached name for the '_on_input_event' method.
-            </summary>
-        </member>
-        <member name="F:Cajon.MethodName.GetZoom">
-            <summary>
-            Cached name for the 'GetZoom' method.
-            </summary>
-        </member>
-        <member name="F:Cajon.MethodName.SetZoom">
-            <summary>
-            Cached name for the 'SetZoom' method.
             </summary>
         </member>
         <member name="M:Cajon.GetGodotMethodList">
@@ -1026,7 +1004,7 @@
             Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script
             </summary>
         </member>
-        <member name="M:Poster._on_input_event(Godot.Node,Godot.InputEvent,System.Int32)">
+        <member name="M:Poster._on_input_event_poster(Godot.Node,Godot.InputEvent,System.Int32)">
             <summary>
             Este metodo es una señal del propio godot que nos permite detectar cuando haces click sobre le objeto
             </summary>
@@ -1044,9 +1022,9 @@
             Cached name for the '_Ready' method.
             </summary>
         </member>
-        <member name="F:Poster.MethodName._on_input_event">
+        <member name="F:Poster.MethodName._on_input_event_poster">
             <summary>
-            Cached name for the '_on_input_event' method.
+            Cached name for the '_on_input_event_poster' method.
             </summary>
         </member>
         <member name="M:Poster.GetGodotMethodList">

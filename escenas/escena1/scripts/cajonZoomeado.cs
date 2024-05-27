@@ -18,10 +18,11 @@ public partial class cajonZoomeado : Area2D
 	{
 		if (evento.IsActionPressed("click_izquierdo"))
 		{
-			Reloj.zoooom = false;
-			Cajon.zoooom = false;
+			
 			QueueFree();
 			Main.fondoNegroInstancia.QueueFree();
+			Reloj.zoooom = false;
+			Cajon.zoooom = false;
 		}
 	}
 }

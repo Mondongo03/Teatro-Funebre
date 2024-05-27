@@ -23,7 +23,7 @@ public partial class Cajon : Area2D
     /// <param name="shap">Variable que se utiliza para la API</param>
 	public void _on_input_event(Node viewport, InputEvent evento, int shap)
 	{
-		if (evento.IsActionPressed("click_izquierdo") && !zoooom && !Reloj.zoooom)
+		if (evento.IsActionPressed("click_izquierdo") && !zoooom && !RelojZoomeado.zoooom)
 		{
 			encontrado = true;
 			zoooom = true;
@@ -47,18 +47,5 @@ public partial class Cajon : Area2D
 	/// Getter de la variable zooom
 	/// </summary>
 	/// <returns>Devuelve la variable zooom</returns>
-	public static Boolean GetZoom()
-	{
-		return zoooom;
-	}
-
-	/// <summary>
-	/// Setter de la variable zooom
-	/// </summary>
-	/// <param name="value">Cambio de la variable zooom</param>
-	public static void SetZoom(Boolean value)
-	{
-		zoooom = value;
-	}
 
 }
