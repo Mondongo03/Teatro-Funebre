@@ -33,7 +33,8 @@ public partial class Cofre : Area2D {
             GD.Print("Entra");
             GD.Print(objetosGuardados[0]);
             GD.Print(scrptsGuardados[0]);
-            if(collisionObject2D.IsInGroup("Ojo")) Ojo.guardado = true;
+            if(collisionObject2D.IsInGroup("Ojo") ) Ojo.guardado = true;
+            if(collisionObject2D.IsInGroup("Hueso") ) Hueso.guardado = true;
         }
     }
 
@@ -61,7 +62,8 @@ public partial class Cofre : Area2D {
         // Crear el fondo del cofre
                 escena = (PackedScene)ResourceLoader.Load("res://escenas/escena2/objetos/fondoCofre.tscn");
                 instanciaActual = escena.Instantiate() as Node2D;
-                instanciaActual.Position = new Vector2I(-450, 200); //-200 -300
+                instanciaActual.Position = new Vector2I(-450, 200);
+                instanciaActual.ZIndex = 50;
                 AddChild(instanciaActual);
                 nodosCreados.Add(instanciaActual);
 
@@ -70,6 +72,7 @@ public partial class Cofre : Area2D {
                         escena = (PackedScene)ResourceLoader.Load(objeto);
                         instanciaActual = escena.Instantiate() as Node2D;
                         instanciaActual.GlobalPosition = new Vector2I(spawnX, spawnY);
+                        instanciaActual.ZIndex = 777;
                         AddChild(instanciaActual);
                         nodosCreados.Add(instanciaActual);
                         spawnX+=120;

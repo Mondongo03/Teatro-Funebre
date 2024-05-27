@@ -44,8 +44,7 @@ public partial class Ojo : Area2D
 	/// <param name="shape_idx">Variable que se utiliza para la API</param>
 	private void _on_input_event(Node viewport, InputEvent @event, long shape_idx)
 	{
-		if (@event.IsActionPressed("click_izquierdo"))
-		{
+		if (@event.IsActionPressed("click_izquierdo") && !MueveTeEnElBosque.comenzar && Ramon.stepTexto>=1) {
 			puedoMover = true;
 			sprite.Visible = true;
 		}

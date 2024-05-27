@@ -9,7 +9,7 @@ public partial class Main : Node2D
     int slotsOcupados;
     Area2D pista_1;
     Node2D godotInstancia2;
-    public static Node2D varillaMinutosInstancia,varillaSegundosInstancia,relojZoomeadoInstancia,fondoNegroInstancia,cajonZoomeadoInstancia,huecoInstancia,escaleraInstancia,cajetillaInstancia,tapaInstancia,pista_1Instancia,lamparaEncendidaInstancia,lamparaApagadaInstancia,relojInstancia,posterInstancia,monstruoInstancia;
+    public static Node2D varillaMinutosInstancia,varillaSegundosInstancia,relojZoomeadoInstancia,fondoNegroInstancia,cajonZoomeadoInstancia,huecoInstancia,escaleraInstancia,cajetillaInstancia,tapaInstancia,pista_1Instancia,lamparaEncendidaInstancia,lamparaApagadaInstancia,relojInstancia,posterInstancia,monstruoInstancia, flechaDerechaInstancia;
     Boolean clickadoBola, clickadoVarillaM = false;
     public static Boolean varillaMinutosReloj, varillaSegundosReloj = false;
     [Export] public AnimationPlayer animationPlayer;
@@ -27,9 +27,11 @@ public partial class Main : Node2D
         animationPlayer.Play("cosa");
         InstanciarEscena();
 
-        if (Reloj.terminado)
-        {
+        if (Reloj.terminado) {
             gnomo.QueueFree();
+        }
+        if(Despertarse.funciona){
+            
         }
     }
 
@@ -40,6 +42,9 @@ public partial class Main : Node2D
     public override void _Process(double delta) {
         if (varillaMinutosInstancia != null) {
             clickadoVarillaM = VarillaM.devolverClickado();
+        }
+        if(Despertarse.funciona){
+            flechaDerechaInstancia.Visible = true;
         }
     }
 
@@ -67,6 +72,7 @@ public partial class Main : Node2D
         instanciarYAgregarNodo("res://escenas/escena1/objects/lamparaApagada.tscn", ref lamparaApagadaInstancia);
         instanciarYAgregarNodo("res://escenas/escena1/objects/poster.tscn", ref posterInstancia);
         instanciarYAgregarNodo("res://escenas/escena1/objects/monstruo.tscn", ref monstruoInstancia);
+        instanciarYAgregarNodo("res://escenas/escena1/objects/flechaDerecha.tscn", ref flechaDerechaInstancia);
     }
 
     /// <summary>

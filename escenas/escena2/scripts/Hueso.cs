@@ -14,9 +14,7 @@ public partial class Hueso : Area2D {
 
 		sprite = GetChild<Sprite2D>(0);
 
-		if(clicks >= 10 && this.IsInGroup("Hueso")){
-			sprite.Texture = (Texture2D)GD.Load("res://escenas/escena2/assets/Hueso2.png");
-		}
+		comprobarSkin();
 		
 	}
 
@@ -31,15 +29,14 @@ public partial class Hueso : Area2D {
 			sprite.Visible = true;
 			postAnimacion = true;
 		}
-		if(clicks == 10 && this.IsInGroup("Hueso")){
-			sprite.Texture = (Texture2D)GD.Load("res://escenas/escena2/assets/Hueso2.png");
-		}
+
+		comprobarSkin();
+		
 	}
 
-	private void _on_input_event(Node viewport, InputEvent @event, long shape_idx)
-	{
-		clicks++;
-		if (@event.IsActionPressed("click_izquierdo") && this.IsInGroup("Hueso"))
+	private void _on_input_event(Node viewport, InputEvent @event, long shape_idx) {
+		
+		if (@event.IsActionPressed("click_izquierdo") && this.IsInGroup("Hueso")&& !MueveTeEnElBosque.comenzar)
 		{
 			puedoMover = true;
 			sprite.Visible = true;
@@ -47,6 +44,7 @@ public partial class Hueso : Area2D {
 		if (@event.IsActionReleased("click_izquierdo") && this.IsInGroup("Hueso"))
 		{
 			puedoMover = false;
+			clicks++;
 		}
 	}
 
@@ -68,6 +66,17 @@ public partial class Hueso : Area2D {
 		}
 		else if(collisionObject2D.IsInGroup("Hueso") && !MueveTeEnElBosque.comenzar && this.IsInGroup("HuesoGnomo")) {
 			sprite.Visible = false;
+		}
+	}
+	private void comprobarSkin(){
+		if(clicks >= 3 && clicks <=14  && this.IsInGroup("Hueso")){
+			sprite.Texture = (Texture2D)GD.Load("res://escenas/escena2/assets/Hueso2.png");
+		}
+		if(clicks >= 15 && clicks <=29 && this.IsInGroup("Hueso")){
+			sprite.Texture = (Texture2D)GD.Load("res://escenas/escena2/assets/Hueso3.png");
+		}
+		if(clicks >= 30 && this.IsInGroup("Hueso")){
+			sprite.Texture = (Texture2D)GD.Load("res://escenas/escena2/assets/Hueso4.png");
 		}
 	}
 }
