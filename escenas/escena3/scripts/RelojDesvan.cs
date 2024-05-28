@@ -20,6 +20,7 @@ public partial class RelojDesvan : Area2D
 		if (evento.IsActionPressed("click_izquierdo"))
 		{
 			animatedSprite2D.Play();
+			GD.Print("Click");
 		}
 		}
 }

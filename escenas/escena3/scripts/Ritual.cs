@@ -6,12 +6,15 @@ using System.Collections.Generic;
 public partial class Ritual : Area2D {
 
 	public static int slotCorrecto;
-	public override void _Process(double delta)
-	{
+	public override void _Process(double delta) {
 		if(slotCorrecto == 5)
 		{
-			MainDesvan.setRitualAcabado(true);
+			MainDesvan.ritualAcabado = true;
 		}
+		 if(this.IsInGroup("Izquierda")){
+			GD.Print(this.Position);
+		}
+		
 	}
 
 	public void _on_area_entered(Area2D area) {

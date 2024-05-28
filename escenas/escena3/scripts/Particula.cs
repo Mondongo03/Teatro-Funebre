@@ -16,6 +16,7 @@ public partial class Particula : Area2D {
 	public override void _Process(double delta) {
 		encenderLuces();
 		apagarLuces();
+
 	}
 
 	public void encenderLuces(){

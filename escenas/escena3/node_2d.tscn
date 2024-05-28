@@ -1,138 +1,10 @@
-[gd_scene load_steps=31 format=3 uid="uid://dmiq6b6x1xr3n"]
+[gd_scene load_steps=6 format=3 uid="uid://dmiq6b6x1xr3n"]
 
 [ext_resource type="Script" path="res://escenas/escena3/MainDesvan.cs" id="1_e4q1i"]
 [ext_resource type="Texture2D" uid="uid://42o21mfgkct3" path="res://escenas/escena3/assets/Desvan.png" id="2_j38e6"]
-[ext_resource type="Script" path="res://escenas/escena3/scripts/Ritual.cs" id="3_4p4qt"]
-[ext_resource type="Script" path="res://escenas/escena3/Caldero.cs" id="7_m56so"]
-[ext_resource type="Texture2D" uid="uid://bq1m3yn5idtqu" path="res://escenas/escena3/assets/Caldero.png" id="7_x713x"]
-[ext_resource type="Texture2D" uid="uid://bbn5lk51pje4q" path="res://escenas/escena3/assets/CalderoVerde.png" id="8_vf8ly"]
 [ext_resource type="PackedScene" uid="uid://csicptbljjd3v" path="res://escenas/escena2/objetos/cofre.tscn" id="9_ux4vi"]
-[ext_resource type="Texture2D" uid="uid://cfmofjmx0hgjy" path="res://escenas/escena3/assets/CalderoAzul.png" id="10_vhvlr"]
 [ext_resource type="PackedScene" uid="uid://5n7ii84ox5c" path="res://escenas/escena3/objects/flechaAbajo.tscn" id="11_o0nmo"]
 [ext_resource type="PackedScene" uid="uid://c0vydxagyq8pj" path="res://escenas/menuPausa/escenas/pausa.tscn" id="13_mg5dv"]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_ibdlg"]
-radius = 35.2278
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_qnmh5"]
-radius = 33.1361
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_vd343"]
-radius = 34.0147
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_8sr8f"]
-radius = 38.1182
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mw7w8"]
-atlas = ExtResource("7_x713x")
-region = Rect2(140, 0, 140, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lsja8"]
-atlas = ExtResource("7_x713x")
-region = Rect2(280, 0, 140, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8we4u"]
-atlas = ExtResource("7_x713x")
-region = Rect2(420, 0, 140, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_uxulq"]
-atlas = ExtResource("7_x713x")
-region = Rect2(0, 0, 140, 192)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_3xpls"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mw7w8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lsja8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8we4u")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_uxulq")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_m2k33"]
-atlas = ExtResource("8_vf8ly")
-region = Rect2(0, 0, 140, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_858mk"]
-atlas = ExtResource("8_vf8ly")
-region = Rect2(140, 0, 140, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ovp1h"]
-atlas = ExtResource("8_vf8ly")
-region = Rect2(280, 0, 140, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ogtrl"]
-atlas = ExtResource("8_vf8ly")
-region = Rect2(420, 0, 140, 192)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_ti22j"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_m2k33")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_858mk")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ovp1h")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ogtrl")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_oynld"]
-atlas = ExtResource("10_vhvlr")
-region = Rect2(0, 0, 140, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7kaki"]
-atlas = ExtResource("10_vhvlr")
-region = Rect2(140, 0, 140, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pkdyf"]
-atlas = ExtResource("10_vhvlr")
-region = Rect2(280, 0, 140, 192)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_03opl"]
-atlas = ExtResource("10_vhvlr")
-region = Rect2(420, 0, 140, 192)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_7hyo2"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_oynld")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7kaki")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pkdyf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_03opl")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_f32x0"]
-radius = 80.0562
 
 [node name="Node2D2" type="Node2D" groups=["Persist"]]
 script = ExtResource("1_e4q1i")
@@ -142,46 +14,6 @@ position = Vector2(576, 325)
 scale = Vector2(0.96, 0.8125)
 texture = ExtResource("2_j38e6")
 
-[node name="Izquierda" type="Area2D" parent="." groups=["Izquierda"]]
-position = Vector2(463, 481)
-script = ExtResource("3_4p4qt")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Izquierda"]
-shape = SubResource("CircleShape2D_ibdlg")
-debug_color = Color(0.87451, 0.321569, 0.333333, 0.419608)
-
-[node name="AbajoIzquierda" type="Area2D" parent="." groups=["AbajoIzquierda"]]
-position = Vector2(511, 601)
-script = ExtResource("3_4p4qt")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AbajoIzquierda"]
-shape = SubResource("CircleShape2D_qnmh5")
-debug_color = Color(0.941176, 0.917647, 0, 0.419608)
-
-[node name="Derecha" type="Area2D" parent="." groups=["Derecha"]]
-position = Vector2(716, 479)
-script = ExtResource("3_4p4qt")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Derecha"]
-shape = SubResource("CircleShape2D_vd343")
-
-[node name="Arriba" type="Area2D" parent="." groups=["Arriba"]]
-position = Vector2(590, 398)
-script = ExtResource("3_4p4qt")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Arriba"]
-shape = SubResource("CircleShape2D_8sr8f")
-debug_color = Color(0.329412, 0.623529, 0, 0.419608)
-
-[node name="AbajoDerecha" type="Area2D" parent="Arriba" groups=["AbajoDerecha"]]
-position = Vector2(85, 203)
-script = ExtResource("3_4p4qt")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Arriba/AbajoDerecha"]
-position = Vector2(2, 0)
-shape = SubResource("CircleShape2D_qnmh5")
-debug_color = Color(0.941176, 0.917647, 0, 0.419608)
-
 [node name="Area2D3" parent="." groups=["HaciaCasa"] instance=ExtResource("11_o0nmo")]
 position = Vector2(798, 590)
 
@@ -190,42 +22,4 @@ position = Vector2(1071, 189)
 
 [node name="CanvasLayer" parent="." instance=ExtResource("13_mg5dv")]
 
-[node name="Caldero" type="Area2D" parent="."]
-position = Vector2(957, 455)
-script = ExtResource("7_m56so")
-
-[node name="Rojo" type="AnimatedSprite2D" parent="Caldero"]
-sprite_frames = SubResource("SpriteFrames_3xpls")
-autoplay = "default"
-frame_progress = 0.54905
-
-[node name="Verde" type="AnimatedSprite2D" parent="Caldero"]
-visible = false
-sprite_frames = SubResource("SpriteFrames_ti22j")
-autoplay = "default"
-frame_progress = 0.742518
-
-[node name="Azul" type="AnimatedSprite2D" parent="Caldero"]
-visible = false
-sprite_frames = SubResource("SpriteFrames_7hyo2")
-autoplay = "default"
-frame_progress = 0.572951
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Caldero"]
-position = Vector2(1, 23)
-shape = SubResource("CircleShape2D_f32x0")
-
 [connection signal="child_entered_tree" from="Sprite2D2" to="." method="_on_sprite_2d_2_child_entered_tree"]
-[connection signal="area_entered" from="Izquierda" to="Izquierda" method="_on_area_entered"]
-[connection signal="area_exited" from="Izquierda" to="Izquierda" method="_on_area_exited"]
-[connection signal="area_entered" from="AbajoIzquierda" to="AbajoIzquierda" method="_on_area_entered"]
-[connection signal="area_exited" from="AbajoIzquierda" to="AbajoIzquierda" method="_on_area_exited"]
-[connection signal="area_entered" from="Derecha" to="Derecha" method="_on_area_entered"]
-[connection signal="area_exited" from="Derecha" to="Derecha" method="_on_area_exited"]
-[connection signal="area_entered" from="Arriba" to="Arriba" method="_on_area_entered"]
-[connection signal="area_exited" from="Arriba" to="Arriba" method="_on_area_exited"]
-[connection signal="area_entered" from="Arriba/AbajoDerecha" to="Arriba/AbajoDerecha" method="_on_area_entered"]
-[connection signal="area_exited" from="Arriba/AbajoDerecha" to="Arriba/AbajoDerecha" method="_on_area_exited"]
-[connection signal="area_entered" from="Caldero" to="Caldero" method="_on_area_entered"]
-[connection signal="area_exited" from="Caldero" to="Caldero" method="_on_area_exited"]
-[connection signal="input_event" from="Caldero" to="Caldero" method="_on_input_event"]

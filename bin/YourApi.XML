@@ -53,6 +53,131 @@
             Señal de Godot que nos permite poner un contador y cuando llega a cero hace las acciones específicas
             </summary>
         </member>
+        <member name="T:Main.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Main.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:Main.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:Main.MethodName.InstanciarEscena">
+            <summary>
+            Cached name for the 'InstanciarEscena' method.
+            </summary>
+        </member>
+        <member name="F:Main.MethodName.popPista_1">
+            <summary>
+            Cached name for the 'popPista_1' method.
+            </summary>
+        </member>
+        <member name="F:Main.MethodName._on_timer_timeout">
+            <summary>
+            Cached name for the '_on_timer_timeout' method.
+            </summary>
+        </member>
+        <member name="M:Main.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Main.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Main.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Main.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Main.PropertyName.slotsOcupados">
+            <summary>
+            Cached name for the 'slotsOcupados' field.
+            </summary>
+        </member>
+        <member name="F:Main.PropertyName.pista_1">
+            <summary>
+            Cached name for the 'pista_1' field.
+            </summary>
+        </member>
+        <member name="F:Main.PropertyName.godotInstancia2">
+            <summary>
+            Cached name for the 'godotInstancia2' field.
+            </summary>
+        </member>
+        <member name="F:Main.PropertyName.clickadoBola">
+            <summary>
+            Cached name for the 'clickadoBola' field.
+            </summary>
+        </member>
+        <member name="F:Main.PropertyName.clickadoVarillaM">
+            <summary>
+            Cached name for the 'clickadoVarillaM' field.
+            </summary>
+        </member>
+        <member name="F:Main.PropertyName.animationPlayer">
+            <summary>
+            Cached name for the 'animationPlayer' field.
+            </summary>
+        </member>
+        <member name="F:Main.PropertyName.audioStreamPlayer2D">
+            <summary>
+            Cached name for the 'audioStreamPlayer2D' field.
+            </summary>
+        </member>
+        <member name="F:Main.PropertyName.gnomo">
+            <summary>
+            Cached name for the 'gnomo' field.
+            </summary>
+        </member>
+        <member name="F:Main.PropertyName.comprobanteArray">
+            <summary>
+            Cached name for the 'comprobanteArray' field.
+            </summary>
+        </member>
+        <member name="M:Main.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Main.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Main.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Main.GetGodotPropertyDefaultValues">
+            <summary>
+            Get the default values for all properties declared in this class.
+            This method is used by Godot to determine the value that will be
+            used by the inspector when resetting properties.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Main.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Main.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Main.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
         <member name="T:Audio">
             <summary>
             Esta clase es para getionar el efecto de sonido de la primera escena
@@ -69,6 +194,50 @@
             </summary>
             <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
         </member>
+        <member name="T:Audio.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Audio.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:Audio.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="M:Audio.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Audio.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Audio.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Audio.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="M:Audio.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Audio.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Audio.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
         <member name="T:Cajetilla">
             <summary>
             Clase que gestiona el Objeto cajetilla de la escena 1
@@ -81,6 +250,45 @@
             <param name="viewport">Nodo del objeto parte de la API</param>
             <param name="evento">Nos permite detectar cuando se hace click</param>
             <param name="shap">Variable que se utiliza para la API</param>
+        </member>
+        <member name="T:Cajetilla.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Cajetilla.MethodName._on_input_event">
+            <summary>
+            Cached name for the '_on_input_event' method.
+            </summary>
+        </member>
+        <member name="M:Cajetilla.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Cajetilla.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Cajetilla.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Cajetilla.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="M:Cajetilla.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Cajetilla.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Cajetilla.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
         </member>
         <member name="T:Cajon">
             <summary>
@@ -95,6 +303,76 @@
             <param name="evento">Nos permite detectar cuando se hace click</param>
             <param name="shap">Variable que se utiliza para la API</param>
         </member>
+        <member name="T:Cajon.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Cajon.MethodName._on_input_event">
+            <summary>
+            Cached name for the '_on_input_event' method.
+            </summary>
+        </member>
+        <member name="M:Cajon.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Cajon.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Cajon.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Cajon.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Cajon.PropertyName.abrir">
+            <summary>
+            Cached name for the 'abrir' field.
+            </summary>
+        </member>
+        <member name="F:Cajon.PropertyName.animPlayer">
+            <summary>
+            Cached name for the 'animPlayer' field.
+            </summary>
+        </member>
+        <member name="M:Cajon.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Cajon.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Cajon.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Cajon.GetGodotPropertyDefaultValues">
+            <summary>
+            Get the default values for all properties declared in this class.
+            This method is used by Godot to determine the value that will be
+            used by the inspector when resetting properties.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Cajon.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Cajon.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Cajon.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
         <member name="T:cajonZoomeado">
             <summary>
             Clase que nos permite gestionar como funciona el cajon cuando salta en pantalla completa
@@ -107,6 +385,71 @@
             <param name="viewport">Nodo del objeto parte de la API</param>
             <param name="evento">Nos permite detectar cuando se hace click</param>
             <param name="shap">Variable que se utiliza para la API</param>
+        </member>
+        <member name="T:cajonZoomeado.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:cajonZoomeado.MethodName._on_input_event">
+            <summary>
+            Cached name for the '_on_input_event' method.
+            </summary>
+        </member>
+        <member name="M:cajonZoomeado.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:cajonZoomeado.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:cajonZoomeado.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:cajonZoomeado.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:cajonZoomeado.PropertyName.cerrar">
+            <summary>
+            Cached name for the 'cerrar' field.
+            </summary>
+        </member>
+        <member name="M:cajonZoomeado.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:cajonZoomeado.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:cajonZoomeado.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:cajonZoomeado.GetGodotPropertyDefaultValues">
+            <summary>
+            Get the default values for all properties declared in this class.
+            This method is used by Godot to determine the value that will be
+            used by the inspector when resetting properties.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:cajonZoomeado.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:cajonZoomeado.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:cajonZoomeado.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
         </member>
         <member name="T:Despertarse">
             <summary>
@@ -124,6 +467,86 @@
             Metodo que nos permite cambiar el booleano funciona
             </summary>
             <param name="boolean">Booleano de entrada que cambiara funciona</param>
+        </member>
+        <member name="T:Despertarse.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Despertarse.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:Despertarse.MethodName.despertar">
+            <summary>
+            Cached name for the 'despertar' method.
+            </summary>
+        </member>
+        <member name="M:Despertarse.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Despertarse.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Despertarse.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Despertarse.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Despertarse.PropertyName.speed">
+            <summary>
+            Cached name for the 'speed' field.
+            </summary>
+        </member>
+        <member name="F:Despertarse.PropertyName.animatedSprite2D">
+            <summary>
+            Cached name for the 'animatedSprite2D' field.
+            </summary>
+        </member>
+        <member name="F:Despertarse.PropertyName.audioStreamPlayer2D">
+            <summary>
+            Cached name for the 'audioStreamPlayer2D' field.
+            </summary>
+        </member>
+        <member name="M:Despertarse.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Despertarse.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Despertarse.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Despertarse.GetGodotPropertyDefaultValues">
+            <summary>
+            Get the default values for all properties declared in this class.
+            This method is used by Godot to determine the value that will be
+            used by the inspector when resetting properties.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Despertarse.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Despertarse.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Despertarse.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
         </member>
         <member name="T:Escalera">
             <summary>
@@ -149,6 +572,111 @@
             <param name="evento">Nos permite detectar cuando se hace click</param>
             <param name="shap">Variable que se utiliza para la API</param>
         </member>
+        <member name="T:Escalera.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Escalera.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:Escalera.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:Escalera.MethodName._on_input_event">
+            <summary>
+            Cached name for the '_on_input_event' method.
+            </summary>
+        </member>
+        <member name="M:Escalera.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Escalera.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Escalera.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Escalera.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Escalera.PropertyName.puedoMover">
+            <summary>
+            Cached name for the 'puedoMover' field.
+            </summary>
+        </member>
+        <member name="F:Escalera.PropertyName.estaMoviendo">
+            <summary>
+            Cached name for the 'estaMoviendo' field.
+            </summary>
+        </member>
+        <member name="F:Escalera.PropertyName.yPrime">
+            <summary>
+            Cached name for the 'yPrime' field.
+            </summary>
+        </member>
+        <member name="F:Escalera.PropertyName.noFlechasInfinitas">
+            <summary>
+            Cached name for the 'noFlechasInfinitas' field.
+            </summary>
+        </member>
+        <member name="F:Escalera.PropertyName.posicionInicialClick">
+            <summary>
+            Cached name for the 'posicionInicialClick' field.
+            </summary>
+        </member>
+        <member name="F:Escalera.PropertyName.posicionInicial">
+            <summary>
+            Cached name for the 'posicionInicial' field.
+            </summary>
+        </member>
+        <member name="F:Escalera.PropertyName.animationPlayer">
+            <summary>
+            Cached name for the 'animationPlayer' field.
+            </summary>
+        </member>
+        <member name="M:Escalera.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Escalera.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Escalera.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Escalera.GetGodotPropertyDefaultValues">
+            <summary>
+            Get the default values for all properties declared in this class.
+            This method is used by Godot to determine the value that will be
+            used by the inspector when resetting properties.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Escalera.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Escalera.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Escalera.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
         <member name="T:Flecha">
             <summary>
             Clase que nos permite gestionar la flecha que aparece y nos permite subir al desban en la primera escena
@@ -161,6 +689,45 @@
             <param name="viewport">Nodo del objeto parte de la API</param>
             <param name="evento">Nos permite detectar cuando se hace click</param>
             <param name="shap">Variable que se utiliza para la API</param>
+        </member>
+        <member name="T:Flecha.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Flecha.MethodName._on_input_event">
+            <summary>
+            Cached name for the '_on_input_event' method.
+            </summary>
+        </member>
+        <member name="M:Flecha.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Flecha.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Flecha.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Flecha.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="M:Flecha.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Flecha.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Flecha.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
         </member>
         <member name="T:InteractuarCon">
             <summary>
@@ -184,6 +751,78 @@
             </summary>
             <param name="area">Es la variable que nos dice el donde a entrado un objeto</param>
         </member>
+        <member name="T:InteractuarCon.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:InteractuarCon.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:InteractuarCon.MethodName._on_hueco_area_entered">
+            <summary>
+            Cached name for the '_on_hueco_area_entered' method.
+            </summary>
+        </member>
+        <member name="M:InteractuarCon.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:InteractuarCon.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:InteractuarCon.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:InteractuarCon.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:InteractuarCon.PropertyName.despertarse">
+            <summary>
+            Cached name for the 'despertarse' field.
+            </summary>
+        </member>
+        <member name="F:InteractuarCon.PropertyName.bolaInside">
+            <summary>
+            Cached name for the 'bolaInside' field.
+            </summary>
+        </member>
+        <member name="F:InteractuarCon.PropertyName.godotInside">
+            <summary>
+            Cached name for the 'godotInside' field.
+            </summary>
+        </member>
+        <member name="M:InteractuarCon.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:InteractuarCon.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:InteractuarCon.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:InteractuarCon.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:InteractuarCon.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:InteractuarCon.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
         <member name="T:Lampara">
             <summary>
             Script que nos permite gestionar como funciona la lampara de la primera escena
@@ -196,6 +835,76 @@
             <param name="viewport">Nodo del objeto parte de la API</param>
             <param name="evento">Nos permite detectar cuando se hace click</param>
             <param name="shap">Variable que se utiliza para la API</param>
+        </member>
+        <member name="T:Lampara.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Lampara.MethodName._on_input_event">
+            <summary>
+            Cached name for the '_on_input_event' method.
+            </summary>
+        </member>
+        <member name="M:Lampara.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Lampara.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Lampara.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Lampara.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Lampara.PropertyName.sprite2D">
+            <summary>
+            Cached name for the 'sprite2D' field.
+            </summary>
+        </member>
+        <member name="F:Lampara.PropertyName.encendido">
+            <summary>
+            Cached name for the 'encendido' field.
+            </summary>
+        </member>
+        <member name="M:Lampara.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Lampara.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Lampara.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Lampara.GetGodotPropertyDefaultValues">
+            <summary>
+            Get the default values for all properties declared in this class.
+            This method is used by Godot to determine the value that will be
+            used by the inspector when resetting properties.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Lampara.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Lampara.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Lampara.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
         </member>
         <member name="T:Monstruo">
             <summary>
@@ -215,6 +924,76 @@
             <param name="evento">Nos permite detectar cuando se hace click</param>
             <param name="shap">Variable que se utiliza para la API</param>
         </member>
+        <member name="T:Monstruo.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Monstruo.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:Monstruo.MethodName._on_input_event">
+            <summary>
+            Cached name for the '_on_input_event' method.
+            </summary>
+        </member>
+        <member name="M:Monstruo.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Monstruo.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Monstruo.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Monstruo.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Monstruo.PropertyName.animationPlayer">
+            <summary>
+            Cached name for the 'animationPlayer' field.
+            </summary>
+        </member>
+        <member name="M:Monstruo.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Monstruo.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Monstruo.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Monstruo.GetGodotPropertyDefaultValues">
+            <summary>
+            Get the default values for all properties declared in this class.
+            This method is used by Godot to determine the value that will be
+            used by the inspector when resetting properties.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Monstruo.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Monstruo.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Monstruo.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
         <member name="T:Poster">
             <summary>
             Clase que gestiona las fisicas del poster para que haga su interaccion
@@ -232,6 +1011,76 @@
             <param name="viewport">Nodo del objeto parte de la API</param>
             <param name="evento">Nos permite detectar cuando se hace click</param>
             <param name="shap">Variable que se utiliza para la API</param>
+        </member>
+        <member name="T:Poster.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Poster.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:Poster.MethodName._on_input_event_poster">
+            <summary>
+            Cached name for the '_on_input_event_poster' method.
+            </summary>
+        </member>
+        <member name="M:Poster.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Poster.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Poster.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Poster.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Poster.PropertyName.animationPlayer">
+            <summary>
+            Cached name for the 'animationPlayer' field.
+            </summary>
+        </member>
+        <member name="M:Poster.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Poster.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Poster.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Poster.GetGodotPropertyDefaultValues">
+            <summary>
+            Get the default values for all properties declared in this class.
+            This method is used by Godot to determine the value that will be
+            used by the inspector when resetting properties.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Poster.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Poster.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Poster.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
         </member>
         <member name="T:Reloj">
             <summary>
@@ -299,6 +1148,96 @@
             </summary>
             <param name="value">El valor que queremos darle a zooom</param>
         </member>
+        <member name="T:Reloj.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Reloj.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:Reloj.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:Reloj.MethodName._on_reloj_entered">
+            <summary>
+            Cached name for the '_on_reloj_entered' method.
+            </summary>
+        </member>
+        <member name="F:Reloj.MethodName._on_input_event">
+            <summary>
+            Cached name for the '_on_input_event' method.
+            </summary>
+        </member>
+        <member name="F:Reloj.MethodName.GetZoom">
+            <summary>
+            Cached name for the 'GetZoom' method.
+            </summary>
+        </member>
+        <member name="F:Reloj.MethodName.SetZoom">
+            <summary>
+            Cached name for the 'SetZoom' method.
+            </summary>
+        </member>
+        <member name="M:Reloj.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Reloj.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Reloj.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Reloj.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Reloj.PropertyName.audioStreamPlayer2D">
+            <summary>
+            Cached name for the 'audioStreamPlayer2D' field.
+            </summary>
+        </member>
+        <member name="M:Reloj.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Reloj.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Reloj.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Reloj.GetGodotPropertyDefaultValues">
+            <summary>
+            Get the default values for all properties declared in this class.
+            This method is used by Godot to determine the value that will be
+            used by the inspector when resetting properties.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Reloj.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Reloj.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Reloj.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
         <member name="T:RelojZoomeado">
             <summary>
             Clase que nos permite gestionar al reloj en zooom
@@ -316,6 +1255,50 @@
             <param name="viewport">Nodo del objeto parte de la API</param>
             <param name="evento">Nos permite detectar cuando se hace click</param>
             <param name="shap">Variable que se utiliza para la API</param>
+        </member>
+        <member name="T:RelojZoomeado.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:RelojZoomeado.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:RelojZoomeado.MethodName._on_input_event">
+            <summary>
+            Cached name for the '_on_input_event' method.
+            </summary>
+        </member>
+        <member name="M:RelojZoomeado.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:RelojZoomeado.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:RelojZoomeado.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:RelojZoomeado.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="M:RelojZoomeado.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:RelojZoomeado.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:RelojZoomeado.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
         </member>
         <member name="T:VarillaM">
             <summary>
@@ -341,6 +1324,73 @@
             Getter de encontrar
             </summary>
             <returns>Devuelve la variable encontrar</returns>
+        </member>
+        <member name="T:VarillaM.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:VarillaM.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:VarillaM.MethodName._on_input_event">
+            <summary>
+            Cached name for the '_on_input_event' method.
+            </summary>
+        </member>
+        <member name="F:VarillaM.MethodName.devolverClickado">
+            <summary>
+            Cached name for the 'devolverClickado' method.
+            </summary>
+        </member>
+        <member name="M:VarillaM.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:VarillaM.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:VarillaM.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:VarillaM.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:VarillaM.PropertyName.puedoMover">
+            <summary>
+            Cached name for the 'puedoMover' field.
+            </summary>
+        </member>
+        <member name="M:VarillaM.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:VarillaM.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:VarillaM.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:VarillaM.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:VarillaM.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:VarillaM.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
         </member>
         <member name="T:VarillaS">
             <summary>
@@ -378,6 +1428,83 @@
             </summary>
             <returns>Devuleve encontrado</returns>
         </member>
+        <member name="T:VarillaS.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:VarillaS.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:VarillaS.MethodName._on_input_event">
+            <summary>
+            Cached name for the '_on_input_event' method.
+            </summary>
+        </member>
+        <member name="F:VarillaS.MethodName.devolverClickado">
+            <summary>
+            Cached name for the 'devolverClickado' method.
+            </summary>
+        </member>
+        <member name="F:VarillaS.MethodName.rotar">
+            <summary>
+            Cached name for the 'rotar' method.
+            </summary>
+        </member>
+        <member name="F:VarillaS.MethodName.GetClickado">
+            <summary>
+            Cached name for the 'GetClickado' method.
+            </summary>
+        </member>
+        <member name="M:VarillaS.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:VarillaS.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:VarillaS.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:VarillaS.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:VarillaS.PropertyName.puedoMover">
+            <summary>
+            Cached name for the 'puedoMover' field.
+            </summary>
+        </member>
+        <member name="M:VarillaS.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:VarillaS.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:VarillaS.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:VarillaS.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:VarillaS.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:VarillaS.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
         <member name="T:Ventana">
             <summary>
             Clase que nos permite gestinar como funciona la logica de la ventana en la escena 1
@@ -390,6 +1517,342 @@
             <param name="viewport">Nodo del objeto parte de la API</param>
             <param name="evento">Nos permite detectar cuando se hace click</param>
             <param name="shap">Variable que se utiliza para la API</param>
+        </member>
+        <member name="T:Ventana.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Ventana.MethodName._on_input_event">
+            <summary>
+            Cached name for the '_on_input_event' method.
+            </summary>
+        </member>
+        <member name="M:Ventana.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Ventana.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Ventana.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Ventana.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Ventana.PropertyName.animPlayer">
+            <summary>
+            Cached name for the 'animPlayer' field.
+            </summary>
+        </member>
+        <member name="M:Ventana.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Ventana.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Ventana.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Ventana.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Ventana.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Ventana.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="T:CartasCartitas.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:CartasCartitas.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:CartasCartitas.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:CartasCartitas.MethodName.barajarCartas">
+            <summary>
+            Cached name for the 'barajarCartas' method.
+            </summary>
+        </member>
+        <member name="F:CartasCartitas.MethodName._on_input_event">
+            <summary>
+            Cached name for the '_on_input_event' method.
+            </summary>
+        </member>
+        <member name="F:CartasCartitas.MethodName.cambioEscena">
+            <summary>
+            Cached name for the 'cambioEscena' method.
+            </summary>
+        </member>
+        <member name="M:CartasCartitas.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:CartasCartitas.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CartasCartitas.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:CartasCartitas.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:CartasCartitas.PropertyName.speed">
+            <summary>
+            Cached name for the 'speed' field.
+            </summary>
+        </member>
+        <member name="F:CartasCartitas.PropertyName.remenar">
+            <summary>
+            Cached name for the 'remenar' field.
+            </summary>
+        </member>
+        <member name="F:CartasCartitas.PropertyName.timer">
+            <summary>
+            Cached name for the 'timer' field.
+            </summary>
+        </member>
+        <member name="F:CartasCartitas.PropertyName.sol">
+            <summary>
+            Cached name for the 'sol' field.
+            </summary>
+        </member>
+        <member name="F:CartasCartitas.PropertyName.estrella">
+            <summary>
+            Cached name for the 'estrella' field.
+            </summary>
+        </member>
+        <member name="F:CartasCartitas.PropertyName.luna">
+            <summary>
+            Cached name for the 'luna' field.
+            </summary>
+        </member>
+        <member name="M:CartasCartitas.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CartasCartitas.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CartasCartitas.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:CartasCartitas.GetGodotPropertyDefaultValues">
+            <summary>
+            Get the default values for all properties declared in this class.
+            This method is used by Godot to determine the value that will be
+            used by the inspector when resetting properties.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:CartasCartitas.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CartasCartitas.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:CartasCartitas.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="T:CartaTarot.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:CartaTarot.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:CartaTarot.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:CartaTarot.MethodName._on_input_event">
+            <summary>
+            Cached name for the '_on_input_event' method.
+            </summary>
+        </member>
+        <member name="F:CartaTarot.MethodName.voltearCarta">
+            <summary>
+            Cached name for the 'voltearCarta' method.
+            </summary>
+        </member>
+        <member name="M:CartaTarot.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:CartaTarot.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CartaTarot.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:CartaTarot.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:CartaTarot.PropertyName.sprite">
+            <summary>
+            Cached name for the 'sprite' field.
+            </summary>
+        </member>
+        <member name="F:CartaTarot.PropertyName.timer">
+            <summary>
+            Cached name for the 'timer' field.
+            </summary>
+        </member>
+        <member name="M:CartaTarot.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CartaTarot.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CartaTarot.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:CartaTarot.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CartaTarot.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:CartaTarot.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="T:Cofre.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Cofre.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:Cofre.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:Cofre.MethodName._on_area_entered">
+            <summary>
+            Cached name for the '_on_area_entered' method.
+            </summary>
+        </member>
+        <member name="F:Cofre.MethodName._on_area_exited">
+            <summary>
+            Cached name for the '_on_area_exited' method.
+            </summary>
+        </member>
+        <member name="F:Cofre.MethodName._on_input_event">
+            <summary>
+            Cached name for the '_on_input_event' method.
+            </summary>
+        </member>
+        <member name="F:Cofre.MethodName.abrirCofre">
+            <summary>
+            Cached name for the 'abrirCofre' method.
+            </summary>
+        </member>
+        <member name="F:Cofre.MethodName.cerrarCofre">
+            <summary>
+            Cached name for the 'cerrarCofre' method.
+            </summary>
+        </member>
+        <member name="M:Cofre.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Cofre.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Cofre.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Cofre.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Cofre.PropertyName.escena">
+            <summary>
+            Cached name for the 'escena' field.
+            </summary>
+        </member>
+        <member name="F:Cofre.PropertyName.script">
+            <summary>
+            Cached name for the 'script' field.
+            </summary>
+        </member>
+        <member name="M:Cofre.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Cofre.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Cofre.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Cofre.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Cofre.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Cofre.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
         </member>
         <member name="T:escena2">
             <summary>
@@ -406,6 +1869,227 @@
             Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla
             </summary>
             <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
+        </member>
+        <member name="T:escena2.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:escena2.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:escena2.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="M:escena2.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:escena2.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:escena2.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:escena2.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:escena2.PropertyName.audioStreamPlayer2D">
+            <summary>
+            Cached name for the 'audioStreamPlayer2D' field.
+            </summary>
+        </member>
+        <member name="F:escena2.PropertyName.comprobanteArray">
+            <summary>
+            Cached name for the 'comprobanteArray' field.
+            </summary>
+        </member>
+        <member name="M:escena2.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:escena2.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:escena2.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:escena2.GetGodotPropertyDefaultValues">
+            <summary>
+            Get the default values for all properties declared in this class.
+            This method is used by Godot to determine the value that will be
+            used by the inspector when resetting properties.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:escena2.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:escena2.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:escena2.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="T:GnomoSinCosas.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:GnomoSinCosas.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:GnomoSinCosas.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:GnomoSinCosas.MethodName._on_area_entered">
+            <summary>
+            Cached name for the '_on_area_entered' method.
+            </summary>
+        </member>
+        <member name="F:GnomoSinCosas.MethodName._on_area_exited">
+            <summary>
+            Cached name for the '_on_area_exited' method.
+            </summary>
+        </member>
+        <member name="M:GnomoSinCosas.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:GnomoSinCosas.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GnomoSinCosas.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:GnomoSinCosas.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="M:GnomoSinCosas.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GnomoSinCosas.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:GnomoSinCosas.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="T:Hueso.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Hueso.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:Hueso.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:Hueso.MethodName._on_input_event">
+            <summary>
+            Cached name for the '_on_input_event' method.
+            </summary>
+        </member>
+        <member name="F:Hueso.MethodName._on_area_entered">
+            <summary>
+            Cached name for the '_on_area_entered' method.
+            </summary>
+        </member>
+        <member name="F:Hueso.MethodName._on_area_exited">
+            <summary>
+            Cached name for the '_on_area_exited' method.
+            </summary>
+        </member>
+        <member name="F:Hueso.MethodName.comprobarSkin">
+            <summary>
+            Cached name for the 'comprobarSkin' method.
+            </summary>
+        </member>
+        <member name="M:Hueso.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Hueso.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Hueso.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Hueso.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Hueso.PropertyName.sprite">
+            <summary>
+            Cached name for the 'sprite' field.
+            </summary>
+        </member>
+        <member name="F:Hueso.PropertyName.puedoMover">
+            <summary>
+            Cached name for the 'puedoMover' field.
+            </summary>
+        </member>
+        <member name="F:Hueso.PropertyName.postAnimacion">
+            <summary>
+            Cached name for the 'postAnimacion' field.
+            </summary>
+        </member>
+        <member name="M:Hueso.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Hueso.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Hueso.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Hueso.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Hueso.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Hueso.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
         </member>
         <member name="T:MoverPrueba">
             <summary>
@@ -425,6 +2109,68 @@
             <param name="viewport">Nodo del objeto parte de la API</param>
             <param name="evento">Nos permite detectar cuando se hace click</param>
             <param name="shap">Variable que se utiliza para la API</param>
+        </member>
+        <member name="T:MoverPrueba.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:MoverPrueba.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:MoverPrueba.MethodName._on_input_event">
+            <summary>
+            Cached name for the '_on_input_event' method.
+            </summary>
+        </member>
+        <member name="M:MoverPrueba.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:MoverPrueba.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:MoverPrueba.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:MoverPrueba.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:MoverPrueba.PropertyName.puedoMover">
+            <summary>
+            Cached name for the 'puedoMover' field.
+            </summary>
+        </member>
+        <member name="M:MoverPrueba.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:MoverPrueba.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:MoverPrueba.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:MoverPrueba.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:MoverPrueba.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:MoverPrueba.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
         </member>
         <member name="T:MueveTeEnElBosque">
             <summary>
@@ -447,6 +2193,86 @@
             Señal de godot que nos permite comprobar si la colision de un objeto colisiona contra otro objeto
             </summary>
             <param name="collisionObject2D">Variable de la colision del objeto que colisiona con el objeto</param>
+        </member>
+        <member name="T:MueveTeEnElBosque.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:MueveTeEnElBosque.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:MueveTeEnElBosque.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:MueveTeEnElBosque.MethodName._on_area_2d_area_entered">
+            <summary>
+            Cached name for the '_on_area_2d_area_entered' method.
+            </summary>
+        </member>
+        <member name="M:MueveTeEnElBosque.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:MueveTeEnElBosque.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:MueveTeEnElBosque.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:MueveTeEnElBosque.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:MueveTeEnElBosque.PropertyName.speed">
+            <summary>
+            Cached name for the 'speed' field.
+            </summary>
+        </member>
+        <member name="F:MueveTeEnElBosque.PropertyName.animatedSprite2D">
+            <summary>
+            Cached name for the 'animatedSprite2D' field.
+            </summary>
+        </member>
+        <member name="M:MueveTeEnElBosque.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:MueveTeEnElBosque.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:MueveTeEnElBosque.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:MueveTeEnElBosque.GetGodotPropertyDefaultValues">
+            <summary>
+            Get the default values for all properties declared in this class.
+            This method is used by Godot to determine the value that will be
+            used by the inspector when resetting properties.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:MueveTeEnElBosque.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:MueveTeEnElBosque.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:MueveTeEnElBosque.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
         </member>
         <member name="T:Ojo">
             <summary>
@@ -483,6 +2309,88 @@
             </summary>
             <param name="collisionObject2D">Variable de la colision del objeto que colisiona con el objeto</param>
         </member>
+        <member name="T:Ojo.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Ojo.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:Ojo.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:Ojo.MethodName._on_input_event">
+            <summary>
+            Cached name for the '_on_input_event' method.
+            </summary>
+        </member>
+        <member name="F:Ojo.MethodName._on_area_entered">
+            <summary>
+            Cached name for the '_on_area_entered' method.
+            </summary>
+        </member>
+        <member name="F:Ojo.MethodName._on_area_exited">
+            <summary>
+            Cached name for the '_on_area_exited' method.
+            </summary>
+        </member>
+        <member name="M:Ojo.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Ojo.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Ojo.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Ojo.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Ojo.PropertyName.sprite">
+            <summary>
+            Cached name for the 'sprite' field.
+            </summary>
+        </member>
+        <member name="F:Ojo.PropertyName.puedoMover">
+            <summary>
+            Cached name for the 'puedoMover' field.
+            </summary>
+        </member>
+        <member name="M:Ojo.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Ojo.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Ojo.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Ojo.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Ojo.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Ojo.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
         <member name="T:Ramon">
             <summary>
             Clase que nos permite gestionar al personaje segundario de Ramon
@@ -515,6 +2423,103 @@
             </summary>
             <param name="collisionObject2D">Variable de la colision del objeto que colisiona con el objeto</param>
         </member>
+        <member name="T:Ramon.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Ramon.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:Ramon.MethodName._on_input_event">
+            <summary>
+            Cached name for the '_on_input_event' method.
+            </summary>
+        </member>
+        <member name="F:Ramon.MethodName.mostrarTexto">
+            <summary>
+            Cached name for the 'mostrarTexto' method.
+            </summary>
+        </member>
+        <member name="F:Ramon.MethodName._on_area_entered">
+            <summary>
+            Cached name for the '_on_area_entered' method.
+            </summary>
+        </member>
+        <member name="M:Ramon.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Ramon.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Ramon.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Ramon.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Ramon.PropertyName.texto1">
+            <summary>
+            Cached name for the 'texto1' field.
+            </summary>
+        </member>
+        <member name="F:Ramon.PropertyName.texto2">
+            <summary>
+            Cached name for the 'texto2' field.
+            </summary>
+        </member>
+        <member name="F:Ramon.PropertyName.texto3">
+            <summary>
+            Cached name for the 'texto3' field.
+            </summary>
+        </member>
+        <member name="F:Ramon.PropertyName.texto4">
+            <summary>
+            Cached name for the 'texto4' field.
+            </summary>
+        </member>
+        <member name="F:Ramon.PropertyName.texto5">
+            <summary>
+            Cached name for the 'texto5' field.
+            </summary>
+        </member>
+        <member name="F:Ramon.PropertyName.ojoEnseñado">
+            <summary>
+            Cached name for the 'ojoEnseñado' field.
+            </summary>
+        </member>
+        <member name="M:Ramon.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Ramon.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Ramon.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Ramon.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Ramon.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Ramon.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
         <!-- Badly formed XML comment ignored for member "T:RespuestasRamon" -->
         <member name="M:RespuestasRamon._Ready">
             <summary>
@@ -539,6 +2544,83 @@
             <param name="event">Nos permite detectar cuando se hace click</param>
             <param name="shape_idx">Variable que se utiliza para la API</param>
         </member>
+        <member name="T:RespuestasRamon.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:RespuestasRamon.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:RespuestasRamon.MethodName._on_mouse_entered">
+            <summary>
+            Cached name for the '_on_mouse_entered' method.
+            </summary>
+        </member>
+        <member name="F:RespuestasRamon.MethodName._on_mouse_exited">
+            <summary>
+            Cached name for the '_on_mouse_exited' method.
+            </summary>
+        </member>
+        <member name="F:RespuestasRamon.MethodName._on_input_event">
+            <summary>
+            Cached name for the '_on_input_event' method.
+            </summary>
+        </member>
+        <member name="M:RespuestasRamon.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:RespuestasRamon.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:RespuestasRamon.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:RespuestasRamon.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:RespuestasRamon.PropertyName.sprite1">
+            <summary>
+            Cached name for the 'sprite1' field.
+            </summary>
+        </member>
+        <member name="F:RespuestasRamon.PropertyName.sprite2">
+            <summary>
+            Cached name for the 'sprite2' field.
+            </summary>
+        </member>
+        <member name="M:RespuestasRamon.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:RespuestasRamon.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:RespuestasRamon.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:RespuestasRamon.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:RespuestasRamon.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:RespuestasRamon.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
         <member name="T:VolareMarron">
             <summary>
             Clase del pajaro Marron que controla sus movimientos, velocidad y ratio de aparicion 
@@ -554,6 +2636,86 @@
             Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla
             </summary>
             <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
+        </member>
+        <member name="T:VolareMarron.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:VolareMarron.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:VolareMarron.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="M:VolareMarron.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:VolareMarron.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:VolareMarron.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:VolareMarron.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:VolareMarron.PropertyName.speed">
+            <summary>
+            Cached name for the 'speed' field.
+            </summary>
+        </member>
+        <member name="F:VolareMarron.PropertyName.animatedSprite2D">
+            <summary>
+            Cached name for the 'animatedSprite2D' field.
+            </summary>
+        </member>
+        <member name="F:VolareMarron.PropertyName.volar">
+            <summary>
+            Cached name for the 'volar' field.
+            </summary>
+        </member>
+        <member name="M:VolareMarron.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:VolareMarron.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:VolareMarron.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:VolareMarron.GetGodotPropertyDefaultValues">
+            <summary>
+            Get the default values for all properties declared in this class.
+            This method is used by Godot to determine the value that will be
+            used by the inspector when resetting properties.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:VolareMarron.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:VolareMarron.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:VolareMarron.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
         </member>
         <member name="T:VolareVerde">
             <summary>
@@ -571,9 +2733,429 @@
             </summary>
             <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
         </member>
+        <member name="T:VolareVerde.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:VolareVerde.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:VolareVerde.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="M:VolareVerde.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:VolareVerde.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:VolareVerde.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:VolareVerde.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:VolareVerde.PropertyName.speed">
+            <summary>
+            Cached name for the 'speed' field.
+            </summary>
+        </member>
+        <member name="F:VolareVerde.PropertyName.animatedSprite2D">
+            <summary>
+            Cached name for the 'animatedSprite2D' field.
+            </summary>
+        </member>
+        <member name="F:VolareVerde.PropertyName.volar">
+            <summary>
+            Cached name for the 'volar' field.
+            </summary>
+        </member>
+        <member name="M:VolareVerde.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:VolareVerde.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:VolareVerde.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:VolareVerde.GetGodotPropertyDefaultValues">
+            <summary>
+            Get the default values for all properties declared in this class.
+            This method is used by Godot to determine the value that will be
+            used by the inspector when resetting properties.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:VolareVerde.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:VolareVerde.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:VolareVerde.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
         <member name="T:MainDesvan">
             <summary>
             Escript que nos permite gestionar como funciona la escena 3
+            </summary>
+        </member>
+        <member name="T:MainDesvan.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:MainDesvan.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:MainDesvan.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:MainDesvan.MethodName.instanciarMain">
+            <summary>
+            Cached name for the 'instanciarMain' method.
+            </summary>
+        </member>
+        <member name="M:MainDesvan.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:MainDesvan.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:MainDesvan.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:MainDesvan.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:MainDesvan.PropertyName.audioStreamPlayer2D">
+            <summary>
+            Cached name for the 'audioStreamPlayer2D' field.
+            </summary>
+        </member>
+        <member name="F:MainDesvan.PropertyName.comprobanteArray">
+            <summary>
+            Cached name for the 'comprobanteArray' field.
+            </summary>
+        </member>
+        <member name="F:MainDesvan.PropertyName.comprobanteSangre">
+            <summary>
+            Cached name for the 'comprobanteSangre' field.
+            </summary>
+        </member>
+        <member name="M:MainDesvan.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:MainDesvan.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:MainDesvan.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:MainDesvan.GetGodotPropertyDefaultValues">
+            <summary>
+            Get the default values for all properties declared in this class.
+            This method is used by Godot to determine the value that will be
+            used by the inspector when resetting properties.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:MainDesvan.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:MainDesvan.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:MainDesvan.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="T:Caldero.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Caldero.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:Caldero.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:Caldero.MethodName._on_input_event">
+            <summary>
+            Cached name for the '_on_input_event' method.
+            </summary>
+        </member>
+        <member name="M:Caldero.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Caldero.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Caldero.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Caldero.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Caldero.PropertyName.rojo">
+            <summary>
+            Cached name for the 'rojo' field.
+            </summary>
+        </member>
+        <member name="F:Caldero.PropertyName.verde">
+            <summary>
+            Cached name for the 'verde' field.
+            </summary>
+        </member>
+        <member name="F:Caldero.PropertyName.azul">
+            <summary>
+            Cached name for the 'azul' field.
+            </summary>
+        </member>
+        <member name="M:Caldero.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Caldero.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Caldero.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Caldero.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Caldero.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Caldero.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="T:Particula.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Particula.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:Particula.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:Particula.MethodName.encenderLuces">
+            <summary>
+            Cached name for the 'encenderLuces' method.
+            </summary>
+        </member>
+        <member name="F:Particula.MethodName.apagarLuces">
+            <summary>
+            Cached name for the 'apagarLuces' method.
+            </summary>
+        </member>
+        <member name="M:Particula.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Particula.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Particula.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Particula.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="M:Particula.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Particula.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Particula.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="T:RelojDesvan.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:RelojDesvan.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:RelojDesvan.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:RelojDesvan.MethodName._on_input_event">
+            <summary>
+            Cached name for the '_on_input_event' method.
+            </summary>
+        </member>
+        <member name="M:RelojDesvan.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:RelojDesvan.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:RelojDesvan.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:RelojDesvan.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:RelojDesvan.PropertyName.animatedSprite2D">
+            <summary>
+            Cached name for the 'animatedSprite2D' field.
+            </summary>
+        </member>
+        <member name="M:RelojDesvan.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:RelojDesvan.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:RelojDesvan.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:RelojDesvan.GetGodotPropertyDefaultValues">
+            <summary>
+            Get the default values for all properties declared in this class.
+            This method is used by Godot to determine the value that will be
+            used by the inspector when resetting properties.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:RelojDesvan.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:RelojDesvan.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:RelojDesvan.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="T:Ritual.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Ritual.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:Ritual.MethodName._on_area_entered">
+            <summary>
+            Cached name for the '_on_area_entered' method.
+            </summary>
+        </member>
+        <member name="F:Ritual.MethodName._on_area_exited">
+            <summary>
+            Cached name for the '_on_area_exited' method.
+            </summary>
+        </member>
+        <member name="M:Ritual.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Ritual.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Ritual.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Ritual.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="M:Ritual.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Ritual.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Ritual.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
         </member>
         <member name="T:Unicornio">
@@ -594,6 +3176,68 @@
             <param name="viewport">Nodo del objeto parte de la API</param>
             <param name="evento">Nos permite detectar cuando se hace click</param>
             <param name="shap">Variable que se utiliza para la API</param>
+        </member>
+        <member name="T:Unicornio.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Unicornio.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:Unicornio.MethodName._on_input_event">
+            <summary>
+            Cached name for the '_on_input_event' method.
+            </summary>
+        </member>
+        <member name="M:Unicornio.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Unicornio.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Unicornio.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Unicornio.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Unicornio.PropertyName.puedoMover">
+            <summary>
+            Cached name for the 'puedoMover' field.
+            </summary>
+        </member>
+        <member name="M:Unicornio.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Unicornio.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Unicornio.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Unicornio.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Unicornio.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Unicornio.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
         </member>
         <member name="T:GuardarEscena">
             <summary>
@@ -621,6 +3265,60 @@
             <summary>
             Note: This can be called from anywhere inside the tree. This function is
             path independent.
+            </summary>
+        </member>
+        <member name="T:GuardarEscena.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:GuardarEscena.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:GuardarEscena.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:GuardarEscena.MethodName.SaveGame">
+            <summary>
+            Cached name for the 'SaveGame' method.
+            </summary>
+        </member>
+        <member name="F:GuardarEscena.MethodName.LoadGame">
+            <summary>
+            Cached name for the 'LoadGame' method.
+            </summary>
+        </member>
+        <member name="M:GuardarEscena.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:GuardarEscena.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GuardarEscena.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:GuardarEscena.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="M:GuardarEscena.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GuardarEscena.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:GuardarEscena.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
         </member>
         <member name="T:MenuPrincipal">
@@ -651,6 +3349,126 @@
         <member name="M:MenuPrincipal._onExitButtonPressed">
             <summary>
             Función llamada cuando se presiona el botón de "Salir"
+            </summary>
+        </member>
+        <member name="T:MenuPrincipal.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:MenuPrincipal.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:MenuPrincipal.MethodName._onNewGameButtonPressed">
+            <summary>
+            Cached name for the '_onNewGameButtonPressed' method.
+            </summary>
+        </member>
+        <member name="F:MenuPrincipal.MethodName._onLoadGameButtonPressed">
+            <summary>
+            Cached name for the '_onLoadGameButtonPressed' method.
+            </summary>
+        </member>
+        <member name="F:MenuPrincipal.MethodName._onSettingsButtonPressed">
+            <summary>
+            Cached name for the '_onSettingsButtonPressed' method.
+            </summary>
+        </member>
+        <member name="F:MenuPrincipal.MethodName._onExitButtonPressed">
+            <summary>
+            Cached name for the '_onExitButtonPressed' method.
+            </summary>
+        </member>
+        <member name="F:MenuPrincipal.MethodName._on_color_rect_animation_finished">
+            <summary>
+            Cached name for the '_on_color_rect_animation_finished' method.
+            </summary>
+        </member>
+        <member name="M:MenuPrincipal.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:MenuPrincipal.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:MenuPrincipal.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:MenuPrincipal.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:MenuPrincipal.PropertyName.newGameButton">
+            <summary>
+            Cached name for the 'newGameButton' field.
+            </summary>
+        </member>
+        <member name="F:MenuPrincipal.PropertyName.loadGameButton">
+            <summary>
+            Cached name for the 'loadGameButton' field.
+            </summary>
+        </member>
+        <member name="F:MenuPrincipal.PropertyName.settingsButton">
+            <summary>
+            Cached name for the 'settingsButton' field.
+            </summary>
+        </member>
+        <member name="F:MenuPrincipal.PropertyName.exitButton">
+            <summary>
+            Cached name for the 'exitButton' field.
+            </summary>
+        </member>
+        <member name="F:MenuPrincipal.PropertyName.audioStreamPlayer2D">
+            <summary>
+            Cached name for the 'audioStreamPlayer2D' field.
+            </summary>
+        </member>
+        <member name="F:MenuPrincipal.PropertyName.animatedSprite2D">
+            <summary>
+            Cached name for the 'animatedSprite2D' field.
+            </summary>
+        </member>
+        <member name="F:MenuPrincipal.PropertyName.opcion">
+            <summary>
+            Cached name for the 'opcion' field.
+            </summary>
+        </member>
+        <member name="M:MenuPrincipal.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:MenuPrincipal.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:MenuPrincipal.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:MenuPrincipal.GetGodotPropertyDefaultValues">
+            <summary>
+            Get the default values for all properties declared in this class.
+            This method is used by Godot to determine the value that will be
+            used by the inspector when resetting properties.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:MenuPrincipal.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:MenuPrincipal.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:MenuPrincipal.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
         </member>
         <member name="T:MenuOpciones">
@@ -729,6 +3547,186 @@
             Metodo que aplica todos los cambios en el juego
             </summary>
         </member>
+        <member name="T:MenuOpciones.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.MethodName._on_color_rect_animation_finished">
+            <summary>
+            Cached name for the '_on_color_rect_animation_finished' method.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.MethodName._on_exit_pressed">
+            <summary>
+            Cached name for the '_on_exit_pressed' method.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.MethodName._on_volumen_master_value_changed">
+            <summary>
+            Cached name for the '_on_volumen_master_value_changed' method.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.MethodName._on_volumen_vfx_value_changed">
+            <summary>
+            Cached name for the '_on_volumen_vfx_value_changed' method.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.MethodName._on_volumen_musica_value_changed">
+            <summary>
+            Cached name for the '_on_volumen_musica_value_changed' method.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.MethodName.setPantalla">
+            <summary>
+            Cached name for the 'setPantalla' method.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.MethodName.AddResolutionToButton">
+            <summary>
+            Cached name for the 'AddResolutionToButton' method.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.MethodName.Save">
+            <summary>
+            Cached name for the 'Save' method.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.MethodName._on_button_pressed">
+            <summary>
+            Cached name for the '_on_button_pressed' method.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.MethodName._on_option_button_item_selected">
+            <summary>
+            Cached name for the '_on_option_button_item_selected' method.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.MethodName.ApplyGameDataVideoSettings">
+            <summary>
+            Cached name for the 'ApplyGameDataVideoSettings' method.
+            </summary>
+        </member>
+        <member name="M:MenuOpciones.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:MenuOpciones.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:MenuOpciones.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:MenuOpciones.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.PropertyName.animatedSprite2D">
+            <summary>
+            Cached name for the 'animatedSprite2D' field.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.PropertyName.button">
+            <summary>
+            Cached name for the 'button' field.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.PropertyName.master">
+            <summary>
+            Cached name for the 'master' field.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.PropertyName.vfx">
+            <summary>
+            Cached name for the 'vfx' field.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.PropertyName.music">
+            <summary>
+            Cached name for the 'music' field.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.PropertyName.master_slider">
+            <summary>
+            Cached name for the 'master_slider' field.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.PropertyName.vfx_slider">
+            <summary>
+            Cached name for the 'vfx_slider' field.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.PropertyName.music_slider">
+            <summary>
+            Cached name for the 'music_slider' field.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.PropertyName.master_porcentual">
+            <summary>
+            Cached name for the 'master_porcentual' field.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.PropertyName.vfx_porcentual">
+            <summary>
+            Cached name for the 'vfx_porcentual' field.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.PropertyName.music_porcentual">
+            <summary>
+            Cached name for the 'music_porcentual' field.
+            </summary>
+        </member>
+        <member name="F:MenuOpciones.PropertyName.optionButton">
+            <summary>
+            Cached name for the 'optionButton' field.
+            </summary>
+        </member>
+        <member name="M:MenuOpciones.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:MenuOpciones.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:MenuOpciones.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:MenuOpciones.GetGodotPropertyDefaultValues">
+            <summary>
+            Get the default values for all properties declared in this class.
+            This method is used by Godot to determine the value that will be
+            used by the inspector when resetting properties.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:MenuOpciones.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:MenuOpciones.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:MenuOpciones.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
         <member name="T:Video_settings">
             <summary>
             Menu de las opciones de video del juego
@@ -782,6 +3780,111 @@
             Metodo que nos permite gestionar cuando alguien le da al boton de exit
             </summary>
         </member>
+        <member name="T:Video_settings.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Video_settings.MethodName.setPantalla">
+            <summary>
+            Cached name for the 'setPantalla' method.
+            </summary>
+        </member>
+        <member name="F:Video_settings.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:Video_settings.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:Video_settings.MethodName.AddResolutionToButton">
+            <summary>
+            Cached name for the 'AddResolutionToButton' method.
+            </summary>
+        </member>
+        <member name="F:Video_settings.MethodName.Save">
+            <summary>
+            Cached name for the 'Save' method.
+            </summary>
+        </member>
+        <member name="F:Video_settings.MethodName._on_button_pressed">
+            <summary>
+            Cached name for the '_on_button_pressed' method.
+            </summary>
+        </member>
+        <member name="F:Video_settings.MethodName._on_option_button_item_selected">
+            <summary>
+            Cached name for the '_on_option_button_item_selected' method.
+            </summary>
+        </member>
+        <member name="F:Video_settings.MethodName.ApplyGameDataVideoSettings">
+            <summary>
+            Cached name for the 'ApplyGameDataVideoSettings' method.
+            </summary>
+        </member>
+        <member name="F:Video_settings.MethodName._on_exit_pressed">
+            <summary>
+            Cached name for the '_on_exit_pressed' method.
+            </summary>
+        </member>
+        <member name="M:Video_settings.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Video_settings.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Video_settings.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Video_settings.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Video_settings.PropertyName.optionButton">
+            <summary>
+            Cached name for the 'optionButton' field.
+            </summary>
+        </member>
+        <member name="M:Video_settings.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Video_settings.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Video_settings.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Video_settings.GetGodotPropertyDefaultValues">
+            <summary>
+            Get the default values for all properties declared in this class.
+            This method is used by Godot to determine the value that will be
+            used by the inspector when resetting properties.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Video_settings.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Video_settings.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Video_settings.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
         <member name="T:Volumen_settings">
             <summary>
             Clase que gestiona las opciones de sonido
@@ -809,6 +3912,126 @@
             Metodo que nos permite cambiar el porcentaje de sonido del buffer musica
             </summary>
             <param name="volumen">Parametro de volumen deseado</param>
+        </member>
+        <member name="T:Volumen_settings.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Volumen_settings.MethodName._Ready">
+            <summary>
+            Cached name for the '_Ready' method.
+            </summary>
+        </member>
+        <member name="F:Volumen_settings.MethodName._on_volumen_master_value_changed">
+            <summary>
+            Cached name for the '_on_volumen_master_value_changed' method.
+            </summary>
+        </member>
+        <member name="F:Volumen_settings.MethodName._on_volumen_vfx_value_changed">
+            <summary>
+            Cached name for the '_on_volumen_vfx_value_changed' method.
+            </summary>
+        </member>
+        <member name="F:Volumen_settings.MethodName._on_volumen_musica_value_changed">
+            <summary>
+            Cached name for the '_on_volumen_musica_value_changed' method.
+            </summary>
+        </member>
+        <member name="M:Volumen_settings.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Volumen_settings.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Volumen_settings.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Volumen_settings.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:Volumen_settings.PropertyName.master">
+            <summary>
+            Cached name for the 'master' field.
+            </summary>
+        </member>
+        <member name="F:Volumen_settings.PropertyName.vfx">
+            <summary>
+            Cached name for the 'vfx' field.
+            </summary>
+        </member>
+        <member name="F:Volumen_settings.PropertyName.music">
+            <summary>
+            Cached name for the 'music' field.
+            </summary>
+        </member>
+        <member name="F:Volumen_settings.PropertyName.master_slider">
+            <summary>
+            Cached name for the 'master_slider' field.
+            </summary>
+        </member>
+        <member name="F:Volumen_settings.PropertyName.vfx_slider">
+            <summary>
+            Cached name for the 'vfx_slider' field.
+            </summary>
+        </member>
+        <member name="F:Volumen_settings.PropertyName.music_slider">
+            <summary>
+            Cached name for the 'music_slider' field.
+            </summary>
+        </member>
+        <member name="F:Volumen_settings.PropertyName.master_porcentual">
+            <summary>
+            Cached name for the 'master_porcentual' field.
+            </summary>
+        </member>
+        <member name="F:Volumen_settings.PropertyName.vfx_porcentual">
+            <summary>
+            Cached name for the 'vfx_porcentual' field.
+            </summary>
+        </member>
+        <member name="F:Volumen_settings.PropertyName.music_porcentual">
+            <summary>
+            Cached name for the 'music_porcentual' field.
+            </summary>
+        </member>
+        <member name="M:Volumen_settings.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Volumen_settings.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Volumen_settings.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Volumen_settings.GetGodotPropertyDefaultValues">
+            <summary>
+            Get the default values for all properties declared in this class.
+            This method is used by Godot to determine the value that will be
+            used by the inspector when resetting properties.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:Volumen_settings.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Volumen_settings.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Volumen_settings.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
         </member>
         <member name="T:MenuDePausa">
             <summary>
@@ -839,6 +4062,121 @@
         <member name="M:MenuDePausa._on_exit_pressed">
             <summary>
             Metodo del boton exit de la pestaña de ajustes
+            </summary>
+        </member>
+        <member name="T:MenuDePausa.MethodName">
+            <summary>
+            Cached StringNames for the methods contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:MenuDePausa.MethodName._Process">
+            <summary>
+            Cached name for the '_Process' method.
+            </summary>
+        </member>
+        <member name="F:MenuDePausa.MethodName._on_continuar_pressed">
+            <summary>
+            Cached name for the '_on_continuar_pressed' method.
+            </summary>
+        </member>
+        <member name="F:MenuDePausa.MethodName._on_opciones_pressed">
+            <summary>
+            Cached name for the '_on_opciones_pressed' method.
+            </summary>
+        </member>
+        <member name="F:MenuDePausa.MethodName._on_salir_al_menu_principal_pressed">
+            <summary>
+            Cached name for the '_on_salir_al_menu_principal_pressed' method.
+            </summary>
+        </member>
+        <member name="F:MenuDePausa.MethodName._on_exit_pressed">
+            <summary>
+            Cached name for the '_on_exit_pressed' method.
+            </summary>
+        </member>
+        <member name="M:MenuDePausa.GetGodotMethodList">
+            <summary>
+            Get the method information for all the methods declared in this class.
+            This method is used by Godot to register the available methods in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:MenuDePausa.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:MenuDePausa.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:MenuDePausa.PropertyName">
+            <summary>
+            Cached StringNames for the properties and fields contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="F:MenuDePausa.PropertyName.continuar">
+            <summary>
+            Cached name for the 'continuar' field.
+            </summary>
+        </member>
+        <member name="F:MenuDePausa.PropertyName.opciones">
+            <summary>
+            Cached name for the 'opciones' field.
+            </summary>
+        </member>
+        <member name="F:MenuDePausa.PropertyName.salir">
+            <summary>
+            Cached name for the 'salir' field.
+            </summary>
+        </member>
+        <member name="F:MenuDePausa.PropertyName.exit">
+            <summary>
+            Cached name for the 'exit' field.
+            </summary>
+        </member>
+        <member name="F:MenuDePausa.PropertyName.video">
+            <summary>
+            Cached name for the 'video' field.
+            </summary>
+        </member>
+        <member name="F:MenuDePausa.PropertyName.sonido">
+            <summary>
+            Cached name for the 'sonido' field.
+            </summary>
+        </member>
+        <member name="F:MenuDePausa.PropertyName.guardarEscena">
+            <summary>
+            Cached name for the 'guardarEscena' field.
+            </summary>
+        </member>
+        <member name="M:MenuDePausa.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:MenuDePausa.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:MenuDePausa.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:MenuDePausa.GetGodotPropertyDefaultValues">
+            <summary>
+            Get the default values for all properties declared in this class.
+            This method is used by Godot to determine the value that will be
+            used by the inspector when resetting properties.
+            Do not call this method.
+            </summary>
+        </member>
+        <member name="M:MenuDePausa.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:MenuDePausa.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:MenuDePausa.SignalName">
+            <summary>
+            Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
         </member>
     </members>

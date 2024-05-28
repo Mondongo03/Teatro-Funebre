@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsrka07jv7fd4"]
+
+[ext_resource type="Script" path="res://escenas/escena3/scripts/Ritual.cs" id="1_dlgib"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qnmh5"]
+radius = 33.1361
+
+[node name="AbajoIzquierda" type="Area2D" groups=["AbajoIzquierda"]]
+position = Vector2(511, 601)
+script = ExtResource("1_dlgib")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_qnmh5")
+debug_color = Color(0.941176, 0.917647, 0, 0.419608)
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]

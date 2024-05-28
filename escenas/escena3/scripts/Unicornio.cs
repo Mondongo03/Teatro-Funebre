@@ -20,6 +20,9 @@ public partial class Unicornio : Area2D
         {
             this.GlobalPosition = GetGlobalMousePosition();
         }
+        if(MainDesvan.ritualAcabado){
+			this.QueueFree();
+		}
     }
 
 	/// <summary>
@@ -30,7 +33,7 @@ public partial class Unicornio : Area2D
     /// <param name="shap">Variable que se utiliza para la API</param>
     public void _on_input_event(Node viewport, InputEvent evento, int shap)
     {
-        if (evento.IsActionPressed("click_izquierdo") && !MainDesvan.getRitualAcabado())
+        if (evento.IsActionPressed("click_izquierdo") && !MainDesvan.ritualAcabado)
         {
             puedoMover = true;
             objetoEnMovimiento = this;

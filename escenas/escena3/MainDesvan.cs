@@ -7,8 +7,9 @@ using System;
 public partial class MainDesvan : Node2D {
 	[Export] public AudioStreamPlayer2D audioStreamPlayer2D;
 	bool comprobanteArray = false;
-	private static bool ritualAcabado;
-	public static Node2D unicornioVerde, unicornioRojo, unicornioNaranja, unicornioBlanco, unicornioAmarillo, particulaUA, particulaUR, particulaUV, particulaUN, particulaUB, relojDesvan;
+	public static bool ritualAcabado;
+	bool comprobanteSangre = false;
+	public static Node2D unicornioVerde, unicornioRojo, unicornioNaranja, unicornioBlanco, unicornioAmarillo, particulaUA, particulaUR, particulaUV, particulaUN, particulaUB, relojDesvan, caldero, Izquierda, Derecha, Arriba, AbajoDerecha, AbajoIzquierda;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready() {
 		if(!ritualAcabado){
@@ -19,25 +20,19 @@ public partial class MainDesvan : Node2D {
 			instanciarYAgregarNodo("res://escenas/escena3/objects/unicornioVerde.tscn", ref unicornioVerde);
 		}
 		instanciarMain();
-		
-		//audioStreamPlayer2D.Play();
+		audioStreamPlayer2D.Play();
 		
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta) {
+		if(ritualAcabado && !comprobanteSangre){
+			comprobanteSangre = true;
+			instanciarYAgregarNodo("res://escenas/escena3/objects/unicornioNaranja.tscn", ref unicornioNaranja);
+		}
 		
 	}
 
-	public static void setRitualAcabado(bool ritual)
-	{
-		ritualAcabado = ritual;
-	}
-
-	public static bool getRitualAcabado()
-	{
-		return ritualAcabado;
-	}
 	private void instanciarYAgregarNodo(String rutaEscena, ref Node2D node2D) {
 
         foreach(String objeto in Cofre.objetosGuardados){
@@ -51,12 +46,21 @@ public partial class MainDesvan : Node2D {
         comprobanteArray = false;
     }
 	private void instanciarMain(){
+		instanciarYAgregarNodo("res://escenas/escena3/objects/izquierda.tscn", ref Izquierda);
+		instanciarYAgregarNodo("res://escenas/escena3/objects/derecha.tscn", ref Derecha);
+		instanciarYAgregarNodo("res://escenas/escena3/objects/abajoDerecha.tscn", ref AbajoDerecha);
+		instanciarYAgregarNodo("res://escenas/escena3/objects/abajoIzquierda.tscn", ref AbajoIzquierda);
+		instanciarYAgregarNodo("res://escenas/escena3/objects/arriba.tscn", ref Arriba);
+
 		instanciarYAgregarNodo("res://escenas/escena3/objects/ParticulaUA.tscn", ref particulaUA);
 		instanciarYAgregarNodo("res://escenas/escena3/objects/ParticulaUR.tscn", ref particulaUR);
 		instanciarYAgregarNodo("res://escenas/escena3/objects/ParticulaUV.tscn", ref particulaUV);
 		instanciarYAgregarNodo("res://escenas/escena3/objects/ParticulaUN.tscn", ref particulaUN);
 		instanciarYAgregarNodo("res://escenas/escena3/objects/ParticulaUB.tscn", ref particulaUB);
-		instanciarYAgregarNodo("res://escenas/escena3/objects/RelojDesvan.tscn", ref relojDesvan);
+		instanciarYAgregarNodo("res://escenas/escena3/objects/caldero.tscn", ref caldero);
+		instanciarYAgregarNodo("res://escenas/escena3/objects/relojDesvan.tscn", ref relojDesvan);
+		
+		
 
 	}
 }
