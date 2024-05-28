@@ -29,6 +29,7 @@ public partial class Hueso : Area2D {
 			sprite.Visible = true;
 			postAnimacion = true;
 		}
+		if(this.IsInGroup("Hueso")) GD.Print(this.Position);
 
 		comprobarSkin();
 		

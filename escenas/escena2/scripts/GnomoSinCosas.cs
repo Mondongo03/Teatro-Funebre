@@ -14,6 +14,7 @@ public partial class GnomoSinCosas : Area2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta) {
 		if(animacionTerminada) sprite.Visible = true;
+		
 	}
 	private void _on_area_entered(CollisionObject2D collisionObject2D) {
 			if (collisionObject2D.IsInGroup("Ojo")&& !MueveTeEnElBosque.comenzar) {

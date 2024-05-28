@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://b3oscujcwaje6"]
+[gd_scene load_steps=29 format=3 uid="uid://b3oscujcwaje6"]
 
 [ext_resource type="Script" path="res://escenas/escena2/scripts/escena2.cs" id="1_7q1kv"]
 [ext_resource type="PackedScene" uid="uid://c0vydxagyq8pj" path="res://escenas/menuPausa/escenas/pausa.tscn" id="2_p1h3l"]
@@ -14,10 +14,6 @@
 [ext_resource type="PackedScene" uid="uid://suhwt3dfugp" path="res://escenas/escena2/objetos/ramoncin.tscn" id="12_cpiaa"]
 [ext_resource type="Script" path="res://escenas/escena2/scripts/GnomoSinCosas.cs" id="14_wdqc6"]
 [ext_resource type="PackedScene" uid="uid://csicptbljjd3v" path="res://escenas/escena2/objetos/cofre.tscn" id="16_3ddve"]
-[ext_resource type="PackedScene" uid="uid://68yuviru404j" path="res://Pistas-Textos/pista.tscn" id="17_64kkr"]
-[ext_resource type="Script" path="res://escenas/escena2/scripts/Hueso.cs" id="18_swpde"]
-[ext_resource type="Texture2D" uid="uid://cm0tjgn0nc6pw" path="res://escenas/escena2/assets/huesoInGnomo.png" id="19_g2n5s"]
-[ext_resource type="PackedScene" uid="uid://cc62t56q8ggh0" path="res://escenas/escena2/objetos/hueso.tscn" id="20_ls4ry"]
 [ext_resource type="PackedScene" uid="uid://bv5ynspws8yl4" path="res://escenas/escena2/objetos/flechaIzquierda.tscn" id="22_qmkqx"]
 
 [sub_resource type="Curve2D" id="Curve2D_a8trf"]
@@ -113,9 +109,6 @@ size = Vector2(58.8438, 121.281)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wnx72"]
 size = Vector2(119, 43)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rv0lo"]
-size = Vector2(14.5455, 15.4545)
-
 [node name="Node2D2" type="Node2D" node_paths=PackedStringArray("audioStreamPlayer2D")]
 position = Vector2(62, 51)
 script = ExtResource("1_7q1kv")
@@ -198,29 +191,7 @@ position = Vector2(6, 359)
 position = Vector2(1016, 87)
 monitorable = false
 
-[node name="Pista" parent="." instance=ExtResource("17_64kkr")]
-
-[node name="Hueso" type="Area2D" parent="." groups=["HuesoGnomo"]]
-position = Vector2(547, 514)
-scale = Vector2(1.1, 1.1)
-script = ExtResource("18_swpde")
-
-[node name="Sprite2D" type="Sprite2D" parent="Hueso"]
-visible = false
-texture_filter = 1
-scale = Vector2(1.1, 1.1)
-texture = ExtResource("19_g2n5s")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Hueso"]
-position = Vector2(0, 2.27271)
-shape = SubResource("RectangleShape2D_rv0lo")
-
-[node name="Area2D4" parent="." instance=ExtResource("20_ls4ry")]
-position = Vector2(547, 514)
-
 [connection signal="area_entered" from="Gnomo/PathFollow2D/AnimatedSprite2D/Area2D" to="Gnomo/PathFollow2D" method="_on_area_2d_area_entered"]
 [connection signal="area_entered" from="Area2D2" to="Area2D2" method="_on_area_entered"]
 [connection signal="area_entered" from="Area2D3" to="Area2D3" method="_on_area_entered"]
 [connection signal="area_exited" from="Area2D3" to="Area2D3" method="_on_area_exited"]
-[connection signal="area_entered" from="Hueso" to="Hueso" method="_on_area_entered"]
-[connection signal="area_exited" from="Hueso" to="Hueso" method="_on_area_exited"]

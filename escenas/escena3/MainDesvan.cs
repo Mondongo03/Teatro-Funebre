@@ -8,7 +8,7 @@ public partial class MainDesvan : Node2D {
 	[Export] public AudioStreamPlayer2D audioStreamPlayer2D;
 	bool comprobanteArray = false;
 	private static bool ritualAcabado;
-	public static Node2D unicornioVerde, unicornioRojo, unicornioNaranja, unicornioBlanco, unicornioAmarillo;
+	public static Node2D unicornioVerde, unicornioRojo, unicornioNaranja, unicornioBlanco, unicornioAmarillo, particulaUA, particulaUR, particulaUV, particulaUN, particulaUB, relojDesvan;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready() {
 		if(!ritualAcabado){
@@ -18,7 +18,7 @@ public partial class MainDesvan : Node2D {
 			instanciarYAgregarNodo("res://escenas/escena3/objects/unicornioRojo.tscn", ref unicornioRojo);
 			instanciarYAgregarNodo("res://escenas/escena3/objects/unicornioVerde.tscn", ref unicornioVerde);
 		}
-		
+		instanciarMain();
 		
 		//audioStreamPlayer2D.Play();
 		
@@ -50,4 +50,13 @@ public partial class MainDesvan : Node2D {
         }
         comprobanteArray = false;
     }
+	private void instanciarMain(){
+		instanciarYAgregarNodo("res://escenas/escena3/objects/ParticulaUA.tscn", ref particulaUA);
+		instanciarYAgregarNodo("res://escenas/escena3/objects/ParticulaUR.tscn", ref particulaUR);
+		instanciarYAgregarNodo("res://escenas/escena3/objects/ParticulaUV.tscn", ref particulaUV);
+		instanciarYAgregarNodo("res://escenas/escena3/objects/ParticulaUN.tscn", ref particulaUN);
+		instanciarYAgregarNodo("res://escenas/escena3/objects/ParticulaUB.tscn", ref particulaUB);
+		instanciarYAgregarNodo("res://escenas/escena3/objects/RelojDesvan.tscn", ref relojDesvan);
+
+	}
 }

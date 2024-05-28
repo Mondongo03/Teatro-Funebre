@@ -72,36 +72,36 @@ public partial class Reloj : Area2D
         {
             if (!VarillaM.encontrado && !VarillaS.encontrado)
             {
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/fondoNegro.tscn", new Vector2I(-400, -400), 0, ref Main.fondoNegroInstancia);
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/relojZoomeado.tscn", 4, ref Main.relojZoomeadoInstancia);
+                InstanciarYAgregarNodo("res://escenas/escena1/objects/fondoNegro.tscn", new Vector2I(-400, -400), 4, ref Main.fondoNegroInstancia);
+                InstanciarYAgregarNodo("res://escenas/escena1/objects/relojZoomeado.tscn", 6, ref Main.relojZoomeadoInstancia);
             }
             else if (VarillaM.encontrado && !VarillaS.encontrado)
             {
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/fondoNegro.tscn", new Vector2I(-400, -400), 0, ref Main.fondoNegroInstancia);
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/relojZoomeado.tscn", 4, ref Main.relojZoomeadoInstancia);
+                InstanciarYAgregarNodo("res://escenas/escena1/objects/fondoNegro.tscn", new Vector2I(-400, -400), 4, ref Main.fondoNegroInstancia);
+                InstanciarYAgregarNodo("res://escenas/escena1/objects/relojZoomeado.tscn", 6, ref Main.relojZoomeadoInstancia);
                 InstanciarYAgregarNodo("res://escenas/escena1/objects/varillaM.tscn", new Vector2I(235, 80), 5, ref Main.varillaMinutosInstancia);
             }
             else if (!VarillaM.encontrado && VarillaS.encontrado)
             {
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/fondoNegro.tscn", new Vector2I(-400, -400), 0, ref Main.fondoNegroInstancia);
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/relojZoomeado.tscn", 4, ref Main.relojZoomeadoInstancia);
+                InstanciarYAgregarNodo("res://escenas/escena1/objects/fondoNegro.tscn", new Vector2I(-400, -400), 4, ref Main.fondoNegroInstancia);
+                InstanciarYAgregarNodo("res://escenas/escena1/objects/relojZoomeado.tscn", 6, ref Main.relojZoomeadoInstancia);
                 InstanciarYAgregarNodo("res://escenas/escena1/objects/varillaS.tscn", new Vector2I(235, 80), 5, ref Main.varillaSegundosInstancia);
             }
             else if (VarillaM.encontrado && VarillaS.encontrado && !Cajon.encontrado && !terminado)
             {
                 zoooom = true;
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/fondoNegro.tscn", new Vector2I(-400, -400), 0, ref Main.fondoNegroInstancia);
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/relojZoomeado.tscn", 4, ref Main.relojZoomeadoInstancia);
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/varillaM.tscn", new Vector2I(235, 80), 5, ref Main.varillaMinutosInstancia);
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/varillaS.tscn", new Vector2I(235, 80), 5, ref Main.varillaSegundosInstancia);
+                InstanciarYAgregarNodo("res://escenas/escena1/objects/fondoNegro.tscn", new Vector2I(-400, -400), 4, ref Main.fondoNegroInstancia);
+                InstanciarYAgregarNodo("res://escenas/escena1/objects/relojZoomeado.tscn", 6, ref Main.relojZoomeadoInstancia);
+                InstanciarYAgregarNodo("res://escenas/escena1/objects/varillaM.tscn", new Vector2I(235, 80), 6, ref Main.varillaMinutosInstancia);
+                InstanciarYAgregarNodo("res://escenas/escena1/objects/varillaS.tscn", new Vector2I(235, 80), 6, ref Main.varillaSegundosInstancia);
             }
             else if (VarillaM.encontrado && VarillaS.encontrado && Cajon.encontrado && !terminado)
             {
                 zoooom = true;
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/fondoNegro.tscn", new Vector2I(-400, -400), 0, ref Main.fondoNegroInstancia);
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/relojZoomeado.tscn", 4, ref Main.relojZoomeadoInstancia);
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/varillaM.tscn", new Vector2I(235, 80), 5, ref Main.varillaMinutosInstancia);
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/varillaS.tscn", new Vector2I(235, 80), 5, ref Main.varillaSegundosInstancia);
+                InstanciarYAgregarNodo("res://escenas/escena1/objects/fondoNegro.tscn", new Vector2I(-400, -400), 4, ref Main.fondoNegroInstancia);
+                InstanciarYAgregarNodo("res://escenas/escena1/objects/relojZoomeado.tscn", 6, ref Main.relojZoomeadoInstancia);
+                InstanciarYAgregarNodo("res://escenas/escena1/objects/varillaM.tscn", new Vector2I(235, 80), 6, ref Main.varillaMinutosInstancia);
+                InstanciarYAgregarNodo("res://escenas/escena1/objects/varillaS.tscn", new Vector2I(235, 80), 6, ref Main.varillaSegundosInstancia);
             }
         }
     }

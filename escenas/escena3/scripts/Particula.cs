@@ -23,7 +23,7 @@ public partial class Particula : Area2D {
 		if(this.IsInGroup("Amarillo") && amarillo) this.Visible = true;
 		if(this.IsInGroup("Naranja") && naranja) this.Visible = true;
 		if(this.IsInGroup("Verde") && verde) this.Visible = true;
-		if(this.IsInGroup("Blanco") && rojo) this.Visible = true;
+		if(this.IsInGroup("Blanco") && blanco) this.Visible = true;
 	}
 	public void apagarLuces(){
 		if(this.IsInGroup("Rojo") && !rojo) this.Visible = false;

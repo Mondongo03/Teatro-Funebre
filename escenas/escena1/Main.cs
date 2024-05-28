@@ -9,7 +9,7 @@ public partial class Main : Node2D
     int slotsOcupados;
     Area2D pista_1;
     Node2D godotInstancia2;
-    public static Node2D varillaMinutosInstancia,varillaSegundosInstancia,relojZoomeadoInstancia,fondoNegroInstancia,cajonZoomeadoInstancia,huecoInstancia,escaleraInstancia,cajetillaInstancia,tapaInstancia,pista_1Instancia,lamparaEncendidaInstancia,lamparaApagadaInstancia,relojInstancia,posterInstancia,monstruoInstancia, flechaDerechaInstancia;
+    public static Node2D varillaMinutosInstancia, pista, varillaSegundosInstancia,relojZoomeadoInstancia,fondoNegroInstancia,cajonZoomeadoInstancia,huecoInstancia,escaleraInstancia,cajetillaInstancia,tapaInstancia,pista_1Instancia,lamparaEncendidaInstancia,lamparaApagadaInstancia,relojInstancia,posterInstancia,monstruoInstancia, flechaDerechaInstancia, camaInstancia;
     Boolean clickadoBola, clickadoVarillaM = false;
     public static Boolean varillaMinutosReloj, varillaSegundosReloj = false;
     [Export] public AnimationPlayer animationPlayer;
@@ -43,6 +43,7 @@ public partial class Main : Node2D
         if (varillaMinutosInstancia != null) {
             clickadoVarillaM = VarillaM.devolverClickado();
         }
+        GD.Print(GetGlobalMousePosition());
         
     }
 
@@ -67,6 +68,9 @@ public partial class Main : Node2D
         instanciarYAgregarNodo("res://escenas/escena1/objects/poster.tscn", ref posterInstancia);
         instanciarYAgregarNodo("res://escenas/escena1/objects/monstruo.tscn", ref monstruoInstancia);
         instanciarYAgregarNodo("res://escenas/escena1/objects/flechaDerecha.tscn", ref flechaDerechaInstancia);
+        instanciarYAgregarNodo("res://escenas/escena1/objects/cama.tscn", ref camaInstancia);
+        instanciarYAgregarNodo("res://escenas/Pistas/pista.tscn", ref pista);
+        pista.Position = new Vector2I(1064, 72);
     }
 
     /// <summary>
