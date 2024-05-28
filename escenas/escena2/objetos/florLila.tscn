@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dyy13k5csieit"]
+
+[ext_resource type="Script" path="res://escenas/escena2/scripts/Flor.cs" id="1_wnfbh"]
+[ext_resource type="Texture2D" uid="uid://bv42t2hpqvkya" path="res://escenas/escena2/assets/FlorMagenta.png" id="2_ki6fn"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_iffr6"]
+radius = 5.0
+height = 44.0
+
+[node name="Area2D7" type="Area2D"]
+position = Vector2(420, 462)
+script = ExtResource("1_wnfbh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ki6fn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_iffr6")

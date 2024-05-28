@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dai8qh7jj40my"]
+
+[ext_resource type="Script" path="res://escenas/escena2/scripts/Flor.cs" id="1_ui04q"]
+[ext_resource type="Texture2D" uid="uid://c8d5k6jcxt7bd" path="res://escenas/escena2/assets/florLilaEspecial.png" id="2_ticri"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kbcbr"]
+radius = 8.0
+height = 36.0
+
+[node name="Area2D10" type="Area2D" groups=["FlorBuena"]]
+position = Vector2(943, 466)
+script = ExtResource("1_ui04q")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ticri")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_kbcbr")

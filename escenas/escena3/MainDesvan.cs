@@ -28,7 +28,7 @@ public partial class MainDesvan : Node2D {
 	public override void _Process(double delta) {
 		if(ritualAcabado && !comprobanteSangre){
 			comprobanteSangre = true;
-			instanciarYAgregarNodo("res://escenas/escena3/objects/unicornioNaranja.tscn", ref unicornioNaranja);
+			instanciarYAgregarNodo("res://escenas/escena3/objects/vialSangre.tscn", ref unicornioNaranja);
 		}
 		
 	}

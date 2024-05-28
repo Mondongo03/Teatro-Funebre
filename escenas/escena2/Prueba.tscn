@@ -126,6 +126,7 @@ stream = ExtResource("4_m1gnl")
 bus = &"Musica"
 
 [node name="Gnomo" type="Path2D" parent="."]
+z_index = 1
 position = Vector2(26, -4)
 scale = Vector2(0.1, 0.1)
 curve = SubResource("Curve2D_a8trf")
