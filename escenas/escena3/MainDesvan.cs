@@ -8,8 +8,8 @@ public partial class MainDesvan : Node2D {
 	[Export] public AudioStreamPlayer2D audioStreamPlayer2D;
 	bool comprobanteArray = false;
 	public static bool ritualAcabado;
-	bool comprobanteSangre = false;
-	public static Node2D vial, unicornioVerde, unicornioRojo, unicornioNaranja, unicornioBlanco, unicornioAmarillo, particulaUA, particulaUR, particulaUV, particulaUN, particulaUB, relojDesvan, caldero, izquierda, derecha, arriba, abajoDerecha, abajoIzquierda, muebleRecetario;
+	static bool comprobanteSangre = false;
+	public static Node2D megaPoti, vial, unicornioVerde, unicornioRojo, unicornioNaranja, unicornioBlanco, unicornioAmarillo, particulaUA, particulaUR, particulaUV, particulaUN, particulaUB, relojDesvan, caldero, izquierda, derecha, arriba, abajoDerecha, abajoIzquierda, muebleRecetario;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready() {
 		if(!ritualAcabado){
@@ -61,6 +61,7 @@ public partial class MainDesvan : Node2D {
 		instanciarYAgregarNodo("res://escenas/escena3/objects/caldero.tscn", ref caldero);
 		instanciarYAgregarNodo("res://escenas/escena3/objects/relojDesvan.tscn", ref relojDesvan);
 		instanciarYAgregarNodo("res://escenas/escena3/objects/muebleRecetario.tscn", ref muebleRecetario);
+		instanciarYAgregarNodo("res://escenas/escena3/objects/megaPoti.tscn", ref megaPoti);
 		
 		
 

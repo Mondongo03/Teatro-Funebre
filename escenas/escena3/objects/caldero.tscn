@@ -1,10 +1,11 @@
-[gd_scene load_steps=27 format=3 uid="uid://jicwvc3sqn1s"]
+[gd_scene load_steps=28 format=3 uid="uid://jicwvc3sqn1s"]
 
 [ext_resource type="Script" path="res://escenas/escena3/scripts/Caldero.cs" id="1_iftpy"]
 [ext_resource type="Texture2D" uid="uid://bq1m3yn5idtqu" path="res://escenas/escena3/assets/Caldero.png" id="2_iqd4m"]
 [ext_resource type="Texture2D" uid="uid://bbn5lk51pje4q" path="res://escenas/escena3/assets/CalderoVerde.png" id="3_qw1ty"]
 [ext_resource type="Texture2D" uid="uid://cfmofjmx0hgjy" path="res://escenas/escena3/assets/CalderoAzul.png" id="4_3dv2r"]
 [ext_resource type="Texture2D" uid="uid://c0bb3meonq3f5" path="res://escenas/escena3/assets/CalderoRosa.png" id="5_tfnya"]
+[ext_resource type="Texture2D" uid="uid://cg51d5la71818" path="res://escenas/escena3/assets/CalderoVacio.png" id="6_q6sfp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mw7w8"]
 atlas = ExtResource("2_iqd4m")
@@ -179,8 +180,13 @@ sprite_frames = SubResource("SpriteFrames_7hyo2")
 autoplay = "default"
 frame_progress = 0.572951
 
+[node name="Vacio" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(0, 24)
+texture = ExtResource("6_q6sfp")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 23)
+position = Vector2(2, 21)
 shape = SubResource("CircleShape2D_f32x0")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

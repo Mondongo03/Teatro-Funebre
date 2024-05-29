@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=3 uid="uid://cusqlmuh80kh"]
+
+[ext_resource type="Texture2D" uid="uid://ddbckl1lokln0" path="res://escenas/escena1/assets/GnomoCD.png" id="1_0ss7k"]
+[ext_resource type="Texture2D" uid="uid://db4kqtpbjhj61" path="res://escenas/escena2/assets/GnomoCreciendo.png" id="2_jmskl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shd8j"]
+atlas = ExtResource("1_0ss7k")
+region = Rect2(0, 0, 46, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1gtw4"]
+atlas = ExtResource("2_jmskl")
+region = Rect2(0, 0, 45, 145)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8yx5w"]
+atlas = ExtResource("2_jmskl")
+region = Rect2(45, 0, 45, 145)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cqyju"]
+atlas = ExtResource("2_jmskl")
+region = Rect2(90, 0, 45, 145)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y2108"]
+animations = [{
+"frames": [{
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_shd8j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1gtw4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8yx5w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cqyju")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Area2D4" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_y2108")
+autoplay = "default"
+frame = 3
+frame_progress = 1.0

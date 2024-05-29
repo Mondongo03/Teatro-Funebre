@@ -21,10 +21,11 @@ public partial class Cofre : Area2D {
         if(CartasCartitas.victoria){
             this.Visible = true;
         }
+        this.Visible = true;
     }
 
     private void _on_area_entered(CollisionObject2D collisionObject2D){
-        if(this.IsInGroup("Cofre") && !abierto && !collisionObject2D.IsInGroup("FondoNegro") && !collisionObject2D.IsInGroup("CajonZoomeado") && !collisionObject2D.IsInGroup("RecetarioZoomeado")){
+        if(this.IsInGroup("Cofre") && !abierto && !collisionObject2D.IsInGroup("FondoNegro") && !collisionObject2D.IsInGroup("CajonZoomeado") && !collisionObject2D.IsInGroup("RecetarioZoomeado") && this.Visible == true){
             objetosGuardados.Add(collisionObject2D.SceneFilePath);
             script = (Script)collisionObject2D.GetScript();
             GD.Print(script.ResourcePath);

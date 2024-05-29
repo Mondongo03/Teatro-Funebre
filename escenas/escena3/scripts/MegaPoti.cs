@@ -1,13 +1,20 @@
 using Godot;
 using System;
 
-public partial class Flor : Area2D
+public partial class MegaPoti : Area2D
 {
 	static bool puedoMover = false;
-	static Flor objetoEnMovimiento = null;
-	public Node2D node2D;
-	// Called when the node enters the scene tree for the first time.
+	Sprite2D spriteVacio, spriteLleno;
+	static MegaPoti objetoEnMovimiento = null;
+	public static bool lleno = false;
 	public override void _Ready() {
+		spriteVacio = GetChild<Sprite2D>(0);
+		spriteLleno = GetChild<Sprite2D>(1);
+		if(lleno){
+			spriteVacio.Visible = false;
+			spriteLleno.Visible = true;
+		}
+
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -25,12 +32,12 @@ public partial class Flor : Area2D
 			objetoEnMovimiento = null;
 		}
 	}
-	private void _on_mouse_entered(){
-		Escena2.node2D.Visible = true;
-	}
-	private void _on_mouse_exited(){
-		Escena2.node2D.Visible = false;
-	}
 
-    
+	private void _on_area_entered(CollisionObject2D collisionObject2D) {
+		if (collisionObject2D.IsInGroup("Caldero") && Caldero.contador >=4) {
+			spriteVacio.Visible = false;
+			spriteLleno.Visible = true;
+			lleno = true;
+		}
+	}
 }

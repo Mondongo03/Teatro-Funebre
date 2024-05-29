@@ -7,12 +7,14 @@ public partial class Caldero : Area2D {
 	AnimatedSprite2D verde;
 	AnimatedSprite2D azul;
 	AnimatedSprite2D rosa;
-	static int contador = 1;
+	Sprite2D vacio;
+	public static int contador = 1;
 	public override void _Ready() {
 		rojo  = GetChild<AnimatedSprite2D>(0);
 		verde  = GetChild<AnimatedSprite2D>(1);
 		rosa  = GetChild<AnimatedSprite2D>(2);
 		azul  = GetChild<AnimatedSprite2D>(3);
+		vacio = GetChild<Sprite2D>(4);
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -44,6 +46,10 @@ public partial class Caldero : Area2D {
 			rosa.Visible = false;
 			azul.Visible = true;
 			
+		}
+		if(MegaPoti.lleno) {
+			azul.Visible = false;
+			vacio.Visible = true;
 		}
 	}
 

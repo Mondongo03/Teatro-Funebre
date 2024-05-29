@@ -1,6 +1,6 @@
 [gd_scene load_steps=29 format=3 uid="uid://b3oscujcwaje6"]
 
-[ext_resource type="Script" path="res://escenas/escena2/scripts/escena2.cs" id="1_7q1kv"]
+[ext_resource type="Script" path="res://escenas/escena2/Escena2.cs" id="1_532y4"]
 [ext_resource type="PackedScene" uid="uid://c0vydxagyq8pj" path="res://escenas/menuPausa/escenas/pausa.tscn" id="2_p1h3l"]
 [ext_resource type="Texture2D" uid="uid://yrxr74qsyjb1" path="res://escenas/escena2/assets/BosqueDefinitivo.png" id="2_p8osb"]
 [ext_resource type="AudioStream" uid="uid://ccfyo5w280mxv" path="res://escenas/escena2/assets/magic-forest-95823.mp3" id="4_m1gnl"]
@@ -109,10 +109,9 @@ size = Vector2(58.8438, 121.281)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wnx72"]
 size = Vector2(119, 43)
 
-[node name="Node2D2" type="Node2D" node_paths=PackedStringArray("audioStreamPlayer2D")]
+[node name="Node2D2" type="Node2D"]
 position = Vector2(62, 51)
-script = ExtResource("1_7q1kv")
-audioStreamPlayer2D = NodePath("AudioStreamPlayer2D")
+script = ExtResource("1_532y4")
 
 [node name="Fondo" type="Sprite2D" parent="."]
 position = Vector2(514, 272)

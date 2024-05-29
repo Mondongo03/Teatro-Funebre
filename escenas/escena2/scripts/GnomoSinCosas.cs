@@ -6,6 +6,7 @@ public partial class GnomoSinCosas : Area2D
 	public static Sprite2D sprite;
 	public static bool animacionTerminada = false;
 	public static bool tullido = false;
+	public static bool crecer = false;
 	public override void _Ready() {
 		sprite = GetChild<Sprite2D>(0);
 		
@@ -20,6 +21,10 @@ public partial class GnomoSinCosas : Area2D
 			if (collisionObject2D.IsInGroup("Ojo")&& !MueveTeEnElBosque.comenzar) {
 				sprite.Texture = (Texture2D)GD.Load("res://escenas/escena2/assets/gnomoTullido.png");
 				tullido = true;
+			}
+			if(collisionObject2D.IsInGroup("MegaPoti") && MegaPoti.lleno){
+				crecer = true;
+				this.QueueFree();
 			}
 	}
 	private void _on_area_exited(CollisionObject2D collisionObject2D) {

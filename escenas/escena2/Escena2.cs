@@ -4,17 +4,18 @@ using System;
 /// <summary>
 /// Clase que nos permite gestionar todo lo que ocurre en la segunda escena
 /// </summary>
-public partial class escena2 : Node2D
-{
-	public static Node2D node2D, ojo, cofre, pista, hueso, huesoPegadoCuerpo, flor1, flor2, flor3, flor4, flor5, flor6;
+public partial class Escena2 : Node2D {
+	public static Node2D node2D, gnomoCrecer, ojo, cofre, pista, hueso, huesoPegadoCuerpo, flor1, flor2, flor3, flor4, flor5, flor6;
 	[Export] public AudioStreamPlayer2D audioStreamPlayer2D;
 	bool comprobanteArray = false;
+	bool comprobanteCrecer = false;
 
 	/// <summary>
 	/// Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script
 	/// </summary>
 	public override void _Ready()
 	{
+		audioStreamPlayer2D = GetChild<AudioStreamPlayer2D>(2);
 		audioStreamPlayer2D.Play();
 		instanciarYAgregarNodo("res://escenas/escena2/objetos/ojo.tscn", ref ojo);
 		instanciarYAgregarNodo("res://escenas/escena2/objetos/hueso.tscn", ref hueso);
@@ -28,6 +29,11 @@ public partial class escena2 : Node2D
 		instanciarYAgregarNodo("res://escenas/escena2/objetos/florLilaEspecial.tscn", ref flor5);
 		instanciarYAgregarNodo("res://escenas/escena2/objetos/florRoja.tscn", ref flor6);
 		instanciarYAgregarNodo("res://escenas/escena2/objetos/greenPeace.tscn", ref node2D);
+
+		if(GnomoSinCosas.crecer && !comprobanteCrecer){
+			instanciarYAgregarNodo("res://escenas/escena2/objetos/GnomoCreciendo.tscn", ref gnomoCrecer);
+			comprobanteCrecer = true;
+		}
 	}
 
 	/// <summary>

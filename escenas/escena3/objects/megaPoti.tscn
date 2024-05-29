@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://cbvb2o8qbnluk"]
+
+[ext_resource type="Script" path="res://escenas/escena3/scripts/MegaPoti.cs" id="1_jrivm"]
+[ext_resource type="Texture2D" uid="uid://ci8p31yb0wliy" path="res://escenas/escena3/assets/Bote.png" id="2_d6eb7"]
+[ext_resource type="Texture2D" uid="uid://c4hkc6fgsnppu" path="res://escenas/escena3/assets/MegaPoti.png" id="3_5sbvp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5dohi"]
+size = Vector2(47, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bkuct"]
+size = Vector2(22, 30)
+
+[node name="Area2D" type="Area2D"]
+position = Vector2(819, 324)
+script = ExtResource("1_jrivm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0.75, -15)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_d6eb7")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1, -15)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_5sbvp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -1)
+shape = SubResource("RectangleShape2D_5dohi")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(0.75, -30)
+shape = SubResource("RectangleShape2D_bkuct")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="input_event" from="." to="." method="_on_input_event"]
