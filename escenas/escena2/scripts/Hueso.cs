@@ -8,7 +8,7 @@ public partial class Hueso : Area2D {
 
 	bool postAnimacion = false;
 	public static bool guardado = false;
-	static int clicks = 0;
+	public static int clicks = 0;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready() {
 
@@ -29,7 +29,7 @@ public partial class Hueso : Area2D {
 			sprite.Visible = true;
 			postAnimacion = true;
 		}
-		if(this.IsInGroup("Hueso")) GD.Print(this.Position);
+		if(this.IsInGroup("Hueso"))
 
 		comprobarSkin();
 		

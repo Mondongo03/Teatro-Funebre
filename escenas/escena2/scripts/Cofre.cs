@@ -24,7 +24,7 @@ public partial class Cofre : Area2D {
     }
 
     private void _on_area_entered(CollisionObject2D collisionObject2D){
-        if(this.IsInGroup("Cofre") && !abierto && !collisionObject2D.IsInGroup("FondoNegro")&& !collisionObject2D.IsInGroup("CajonZoomeado")){
+        if(this.IsInGroup("Cofre") && !abierto && !collisionObject2D.IsInGroup("FondoNegro") && !collisionObject2D.IsInGroup("CajonZoomeado") && !collisionObject2D.IsInGroup("RecetarioZoomeado")){
             objetosGuardados.Add(collisionObject2D.SceneFilePath);
             script = (Script)collisionObject2D.GetScript();
             GD.Print(script.ResourcePath);

@@ -6,11 +6,13 @@ public partial class Caldero : Area2D {
 	AnimatedSprite2D rojo;
 	AnimatedSprite2D verde;
 	AnimatedSprite2D azul;
+	AnimatedSprite2D rosa;
 	static int contador = 1;
 	public override void _Ready() {
 		rojo  = GetChild<AnimatedSprite2D>(0);
 		verde  = GetChild<AnimatedSprite2D>(1);
-		azul  = GetChild<AnimatedSprite2D>(2);
+		rosa  = GetChild<AnimatedSprite2D>(2);
+		azul  = GetChild<AnimatedSprite2D>(3);
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -18,23 +20,37 @@ public partial class Caldero : Area2D {
 		if(contador == 1) {
 			rojo.Visible = true;
 			verde.Visible = false;
+			rosa.Visible = false;
 			azul.Visible = false;
+			
 		}
 		if(contador == 2) {
 			rojo.Visible = false;
 			verde.Visible = true;
+			rosa.Visible = false;
 			azul.Visible = false;
+			
 		}
 		if(contador == 3) {
 			rojo.Visible = false;
 			verde.Visible = false;
+			rosa.Visible = true;
+			azul.Visible = false;
+			
+		}
+		if(contador == 4) {
+			rojo.Visible = false;
+			verde.Visible = false;
+			rosa.Visible = false;
 			azul.Visible = true;
+			
 		}
 	}
 
-	public void _on_input_event(Node viewport, InputEvent evento, int shap) {
-		if (evento.IsActionPressed("click_izquierdo")) {
+	void _on_area_entered(CollisionObject2D collisionObject2D){
+		if(collisionObject2D.IsInGroup("Vial") || collisionObject2D.IsInGroup("FlorBuena") || collisionObject2D.IsInGroup("Hueso") && Hueso.clicks >= 30){
 			contador++;
+			collisionObject2D.QueueFree();
 		}
 	}
 }

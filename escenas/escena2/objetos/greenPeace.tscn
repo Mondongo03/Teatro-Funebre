@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dql2346d3e6p5"]
+
+[ext_resource type="Texture2D" uid="uid://c16yt61ld6hwq" path="res://escenas/escena2/assets/GreenPace.png" id="1_ba6um"]
+[ext_resource type="Script" path="res://escenas/escena2/objetos/greenPeace.cs" id="1_q4lfv"]
+
+[node name="Area2D4" type="Area2D"]
+visible = false
+position = Vector2(522, 567)
+script = ExtResource("1_q4lfv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ba6um")

@@ -16,13 +16,9 @@ public partial class Unicornio : Area2D
 	/// <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
     public override void _Process(double delta)
     {
-        if (puedoMover && objetoEnMovimiento == this)
-        {
-            this.GlobalPosition = GetGlobalMousePosition();
-        }
-        if(MainDesvan.ritualAcabado){
-			this.QueueFree();
-		}
+        if (puedoMover && objetoEnMovimiento == this) this.GlobalPosition = GetGlobalMousePosition();
+        
+        if(MainDesvan.ritualAcabado) this.QueueFree();
     }
 
 	/// <summary>

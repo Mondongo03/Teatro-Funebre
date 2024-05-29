@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://dctjum5owj56f"]
+
+[ext_resource type="Script" path="res://escenas/escena3/scripts/Recetario.cs" id="1_bgo3y"]
+[ext_resource type="Texture2D" uid="uid://dc3tmivo7uw13" path="res://escenas/escena1/assets/fondoNegro.png" id="2_weniv"]
+[ext_resource type="Texture2D" uid="uid://bthg7ou5sqfr0" path="res://escenas/escena3/assets/recetario.png" id="3_apqr5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_coq6l"]
+size = Vector2(1165, 669)
+
+[node name="Area2D2" type="Area2D" groups=["RecetarioZoomeado"]]
+z_index = 777
+script = ExtResource("1_bgo3y")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(579.999, 322)
+scale = Vector2(1.72, 1.364)
+texture = ExtResource("2_weniv")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(594.5, 321)
+scale = Vector2(0.946469, 0.948485)
+texture = ExtResource("3_apqr5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(572.5, 324.5)
+shape = SubResource("RectangleShape2D_coq6l")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

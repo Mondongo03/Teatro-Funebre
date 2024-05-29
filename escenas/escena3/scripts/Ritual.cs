@@ -11,9 +11,7 @@ public partial class Ritual : Area2D {
 		{
 			MainDesvan.ritualAcabado = true;
 		}
-		 if(this.IsInGroup("Izquierda")){
-			GD.Print(this.Position);
-		}
+		
 		
 	}
 

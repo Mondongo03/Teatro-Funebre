@@ -9,7 +9,7 @@ public partial class MainDesvan : Node2D {
 	bool comprobanteArray = false;
 	public static bool ritualAcabado;
 	bool comprobanteSangre = false;
-	public static Node2D unicornioVerde, unicornioRojo, unicornioNaranja, unicornioBlanco, unicornioAmarillo, particulaUA, particulaUR, particulaUV, particulaUN, particulaUB, relojDesvan, caldero, Izquierda, Derecha, Arriba, AbajoDerecha, AbajoIzquierda;
+	public static Node2D vial, unicornioVerde, unicornioRojo, unicornioNaranja, unicornioBlanco, unicornioAmarillo, particulaUA, particulaUR, particulaUV, particulaUN, particulaUB, relojDesvan, caldero, izquierda, derecha, arriba, abajoDerecha, abajoIzquierda, muebleRecetario;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready() {
 		if(!ritualAcabado){
@@ -20,7 +20,7 @@ public partial class MainDesvan : Node2D {
 			instanciarYAgregarNodo("res://escenas/escena3/objects/unicornioVerde.tscn", ref unicornioVerde);
 		}
 		instanciarMain();
-		audioStreamPlayer2D.Play();
+		//audioStreamPlayer2D.Play();
 		
 	}
 
@@ -28,8 +28,9 @@ public partial class MainDesvan : Node2D {
 	public override void _Process(double delta) {
 		if(ritualAcabado && !comprobanteSangre){
 			comprobanteSangre = true;
-			instanciarYAgregarNodo("res://escenas/escena3/objects/vialSangre.tscn", ref unicornioNaranja);
+			instanciarYAgregarNodo("res://escenas/escena3/objects/vialSangre.tscn", ref vial);
 		}
+		
 		
 	}
 
@@ -46,11 +47,11 @@ public partial class MainDesvan : Node2D {
         comprobanteArray = false;
     }
 	private void instanciarMain(){
-		instanciarYAgregarNodo("res://escenas/escena3/objects/izquierda.tscn", ref Izquierda);
-		instanciarYAgregarNodo("res://escenas/escena3/objects/derecha.tscn", ref Derecha);
-		instanciarYAgregarNodo("res://escenas/escena3/objects/abajoDerecha.tscn", ref AbajoDerecha);
-		instanciarYAgregarNodo("res://escenas/escena3/objects/abajoIzquierda.tscn", ref AbajoIzquierda);
-		instanciarYAgregarNodo("res://escenas/escena3/objects/arriba.tscn", ref Arriba);
+		instanciarYAgregarNodo("res://escenas/escena3/objects/izquierda.tscn", ref izquierda);
+		instanciarYAgregarNodo("res://escenas/escena3/objects/derecha.tscn", ref derecha);
+		instanciarYAgregarNodo("res://escenas/escena3/objects/abajoDerecha.tscn", ref abajoDerecha);
+		instanciarYAgregarNodo("res://escenas/escena3/objects/abajoIzquierda.tscn", ref abajoIzquierda);
+		instanciarYAgregarNodo("res://escenas/escena3/objects/arriba.tscn", ref arriba);
 
 		instanciarYAgregarNodo("res://escenas/escena3/objects/ParticulaUA.tscn", ref particulaUA);
 		instanciarYAgregarNodo("res://escenas/escena3/objects/ParticulaUR.tscn", ref particulaUR);
@@ -59,6 +60,7 @@ public partial class MainDesvan : Node2D {
 		instanciarYAgregarNodo("res://escenas/escena3/objects/ParticulaUB.tscn", ref particulaUB);
 		instanciarYAgregarNodo("res://escenas/escena3/objects/caldero.tscn", ref caldero);
 		instanciarYAgregarNodo("res://escenas/escena3/objects/relojDesvan.tscn", ref relojDesvan);
+		instanciarYAgregarNodo("res://escenas/escena3/objects/muebleRecetario.tscn", ref muebleRecetario);
 		
 		
 

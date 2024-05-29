@@ -1,9 +1,10 @@
-[gd_scene load_steps=21 format=3 uid="uid://b8ih0huxx06nm"]
+[gd_scene load_steps=27 format=3 uid="uid://jicwvc3sqn1s"]
 
 [ext_resource type="Script" path="res://escenas/escena3/scripts/Caldero.cs" id="1_iftpy"]
 [ext_resource type="Texture2D" uid="uid://bq1m3yn5idtqu" path="res://escenas/escena3/assets/Caldero.png" id="2_iqd4m"]
 [ext_resource type="Texture2D" uid="uid://bbn5lk51pje4q" path="res://escenas/escena3/assets/CalderoVerde.png" id="3_qw1ty"]
 [ext_resource type="Texture2D" uid="uid://cfmofjmx0hgjy" path="res://escenas/escena3/assets/CalderoAzul.png" id="4_3dv2r"]
+[ext_resource type="Texture2D" uid="uid://c0bb3meonq3f5" path="res://escenas/escena3/assets/CalderoRosa.png" id="5_tfnya"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mw7w8"]
 atlas = ExtResource("2_iqd4m")
@@ -77,6 +78,42 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_k4l0f"]
+atlas = ExtResource("5_tfnya")
+region = Rect2(0, 0, 140, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5gg7m"]
+atlas = ExtResource("5_tfnya")
+region = Rect2(140, 0, 140, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kbgcu"]
+atlas = ExtResource("5_tfnya")
+region = Rect2(280, 0, 140, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hjhft"]
+atlas = ExtResource("5_tfnya")
+region = Rect2(420, 0, 140, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pchxs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k4l0f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5gg7m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kbgcu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hjhft")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_oynld"]
 atlas = ExtResource("4_3dv2r")
 region = Rect2(0, 0, 140, 192)
@@ -130,6 +167,11 @@ visible = false
 sprite_frames = SubResource("SpriteFrames_ti22j")
 autoplay = "default"
 frame_progress = 0.742518
+
+[node name="Rosa" type="AnimatedSprite2D" parent="."]
+visible = false
+sprite_frames = SubResource("SpriteFrames_pchxs")
+frame_progress = 0.107494
 
 [node name="Azul" type="AnimatedSprite2D" parent="."]
 visible = false

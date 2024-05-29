@@ -69,8 +69,9 @@ public partial class Main : Node2D
         instanciarYAgregarNodo("res://escenas/escena1/objects/monstruo.tscn", ref monstruoInstancia);
         instanciarYAgregarNodo("res://escenas/escena1/objects/flechaDerecha.tscn", ref flechaDerechaInstancia);
         instanciarYAgregarNodo("res://escenas/escena1/objects/cama.tscn", ref camaInstancia);
-        instanciarYAgregarNodo("res://escenas/Pistas/pista.tscn", ref pista);
+        instanciarYAgregarNodo("res://escenas/Pistas/pista.tscn", ref pista); 
         pista.Position = new Vector2I(1064, 72);
+        
     }
 
     /// <summary>
