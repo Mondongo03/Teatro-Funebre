@@ -56,6 +56,8 @@ public partial class Caldero : Area2D {
 	void _on_area_entered(CollisionObject2D collisionObject2D){
 		if(collisionObject2D.IsInGroup("Vial") || collisionObject2D.IsInGroup("FlorBuena") || collisionObject2D.IsInGroup("Hueso") && Hueso.clicks >= 30){
 			contador++;
+			if(collisionObject2D.IsInGroup("FlorBuena")) Flor.metidoEnCaldero = true;
+			if(collisionObject2D.IsInGroup("Hueso")) Hueso.metidoEnCaldero = true;
 			collisionObject2D.QueueFree();
 		}
 	}

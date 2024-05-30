@@ -10,7 +10,7 @@ size = Vector2(47, 30)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bkuct"]
 size = Vector2(22, 30)
 
-[node name="Area2D" type="Area2D"]
+[node name="Area2D" type="Area2D" groups=["MegaPoti"]]
 position = Vector2(819, 324)
 script = ExtResource("1_jrivm")
 

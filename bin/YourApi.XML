@@ -263,7 +263,7 @@
             <param name="evento">Nos permite detectar cuando se hace click</param>
             <param name="shap">Variable que se utiliza para la API</param>
         </member>
-        <member name="M:Reloj.InstanciarYAgregarNodo(System.String,Godot.Vector2I,System.Int32,Godot.Node2D@)">
+        <member name="M:Reloj.instanciarYAgregarNodo(System.String,Godot.Vector2I,System.Int32,Godot.Node2D@)">
             <summary>
             Método que instancia un nodo y lo agrega al árbol de escenas
             </summary>
@@ -272,7 +272,7 @@
             <param name="zIndex">Referencia al indice deseado en el nodo</param>
             <param name="node2D">Referencia al nodo instanciado</param>
         </member>
-        <member name="M:Reloj.InstanciarYAgregarNodo(System.String,System.Int32,Godot.Node2D@)">
+        <member name="M:Reloj.instanciarYAgregarNodo(System.String,System.Int32,Godot.Node2D@)">
             <summary>
             Método que instancia un nodo y lo agrega al árbol de escenas
             </summary>
@@ -280,7 +280,7 @@
             <param name="zIndex">Referencia al indice deseado en el nodo</param>
             <param name="node2D">Referencia al nodo instanciado</param>
         </member>
-        <member name="M:Reloj.InstanciarYAgregarNodo(System.String,Godot.Node2D@)">
+        <member name="M:Reloj.instanciarYAgregarNodo(System.String,Godot.Node2D@)">
             <summary>
             Método que instancia un nodo y lo agrega al árbol de escenas
             </summary>

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2u1exda6fcrj"]
+
+[ext_resource type="Texture2D" uid="uid://cly82xjk5esrx" path="res://escenas/escena2/assets/Cartacerrada.png" id="1_gcllq"]
+
+[node name="Carta" type="Sprite2D"]
+position = Vector2(470, 334)
+rotation = -0.539621
+scale = Vector2(0.2691, 0.309366)
+texture = ExtResource("1_gcllq")

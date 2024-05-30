@@ -9,6 +9,7 @@ public partial class Hueso : Area2D {
 	bool postAnimacion = false;
 	public static bool guardado = false;
 	public static int clicks = 0;
+	public static bool metidoEnCaldero = false;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready() {
 

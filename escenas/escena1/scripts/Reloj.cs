@@ -18,11 +18,11 @@ public partial class Reloj : Area2D
     /// </summary>
     public override void _Ready()
     {
-        if(terminado)
-        {
-            InstanciarYAgregarNodo("res://escenas/escena1/objects/miniVarillaM.tscn", ref miniVarillaMInstancia);
-            InstanciarYAgregarNodo("res://escenas/escena1/objects/miniVarillaS.tscn", ref miniVarillaSInstancia);
-        }
+        if (VarillaM.encontrado) instanciarYAgregarNodo("res://escenas/escena1/objects/MiniVarillaM.tscn", ref miniVarillaMInstancia);
+
+        if (VarillaS.encontrado) instanciarYAgregarNodo("res://escenas/escena1/objects/MiniVarillaS.tscn", ref miniVarillaSInstancia);
+
+        
     }
 
     /// <summary>
@@ -49,14 +49,14 @@ public partial class Reloj : Area2D
             VarillaM.encontrado = true;
             collisionObject2D.QueueFree();
             Main.varillaMinutosReloj = true;
-            InstanciarYAgregarNodo("res://escenas/escena1/objects/miniVarillaM.tscn", ref miniVarillaMInstancia);
+            instanciarYAgregarNodo("res://escenas/escena1/objects/miniVarillaM.tscn", ref miniVarillaMInstancia);
         }
         if (collisionObject2D.IsInGroup("VarillaS"))
         {
             VarillaS.encontrado = true;
             Main.varillaSegundosReloj = true;
             collisionObject2D.QueueFree();
-            InstanciarYAgregarNodo("res://escenas/escena1/objects/miniVarillaS.tscn", ref miniVarillaSInstancia);
+            instanciarYAgregarNodo("res://escenas/escena1/objects/miniVarillaS.tscn", ref miniVarillaSInstancia);
         }
     }
 
@@ -72,36 +72,36 @@ public partial class Reloj : Area2D
         {
             if (!VarillaM.encontrado && !VarillaS.encontrado)
             {
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/fondoNegro.tscn", new Vector2I(-400, -400), 4, ref Main.fondoNegroInstancia);
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/relojZoomeado.tscn", 6, ref Main.relojZoomeadoInstancia);
+                instanciarYAgregarNodo("res://escenas/escena1/objects/fondoNegro.tscn", new Vector2I(-400, -400), 4, ref Main.fondoNegroInstancia);
+                instanciarYAgregarNodo("res://escenas/escena1/objects/relojZoomeado.tscn", 6, ref Main.relojZoomeadoInstancia);
             }
             else if (VarillaM.encontrado && !VarillaS.encontrado)
             {
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/fondoNegro.tscn", new Vector2I(-400, -400), 4, ref Main.fondoNegroInstancia);
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/relojZoomeado.tscn", 6, ref Main.relojZoomeadoInstancia);
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/varillaM.tscn", new Vector2I(235, 80), 5, ref Main.varillaMinutosInstancia);
+                instanciarYAgregarNodo("res://escenas/escena1/objects/fondoNegro.tscn", new Vector2I(-400, -400), 4, ref Main.fondoNegroInstancia);
+                instanciarYAgregarNodo("res://escenas/escena1/objects/relojZoomeado.tscn", 6, ref Main.relojZoomeadoInstancia);
+                instanciarYAgregarNodo("res://escenas/escena1/objects/varillaM.tscn", new Vector2I(235, 80), 5, ref Main.varillaMinutosInstancia);
             }
             else if (!VarillaM.encontrado && VarillaS.encontrado)
             {
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/fondoNegro.tscn", new Vector2I(-400, -400), 4, ref Main.fondoNegroInstancia);
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/relojZoomeado.tscn", 6, ref Main.relojZoomeadoInstancia);
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/varillaS.tscn", new Vector2I(235, 80), 5, ref Main.varillaSegundosInstancia);
+                instanciarYAgregarNodo("res://escenas/escena1/objects/fondoNegro.tscn", new Vector2I(-400, -400), 4, ref Main.fondoNegroInstancia);
+                instanciarYAgregarNodo("res://escenas/escena1/objects/relojZoomeado.tscn", 6, ref Main.relojZoomeadoInstancia);
+                instanciarYAgregarNodo("res://escenas/escena1/objects/varillaS.tscn", new Vector2I(235, 80), 5, ref Main.varillaSegundosInstancia);
             }
             else if (VarillaM.encontrado && VarillaS.encontrado && !Cajon.encontrado && !terminado)
             {
                 zoooom = true;
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/fondoNegro.tscn", new Vector2I(-400, -400), 4, ref Main.fondoNegroInstancia);
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/relojZoomeado.tscn", 6, ref Main.relojZoomeadoInstancia);
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/varillaM.tscn", new Vector2I(235, 80), 6, ref Main.varillaMinutosInstancia);
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/varillaS.tscn", new Vector2I(235, 80), 6, ref Main.varillaSegundosInstancia);
+                instanciarYAgregarNodo("res://escenas/escena1/objects/fondoNegro.tscn", new Vector2I(-400, -400), 4, ref Main.fondoNegroInstancia);
+                instanciarYAgregarNodo("res://escenas/escena1/objects/relojZoomeado.tscn", 6, ref Main.relojZoomeadoInstancia);
+                instanciarYAgregarNodo("res://escenas/escena1/objects/varillaM.tscn", new Vector2I(235, 80), 6, ref Main.varillaMinutosInstancia);
+                instanciarYAgregarNodo("res://escenas/escena1/objects/varillaS.tscn", new Vector2I(235, 80), 6, ref Main.varillaSegundosInstancia);
             }
             else if (VarillaM.encontrado && VarillaS.encontrado && Cajon.encontrado && !terminado)
             {
                 zoooom = true;
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/fondoNegro.tscn", new Vector2I(-400, -400), 4, ref Main.fondoNegroInstancia);
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/relojZoomeado.tscn", 6, ref Main.relojZoomeadoInstancia);
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/varillaM.tscn", new Vector2I(235, 80), 6, ref Main.varillaMinutosInstancia);
-                InstanciarYAgregarNodo("res://escenas/escena1/objects/varillaS.tscn", new Vector2I(235, 80), 6, ref Main.varillaSegundosInstancia);
+                instanciarYAgregarNodo("res://escenas/escena1/objects/fondoNegro.tscn", new Vector2I(-400, -400), 4, ref Main.fondoNegroInstancia);
+                instanciarYAgregarNodo("res://escenas/escena1/objects/relojZoomeado.tscn", 6, ref Main.relojZoomeadoInstancia);
+                instanciarYAgregarNodo("res://escenas/escena1/objects/varillaM.tscn", new Vector2I(235, 80), 6, ref Main.varillaMinutosInstancia);
+                instanciarYAgregarNodo("res://escenas/escena1/objects/varillaS.tscn", new Vector2I(235, 80), 6, ref Main.varillaSegundosInstancia);
             }
         }
     }
@@ -113,7 +113,7 @@ public partial class Reloj : Area2D
     /// <param name="posicion">Referencia a la posicion deseada al instanciar el nodo</param>
     /// <param name="zIndex">Referencia al indice deseado en el nodo</param>
     /// <param name="node2D">Referencia al nodo instanciado</param>
-    private void InstanciarYAgregarNodo(string rutaEscena, Vector2I posicion, int zIndex, ref Node2D node2D)
+    private void instanciarYAgregarNodo(string rutaEscena, Vector2I posicion, int zIndex, ref Node2D node2D)
     {
         PackedScene escena = (PackedScene)ResourceLoader.Load(rutaEscena);
         node2D = escena.Instantiate() as Node2D;
@@ -128,7 +128,7 @@ public partial class Reloj : Area2D
     /// <param name="rutaEscena">Ruta de la escena a instanciar</param>
     /// <param name="zIndex">Referencia al indice deseado en el nodo</param>
     /// <param name="node2D">Referencia al nodo instanciado</param>
-    private void InstanciarYAgregarNodo(string rutaEscena, int zIndex, ref Node2D node2D) {
+    private void instanciarYAgregarNodo(string rutaEscena, int zIndex, ref Node2D node2D) {
         PackedScene escena = (PackedScene)ResourceLoader.Load(rutaEscena);
         node2D = escena.Instantiate() as Node2D;
         node2D.ZIndex = zIndex;
@@ -140,7 +140,7 @@ public partial class Reloj : Area2D
     /// </summary>
     /// <param name="rutaEscena">Ruta de la escena a instanciar</param>
     /// <param name="node2D">Referencia al nodo instanciado</param>
-	private void InstanciarYAgregarNodo(string rutaEscena, ref Node2D node2D)
+	private void instanciarYAgregarNodo(string rutaEscena, ref Node2D node2D)
     {
         PackedScene escena = (PackedScene)ResourceLoader.Load(rutaEscena);
         node2D = escena.Instantiate() as Node2D;

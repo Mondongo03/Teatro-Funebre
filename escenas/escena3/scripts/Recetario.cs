@@ -14,7 +14,6 @@ public partial class Recetario : Area2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		if(this.IsInGroup("RecetarioZoomeado")) GD.Print(GetGlobalMousePosition());
 	}
 	private void _on_input_event(Node viewport, InputEvent @event, long shape_idx) {
 

@@ -24,6 +24,8 @@ public partial class GnomoSinCosas : Area2D
 			}
 			if(collisionObject2D.IsInGroup("MegaPoti") && MegaPoti.lleno){
 				crecer = true;
+				collisionObject2D.QueueFree();
+				Escena2.huesoPegadoCuerpo.QueueFree();
 				this.QueueFree();
 			}
 	}

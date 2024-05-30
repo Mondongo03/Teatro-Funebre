@@ -38,6 +38,7 @@ public partial class MegaPoti : Area2D
 			spriteVacio.Visible = false;
 			spriteLleno.Visible = true;
 			lleno = true;
+			GD.Print("Caaaaaaaaaaalderooooooo");
 		}
 	}
 }

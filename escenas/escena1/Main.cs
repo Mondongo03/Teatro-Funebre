@@ -9,7 +9,7 @@ public partial class Main : Node2D
     int slotsOcupados;
     Area2D pista_1;
     Node2D godotInstancia2;
-    public static Node2D varillaMinutosInstancia, pista, varillaSegundosInstancia,relojZoomeadoInstancia,fondoNegroInstancia,cajonZoomeadoInstancia,huecoInstancia,escaleraInstancia,cajetillaInstancia,tapaInstancia,pista_1Instancia,lamparaEncendidaInstancia,lamparaApagadaInstancia,relojInstancia,posterInstancia,monstruoInstancia, flechaDerechaInstancia, camaInstancia;
+    public static Node2D miniVarillaMInstancia, miniVarillaSInstancia, varillaMinutosInstancia, pista, varillaSegundosInstancia,relojZoomeadoInstancia,fondoNegroInstancia,cajonZoomeadoInstancia,huecoInstancia,escaleraInstancia,cajetillaInstancia,tapaInstancia,pista_1Instancia,lamparaEncendidaInstancia,lamparaApagadaInstancia,relojInstancia,posterInstancia,monstruoInstancia, flechaDerechaInstancia, camaInstancia;
     Boolean clickadoBola, clickadoVarillaM = false;
     public static Boolean varillaMinutosReloj, varillaSegundosReloj = false;
     [Export] public AnimationPlayer animationPlayer;
@@ -50,13 +50,16 @@ public partial class Main : Node2D
     /// <summary>
     /// Método que instancia todos los elementos de la escena y los añade a su respectivo padre
     /// </summary>
-    public void InstanciarEscena()
-    {
-        if (!Reloj.terminado)
-        {
-            instanciarYAgregarNodo("res://escenas/escena1/objects/varillaM.tscn", ref varillaMinutosInstancia);
-            instanciarYAgregarNodo("res://escenas/escena1/objects/varillaS.tscn", ref varillaSegundosInstancia);
-        }
+     void InstanciarEscena() {
+        if (!VarillaM.encontrado) instanciarYAgregarNodo("res://escenas/escena1/objects/varillaM.tscn", ref varillaMinutosInstancia);
+            
+        else instanciarYAgregarNodo("res://escenas/escena1/objects/MiniVarillaM.tscn", ref miniVarillaMInstancia);
+
+
+        if (!VarillaS.encontrado) instanciarYAgregarNodo("res://escenas/escena1/objects/varillaS.tscn", ref varillaSegundosInstancia);
+
+        else  instanciarYAgregarNodo("res://escenas/escena1/objects/MiniVarillaS.tscn", ref miniVarillaSInstancia);
+           
 
         instanciarYAgregarNodo("res://escenas/escena1/objects/reloj.tscn", ref relojInstancia);
         instanciarYAgregarNodo("res://escenas/escena1/objects/hueco.tscn", ref huecoInstancia);

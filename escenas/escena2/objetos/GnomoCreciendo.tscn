@@ -22,7 +22,7 @@ region = Rect2(90, 0, 45, 145)
 [sub_resource type="SpriteFrames" id="SpriteFrames_y2108"]
 animations = [{
 "frames": [{
-"duration": 2.0,
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_shd8j")
 }, {
 "duration": 1.0,
@@ -36,10 +36,12 @@ animations = [{
 }],
 "loop": false,
 "name": &"default",
-"speed": 5.0
+"speed": 4.0
 }]
 
 [node name="Area2D4" type="Area2D"]
+texture_filter = 1
+scale = Vector2(1.5, 1.5)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_y2108")

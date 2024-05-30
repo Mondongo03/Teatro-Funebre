@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://b3oscujcwaje6"]
+[gd_scene load_steps=34 format=3 uid="uid://b3oscujcwaje6"]
 
 [ext_resource type="Script" path="res://escenas/escena2/Escena2.cs" id="1_532y4"]
 [ext_resource type="PackedScene" uid="uid://c0vydxagyq8pj" path="res://escenas/menuPausa/escenas/pausa.tscn" id="2_p1h3l"]
@@ -10,10 +10,10 @@
 [ext_resource type="PackedScene" uid="uid://cky2o76wpk0bl" path="res://escenas/escena2/objetos/pajaro_marron.tscn" id="7_wd4jo"]
 [ext_resource type="Texture2D" uid="uid://dkcnnqo4jbiag" path="res://escenas/escena1/assets/GnomoCI.png" id="7_wijr8"]
 [ext_resource type="PackedScene" uid="uid://ciocjjv3ss2lc" path="res://escenas/escena2/objetos/pajaro_verde.tscn" id="8_83e7h"]
-[ext_resource type="Texture2D" uid="uid://cly82xjk5esrx" path="res://escenas/escena2/assets/Cartacerrada.png" id="9_4wxrt"]
 [ext_resource type="PackedScene" uid="uid://suhwt3dfugp" path="res://escenas/escena2/objetos/ramoncin.tscn" id="12_cpiaa"]
 [ext_resource type="Script" path="res://escenas/escena2/scripts/GnomoSinCosas.cs" id="14_wdqc6"]
 [ext_resource type="PackedScene" uid="uid://csicptbljjd3v" path="res://escenas/escena2/objetos/cofre.tscn" id="16_3ddve"]
+[ext_resource type="Texture2D" uid="uid://tr1dui7lk8hb" path="res://escenas/escena2/assets/GnomoCrecidoCaminando.png" id="16_5nppf"]
 [ext_resource type="PackedScene" uid="uid://bv5ynspws8yl4" path="res://escenas/escena2/objetos/flechaIzquierda.tscn" id="22_qmkqx"]
 
 [sub_resource type="Curve2D" id="Curve2D_a8trf"]
@@ -109,6 +109,42 @@ size = Vector2(58.8438, 121.281)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wnx72"]
 size = Vector2(119, 43)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_0lea1"]
+atlas = ExtResource("16_5nppf")
+region = Rect2(0, 0, 44, 145)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1gg38"]
+atlas = ExtResource("16_5nppf")
+region = Rect2(44, 0, 44, 145)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t6q3l"]
+atlas = ExtResource("16_5nppf")
+region = Rect2(88, 0, 44, 145)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q74y1"]
+atlas = ExtResource("16_5nppf")
+region = Rect2(132, 0, 44, 145)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mqln4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0lea1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1gg38")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t6q3l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q74y1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Node2D2" type="Node2D"]
 position = Vector2(62, 51)
 script = ExtResource("1_532y4")
@@ -163,12 +199,6 @@ scale = Vector2(0.1, 0.1)
 position = Vector2(-44, -25)
 scale = Vector2(0.1, 0.1)
 
-[node name="Carta" type="Sprite2D" parent="."]
-position = Vector2(470, 334)
-rotation = -0.539621
-scale = Vector2(0.2691, 0.309366)
-texture = ExtResource("9_4wxrt")
-
 [node name="Area2D2" parent="." instance=ExtResource("12_cpiaa")]
 
 [node name="Area2D3" type="Area2D" parent="." groups=["GnomoSinCosas"]]
@@ -190,6 +220,12 @@ position = Vector2(6, 359)
 [node name="Area2D5" parent="." instance=ExtResource("16_3ddve")]
 position = Vector2(1016, 87)
 monitorable = false
+
+[node name="Area2D4" type="Area2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D4"]
+sprite_frames = SubResource("SpriteFrames_mqln4")
+frame_progress = 0.470567
 
 [connection signal="area_entered" from="Gnomo/PathFollow2D/AnimatedSprite2D/Area2D" to="Gnomo/PathFollow2D" method="_on_area_2d_area_entered"]
 [connection signal="area_entered" from="Area2D2" to="Area2D2" method="_on_area_entered"]

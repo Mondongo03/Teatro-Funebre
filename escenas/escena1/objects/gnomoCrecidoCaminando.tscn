@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://bc7xfixgfmuw2"]
+
+[ext_resource type="Texture2D" uid="uid://tr1dui7lk8hb" path="res://escenas/escena2/assets/GnomoCrecidoCaminando.png" id="1_o7r4a"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0lea1"]
+atlas = ExtResource("1_o7r4a")
+region = Rect2(0, 0, 44, 145)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1gg38"]
+atlas = ExtResource("1_o7r4a")
+region = Rect2(44, 0, 44, 145)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t6q3l"]
+atlas = ExtResource("1_o7r4a")
+region = Rect2(88, 0, 44, 145)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q74y1"]
+atlas = ExtResource("1_o7r4a")
+region = Rect2(132, 0, 44, 145)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mqln4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0lea1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1gg38")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t6q3l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q74y1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Area2D4" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_mqln4")
+autoplay = "default"
+frame_progress = 0.464278

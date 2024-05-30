@@ -154,7 +154,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_f32x0"]
 radius = 80.0562
 
-[node name="Caldero" type="Area2D"]
+[node name="Caldero" type="Area2D" groups=["Caldero"]]
 position = Vector2(957, 455)
 script = ExtResource("1_iftpy")
 
@@ -172,6 +172,7 @@ frame_progress = 0.742518
 [node name="Rosa" type="AnimatedSprite2D" parent="."]
 visible = false
 sprite_frames = SubResource("SpriteFrames_pchxs")
+autoplay = "default"
 frame_progress = 0.107494
 
 [node name="Azul" type="AnimatedSprite2D" parent="."]
@@ -190,5 +191,3 @@ position = Vector2(2, 21)
 shape = SubResource("CircleShape2D_f32x0")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
-[connection signal="area_exited" from="." to="." method="_on_area_exited"]
-[connection signal="input_event" from="." to="." method="_on_input_event"]
