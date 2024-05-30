@@ -2052,6 +2052,24 @@
             Cached StringNames for the properties and fields contained in this class, for fast lookup.
             </summary>
         </member>
+        <member name="F:Flor.PropertyName.node2D">
+            <summary>
+            Cached name for the 'node2D' field.
+            </summary>
+        </member>
+        <member name="M:Flor.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Flor.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Flor.GetGodotPropertyList">
+            <summary>
+            Get the property information for all the properties declared in this class.
+            This method is used by Godot to register the available properties in the editor.
+            Do not call this method.
+            </summary>
+        </member>
         <member name="M:Flor.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
             <inheritdoc/>
         </member>
