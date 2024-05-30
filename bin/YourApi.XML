@@ -2174,6 +2174,11 @@
             Clase que nos permite gestionar al gnomo cuando esta tumbado en el suelo
             </summary>
         </member>
+        <member name="M:GnomoSinCosas._Ready">
+            <summary>
+            Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script
+            </summary>
+        </member>
         <member name="M:GnomoSinCosas._Process(System.Double)">
             <summary>
             Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla
@@ -3030,6 +3035,27 @@
             Escript que nos permite gestionar como funciona la escena 3
             </summary>
         </member>
+        <member name="M:MainDesvan._Ready">
+            <summary>
+            Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script
+            </summary>
+        </member>
+        <member name="M:MainDesvan._Process(System.Double)">
+            <summary>
+            Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla
+            </summary>
+            <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
+        </member>
+        <member name="M:MainDesvan.instanciarYAgregarNodo(System.String,Godot.Node2D@)">
+            <summary>
+            Método que instancia todos los elementos de la escena y los añade a su respectivo padre
+            </summary>
+        </member>
+        <member name="M:MainDesvan.instanciarMain">
+            <summary>
+            Método que instancia todos los elementos de la escena y los añade a su respectivo padre
+            </summary>
+        </member>
         <member name="T:MainDesvan.MethodName">
             <summary>
             Cached StringNames for the methods contained in this class, for fast lookup.
@@ -3110,6 +3136,28 @@
             Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
         </member>
+        <member name="T:Caldero">
+            <summary>
+            Clase que nos permite gestionar el puzle del caldero
+            </summary>
+        </member>
+        <member name="M:Caldero._Ready">
+            <summary>
+            Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script
+            </summary>
+        </member>
+        <member name="M:Caldero._Process(System.Double)">
+            <summary>
+            Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla
+            </summary>
+            <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
+        </member>
+        <member name="M:Caldero._on_area_entered(Godot.CollisionObject2D)">
+            <summary>
+            Metodo que nos permite ejecutar codigo cuando algo entra en el colision, este metodo es una señal de godot
+            </summary>
+            <param name="collisionObject2D">Es la variable que nos dice el donde a entrado un objeto</param>
+        </member>
         <member name="T:Caldero.MethodName">
             <summary>
             Cached StringNames for the methods contained in this class, for fast lookup.
@@ -3148,6 +3196,11 @@
             Cached StringNames for the properties and fields contained in this class, for fast lookup.
             </summary>
         </member>
+        <member name="F:Caldero.PropertyName.audioStreamPlayer2D">
+            <summary>
+            Cached name for the 'audioStreamPlayer2D' field.
+            </summary>
+        </member>
         <member name="F:Caldero.PropertyName.rojo">
             <summary>
             Cached name for the 'rojo' field.
@@ -3173,6 +3226,11 @@
             Cached name for the 'vacio' field.
             </summary>
         </member>
+        <member name="F:Caldero.PropertyName.musica">
+            <summary>
+            Cached name for the 'musica' field.
+            </summary>
+        </member>
         <member name="M:Caldero.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
             <inheritdoc/>
         </member>
@@ -3186,6 +3244,14 @@
             Do not call this method.
             </summary>
         </member>
+        <member name="M:Caldero.GetGodotPropertyDefaultValues">
+            <summary>
+            Get the default values for all properties declared in this class.
+            This method is used by Godot to determine the value that will be
+            used by the inspector when resetting properties.
+            Do not call this method.
+            </summary>
+        </member>
         <member name="M:Caldero.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
             <inheritdoc/>
         </member>
@@ -3196,6 +3262,36 @@
             <summary>
             Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
+        </member>
+        <member name="T:MegaPoti">
+            <summary>
+            Clase que nos permite gestionar el estado de la pocion del puzle de la escena 2
+            </summary>
+        </member>
+        <member name="M:MegaPoti._Ready">
+            <summary>
+            Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script
+            </summary>
+        </member>
+        <member name="M:MegaPoti._Process(System.Double)">
+            <summary>
+            Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla
+            </summary>
+            <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
+        </member>
+        <member name="M:MegaPoti._on_input_event(Godot.Node,Godot.InputEvent,System.Int64)">
+            <summary>
+            Este metodo es una señal del propio godot que nos permite detectar cuando haces click sobre le objeto
+            </summary>
+            <param name="viewport">Nodo del objeto parte de la API</param>
+            <param name="event">Nos permite detectar cuando se hace click</param>
+            <param name="shape_idx">Variable que se utiliza para la API</param>
+        </member>
+        <member name="M:MegaPoti._on_area_entered(Godot.CollisionObject2D)">
+            <summary>
+            Metodo que nos permite ejecutar codigo cuando algo entra en el colision, este metodo es una señal de godot
+            </summary>
+            <param name="collisionObject2D">Es la variable que nos dice el donde a entrado un objeto</param>
         </member>
         <member name="T:MegaPoti.MethodName">
             <summary>
@@ -3274,14 +3370,30 @@
             Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
         </member>
+        <member name="T:Particula">
+            <summary>
+            Clase que nos permite gestionar las particulas que aparecen cuando haces el ritual de los unicornios
+            </summary>
+        </member>
+        <member name="M:Particula._Process(System.Double)">
+            <summary>
+            Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla
+            </summary>
+            <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
+        </member>
+        <member name="M:Particula.encenderLuces">
+            <summary>
+            Metodo que enciende las parcticulas cuando los unicornios estan en su sitio
+            </summary>
+        </member>
+        <member name="M:Particula.apagarLuces">
+            <summary>
+            Metodo que apaga las parcticulas cuando los unicornios salen de su sitio
+            </summary>
+        </member>
         <member name="T:Particula.MethodName">
             <summary>
             Cached StringNames for the methods contained in this class, for fast lookup.
-            </summary>
-        </member>
-        <member name="F:Particula.MethodName._Ready">
-            <summary>
-            Cached name for the '_Ready' method.
             </summary>
         </member>
         <member name="F:Particula.MethodName._Process">
@@ -3328,19 +3440,22 @@
             Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
         </member>
+        <member name="T:Recetario">
+            <summary>
+            Clase para gestionar el recetario del desban 
+            </summary>
+        </member>
+        <member name="M:Recetario._on_input_event(Godot.Node,Godot.InputEvent,System.Int64)">
+            <summary>
+            Este metodo es una señal del propio godot que nos permite detectar cuando haces click sobre le objeto
+            </summary>
+            <param name="viewport">Nodo del objeto parte de la API</param>
+            <param name="event">Nos permite detectar cuando se hace click</param>
+            <param name="shape_idx">Variable que se utiliza para la API</param>
+        </member>
         <member name="T:Recetario.MethodName">
             <summary>
             Cached StringNames for the methods contained in this class, for fast lookup.
-            </summary>
-        </member>
-        <member name="F:Recetario.MethodName._Ready">
-            <summary>
-            Cached name for the '_Ready' method.
-            </summary>
-        </member>
-        <member name="F:Recetario.MethodName._Process">
-            <summary>
-            Cached name for the '_Process' method.
             </summary>
         </member>
         <member name="F:Recetario.MethodName._on_input_event">
@@ -3400,82 +3515,23 @@
             Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
         </member>
-        <member name="T:recetarioZoomeado.MethodName">
+        <member name="T:RelojDesvan">
             <summary>
-            Cached StringNames for the methods contained in this class, for fast lookup.
+            Clase que nos permite gestionar la animacion del desban
             </summary>
         </member>
-        <member name="F:recetarioZoomeado.MethodName._Ready">
+        <member name="M:RelojDesvan._Ready">
             <summary>
-            Cached name for the '_Ready' method.
+            Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script
             </summary>
         </member>
-        <member name="F:recetarioZoomeado.MethodName._Process">
+        <member name="M:RelojDesvan._on_input_event(Godot.Node,Godot.InputEvent,System.Int32)">
             <summary>
-            Cached name for the '_Process' method.
+            Este metodo es una señal del propio godot que nos permite detectar cuando haces click sobre le objeto
             </summary>
-        </member>
-        <member name="F:recetarioZoomeado.MethodName._on_input_event">
-            <summary>
-            Cached name for the '_on_input_event' method.
-            </summary>
-        </member>
-        <member name="M:recetarioZoomeado.GetGodotMethodList">
-            <summary>
-            Get the method information for all the methods declared in this class.
-            This method is used by Godot to register the available methods in the editor.
-            Do not call this method.
-            </summary>
-        </member>
-        <member name="M:recetarioZoomeado.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
-            <inheritdoc/>
-        </member>
-        <member name="M:recetarioZoomeado.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
-            <inheritdoc/>
-        </member>
-        <member name="T:recetarioZoomeado.PropertyName">
-            <summary>
-            Cached StringNames for the properties and fields contained in this class, for fast lookup.
-            </summary>
-        </member>
-        <member name="F:recetarioZoomeado.PropertyName.zoom">
-            <summary>
-            Cached name for the 'zoom' field.
-            </summary>
-        </member>
-        <member name="F:recetarioZoomeado.PropertyName.escena">
-            <summary>
-            Cached name for the 'escena' field.
-            </summary>
-        </member>
-        <member name="F:recetarioZoomeado.PropertyName.node2D">
-            <summary>
-            Cached name for the 'node2D' field.
-            </summary>
-        </member>
-        <member name="M:recetarioZoomeado.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
-            <inheritdoc/>
-        </member>
-        <member name="M:recetarioZoomeado.GetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">
-            <inheritdoc/>
-        </member>
-        <member name="M:recetarioZoomeado.GetGodotPropertyList">
-            <summary>
-            Get the property information for all the properties declared in this class.
-            This method is used by Godot to register the available properties in the editor.
-            Do not call this method.
-            </summary>
-        </member>
-        <member name="M:recetarioZoomeado.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
-            <inheritdoc/>
-        </member>
-        <member name="M:recetarioZoomeado.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
-            <inheritdoc/>
-        </member>
-        <member name="T:recetarioZoomeado.SignalName">
-            <summary>
-            Cached StringNames for the signals contained in this class, for fast lookup.
-            </summary>
+            <param name="viewport">Nodo del objeto parte de la API</param>
+            <param name="evento">Nos permite detectar cuando se hace click</param>
+            <param name="shap">Variable que se utiliza para la API</param>
         </member>
         <member name="T:RelojDesvan.MethodName">
             <summary>
@@ -3485,11 +3541,6 @@
         <member name="F:RelojDesvan.MethodName._Ready">
             <summary>
             Cached name for the '_Ready' method.
-            </summary>
-        </member>
-        <member name="F:RelojDesvan.MethodName._Process">
-            <summary>
-            Cached name for the '_Process' method.
             </summary>
         </member>
         <member name="F:RelojDesvan.MethodName._on_input_event">
@@ -3552,6 +3603,28 @@
             Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
         </member>
+        <member name="T:Ritual">
+            <summary>
+            Clase que nos permite gestionar el puzzle del ritual
+            </summary>
+        </member>
+        <member name="M:Ritual._Process(System.Double)">
+            <summary>
+            Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script
+            </summary>
+        </member>
+        <member name="M:Ritual._on_area_entered(Godot.Area2D)">
+            <summary>
+            Metodo que nos permite ejecutar codigo cuando algo entra en el area, este metodo es una señal de godot
+            </summary>
+            <param name="area">Es la variable que nos dice el donde a entrado un objeto</param>
+        </member>
+        <member name="M:Ritual._on_area_exited(Godot.Area2D)">
+            <summary>
+            Señal de godot que nos permite comprobar si el area de un objeto deja de colisionar contra otro objeto
+            </summary>
+            <param name="area">Variable de la colision del objeto que colisiona con el objeto</param>
+        </member>
         <member name="T:Ritual.MethodName">
             <summary>
             Cached StringNames for the methods contained in this class, for fast lookup.
@@ -3601,14 +3674,28 @@
             Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
         </member>
+        <member name="T:Sangre">
+            <summary>
+            Clase que nos permite gestionar el producto final del ritual
+            </summary>
+        </member>
+        <member name="M:Sangre._Process(System.Double)">
+            <summary>
+            Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla
+            </summary>
+            <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
+        </member>
+        <member name="M:Sangre._on_input_event(Godot.Node,Godot.InputEvent,System.Int64)">
+            <summary>
+            Este metodo es una señal del propio godot que nos permite detectar cuando haces click sobre le objeto
+            </summary>
+            <param name="viewport">Nodo del objeto parte de la API</param>
+            <param name="event">Nos permite detectar cuando se hace click</param>
+            <param name="shape_idx">Variable que se utiliza para la API</param>
+        </member>
         <member name="T:Sangre.MethodName">
             <summary>
             Cached StringNames for the methods contained in this class, for fast lookup.
-            </summary>
-        </member>
-        <member name="F:Sangre.MethodName._Ready">
-            <summary>
-            Cached name for the '_Ready' method.
             </summary>
         </member>
         <member name="F:Sangre.MethodName._Process">
@@ -3841,6 +3928,11 @@
         <member name="M:MenuPrincipal._onExitButtonPressed">
             <summary>
             Función llamada cuando se presiona el botón de "Salir"
+            </summary>
+        </member>
+        <member name="M:MenuPrincipal._on_color_rect_animation_finished">
+            <summary>
+            Senal de godot que nos permite saber cuando una animacion a finalizado
             </summary>
         </member>
         <member name="T:MenuPrincipal.MethodName">

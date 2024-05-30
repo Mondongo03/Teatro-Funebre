@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://jicwvc3sqn1s"]
+[gd_scene load_steps=29 format=3 uid="uid://jicwvc3sqn1s"]
 
 [ext_resource type="Script" path="res://escenas/escena3/scripts/Caldero.cs" id="1_iftpy"]
 [ext_resource type="Texture2D" uid="uid://bq1m3yn5idtqu" path="res://escenas/escena3/assets/Caldero.png" id="2_iqd4m"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cfmofjmx0hgjy" path="res://escenas/escena3/assets/CalderoAzul.png" id="4_3dv2r"]
 [ext_resource type="Texture2D" uid="uid://c0bb3meonq3f5" path="res://escenas/escena3/assets/CalderoRosa.png" id="5_tfnya"]
 [ext_resource type="Texture2D" uid="uid://cg51d5la71818" path="res://escenas/escena3/assets/CalderoVacio.png" id="6_q6sfp"]
+[ext_resource type="AudioStream" uid="uid://bmq3crsuptv0n" path="res://escenas/escena3/assets/magiccauldronbubbling-31524 (1).mp3" id="7_xqmqj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mw7w8"]
 atlas = ExtResource("2_iqd4m")
@@ -154,9 +155,10 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_f32x0"]
 radius = 80.0562
 
-[node name="Caldero" type="Area2D" groups=["Caldero"]]
+[node name="Caldero" type="Area2D" node_paths=PackedStringArray("audioStreamPlayer2D") groups=["Caldero"]]
 position = Vector2(957, 455)
 script = ExtResource("1_iftpy")
+audioStreamPlayer2D = NodePath("AudioStreamPlayer2D")
 
 [node name="Rojo" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_3xpls")
@@ -189,5 +191,9 @@ texture = ExtResource("6_q6sfp")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, 21)
 shape = SubResource("CircleShape2D_f32x0")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_xqmqj")
+bus = &"Ejecftos de sonido"
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

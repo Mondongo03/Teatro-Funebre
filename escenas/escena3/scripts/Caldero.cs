@@ -6,11 +6,13 @@ using System;
 /// </summary>
 public partial class Caldero : Area2D
 {
+	[Export] public AudioStreamPlayer2D audioStreamPlayer2D;
 	AnimatedSprite2D rojo;
 	AnimatedSprite2D verde;
 	AnimatedSprite2D azul;
 	AnimatedSprite2D rosa;
 	Sprite2D vacio;
+	int musica = 1;
 	public static int contador = 1;
 
 	/// <summary>
@@ -37,7 +39,11 @@ public partial class Caldero : Area2D
 			verde.Visible = false;
 			rosa.Visible = false;
 			azul.Visible = false;
-
+			if(musica == 1)
+			{
+				audioStreamPlayer2D.Play();
+				musica++;
+			}
 		}
 		if (contador == 2)
 		{
@@ -45,7 +51,11 @@ public partial class Caldero : Area2D
 			verde.Visible = true;
 			rosa.Visible = false;
 			azul.Visible = false;
-
+			if(musica == 2)
+			{
+				audioStreamPlayer2D.Play();
+				musica++;
+			}
 		}
 		if (contador == 3)
 		{
@@ -53,7 +63,11 @@ public partial class Caldero : Area2D
 			verde.Visible = false;
 			rosa.Visible = true;
 			azul.Visible = false;
-
+			if(musica == 3)
+			{
+				audioStreamPlayer2D.Play();
+				musica++;
+			}
 		}
 		if (contador == 4)
 		{
@@ -61,12 +75,21 @@ public partial class Caldero : Area2D
 			verde.Visible = false;
 			rosa.Visible = false;
 			azul.Visible = true;
-
+			if(musica == 4)
+			{
+				audioStreamPlayer2D.Play();
+				musica++;
+			}
 		}
 		if (MegaPoti.lleno)
 		{
 			azul.Visible = false;
 			vacio.Visible = true;
+			if(musica == 5)
+			{
+				audioStreamPlayer2D.Play();
+				musica++;
+			}
 		}
 	}
 

@@ -26,6 +26,7 @@ position = Vector2(1071, 189)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_556e2")
+autoplay = true
 bus = &"Musica"
 
 [connection signal="child_entered_tree" from="Sprite2D2" to="." method="_on_sprite_2d_2_child_entered_tree"]
