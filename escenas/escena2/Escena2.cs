@@ -37,7 +37,10 @@ public partial class Escena2 : Node2D {
 	/// <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
 	public async override void _Process(double delta) {
 		if(GnomoSinCosas.crecer && !comprobanteCrecer){
-			ojo.QueueFree();
+			try{
+				ojo.QueueFree();
+			}catch(Exception e)
+			{}
 			instanciarYAgregarNodo("res://escenas/escena2/objetos/GnomoCreciendo.tscn", ref gnomoCrecer);
 			gnomoCrecer.Position = new Vector2I(500, 420);
 			comprobanteCrecer = true;
