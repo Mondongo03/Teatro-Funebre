@@ -10,7 +10,10 @@ public partial class MainDesvan : Node2D {
 	public static bool ritualAcabado;
 	static bool comprobanteSangre = false;
 	public static Node2D megaPoti, vial, unicornioVerde, unicornioRojo, unicornioNaranja, unicornioBlanco, unicornioAmarillo, particulaUA, particulaUR, particulaUV, particulaUN, particulaUB, relojDesvan, caldero, izquierda, derecha, arriba, abajoDerecha, abajoIzquierda, muebleRecetario;
-	// Called when the node enters the scene tree for the first time.
+	
+	/// <summary>
+	/// Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script
+	/// </summary>
 	public override void _Ready() {
 		if(!ritualAcabado){
 			instanciarYAgregarNodo("res://escenas/escena3/objects/unicornioAmarillo.tscn", ref unicornioAmarillo);
@@ -20,11 +23,14 @@ public partial class MainDesvan : Node2D {
 			instanciarYAgregarNodo("res://escenas/escena3/objects/unicornioVerde.tscn", ref unicornioVerde);
 		}
 		instanciarMain();
-		//audioStreamPlayer2D.Play();
+		audioStreamPlayer2D.Play();
 		
 	}
 
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
+	/// <summary>
+	/// Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla
+	/// </summary>
+	/// <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
 	public override void _Process(double delta) {
 		if(ritualAcabado && !comprobanteSangre){
 			comprobanteSangre = true;
@@ -34,6 +40,9 @@ public partial class MainDesvan : Node2D {
 		
 	}
 
+	/// <summary>
+    /// Método que instancia todos los elementos de la escena y los añade a su respectivo padre
+    /// </summary>
 	private void instanciarYAgregarNodo(String rutaEscena, ref Node2D node2D) {
 
         foreach(String objeto in Cofre.objetosGuardados){
@@ -46,6 +55,9 @@ public partial class MainDesvan : Node2D {
         }
         comprobanteArray = false;
     }
+	/// <summary>
+    /// Método que instancia todos los elementos de la escena y los añade a su respectivo padre
+    /// </summary>
 	private void instanciarMain(){
 		instanciarYAgregarNodo("res://escenas/escena3/objects/izquierda.tscn", ref izquierda);
 		instanciarYAgregarNodo("res://escenas/escena3/objects/derecha.tscn", ref derecha);
@@ -62,8 +74,5 @@ public partial class MainDesvan : Node2D {
 		instanciarYAgregarNodo("res://escenas/escena3/objects/relojDesvan.tscn", ref relojDesvan);
 		instanciarYAgregarNodo("res://escenas/escena3/objects/muebleRecetario.tscn", ref muebleRecetario);
 		instanciarYAgregarNodo("res://escenas/escena3/objects/megaPoti.tscn", ref megaPoti);
-		
-		
-
 	}
 }

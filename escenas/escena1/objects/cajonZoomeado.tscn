@@ -1,14 +1,14 @@
 [gd_scene load_steps=4 format=3 uid="uid://bcc5xa7yb82wj"]
 
 [ext_resource type="Texture2D" uid="uid://ckldlnl30sbyc" path="res://escenas/escena1/assets/cajon.png" id="1_fs7n7"]
-[ext_resource type="Script" path="res://escenas/escena1/scripts/cajonZoomeado.cs" id="1_igapj"]
+[ext_resource type="Script" path="res://escenas/escena1/scripts/CajonZoomeado.cs" id="1_ixf26"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mhoc7"]
 size = Vector2(1285, 708)
 
 [node name="Area2D2" type="Area2D" groups=["CajonZoomeado"]]
 z_index = 4
-script = ExtResource("1_igapj")
+script = ExtResource("1_ixf26")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(582.695, 344.25)

@@ -1,20 +1,28 @@
 using Godot;
 using System;
 
+/// <summary>
+/// Clase que nos permite gestionar la animacion del desban
+/// </summary>
 public partial class RelojDesvan : Area2D
 {
-	// Called when the node enters the scene tree for the first time.
 	[Export]
 	public AnimatedSprite2D animatedSprite2D;
-	public override void _Ready() {
+
+	/// <summary>
+	/// Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script
+	/// </summary>
+	public override void _Ready()
+	{
 		animatedSprite2D = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
 	}
 
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
-	{
-		
-	}
+	/// <summary>
+	/// Este metodo es una señal del propio godot que nos permite detectar cuando haces click sobre le objeto
+	/// </summary>
+	/// <param name="viewport">Nodo del objeto parte de la API</param>
+	/// <param name="evento">Nos permite detectar cuando se hace click</param>
+	/// <param name="shap">Variable que se utiliza para la API</param>
 	public void _on_input_event(Node viewport, InputEvent evento, int shap)
 	{
 		if (evento.IsActionPressed("click_izquierdo"))
@@ -22,5 +30,5 @@ public partial class RelojDesvan : Area2D
 			animatedSprite2D.Play();
 			GD.Print("Click");
 		}
-		}
+	}
 }

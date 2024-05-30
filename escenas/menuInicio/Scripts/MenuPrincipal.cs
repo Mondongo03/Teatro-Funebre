@@ -66,6 +66,9 @@ public partial class MenuPrincipal : CanvasLayer
         opcion = false;
     }
 
+    /// <summary>
+    /// Senal de godot que nos permite saber cuando una animacion a finalizado
+    /// </summary>
     private void _on_color_rect_animation_finished()
     {
         if(animatedSprite2D.Animation.ToString().Equals("cerrar") && opcion)

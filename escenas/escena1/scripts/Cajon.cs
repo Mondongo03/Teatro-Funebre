@@ -42,10 +42,4 @@ public partial class Cajon : Area2D
 
 		}
 	}
-
-	/// <summary>
-	/// Getter de la variable zooom
-	/// </summary>
-	/// <returns>Devuelve la variable zooom</returns>
-
 }

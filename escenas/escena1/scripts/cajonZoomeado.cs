@@ -4,7 +4,7 @@ using System;
 /// <summary>
 /// Clase que nos permite gestionar como funciona el cajon cuando salta en pantalla completa
 /// </summary>
-public partial class cajonZoomeado : Area2D
+public partial class CajonZoomeado : Area2D
 {
 	[Export] public AudioStreamPlayer2D cerrar;
 

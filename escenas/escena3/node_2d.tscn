@@ -1,13 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://dmiq6b6x1xr3n"]
+[gd_scene load_steps=7 format=3 uid="uid://dmiq6b6x1xr3n"]
 
 [ext_resource type="Script" path="res://escenas/escena3/MainDesvan.cs" id="1_e4q1i"]
 [ext_resource type="Texture2D" uid="uid://42o21mfgkct3" path="res://escenas/escena3/assets/Desvan.png" id="2_j38e6"]
+[ext_resource type="AudioStream" uid="uid://dujj65yl2sggy" path="res://escenas/escena3/assets/cathedral-164234.mp3" id="6_556e2"]
 [ext_resource type="PackedScene" uid="uid://csicptbljjd3v" path="res://escenas/escena2/objetos/cofre.tscn" id="9_ux4vi"]
 [ext_resource type="PackedScene" uid="uid://5n7ii84ox5c" path="res://escenas/escena3/objects/flechaAbajo.tscn" id="11_o0nmo"]
 [ext_resource type="PackedScene" uid="uid://c0vydxagyq8pj" path="res://escenas/menuPausa/escenas/pausa.tscn" id="13_mg5dv"]
 
-[node name="Node2D2" type="Node2D" groups=["Persist"]]
+[node name="Node2D2" type="Node2D" node_paths=PackedStringArray("audioStreamPlayer2D") groups=["Persist"]]
 script = ExtResource("1_e4q1i")
+audioStreamPlayer2D = NodePath("AudioStreamPlayer")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(576, 325)
@@ -21,5 +23,9 @@ position = Vector2(798, 590)
 position = Vector2(1071, 189)
 
 [node name="CanvasLayer" parent="." instance=ExtResource("13_mg5dv")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_556e2")
+bus = &"Musica"
 
 [connection signal="child_entered_tree" from="Sprite2D2" to="." method="_on_sprite_2d_2_child_entered_tree"]
