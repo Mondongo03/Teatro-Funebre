@@ -8,7 +8,7 @@ public partial class Ramon : Area2D
 {
 	public static int stepTexto = 0;
 	PackedScene texto1, texto2, texto3, texto4, texto5;
-	static Node2D instanciaTextoActual;
+	Node2D instanciaTextoActual;
 	bool ojoEnseñado = false;
 
 	/// <summary>
@@ -17,7 +17,7 @@ public partial class Ramon : Area2D
 	/// <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
 	public override void _Process(double delta)
 	{
-		
+
 		if (RespuestasRamon.pasar && stepTexto != 4)
 		{
 			if (instanciaTextoActual != null)
@@ -30,50 +30,43 @@ public partial class Ramon : Area2D
 
 	}
 
-    /// <summary>
-    /// Este metodo es una señal del propio godot que nos permite detectar cuando haces click sobre le objeto
-    /// </summary>
-    /// <param name="viewport">Nodo del objeto parte de la API</param>
-    /// <param name="event">Nos permite detectar cuando se hace click</param>
-    /// <param name="shape_idx">Variable que se utiliza para la API</param>
-    private void _on_input_event(Node viewport, InputEvent @event, long shape_idx)
+	/// <summary>
+	/// Este metodo es una señal del propio godot que nos permite detectar cuando haces click sobre le objeto
+	/// </summary>
+	/// <param name="viewport">Nodo del objeto parte de la API</param>
+	/// <param name="event">Nos permite detectar cuando se hace click</param>
+	/// <param name="shape_idx">Variable que se utiliza para la API</param>
+	private void _on_input_event(Node viewport, InputEvent @event, long shape_idx)
 	{
 
-		if (@event.IsActionPressed("click_izquierdo") && !CartasCartitas.victoria) {
-
-			if (stepTexto == 0)
+		if (@event.IsActionPressed("click_izquierdo") && !CartasCartitas.victoria)
+		{
+			switch (stepTexto)
 			{
-				mostrarTexto(texto1, "res://escenas/escena2/objetos/textBox1Ramon.tscn");
-				stepTexto++;
+				case 0:
+					mostrarTexto(texto1, "res://escenas/escena2/objetos/textBox1Ramon.tscn");
+					stepTexto++;
+					break;
+				case 1:
+					mostrarTexto(texto2, "res://escenas/escena2/objetos/textBox2Ramon.tscn");
+					break;
+				case 2:
+					mostrarTexto(texto3, "res://escenas/escena2/objetos/textBox3Ramon.tscn");
+					stepTexto++;
+					break;
+				case 3:
+					mostrarTexto(texto4, "res://escenas/escena2/objetos/textBox4Ramon.tscn");
+					if (GnomoSinCosas.tullido) stepTexto++;
+					break;
+				case 4:
+					GD.Print("STEP 4");
+					mostrarTexto(texto5, "res://escenas/escena2/objetos/textBox5Ramon.tscn");
+					stepTexto++;
+					break;
+				case 5:
+					mostrarTexto(texto5, "res://escenas/escena2/objetos/textBox6Ramon.tscn");
+					break;
 			}
-			else if (stepTexto == 1)
-			{
-				mostrarTexto(texto2, "res://escenas/escena2/objetos/textBox2Ramon.tscn");
-			}
-			else if (stepTexto == 2)
-			{
-				mostrarTexto(texto3, "res://escenas/escena2/objetos/textBox3Ramon.tscn");
-				stepTexto++;
-			}
-			else if (stepTexto == 3)
-			{
-				mostrarTexto(texto4, "res://escenas/escena2/objetos/textBox4Ramon.tscn");
-				if (GnomoSinCosas.tullido) stepTexto++;
-				
-			}
-			else if (stepTexto == 4)
-			{
-				GD.Print("STEP 4");
-				mostrarTexto(texto5, "res://escenas/escena2/objetos/textBox5Ramon.tscn");
-				stepTexto++;
-			}
-			else if (stepTexto == 5)
-			{
-				mostrarTexto(texto5, "res://escenas/escena2/objetos/textBox6Ramon.tscn");
-			}
-		}
-		else {
-			
 		}
 	}
 
@@ -100,7 +93,8 @@ public partial class Ramon : Area2D
 	/// <param name="collisionObject2D">Variable de la colision del objeto que colisiona con el objeto</param>
 	private void _on_area_entered(CollisionObject2D collisionObject2D)
 	{
-		if (collisionObject2D.IsInGroup("Ojo") && !ojoEnseñado) {
+		if (collisionObject2D.IsInGroup("Ojo") && !ojoEnseñado)
+		{
 			ojoEnseñado = true;
 			stepTexto++;
 		}

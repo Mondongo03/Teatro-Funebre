@@ -2627,6 +2627,11 @@
             Cached name for the 'texto5' field.
             </summary>
         </member>
+        <member name="F:Ramon.PropertyName.instanciaTextoActual">
+            <summary>
+            Cached name for the 'instanciaTextoActual' field.
+            </summary>
+        </member>
         <member name="F:Ramon.PropertyName.ojoEnseñado">
             <summary>
             Cached name for the 'ojoEnseñado' field.

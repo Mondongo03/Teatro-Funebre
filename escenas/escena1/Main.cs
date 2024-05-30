@@ -11,6 +11,7 @@ public partial class Main : Node2D
     Node2D godotInstancia2;
     public static Node2D miniVarillaMInstancia, miniVarillaSInstancia, varillaMinutosInstancia, pista, varillaSegundosInstancia,relojZoomeadoInstancia,fondoNegroInstancia,cajonZoomeadoInstancia,huecoInstancia,escaleraInstancia,cajetillaInstancia,tapaInstancia,pista_1Instancia,lamparaEncendidaInstancia,lamparaApagadaInstancia,relojInstancia,posterInstancia,monstruoInstancia, flechaDerechaInstancia, camaInstancia;
     Boolean clickadoBola, clickadoVarillaM = false;
+    public static bool subir;
     public static Boolean varillaMinutosReloj, varillaSegundosReloj = false;
     [Export] public AnimationPlayer animationPlayer;
     [Export] public AudioStreamPlayer2D audioStreamPlayer2D;
@@ -64,6 +65,10 @@ public partial class Main : Node2D
         instanciarYAgregarNodo("res://escenas/escena1/objects/reloj.tscn", ref relojInstancia);
         instanciarYAgregarNodo("res://escenas/escena1/objects/hueco.tscn", ref huecoInstancia);
         instanciarYAgregarNodo("res://escenas/escena1/objects/escalera.tscn", ref escaleraInstancia);
+        if (subir)
+        {
+            escaleraInstancia.Position = new Vector2I((int)escaleraInstancia.Position.X, -75);
+        }
         instanciarYAgregarNodo("res://escenas/escena1/objects/cajetilla.tscn", ref cajetillaInstancia);
         instanciarYAgregarNodo("res://escenas/escena1/objects/tapa.tscn", ref tapaInstancia);
         instanciarYAgregarNodo("res://escenas/escena1/objects/pista_1.tscn", ref pista_1Instancia);
