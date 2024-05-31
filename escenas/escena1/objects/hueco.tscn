@@ -15,6 +15,5 @@ shape = SubResource("RectangleShape2D_i1xvr")
 debug_color = Color(0.00392157, 0, 0.00392157, 0.419608)
 
 [connection signal="area_entered" from="." to="." method="_on_hueco_area_entered"]
-[connection signal="area_exited" from="." to="." method="_on_hueco_area_exited"]
 [connection signal="tree_entered" from="CollisionShape2D" to="." method="_on_collision_shape_2d_tree_entered"]
 [connection signal="tree_exited" from="CollisionShape2D" to="." method="_on_collision_shape_2d_tree_exited"]

@@ -1,6 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://v5m85lfhhmy4"]
 
-[ext_resource type="Texture2D" uid="uid://c3kotab24v707" path="res://escenas/escena1/assets/pista1.png" id="1_lul71"]
+[ext_resource type="Texture2D" uid="uid://bilxj2cbbf2qb" path="res://escenas/escena1/assets/Ej.png" id="1_lul71"]
+
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kvs7x"]
 radius = 146.055

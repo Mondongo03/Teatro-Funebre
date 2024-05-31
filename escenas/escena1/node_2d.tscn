@@ -53,6 +53,7 @@ _data = {
 }
 
 [node name="Node2D2" type="Node2D" node_paths=PackedStringArray("animationPlayer", "audioStreamPlayer2D", "gnomo") groups=["Persist"]]
+modulate = Color(1, 1, 1, 0)
 script = ExtResource("1_h6e1c")
 animationPlayer = NodePath("AnimationPlayer")
 audioStreamPlayer2D = NodePath("AudioStreamPlayer2D")

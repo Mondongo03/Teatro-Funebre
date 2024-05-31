@@ -71,16 +71,17 @@ public partial class Main : Node2D
      void InstanciarEscena() {
         if (!VarillaM.encontrado) instanciarYAgregarNodo("res://escenas/escena1/objects/varillaM.tscn", ref varillaMinutosInstancia);
             
-        else instanciarYAgregarNodo("res://escenas/escena1/objects/MiniVarillaM.tscn", ref miniVarillaMInstancia);
+        //else instanciarYAgregarNodo("res://escenas/escena1/objects/MiniVarillaM.tscn", ref miniVarillaMInstancia);
 
 
         if (!VarillaS.encontrado) instanciarYAgregarNodo("res://escenas/escena1/objects/varillaS.tscn", ref varillaSegundosInstancia);
 
-        else  instanciarYAgregarNodo("res://escenas/escena1/objects/MiniVarillaS.tscn", ref miniVarillaSInstancia);
+       // else  instanciarYAgregarNodo("res://escenas/escena1/objects/MiniVarillaS.tscn", ref miniVarillaSInstancia);
            
 
         instanciarYAgregarNodo("res://escenas/escena1/objects/reloj.tscn", ref relojInstancia);
-        instanciarYAgregarNodo("res://escenas/escena1/objects/hueco.tscn", ref huecoInstancia);
+        if(!Reloj.terminado) instanciarYAgregarNodo("res://escenas/escena1/objects/hueco.tscn", ref huecoInstancia);
+        
         instanciarYAgregarNodo("res://escenas/escena1/objects/escalera.tscn", ref escaleraInstancia);
         if (subir)
         {
@@ -90,7 +91,7 @@ public partial class Main : Node2D
         instanciarYAgregarNodo("res://escenas/escena1/objects/tapa.tscn", ref tapaInstancia);
         instanciarYAgregarNodo("res://escenas/escena1/objects/pista_1.tscn", ref pista_1Instancia);
         instanciarYAgregarNodo("res://escenas/escena1/objects/lamparaApagada.tscn", ref lamparaApagadaInstancia);
-        instanciarYAgregarNodo("res://escenas/escena1/objects/poster.tscn", ref posterInstancia);
+        //instanciarYAgregarNodo("res://escenas/escena1/objects/poster.tscn", ref posterInstancia);
         instanciarYAgregarNodo("res://escenas/escena1/objects/monstruo.tscn", ref monstruoInstancia);
         instanciarYAgregarNodo("res://escenas/escena1/objects/flechaDerecha.tscn", ref flechaDerechaInstancia);
         instanciarYAgregarNodo("res://escenas/escena1/objects/cama.tscn", ref camaInstancia);
@@ -105,18 +106,27 @@ public partial class Main : Node2D
     /// </summary>
     /// <param name="rutaEscena">Ruta de la escena a instanciar</param>
     /// <param name="node2D">Referencia al nodo instanciado</param>
-    private void instanciarYAgregarNodo(String rutaEscena, ref Node2D node2D) {
-
-        foreach(String objeto in Cofre.objetosGuardados){
-            if(objeto.Equals(rutaEscena)) comprobanteArray = true;
+    private void instanciarYAgregarNodo(String rutaEscena, ref Node2D node2D)
+{
+    foreach (String objeto in Cofre.objetosGuardados)
+    {
+        if (objeto.Equals(rutaEscena))
+        {
+            comprobanteArray = true;
         }
-        if(!comprobanteArray){
+    }
+
+    if (!comprobanteArray)
+    {
         PackedScene escena = (PackedScene)ResourceLoader.Load(rutaEscena);
         node2D = escena.Instantiate() as Node2D;
-        AddChild(node2D);
-        }
-        comprobanteArray = false;
+
+        // Usar call_deferred para agregar el nodo al árbol de nodos
+        CallDeferred("add_child", node2D);
     }
+    comprobanteArray = false;
+}
+
 
     /// <summary>
     /// Método que gestiona las pistas de la escena
