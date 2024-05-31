@@ -46,6 +46,7 @@ public partial class RespuestasRamon : Area2D {
 		if (@event.IsActionPressed("click_izquierdo") && this.IsInGroup("Si"))
 		{
 			jugar = true;
+			Ramon.stepTexto++;
 			GetTree().ChangeSceneToFile("res://escenas/escena2.5/CartasCartitas.tscn");
 			GD.Print("Jugar");
 		}

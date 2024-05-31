@@ -1,0 +1,78 @@
+[gd_scene load_steps=10 format=3 uid="uid://cj8ehy21gvpg5"]
+
+[ext_resource type="Script" path="res://escenas/escena2/scripts/Final.cs" id="1_pdbw7"]
+[ext_resource type="Texture2D" uid="uid://tr1dui7lk8hb" path="res://escenas/escena2/assets/GnomoCrecidoCaminando.png" id="2_2wj0d"]
+
+[sub_resource type="Curve2D" id="Curve2D_216sr"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 59, 10, 0, 0, 0, 0, 348, 11, 0, 0, 0, 0, 603, 10, 0, 0, 0, 0, 786, 10)
+}
+point_count = 4
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cn578"]
+size = Vector2(66.363, 220.95)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0lea1"]
+atlas = ExtResource("2_2wj0d")
+region = Rect2(0, 0, 44, 145)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1gg38"]
+atlas = ExtResource("2_2wj0d")
+region = Rect2(44, 0, 44, 145)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t6q3l"]
+atlas = ExtResource("2_2wj0d")
+region = Rect2(88, 0, 44, 145)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q74y1"]
+atlas = ExtResource("2_2wj0d")
+region = Rect2(132, 0, 44, 145)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mqln4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0lea1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1gg38")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t6q3l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q74y1")
+}],
+"loop": true,
+"name": &"AccionBosque",
+"speed": 5.0
+}]
+
+[node name="Path2D" type="Path2D" groups=["CaminoFinal"]]
+position = Vector2(442, 410)
+curve = SubResource("Curve2D_216sr")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="." node_paths=PackedStringArray("animatedSprite2D")]
+position = Vector2(59, 10)
+rotation = 0.00346019
+rotates = false
+loop = false
+script = ExtResource("1_pdbw7")
+animatedSprite2D = NodePath("AnimatedSprite2D")
+
+[node name="Area2D" type="Area2D" parent="PathFollow2D" groups=["CaminoFinal"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/Area2D"]
+position = Vector2(0.195557, -1.59)
+shape = SubResource("RectangleShape2D_cn578")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="PathFollow2D"]
+texture_filter = 1
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_mqln4")
+animation = &"AccionBosque"
+autoplay = "AccionBosque"
+
+[node name="_Timer_22978" type="Timer" parent="PathFollow2D"]
+wait_time = 0.2
+one_shot = true

@@ -1,0 +1,87 @@
+[gd_scene load_steps=8 format=3 uid="uid://ca5k86pgqd2jm"]
+
+[ext_resource type="Script" path="res://escenas/Pistas/PistasEscenaCandado.cs" id="1_qlv1m"]
+[ext_resource type="Script" path="res://escenas/Pistas/Narracion.cs" id="2_hfik1"]
+[ext_resource type="Texture2D" uid="uid://dlwnbca12us5y" path="res://escenas/Pistas/Pista1Escena3.png" id="3_57h86"]
+[ext_resource type="Texture2D" uid="uid://blvec3logdvpo" path="res://escenas/Pistas/candado.png" id="4_kimes"]
+[ext_resource type="Texture2D" uid="uid://c3h7hfn4guge6" path="res://escenas/Pistas/Pista2Escena3.png" id="5_c3jwp"]
+[ext_resource type="Texture2D" uid="uid://qbog124ygs1k" path="res://escenas/Pistas/Pista3Escena3.png" id="6_m1mri"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6welm"]
+size = Vector2(563.5, 449)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_qlv1m")
+
+[node name="Area2D" type="Area2D" parent="."]
+z_index = 777
+script = ExtResource("2_hfik1")
+
+[node name="Pista1" type="Area2D" parent="Area2D"]
+z_index = 3
+texture_filter = 1
+position = Vector2(583, 130)
+scale = Vector2(1.3, 1.3)
+script = ExtResource("2_hfik1")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D/Pista1"]
+z_index = 3
+texture_filter = 1
+position = Vector2(-0.592377, -3.21161)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("3_57h86")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Area2D/Pista1" groups=["Candado1"]]
+z_index = 4
+position = Vector2(-0.423111, -2.78853)
+scale = Vector2(1.30608, 1.35068)
+texture = ExtResource("4_kimes")
+
+[node name="Pista2" type="Area2D" parent="Area2D"]
+z_index = 3
+texture_filter = 1
+position = Vector2(583, 279)
+scale = Vector2(1.3, 1.3)
+script = ExtResource("2_hfik1")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D/Pista2"]
+z_index = 3
+texture_filter = 1
+position = Vector2(-0.592377, -3.21161)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("5_c3jwp")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Area2D/Pista2" groups=["Candado2"]]
+z_index = 4
+position = Vector2(-0.423111, -2.78853)
+scale = Vector2(1.30608, 1.35068)
+texture = ExtResource("4_kimes")
+
+[node name="Pista3" type="Area2D" parent="Area2D" groups=["Candado3"]]
+z_index = 3
+texture_filter = 1
+position = Vector2(583, 428)
+scale = Vector2(1.3, 1.3)
+script = ExtResource("2_hfik1")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D/Pista3"]
+z_index = 3
+texture_filter = 1
+position = Vector2(-0.592377, -3.21161)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("6_m1mri")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Area2D/Pista3" groups=["Candado3"]]
+z_index = 4
+position = Vector2(-0.423111, -2.78853)
+scale = Vector2(1.30608, 1.35068)
+texture = ExtResource("4_kimes")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(583.25, 277.5)
+shape = SubResource("RectangleShape2D_6welm")
+
+[connection signal="input_event" from="Area2D" to="Area2D" method="_on_input_event"]
+[connection signal="input_event" from="Area2D/Pista1" to="Area2D/Pista1" method="_on_input_event"]
+[connection signal="input_event" from="Area2D/Pista2" to="Area2D/Pista2" method="_on_input_event"]
+[connection signal="input_event" from="Area2D/Pista3" to="Area2D/Pista3" method="_on_input_event"]

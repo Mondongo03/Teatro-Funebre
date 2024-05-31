@@ -4,8 +4,7 @@ using System;
 /// <summary>
 /// Clase que gestiona todo el menu principal
 /// </summary>
-public partial class MenuPrincipal : CanvasLayer
-{
+public partial class MenuPrincipal : CanvasLayer {
     [ExportGroup("Buttons")]
     [ExportSubgroup("MenuPrincipal")]
     [Export] 

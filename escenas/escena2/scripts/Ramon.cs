@@ -7,7 +7,7 @@ using System;
 public partial class Ramon : Area2D
 {
 	public static int stepTexto = 0;
-	PackedScene texto1, texto2, texto3, texto4, texto5;
+	PackedScene texto1, texto2, texto3, texto4, texto5, texto6;
 	Node2D instanciaTextoActual;
 	bool ojoEnseñado = false;
 
@@ -15,8 +15,7 @@ public partial class Ramon : Area2D
 	/// Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla
 	/// </summary>
 	/// <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
-	public override void _Process(double delta)
-	{
+	public override void _Process(double delta) {
 
 		if (RespuestasRamon.pasar && stepTexto != 4)
 		{
@@ -24,7 +23,6 @@ public partial class Ramon : Area2D
 			{
 				instanciaTextoActual.Visible = false;
 			}
-			stepTexto = 4;
 			RespuestasRamon.pasar = false;
 		}
 
@@ -36,13 +34,10 @@ public partial class Ramon : Area2D
 	/// <param name="viewport">Nodo del objeto parte de la API</param>
 	/// <param name="event">Nos permite detectar cuando se hace click</param>
 	/// <param name="shape_idx">Variable que se utiliza para la API</param>
-	private void _on_input_event(Node viewport, InputEvent @event, long shape_idx)
-	{
-
-		if (@event.IsActionPressed("click_izquierdo") && !CartasCartitas.victoria)
-		{
-			switch (stepTexto)
-			{
+	private void _on_input_event(Node viewport, InputEvent @event, long shape_idx) {
+		GD.Print(stepTexto);
+		if (@event.IsActionPressed("click_izquierdo")) {
+			switch (stepTexto) {
 				case 0:
 					mostrarTexto(texto1, "res://escenas/escena2/objetos/textBox1Ramon.tscn");
 					stepTexto++;
@@ -65,6 +60,9 @@ public partial class Ramon : Area2D
 					break;
 				case 5:
 					mostrarTexto(texto5, "res://escenas/escena2/objetos/textBox6Ramon.tscn");
+					break;
+				case 6:
+				Escena2.contestacionRamon();
 					break;
 			}
 		}

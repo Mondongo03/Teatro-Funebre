@@ -11,11 +11,7 @@ public partial class InteractuarCon : Area2D
 	/// </summary>
 	Despertarse despertarse = new Despertarse();
 
-	private bool bolaInside = false;
-	private bool godotInside = false;
-
 	public static Boolean clickado = false;
-	public static int slotsOcupados = 0;
 
 	/// <summary>
 	/// Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla
@@ -23,18 +19,13 @@ public partial class InteractuarCon : Area2D
 	/// <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
 	public override void _Process(double delta)
 	{
-		if (Reloj.terminado)
-		{
-			despertarse.despertar(true);
-		}
+		if (Reloj.terminado) despertarse.despertar(true);
 	}
-
 	/// <summary>
 	/// Metodo que nos permite ejecutar codigo cuando algo entra en el area, este metodo es una señal de godot
 	/// </summary>
 	/// <param name="area">Es la variable que nos dice el donde a entrado un objeto</param>
-	public void _on_hueco_area_entered(Area2D area)
-	{
+	public void _on_hueco_area_entered(Area2D area) {
 		if (area.IsInGroup("personaje"))
 		{
 			GD.Print("Saul ha entrado al área. Cambiando de escena...");
@@ -42,3 +33,4 @@ public partial class InteractuarCon : Area2D
 		}
 	}
 }
+

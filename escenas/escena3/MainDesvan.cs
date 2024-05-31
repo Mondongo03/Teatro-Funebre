@@ -7,15 +7,33 @@ using System;
 public partial class MainDesvan : Node2D {
 	[Export] public AudioStreamPlayer2D audioStreamPlayer2D;
 	bool comprobanteArray = false;
+	static int narradorNum = 0;
 	public static bool ritualAcabado;
 	static bool comprobanteSangre = false;
-	public static Node2D megaPoti, vial, unicornioVerde, unicornioRojo, unicornioNaranja, unicornioBlanco, unicornioAmarillo, particulaUA, particulaUR, particulaUV, particulaUN, particulaUB, relojDesvan, caldero, izquierda, derecha, arriba, abajoDerecha, abajoIzquierda, muebleRecetario;
+	public static Node2D pista, narrador, megaPoti, vial, unicornioVerde, unicornioRojo, unicornioNaranja, unicornioBlanco, unicornioAmarillo, particulaUA, particulaUR, particulaUV, particulaUN, particulaUB, relojDesvan, caldero, izquierda, derecha, arriba, abajoDerecha, abajoIzquierda, muebleRecetario;
 	
+	static Timer pista1, pista2, pista3;
+
+    public static bool pista1POP, pista2POP, pista3POP;
 	/// <summary>
 	/// Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script
 	/// </summary>
 	public override void _Ready() {
+		pista1 = new Timer();
+        pista2 = new Timer();
+        pista3 = new Timer();
+
+        // Agregar los timers de las super pistas a la escena
+        AddChild(pista1);
+        AddChild(pista2);
+        AddChild(pista3);
+        pista3Timer();
+
 		if(!ritualAcabado){
+			if(narradorNum == 0){
+				instanciarYAgregarNodo("res://escenas/Pistas/NarracionEscena3PrePoti.tscn", ref narrador);
+				narradorNum++;
+			}
 			instanciarYAgregarNodo("res://escenas/escena3/objects/unicornioAmarillo.tscn", ref unicornioAmarillo);
 			instanciarYAgregarNodo("res://escenas/escena3/objects/unicornioBlanco.tscn", ref unicornioBlanco);
 			instanciarYAgregarNodo("res://escenas/escena3/objects/unicornioNaranja.tscn", ref unicornioNaranja);
@@ -36,7 +54,10 @@ public partial class MainDesvan : Node2D {
 			comprobanteSangre = true;
 			instanciarYAgregarNodo("res://escenas/escena3/objects/vialSangre.tscn", ref vial);
 		}
-		
+		if(MegaPoti.lleno && narradorNum == 1){
+			instanciarYAgregarNodo("res://escenas/Pistas/NarracionEscena3PostPoti.tscn", ref narrador);
+			narradorNum++;
+		}
 		
 	}
 
@@ -74,5 +95,25 @@ public partial class MainDesvan : Node2D {
 		instanciarYAgregarNodo("res://escenas/escena3/objects/relojDesvan.tscn", ref relojDesvan);
 		instanciarYAgregarNodo("res://escenas/escena3/objects/muebleRecetario.tscn", ref muebleRecetario);
 		instanciarYAgregarNodo("res://escenas/escena3/objects/megaPoti.tscn", ref megaPoti);
+		instanciarYAgregarNodo("res://escenas/Pistas/pista.tscn", ref pista);
+		pista.Position = new Vector2I(1072, 130);
+		pista.AddToGroup("Escena3");
 	}
+
+	public async void pista3Timer() {
+        pista1.Start(5);
+	    await ToSignal(pista1, "timeout");
+        GD.Print("Timer1");
+        pista1POP = true;
+        
+        pista2.Start(5);
+	    await ToSignal(pista2, "timeout");
+        pista2POP = true;
+        GD.Print("Timer2");
+
+        pista3.Start(5);
+	    await ToSignal(pista3, "timeout");
+        pista3POP = true;
+        GD.Print("Timer3");
+    }
 }

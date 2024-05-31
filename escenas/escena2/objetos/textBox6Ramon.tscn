@@ -1,11 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://bhxsp7xo76l6i"]
+[gd_scene load_steps=11 format=3 uid="uid://ceyw76t12qmag"]
 
-[ext_resource type="Texture2D" uid="uid://bgomb3xbulxum" path="res://escenas/escena2/assets/TextBox6.png" id="1_da6mc"]
-[ext_resource type="Script" path="res://escenas/escena2/scripts/RespuestasRamon.cs" id="2_l0wns"]
-[ext_resource type="Texture2D" uid="uid://wbvj7yjxk45f" path="res://escenas/escena2/assets/Opcion2NoBrillante.png" id="3_8ppq4"]
-[ext_resource type="Texture2D" uid="uid://uxfrsqy3do6w" path="res://escenas/escena2/assets/Opcion2No.png" id="4_s3hb7"]
-[ext_resource type="Texture2D" uid="uid://dlgfijn5s5fvl" path="res://escenas/escena2/assets/Opcion1SiBrillante.png" id="5_soo63"]
-[ext_resource type="Texture2D" uid="uid://0hmrv222doit" path="res://escenas/escena2/assets/Opcion1Si.png" id="6_a6sys"]
+[ext_resource type="Texture2D" uid="uid://bgomb3xbulxum" path="res://escenas/escena2/assets/TextBox6.png" id="1_koyjj"]
+[ext_resource type="Script" path="res://escenas/escena2/scripts/RespuestasRamon.cs" id="2_pgctb"]
+[ext_resource type="Texture2D" uid="uid://wbvj7yjxk45f" path="res://escenas/escena2/assets/Opcion2NoBrillante.png" id="3_c81rc"]
+[ext_resource type="Texture2D" uid="uid://uxfrsqy3do6w" path="res://escenas/escena2/assets/Opcion2No.png" id="4_8pc8l"]
+[ext_resource type="Texture2D" uid="uid://dlgfijn5s5fvl" path="res://escenas/escena2/assets/Opcion1SiBrillante.png" id="5_d81jj"]
+[ext_resource type="Texture2D" uid="uid://0hmrv222doit" path="res://escenas/escena2/assets/Opcion1Si.png" id="6_0ruqh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bgifi"]
 size = Vector2(333, 84)
@@ -23,7 +23,7 @@ size = Vector2(319, 16)
 position = Vector2(796, 251)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_da6mc")
+texture = ExtResource("1_koyjj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 27)
@@ -39,15 +39,15 @@ shape = SubResource("RectangleShape2D_qh4n3")
 
 [node name="Area2D" type="Area2D" parent="." groups=["No"]]
 position = Vector2(-3, 50)
-script = ExtResource("2_l0wns")
+script = ExtResource("2_pgctb")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Area2D"]
 position = Vector2(-29.5, -0.5)
-texture = ExtResource("3_8ppq4")
+texture = ExtResource("3_c81rc")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D"]
 position = Vector2(-29.5, -0.5)
-texture = ExtResource("4_s3hb7")
+texture = ExtResource("4_8pc8l")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(0, -0.5)
@@ -55,15 +55,15 @@ shape = SubResource("RectangleShape2D_533qb")
 
 [node name="Area2D2" type="Area2D" parent="." groups=["Si"]]
 position = Vector2(-2, 25)
-script = ExtResource("2_l0wns")
+script = ExtResource("2_pgctb")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Area2D2"]
 position = Vector2(-120, 0.5)
-texture = ExtResource("5_soo63")
+texture = ExtResource("5_d81jj")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D2"]
 position = Vector2(-120, 0.5)
-texture = ExtResource("6_a6sys")
+texture = ExtResource("6_0ruqh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 position = Vector2(0, 0.5)

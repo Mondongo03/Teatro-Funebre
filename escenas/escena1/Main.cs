@@ -9,21 +9,35 @@ public partial class Main : Node2D
     int slotsOcupados;
     Area2D pista_1;
     Node2D godotInstancia2;
-    public static Node2D miniVarillaMInstancia, miniVarillaSInstancia, varillaMinutosInstancia, pista, varillaSegundosInstancia,relojZoomeadoInstancia,fondoNegroInstancia,cajonZoomeadoInstancia,huecoInstancia,escaleraInstancia,cajetillaInstancia,tapaInstancia,pista_1Instancia,lamparaEncendidaInstancia,lamparaApagadaInstancia,relojInstancia,posterInstancia,monstruoInstancia, flechaDerechaInstancia, camaInstancia;
+    public static Node2D narrador, miniVarillaMInstancia, miniVarillaSInstancia, varillaMinutosInstancia, pista, varillaSegundosInstancia,relojZoomeadoInstancia,fondoNegroInstancia,cajonZoomeadoInstancia,huecoInstancia,escaleraInstancia,cajetillaInstancia,tapaInstancia,pista_1Instancia,lamparaEncendidaInstancia,lamparaApagadaInstancia,relojInstancia,posterInstancia,monstruoInstancia, flechaDerechaInstancia, camaInstancia;
     Boolean clickadoBola, clickadoVarillaM = false;
     public static bool subir;
+    static int narradorNum = 0;
     public static Boolean varillaMinutosReloj, varillaSegundosReloj = false;
     [Export] public AnimationPlayer animationPlayer;
     [Export] public AudioStreamPlayer2D audioStreamPlayer2D;
     [Export] public Path2D gnomo;
+
+    static Timer pista1, pista2, pista3;
+
+    public static bool pista1POP, pista2POP, pista3POP;
 
     bool comprobanteArray = false;
 
     /// <summary>
     /// Esta función se llama automáticamente cuando se instancia el objeto al cual está asociado el script
     /// </summary>
-    public override void _Ready()
-    {
+    public override void _Ready() {
+
+        pista1 = new Timer();
+        pista2 = new Timer();
+        pista3 = new Timer();
+
+        // Agregar los timers de las super pistas a la escena
+        AddChild(pista1);
+        AddChild(pista2);
+        AddChild(pista3);
+        pista1Timer();
         audioStreamPlayer2D.Play();
         animationPlayer.Play("cosa");
         InstanciarEscena();
@@ -33,6 +47,10 @@ public partial class Main : Node2D
         }
         if(Despertarse.funciona){
             flechaDerechaInstancia.Visible = true;
+        }
+        if(narradorNum == 0){
+            narradorNum++;
+            instanciarYAgregarNodo("res://escenas/Pistas/NarracionEscena1.tscn", ref narrador);
         }
     }
 
@@ -44,7 +62,6 @@ public partial class Main : Node2D
         if (varillaMinutosInstancia != null) {
             clickadoVarillaM = VarillaM.devolverClickado();
         }
-        GD.Print(GetGlobalMousePosition());
         
     }
 
@@ -77,7 +94,8 @@ public partial class Main : Node2D
         instanciarYAgregarNodo("res://escenas/escena1/objects/monstruo.tscn", ref monstruoInstancia);
         instanciarYAgregarNodo("res://escenas/escena1/objects/flechaDerecha.tscn", ref flechaDerechaInstancia);
         instanciarYAgregarNodo("res://escenas/escena1/objects/cama.tscn", ref camaInstancia);
-        instanciarYAgregarNodo("res://escenas/Pistas/pista.tscn", ref pista); 
+        instanciarYAgregarNodo("res://escenas/Pistas/pista.tscn", ref pista);
+        pista.AddToGroup("Escena1");
         pista.Position = new Vector2I(1064, 72);
         
     }
@@ -103,19 +121,25 @@ public partial class Main : Node2D
     /// <summary>
     /// Método que gestiona las pistas de la escena
     /// </summary>
-    public void popPista_1()
-    {
-        pista_1Instancia.Position = new Vector2I(334, 255);
+    public async void pista1Timer() {
+        pista1.Start(5);
+	    await ToSignal(pista1, "timeout");
+        GD.Print("Timer1");
+        pista1POP = true;
+        
+        pista2.Start(5);
+	    await ToSignal(pista2, "timeout");
+        pista2POP = true;
+        GD.Print("Timer2");
+
+        pista3.Start(5);
+	    await ToSignal(pista3, "timeout");
+        pista3POP = true;
+        GD.Print("Timer3");
     }
 
     /// <summary>
     /// Señal de Godot que nos permite poner un contador y cuando llega a cero hace las acciones específicas
     /// </summary>
-    public void _on_timer_timeout()
-    {
-        if (!VarillaM.encontrado || !VarillaS.encontrado)
-        {
-            popPista_1();
-        }
-    }
+
 }

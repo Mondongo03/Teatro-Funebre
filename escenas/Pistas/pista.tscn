@@ -1,12 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://68yuviru404j"]
+[gd_scene load_steps=4 format=3 uid="uid://68yuviru404j"]
 
 [ext_resource type="Texture2D" uid="uid://1qk2aekn014y" path="res://escenas/Pistas/IconoPista.png" id="1_2rfda"]
+[ext_resource type="Script" path="res://escenas/Pistas/Narracion.cs" id="1_6py05"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rfenn"]
 size = Vector2(66, 67)
 
-[node name="Pista" type="Area2D"]
+[node name="Pista" type="Area2D" groups=["Pista"]]
 position = Vector2(1017, 26)
+script = ExtResource("1_6py05")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_2rfda")
@@ -14,3 +16,5 @@ texture = ExtResource("1_2rfda")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_rfenn")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://b3oscujcwaje6"]
+[gd_scene load_steps=31 format=3 uid="uid://b3oscujcwaje6"]
 
 [ext_resource type="Script" path="res://escenas/escena2/Escena2.cs" id="1_532y4"]
 [ext_resource type="PackedScene" uid="uid://c0vydxagyq8pj" path="res://escenas/menuPausa/escenas/pausa.tscn" id="2_p1h3l"]
@@ -12,8 +12,9 @@
 [ext_resource type="PackedScene" uid="uid://ciocjjv3ss2lc" path="res://escenas/escena2/objetos/pajaro_verde.tscn" id="8_83e7h"]
 [ext_resource type="PackedScene" uid="uid://suhwt3dfugp" path="res://escenas/escena2/objetos/ramoncin.tscn" id="12_cpiaa"]
 [ext_resource type="Script" path="res://escenas/escena2/scripts/GnomoSinCosas.cs" id="14_wdqc6"]
+[ext_resource type="Script" path="res://escenas/escena1/scripts/Flecha.cs" id="15_8nmeb"]
 [ext_resource type="PackedScene" uid="uid://csicptbljjd3v" path="res://escenas/escena2/objetos/cofre.tscn" id="16_3ddve"]
-[ext_resource type="Texture2D" uid="uid://tr1dui7lk8hb" path="res://escenas/escena2/assets/GnomoCrecidoCaminando.png" id="16_5nppf"]
+[ext_resource type="AudioStream" uid="uid://bjmc7nns0t7y3" path="res://escenas/escena2/assets/Ramon.mp3" id="16_3eryw"]
 [ext_resource type="PackedScene" uid="uid://bv5ynspws8yl4" path="res://escenas/escena2/objetos/flechaIzquierda.tscn" id="22_qmkqx"]
 
 [sub_resource type="Curve2D" id="Curve2D_a8trf"]
@@ -109,41 +110,8 @@ size = Vector2(58.8438, 121.281)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wnx72"]
 size = Vector2(119, 43)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_0lea1"]
-atlas = ExtResource("16_5nppf")
-region = Rect2(0, 0, 44, 145)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1gg38"]
-atlas = ExtResource("16_5nppf")
-region = Rect2(44, 0, 44, 145)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_t6q3l"]
-atlas = ExtResource("16_5nppf")
-region = Rect2(88, 0, 44, 145)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_q74y1"]
-atlas = ExtResource("16_5nppf")
-region = Rect2(132, 0, 44, 145)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_mqln4"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0lea1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1gg38")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_t6q3l")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_q74y1")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_600q0"]
+size = Vector2(35, 162)
 
 [node name="Node2D2" type="Node2D"]
 position = Vector2(62, 51)
@@ -221,13 +189,19 @@ position = Vector2(6, 359)
 position = Vector2(1016, 87)
 monitorable = false
 
-[node name="Area2D4" type="Area2D" parent="."]
+[node name="Area2D6" type="Area2D" parent="." groups=["Final"]]
+script = ExtResource("15_8nmeb")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D4"]
-sprite_frames = SubResource("SpriteFrames_mqln4")
-frame_progress = 0.470567
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D6"]
+position = Vector2(1074, 429)
+shape = SubResource("RectangleShape2D_600q0")
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("16_3eryw")
+bus = &"Ejecftos de sonido"
 
 [connection signal="area_entered" from="Gnomo/PathFollow2D/AnimatedSprite2D/Area2D" to="Gnomo/PathFollow2D" method="_on_area_2d_area_entered"]
 [connection signal="area_entered" from="Area2D2" to="Area2D2" method="_on_area_entered"]
 [connection signal="area_entered" from="Area2D3" to="Area2D3" method="_on_area_entered"]
 [connection signal="area_exited" from="Area2D3" to="Area2D3" method="_on_area_exited"]
+[connection signal="area_entered" from="Area2D6" to="Area2D6" method="_on_area_entered"]

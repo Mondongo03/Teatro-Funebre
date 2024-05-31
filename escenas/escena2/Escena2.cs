@@ -6,21 +6,41 @@ using System;
 /// </summary>
 public partial class Escena2 : Node2D
 {
-	public static Node2D node2D, gnomoCrecer, ojo, cofre, pista, hueso, huesoPegadoCuerpo, flor1, flor2, flor3, flor4, flor5, flor6, carta;
+	public static Node2D node2D, gnomoCrecer, ojo, cofre, pista, hueso, huesoPegadoCuerpo, flor1, flor2, flor3, flor4, flor5, flor6, carta, finalGnomo, narracion;
 	[Export] public AudioStreamPlayer2D audioStreamPlayer2D;
+
+	[Export] static public AudioStreamPlayer2D ramonAudio;
 	bool comprobanteArray = false;
 	bool comprobanteCrecer = false;
+	static int narracionNum = 0;
 	Timer timer;
+
+	 static Timer pista1, pista2, pista3;
+
+    public static bool pista1POP, pista2POP, pista3POP;
+
 
 	/// <summary>
 	/// Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script
 	/// </summary>
-	public override void _Ready()
-	{
+	public override void _Ready() {
+
+		pista1 = new Timer();
+        pista2 = new Timer();
+        pista3 = new Timer();
+
+        // Agregar los timers de las super pistas a la escena
+        AddChild(pista1);
+        AddChild(pista2);
+        AddChild(pista3);
+        pista2Timer();
+
+		
 		timer = new Timer();
 		AddChild(timer);
 		timer.OneShot = false;
 		audioStreamPlayer2D = GetChild<AudioStreamPlayer2D>(2);
+		ramonAudio = GetChild<AudioStreamPlayer2D>(11);
 		audioStreamPlayer2D.Play();
 
 		if (!Hueso.metidoEnCaldero)
@@ -40,8 +60,7 @@ public partial class Escena2 : Node2D
 	/// <param name="delta">Es una varibale generada por Godot que almacena la posicion del objeto</param>
 	public async override void _Process(double delta)
 	{
-		if (GnomoSinCosas.crecer && !comprobanteCrecer)
-		{
+		if (GnomoSinCosas.crecer && !comprobanteCrecer) {
 			try
 			{
 				ojo.QueueFree();
@@ -54,8 +73,17 @@ public partial class Escena2 : Node2D
 			timer.Start(1);
 			await ToSignal(timer, "timeout");
 			carta.QueueFree();
+			instanciarYAgregarNodo("res://escenas/escena2/objetos/GnomoGrandeCaminando.tscn", ref finalGnomo);
+			instanciarYAgregarNodo("res://escenas/Pistas/NarracionEscena2Camina.tscn", ref narracion);
+			gnomoCrecer.QueueFree();
 
 		}
+		if(GnomoSinCosas.animacionTerminada && narracionNum == 0){
+			narracionNum++;
+			instanciarYAgregarNodo("res://escenas/Pistas/NarracionEscena2.tscn", ref narracion);
+			
+		}
+		
 	}
 
 	/// <summary>
@@ -87,6 +115,7 @@ public partial class Escena2 : Node2D
 		instanciarYAgregarNodo("res://escenas/escena2/objetos/ojo.tscn", ref ojo);
 		instanciarYAgregarNodo("res://escenas/escena2/objetos/huesoPegadoCuerpo.tscn", ref huesoPegadoCuerpo);
 		instanciarYAgregarNodo("res://escenas/Pistas/pista.tscn", ref pista);
+		pista.AddToGroup("Escena2");
 		instanciarYAgregarNodo("res://escenas/escena2/objetos/florAmarilla.tscn", ref flor1);
 		instanciarYAgregarNodo("res://escenas/escena2/objetos/florAmarillaGrande.tscn", ref flor2);
 		instanciarYAgregarNodo("res://escenas/escena2/objetos/florAzul.tscn", ref flor3);
@@ -95,4 +124,24 @@ public partial class Escena2 : Node2D
 		instanciarYAgregarNodo("res://escenas/escena2/objetos/greenPeace.tscn", ref node2D);
 		instanciarYAgregarNodo("res://escenas/escena2/objetos/carta.tscn", ref carta);
 	}
+	static public void contestacionRamon(){
+		ramonAudio.Play();
+	}
+
+	public async void pista2Timer() {
+        pista1.Start(5);
+	    await ToSignal(pista1, "timeout");
+        GD.Print("Timer1");
+        pista1POP = true;
+        
+        pista2.Start(5);
+	    await ToSignal(pista2, "timeout");
+        pista2POP = true;
+        GD.Print("Timer2");
+
+        pista3.Start(5);
+	    await ToSignal(pista3, "timeout");
+        pista3POP = true;
+        GD.Print("Timer3");
+    }
 }

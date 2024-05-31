@@ -21,7 +21,6 @@ public partial class Cofre : Area2D {
         if(CartasCartitas.victoria){
             this.Visible = true;
         }
-        this.Visible = true;
     }
 
     private void _on_area_entered(CollisionObject2D collisionObject2D){
@@ -50,7 +49,7 @@ public partial class Cofre : Area2D {
     }
 
     void _on_input_event(Node viewport, InputEvent @event, long shape_idx){
-        if (@event.IsActionPressed("click_izquierdo") && this.IsInGroup("Cofre") ) { //&& CartasCartitas.victoria
+        if (@event.IsActionPressed("click_izquierdo") && this.IsInGroup("Cofre") ) {
             if(!abierto){
                 abrirCofre();
                 }
