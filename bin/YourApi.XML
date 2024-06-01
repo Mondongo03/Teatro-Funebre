@@ -149,14 +149,6 @@
             Do not call this method.
             </summary>
         </member>
-        <member name="M:Main.GetGodotPropertyDefaultValues">
-            <summary>
-            Get the default values for all properties declared in this class.
-            This method is used by Godot to determine the value that will be
-            used by the inspector when resetting properties.
-            Do not call this method.
-            </summary>
-        </member>
         <member name="M:Main.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
             <inheritdoc/>
         </member>
@@ -344,14 +336,6 @@
             Do not call this method.
             </summary>
         </member>
-        <member name="M:Cajon.GetGodotPropertyDefaultValues">
-            <summary>
-            Get the default values for all properties declared in this class.
-            This method is used by Godot to determine the value that will be
-            used by the inspector when resetting properties.
-            Do not call this method.
-            </summary>
-        </member>
         <member name="M:Cajon.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
             <inheritdoc/>
         </member>
@@ -419,14 +403,6 @@
             <summary>
             Get the property information for all the properties declared in this class.
             This method is used by Godot to register the available properties in the editor.
-            Do not call this method.
-            </summary>
-        </member>
-        <member name="M:CajonZoomeado.GetGodotPropertyDefaultValues">
-            <summary>
-            Get the default values for all properties declared in this class.
-            This method is used by Godot to determine the value that will be
-            used by the inspector when resetting properties.
             Do not call this method.
             </summary>
         </member>
@@ -516,14 +492,6 @@
             <summary>
             Get the property information for all the properties declared in this class.
             This method is used by Godot to register the available properties in the editor.
-            Do not call this method.
-            </summary>
-        </member>
-        <member name="M:Despertarse.GetGodotPropertyDefaultValues">
-            <summary>
-            Get the default values for all properties declared in this class.
-            This method is used by Godot to determine the value that will be
-            used by the inspector when resetting properties.
             Do not call this method.
             </summary>
         </member>
@@ -645,14 +613,6 @@
             <summary>
             Get the property information for all the properties declared in this class.
             This method is used by Godot to register the available properties in the editor.
-            Do not call this method.
-            </summary>
-        </member>
-        <member name="M:Escalera.GetGodotPropertyDefaultValues">
-            <summary>
-            Get the default values for all properties declared in this class.
-            This method is used by Godot to determine the value that will be
-            used by the inspector when resetting properties.
             Do not call this method.
             </summary>
         </member>
@@ -878,14 +838,6 @@
             Do not call this method.
             </summary>
         </member>
-        <member name="M:Lampara.GetGodotPropertyDefaultValues">
-            <summary>
-            Get the default values for all properties declared in this class.
-            This method is used by Godot to determine the value that will be
-            used by the inspector when resetting properties.
-            Do not call this method.
-            </summary>
-        </member>
         <member name="M:Lampara.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
             <inheritdoc/>
         </member>
@@ -966,14 +918,6 @@
             Do not call this method.
             </summary>
         </member>
-        <member name="M:Monstruo.GetGodotPropertyDefaultValues">
-            <summary>
-            Get the default values for all properties declared in this class.
-            This method is used by Godot to determine the value that will be
-            used by the inspector when resetting properties.
-            Do not call this method.
-            </summary>
-        </member>
         <member name="M:Monstruo.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
             <inheritdoc/>
         </member>
@@ -1051,14 +995,6 @@
             <summary>
             Get the property information for all the properties declared in this class.
             This method is used by Godot to register the available properties in the editor.
-            Do not call this method.
-            </summary>
-        </member>
-        <member name="M:Poster.GetGodotPropertyDefaultValues">
-            <summary>
-            Get the default values for all properties declared in this class.
-            This method is used by Godot to determine the value that will be
-            used by the inspector when resetting properties.
             Do not call this method.
             </summary>
         </member>
@@ -1207,14 +1143,6 @@
             <summary>
             Get the property information for all the properties declared in this class.
             This method is used by Godot to register the available properties in the editor.
-            Do not call this method.
-            </summary>
-        </member>
-        <member name="M:Reloj.GetGodotPropertyDefaultValues">
-            <summary>
-            Get the default values for all properties declared in this class.
-            This method is used by Godot to determine the value that will be
-            used by the inspector when resetting properties.
             Do not call this method.
             </summary>
         </member>
@@ -1692,14 +1620,6 @@
             Do not call this method.
             </summary>
         </member>
-        <member name="M:CartasCartitas.GetGodotPropertyDefaultValues">
-            <summary>
-            Get the default values for all properties declared in this class.
-            This method is used by Godot to determine the value that will be
-            used by the inspector when resetting properties.
-            Do not call this method.
-            </summary>
-        </member>
         <member name="M:CartasCartitas.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
             <inheritdoc/>
         </member>
@@ -1927,14 +1847,6 @@
             Do not call this method.
             </summary>
         </member>
-        <member name="M:Escena2.GetGodotPropertyDefaultValues">
-            <summary>
-            Get the default values for all properties declared in this class.
-            This method is used by Godot to determine the value that will be
-            used by the inspector when resetting properties.
-            Do not call this method.
-            </summary>
-        </member>
         <member name="M:Escena2.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
             <inheritdoc/>
         </member>
@@ -2091,14 +2003,6 @@
             <summary>
             Get the property information for all the properties declared in this class.
             This method is used by Godot to register the available properties in the editor.
-            Do not call this method.
-            </summary>
-        </member>
-        <member name="M:Final.GetGodotPropertyDefaultValues">
-            <summary>
-            Get the default values for all properties declared in this class.
-            This method is used by Godot to determine the value that will be
-            used by the inspector when resetting properties.
             Do not call this method.
             </summary>
         </member>
@@ -2511,14 +2415,6 @@
             <summary>
             Get the property information for all the properties declared in this class.
             This method is used by Godot to register the available properties in the editor.
-            Do not call this method.
-            </summary>
-        </member>
-        <member name="M:MueveTeEnElBosque.GetGodotPropertyDefaultValues">
-            <summary>
-            Get the default values for all properties declared in this class.
-            This method is used by Godot to determine the value that will be
-            used by the inspector when resetting properties.
             Do not call this method.
             </summary>
         </member>
@@ -2967,14 +2863,6 @@
             Do not call this method.
             </summary>
         </member>
-        <member name="M:VolareMarron.GetGodotPropertyDefaultValues">
-            <summary>
-            Get the default values for all properties declared in this class.
-            This method is used by Godot to determine the value that will be
-            used by the inspector when resetting properties.
-            Do not call this method.
-            </summary>
-        </member>
         <member name="M:VolareMarron.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
             <inheritdoc/>
         </member>
@@ -3060,14 +2948,6 @@
             <summary>
             Get the property information for all the properties declared in this class.
             This method is used by Godot to register the available properties in the editor.
-            Do not call this method.
-            </summary>
-        </member>
-        <member name="M:VolareVerde.GetGodotPropertyDefaultValues">
-            <summary>
-            Get the default values for all properties declared in this class.
-            This method is used by Godot to determine the value that will be
-            used by the inspector when resetting properties.
             Do not call this method.
             </summary>
         </member>
@@ -3176,14 +3056,6 @@
             <summary>
             Get the property information for all the properties declared in this class.
             This method is used by Godot to register the available properties in the editor.
-            Do not call this method.
-            </summary>
-        </member>
-        <member name="M:MainDesvan.GetGodotPropertyDefaultValues">
-            <summary>
-            Get the default values for all properties declared in this class.
-            This method is used by Godot to determine the value that will be
-            used by the inspector when resetting properties.
             Do not call this method.
             </summary>
         </member>
@@ -3303,14 +3175,6 @@
             <summary>
             Get the property information for all the properties declared in this class.
             This method is used by Godot to register the available properties in the editor.
-            Do not call this method.
-            </summary>
-        </member>
-        <member name="M:Caldero.GetGodotPropertyDefaultValues">
-            <summary>
-            Get the default values for all properties declared in this class.
-            This method is used by Godot to determine the value that will be
-            used by the inspector when resetting properties.
             Do not call this method.
             </summary>
         </member>
@@ -3643,14 +3507,6 @@
             <summary>
             Get the property information for all the properties declared in this class.
             This method is used by Godot to register the available properties in the editor.
-            Do not call this method.
-            </summary>
-        </member>
-        <member name="M:RelojDesvan.GetGodotPropertyDefaultValues">
-            <summary>
-            Get the default values for all properties declared in this class.
-            This method is used by Godot to determine the value that will be
-            used by the inspector when resetting properties.
             Do not call this method.
             </summary>
         </member>
@@ -4150,14 +4006,6 @@
             Do not call this method.
             </summary>
         </member>
-        <member name="M:MenuPrincipal.GetGodotPropertyDefaultValues">
-            <summary>
-            Get the default values for all properties declared in this class.
-            This method is used by Godot to determine the value that will be
-            used by the inspector when resetting properties.
-            Do not call this method.
-            </summary>
-        </member>
         <member name="M:MenuPrincipal.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
             <inheritdoc/>
         </member>
@@ -4406,14 +4254,6 @@
             Do not call this method.
             </summary>
         </member>
-        <member name="M:MenuOpciones.GetGodotPropertyDefaultValues">
-            <summary>
-            Get the default values for all properties declared in this class.
-            This method is used by Godot to determine the value that will be
-            used by the inspector when resetting properties.
-            Do not call this method.
-            </summary>
-        </member>
         <member name="M:MenuOpciones.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
             <inheritdoc/>
         </member>
@@ -4564,14 +4404,6 @@
             Do not call this method.
             </summary>
         </member>
-        <member name="M:Video_settings.GetGodotPropertyDefaultValues">
-            <summary>
-            Get the default values for all properties declared in this class.
-            This method is used by Godot to determine the value that will be
-            used by the inspector when resetting properties.
-            Do not call this method.
-            </summary>
-        </member>
         <member name="M:Video_settings.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
             <inheritdoc/>
         </member>
@@ -4712,14 +4544,6 @@
             Do not call this method.
             </summary>
         </member>
-        <member name="M:Volumen_settings.GetGodotPropertyDefaultValues">
-            <summary>
-            Get the default values for all properties declared in this class.
-            This method is used by Godot to determine the value that will be
-            used by the inspector when resetting properties.
-            Do not call this method.
-            </summary>
-        </member>
         <member name="M:Volumen_settings.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
             <inheritdoc/>
         </member>
@@ -4855,14 +4679,6 @@
             <summary>
             Get the property information for all the properties declared in this class.
             This method is used by Godot to register the available properties in the editor.
-            Do not call this method.
-            </summary>
-        </member>
-        <member name="M:MenuDePausa.GetGodotPropertyDefaultValues">
-            <summary>
-            Get the default values for all properties declared in this class.
-            This method is used by Godot to determine the value that will be
-            used by the inspector when resetting properties.
             Do not call this method.
             </summary>
         </member>
