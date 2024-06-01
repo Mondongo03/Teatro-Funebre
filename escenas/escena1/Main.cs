@@ -147,9 +147,4 @@ public partial class Main : Node2D
         pista3POP = true;
         GD.Print("Timer3");
     }
-
-    /// <summary>
-    /// Señal de Godot que nos permite poner un contador y cuando llega a cero hace las acciones específicas
-    /// </summary>
-
 }

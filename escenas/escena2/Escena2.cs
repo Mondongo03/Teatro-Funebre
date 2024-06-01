@@ -124,10 +124,17 @@ public partial class Escena2 : Node2D
 		instanciarYAgregarNodo("res://escenas/escena2/objetos/greenPeace.tscn", ref node2D);
 		instanciarYAgregarNodo("res://escenas/escena2/objetos/carta.tscn", ref carta);
 	}
+
+	/// <summary>
+	/// Metodo que nos permite gestionar el audio de Ramon
+	/// </summary>
 	static public void contestacionRamon(){
 		ramonAudio.Play();
 	}
 
+	/// <summary>
+	/// Metodo que nos permite gestionar como funcionan las pistas en esta pantalla
+	/// </summary>
 	public async void pista2Timer() {
         pista1.Start(5);
 	    await ToSignal(pista1, "timeout");

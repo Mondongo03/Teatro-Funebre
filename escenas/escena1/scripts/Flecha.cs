@@ -33,6 +33,11 @@ public partial class Flecha : Area2D
 			if(this.IsInGroup("HaciaBosque")) GetTree().ChangeSceneToFile("res://escenas/escena2/Prueba.tscn");
 		}
 	}
+
+	/// <summary>
+	/// Senal de godot que nos permite saber cuando algo entra en el area del objeto
+	/// </summary>
+	/// <param name="collisionObject2D">Referencia a la colision del objeto</param>
 	void _on_area_entered(CollisionObject2D collisionObject2D){
 		GD.Print("Esta");
 		if(collisionObject2D.IsInGroup("CaminoFinal")){

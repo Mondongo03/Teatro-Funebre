@@ -2,6 +2,10 @@ using Godot;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+
+/// <summary>
+/// Clase que nos permite gestionar el minijuego de las cartas
+/// </summary>
 public partial class CartasCartitas : Node2D
 {
 

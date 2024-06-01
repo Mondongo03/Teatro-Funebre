@@ -1,9 +1,16 @@
 using Godot;
 using System;
 
+/// <summary>
+/// Clase que nso permite gestionar las pistas de todas las pantallas
+/// </summary>
 public partial class PistasEscenaCandado : Node2D
 {
 	public static Sprite2D candado1, candado2, candado3;
+
+	/// <summary>
+    /// Esta función se llama automáticamente cuando se instancia el objeto al cual está asociado el script
+    /// </summary>
 	public override void _Ready() {
 
 		 Node parent = GetParent();
@@ -27,8 +34,10 @@ public partial class PistasEscenaCandado : Node2D
 			}
 	}
 
-
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
+	/// <summary>
+    /// Este método está siempre en ejecución mientras el objeto que tiene asociado el script esté en pantalla
+    /// </summary>
+    /// <param name="delta">Es una variable generada por Godot que almacena la posición del objeto</param>
 	public override void _Process(double delta) {
 	}
 

@@ -100,6 +100,9 @@ public partial class MainDesvan : Node2D {
 		pista.AddToGroup("Escena3");
 	}
 
+	/// <summary>
+	/// Metodo que nos permite gestionar como funcionan las pistas en esta pantalla
+	/// </summary>
 	public async void pista3Timer() {
         pista1.Start(5);
 	    await ToSignal(pista1, "timeout");
