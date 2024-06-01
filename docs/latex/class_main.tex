@@ -2,7 +2,7 @@
 \hypertarget{class_main}{}\label{class_main}\index{Main@{Main}}
 
 
-Primera case del proyecto que nos per mite gestionar la primera escena al completo, como instanciar los objetos en ella.  
+Primera clase del proyecto que nos permite gestionar la primera escena al completo, como instanciar los objetos en ella.  
 
 
 Diagrama de herencia de Main\begin{figure}[H]
@@ -16,18 +16,12 @@ Diagrama de herencia de Main\begin{figure}[H]
 \item 
 \Hypertarget{class_main_afa38a52a0b6f8e0362539aea9114f285}\label{class_main_afa38a52a0b6f8e0362539aea9114f285} 
 override void {\bfseries \+\_\+\+Ready} ()
-\begin{DoxyCompactList}\small\item\em Esta funcion se llama automaticamente cuando se instancia el objeto al cual esta asociado el script. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Esta función se llama automáticamente cuando se instancia el objeto al cual está asociado el script. \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{class_main_a86919ed599f9f8a27a81a3f71142dea4}{\+\_\+\+Process}} (double delta)
-\begin{DoxyCompactList}\small\item\em Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla. \end{DoxyCompactList}\item 
-\Hypertarget{class_main_a0ab775342fc867755f3fd37cb8a738f9}\label{class_main_a0ab775342fc867755f3fd37cb8a738f9} 
-void {\bfseries Instanciar\+Escena} ()
-\begin{DoxyCompactList}\small\item\em Metodo que instancia todos los elementos de la escena y los añade a su respectivo padre. \end{DoxyCompactList}\item 
-\Hypertarget{class_main_aa263141de205b807204a92cae503339d}\label{class_main_aa263141de205b807204a92cae503339d} 
-void {\bfseries pop\+Pista\+\_\+1} ()
-\begin{DoxyCompactList}\small\item\em Metodo que gestina las pistas de la escena. \end{DoxyCompactList}\item 
-\Hypertarget{class_main_a11a5ace0e275706cd7b40f1dad42a000}\label{class_main_a11a5ace0e275706cd7b40f1dad42a000} 
-void {\bfseries \+\_\+on\+\_\+timer\+\_\+timeout} ()
-\begin{DoxyCompactList}\small\item\em Señal de godot que nos permite poner un contador y cuando llega a cero hace las acciones especificas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Este método está siempre en ejecución mientras el objeto que tiene asociado el script esté en pantalla. \end{DoxyCompactList}\item 
+\Hypertarget{class_main_a10c255814ea903671caf8de67d7e2486}\label{class_main_a10c255814ea903671caf8de67d7e2486} 
+async void {\bfseries pista1\+Timer} ()
+\begin{DoxyCompactList}\small\item\em Método que gestiona las pistas de la escena. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Atributos públicos}
 \begin{DoxyCompactItemize}
 \item 
@@ -36,12 +30,27 @@ Animation\+Player {\bfseries animation\+Player}
 \item 
 \Hypertarget{class_main_af8d742c6c52a829d8b04f90393fd329e}\label{class_main_af8d742c6c52a829d8b04f90393fd329e} 
 Audio\+Stream\+Player2D {\bfseries audio\+Stream\+Player2D}
+\item 
+\Hypertarget{class_main_ae2f4b9fe7f4f2d99877e292bb366952f}\label{class_main_ae2f4b9fe7f4f2d99877e292bb366952f} 
+Path2D {\bfseries gnomo}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Atributos públicos estáticos}
 \begin{DoxyCompactItemize}
 \item 
+\Hypertarget{class_main_a0fa741baa46c43f5cc3335cdc41a31d7}\label{class_main_a0fa741baa46c43f5cc3335cdc41a31d7} 
+static Node2D {\bfseries narrador}
+\item 
+\Hypertarget{class_main_a02ca8f1860f53e1b8ec388ad54c38e15}\label{class_main_a02ca8f1860f53e1b8ec388ad54c38e15} 
+static Node2D {\bfseries mini\+Varilla\+MInstancia}
+\item 
+\Hypertarget{class_main_ae64bd106d5593060779edce52b5f8ba3}\label{class_main_ae64bd106d5593060779edce52b5f8ba3} 
+static Node2D {\bfseries mini\+Varilla\+SInstancia}
+\item 
 \Hypertarget{class_main_ab84385b0fee002c41ebabe65d0f6b68e}\label{class_main_ab84385b0fee002c41ebabe65d0f6b68e} 
 static Node2D {\bfseries varilla\+Minutos\+Instancia}
+\item 
+\Hypertarget{class_main_a5298b4944e6b196de4d344edd0b2e4fa}\label{class_main_a5298b4944e6b196de4d344edd0b2e4fa} 
+static Node2D {\bfseries pista}
 \item 
 \Hypertarget{class_main_aeee46d744170c367fa6230ea8f6a03be}\label{class_main_aeee46d744170c367fa6230ea8f6a03be} 
 static Node2D {\bfseries varilla\+Segundos\+Instancia}
@@ -85,31 +94,49 @@ static Node2D {\bfseries poster\+Instancia}
 \Hypertarget{class_main_adf6fd45502443bd9aff48e443164d9db}\label{class_main_adf6fd45502443bd9aff48e443164d9db} 
 static Node2D {\bfseries monstruo\+Instancia}
 \item 
+\Hypertarget{class_main_a3a027cc39f788be6b614c6f24a8e1656}\label{class_main_a3a027cc39f788be6b614c6f24a8e1656} 
+static Node2D {\bfseries flecha\+Derecha\+Instancia}
+\item 
+\Hypertarget{class_main_aced998efd050d1b475de334e84035c52}\label{class_main_aced998efd050d1b475de334e84035c52} 
+static Node2D {\bfseries cama\+Instancia}
+\item 
+\Hypertarget{class_main_aaf0c7043f02df32fe719a3a7cfe96d91}\label{class_main_aaf0c7043f02df32fe719a3a7cfe96d91} 
+static bool {\bfseries subir}
+\item 
 \Hypertarget{class_main_a0d70aed3ef73633de54cec46c892c2cd}\label{class_main_a0d70aed3ef73633de54cec46c892c2cd} 
-static Boolean {\bfseries varilla\+Minutos\+Reloj} = false
+static Boolean {\bfseries varilla\+Minutos\+Reloj}
 \item 
 \Hypertarget{class_main_ab8365d247119c87b8cf95d37146441d0}\label{class_main_ab8365d247119c87b8cf95d37146441d0} 
 static Boolean {\bfseries varilla\+Segundos\+Reloj} = false
+\item 
+\Hypertarget{class_main_abf5d8f18973a00404845ab45b05b15e4}\label{class_main_abf5d8f18973a00404845ab45b05b15e4} 
+static bool {\bfseries pista1\+POP}
+\item 
+\Hypertarget{class_main_addfcf26e7fb7fc818db1df8aa3e5628b}\label{class_main_addfcf26e7fb7fc818db1df8aa3e5628b} 
+static bool {\bfseries pista2\+POP}
+\item 
+\Hypertarget{class_main_af07bf2d44a80cb83ef938584945fa7d7}\label{class_main_af07bf2d44a80cb83ef938584945fa7d7} 
+static bool {\bfseries pista3\+POP}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Descripción detallada}
-Primera case del proyecto que nos per mite gestionar la primera escena al completo, como instanciar los objetos en ella. 
+Primera clase del proyecto que nos permite gestionar la primera escena al completo, como instanciar los objetos en ella. 
 
 \doxysubsection{Documentación de funciones miembro}
-\Hypertarget{class_main_a86919ed599f9f8a27a81a3f71142dea4}\label{class_main_a86919ed599f9f8a27a81a3f71142dea4} 
-\index{Main@{Main}!\_Process@{\_Process}}
+\Hypertarget{class_main_a86919ed599f9f8a27a81a3f71142dea4}\index{Main@{Main}!\_Process@{\_Process}}
 \index{\_Process@{\_Process}!Main@{Main}}
 \doxysubsubsection{\texorpdfstring{\_Process()}{\_Process()}}
-{\footnotesize\ttfamily override void Main.\+\_\+\+Process (\begin{DoxyParamCaption}\item[{double}]{delta }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{class_main_a86919ed599f9f8a27a81a3f71142dea4} 
+override void Main.\+\_\+\+Process (\begin{DoxyParamCaption}\item[{double}]{delta}{}\end{DoxyParamCaption})}
 
 
 
-Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla. 
+Este método está siempre en ejecución mientras el objeto que tiene asociado el script esté en pantalla. 
 
 
 \begin{DoxyParams}{Parámetros}
-{\em delta} & Es una varibale generada por Godot que almacena la posicion del objeto\\
+{\em delta} & Es una variable generada por Godot que almacena la posición del objeto\\
 \hline
 \end{DoxyParams}
 

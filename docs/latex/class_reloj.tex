@@ -2,7 +2,7 @@
 \hypertarget{class_reloj}{}\label{class_reloj}\index{Reloj@{Reloj}}
 
 
-Clase que nos permite gestionar como funciona el \doxylink{class_reloj}{Reloj} y que pueda almacenar objetos dentro del mismo.  
+Clase que nos permite gestionar cómo funciona el \doxylink{class_reloj}{Reloj} y que pueda almacenar objetos dentro del mismo.  
 
 
 Diagrama de herencia de Reloj\begin{figure}[H]
@@ -14,19 +14,22 @@ Diagrama de herencia de Reloj\begin{figure}[H]
 \doxysubsubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
+\Hypertarget{class_reloj_afe4944e7bacfd375f8aed38aa387b26b}\label{class_reloj_afe4944e7bacfd375f8aed38aa387b26b} 
+override void {\bfseries \+\_\+\+Ready} ()
+\begin{DoxyCompactList}\small\item\em Esta función se llama automáticamente cuando se instancia el objeto al cual está asociado el script. \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{class_reloj_aacbb68ecc18231e95e4cae8b359ee397}{\+\_\+\+Process}} (double delta)
 \begin{DoxyCompactList}\small\item\em Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el script este en pantalla. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_reloj_acba0c6011827d66e452aeea69d71b44b}{\+\_\+on\+\_\+reloj\+\_\+entered}} (Collision\+Object2D collision\+Object2D)
-\begin{DoxyCompactList}\small\item\em Señal de godot que nos permite comprobar si la colision de un objeto colisiona contra la colision del reloj. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Señal de godot que nos permite comprobar si la colision de un objeto colisiona contra otro objeto. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_reloj_a4ba980f5e8ff96726f708c5f9200442d}{\+\_\+on\+\_\+input\+\_\+event}} (Node viewport, Input\+Event evento, int shap)
 \begin{DoxyCompactList}\small\item\em Este metodo es una señal del propio godot que nos permite detectar cuando haces click sobre le objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Métodos públicos estáticos}
 \begin{DoxyCompactItemize}
 \item 
 static Boolean \mbox{\hyperlink{class_reloj_a63fafa4326b917b7058c6b1a3d7165fc}{Get\+Zoom}} ()
-\begin{DoxyCompactList}\small\item\em Getter de la variable zooom. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Getter de zooom. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_reloj_a4d8114de12eddf6a4599655267b342c5}{Set\+Zoom}} (Boolean value)
-\begin{DoxyCompactList}\small\item\em Setter de la variable zooom. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Setter de zooom. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Atributos públicos}
 \begin{DoxyCompactItemize}
 \item 
@@ -54,14 +57,14 @@ static Node2D {\bfseries mini\+Varilla\+SInstancia}
 
 
 \doxysubsection{Descripción detallada}
-Clase que nos permite gestionar como funciona el \doxylink{class_reloj}{Reloj} y que pueda almacenar objetos dentro del mismo. 
+Clase que nos permite gestionar cómo funciona el \doxylink{class_reloj}{Reloj} y que pueda almacenar objetos dentro del mismo. 
 
 \doxysubsection{Documentación de funciones miembro}
-\Hypertarget{class_reloj_a4ba980f5e8ff96726f708c5f9200442d}\label{class_reloj_a4ba980f5e8ff96726f708c5f9200442d} 
-\index{Reloj@{Reloj}!\_on\_input\_event@{\_on\_input\_event}}
+\Hypertarget{class_reloj_a4ba980f5e8ff96726f708c5f9200442d}\index{Reloj@{Reloj}!\_on\_input\_event@{\_on\_input\_event}}
 \index{\_on\_input\_event@{\_on\_input\_event}!Reloj@{Reloj}}
 \doxysubsubsection{\texorpdfstring{\_on\_input\_event()}{\_on\_input\_event()}}
-{\footnotesize\ttfamily void Reloj.\+\_\+on\+\_\+input\+\_\+event (\begin{DoxyParamCaption}\item[{Node}]{viewport,  }\item[{Input\+Event}]{evento,  }\item[{int}]{shap }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{class_reloj_a4ba980f5e8ff96726f708c5f9200442d} 
+void Reloj.\+\_\+on\+\_\+input\+\_\+event (\begin{DoxyParamCaption}\item[{Node}]{viewport}{, }\item[{Input\+Event}]{evento}{, }\item[{int}]{shap}{}\end{DoxyParamCaption})}
 
 
 
@@ -76,26 +79,26 @@ Este metodo es una señal del propio godot que nos permite detectar cuando haces
 {\em shap} & Variable que se utiliza para la API\\
 \hline
 \end{DoxyParams}
-\Hypertarget{class_reloj_acba0c6011827d66e452aeea69d71b44b}\label{class_reloj_acba0c6011827d66e452aeea69d71b44b} 
-\index{Reloj@{Reloj}!\_on\_reloj\_entered@{\_on\_reloj\_entered}}
+\Hypertarget{class_reloj_acba0c6011827d66e452aeea69d71b44b}\index{Reloj@{Reloj}!\_on\_reloj\_entered@{\_on\_reloj\_entered}}
 \index{\_on\_reloj\_entered@{\_on\_reloj\_entered}!Reloj@{Reloj}}
 \doxysubsubsection{\texorpdfstring{\_on\_reloj\_entered()}{\_on\_reloj\_entered()}}
-{\footnotesize\ttfamily void Reloj.\+\_\+on\+\_\+reloj\+\_\+entered (\begin{DoxyParamCaption}\item[{Collision\+Object2D}]{collision\+Object2D }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{class_reloj_acba0c6011827d66e452aeea69d71b44b} 
+void Reloj.\+\_\+on\+\_\+reloj\+\_\+entered (\begin{DoxyParamCaption}\item[{Collision\+Object2D}]{collision\+Object2D}{}\end{DoxyParamCaption})}
 
 
 
-Señal de godot que nos permite comprobar si la colision de un objeto colisiona contra la colision del reloj. 
+Señal de godot que nos permite comprobar si la colision de un objeto colisiona contra otro objeto. 
 
 
 \begin{DoxyParams}{Parámetros}
-{\em collision\+Object2D} & Variable de la colision del objeto que colisiona con el reloj\\
+{\em collision\+Object2D} & Variable de la colision del objeto que colisiona con el objeto\\
 \hline
 \end{DoxyParams}
-\Hypertarget{class_reloj_aacbb68ecc18231e95e4cae8b359ee397}\label{class_reloj_aacbb68ecc18231e95e4cae8b359ee397} 
-\index{Reloj@{Reloj}!\_Process@{\_Process}}
+\Hypertarget{class_reloj_aacbb68ecc18231e95e4cae8b359ee397}\index{Reloj@{Reloj}!\_Process@{\_Process}}
 \index{\_Process@{\_Process}!Reloj@{Reloj}}
 \doxysubsubsection{\texorpdfstring{\_Process()}{\_Process()}}
-{\footnotesize\ttfamily override void Reloj.\+\_\+\+Process (\begin{DoxyParamCaption}\item[{double}]{delta }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{class_reloj_aacbb68ecc18231e95e4cae8b359ee397} 
+override void Reloj.\+\_\+\+Process (\begin{DoxyParamCaption}\item[{double}]{delta}{}\end{DoxyParamCaption})}
 
 
 
@@ -106,32 +109,32 @@ Este metodo esta siempre en ejecucion mientras el objeto que tiene asociado el s
 {\em delta} & Es una varibale generada por Godot que almacena la posicion del objeto\\
 \hline
 \end{DoxyParams}
-\Hypertarget{class_reloj_a63fafa4326b917b7058c6b1a3d7165fc}\label{class_reloj_a63fafa4326b917b7058c6b1a3d7165fc} 
-\index{Reloj@{Reloj}!GetZoom@{GetZoom}}
+\Hypertarget{class_reloj_a63fafa4326b917b7058c6b1a3d7165fc}\index{Reloj@{Reloj}!GetZoom@{GetZoom}}
 \index{GetZoom@{GetZoom}!Reloj@{Reloj}}
 \doxysubsubsection{\texorpdfstring{GetZoom()}{GetZoom()}}
-{\footnotesize\ttfamily static Boolean Reloj.\+Get\+Zoom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{class_reloj_a63fafa4326b917b7058c6b1a3d7165fc} 
+static Boolean Reloj.\+Get\+Zoom (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-Getter de la variable zooom. 
+Getter de zooom. 
 
 \begin{DoxyReturn}{Devuelve}
-Devuelve la variable zooom
+devuelve la varibale de la clase zooom
 \end{DoxyReturn}
-\Hypertarget{class_reloj_a4d8114de12eddf6a4599655267b342c5}\label{class_reloj_a4d8114de12eddf6a4599655267b342c5} 
-\index{Reloj@{Reloj}!SetZoom@{SetZoom}}
+\Hypertarget{class_reloj_a4d8114de12eddf6a4599655267b342c5}\index{Reloj@{Reloj}!SetZoom@{SetZoom}}
 \index{SetZoom@{SetZoom}!Reloj@{Reloj}}
 \doxysubsubsection{\texorpdfstring{SetZoom()}{SetZoom()}}
-{\footnotesize\ttfamily static void Reloj.\+Set\+Zoom (\begin{DoxyParamCaption}\item[{Boolean}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{class_reloj_a4d8114de12eddf6a4599655267b342c5} 
+static void Reloj.\+Set\+Zoom (\begin{DoxyParamCaption}\item[{Boolean}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-Setter de la variable zooom. 
+Setter de zooom. 
 
 
 \begin{DoxyParams}{Parámetros}
-{\em value} & Cambio de la variable zooom\\
+{\em value} & El valor que queremos darle a zooom\\
 \hline
 \end{DoxyParams}
 
